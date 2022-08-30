@@ -1,6 +1,6 @@
 # Terraform CDK kubernetes Provider ~> 2.0
 
-This repo builds and publishes the Terraform kubernetes Provider bindings for [cdktf](https://cdk.tf).
+This repo builds and publishes the Terraform kubernetes Provider bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Available Packages
 
@@ -36,13 +36,14 @@ The Maven package is available at [https://mvnrepository.com/artifact/com.hashic
 
 ### Go
 
-The go package is generated into the [`github.com/hashicorp/cdktf-provider-kubernetes-go`]https://github.com/hashicorp/cdktf-provider-kubernetes-go) package.
+The go package is generated into the [`github.com/hashicorp/cdktf-provider-kubernetes-go`](https://github.com/hashicorp/cdktf-provider-kubernetes-go) package.
 
 `go get github.com/hashicorp/cdktf-provider-kubernetes-go/kubernetes`
 
 ## Docs
 
 Find auto-generated docs for this provider here: [./API.md](./API.md)
+You can also visit a hosted version of the documentation on [constructs.dev](https://constructs.dev/packages/@cdktf/provider-kubernetes).
 
 ## Versioning
 
@@ -54,7 +55,7 @@ These are the upstream dependencies:
 * [Terraform kubernetes Provider](https://github.com/terraform-providers/terraform-provider-kubernetes)
 * [Terraform Engine](https://terraform.io)
 
-If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped. While the Terraform Engine and the Terraform kubernetes Provider are relatively stable, the Terraform CDK is in an early stage. Therefore, it's likely that there will be breaking changes.
+If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
 
 ## Features / Issues / Bugs
 
