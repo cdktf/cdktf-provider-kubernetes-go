@@ -1,0 +1,112 @@
+//go:build no_runtime_type_checking
+// +build no_runtime_type_checking
+
+// Prebuilt kubernetes Provider for Terraform CDK (cdktf)
+package kubernetes
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (s *jsiiProxy_StorageClassV1) validateAddOverrideParameters(path *string, value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageClassV1) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageClassV1) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageClassV1) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageClassV1) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageClassV1) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageClassV1) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageClassV1) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageClassV1) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageClassV1) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageClassV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageClassV1) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageClassV1) validatePutAllowedTopologiesParameters(value *StorageClassV1AllowedTopologies) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageClassV1) validatePutMetadataParameters(value *StorageClassV1Metadata) error {
+	return nil
+}
+
+func validateStorageClassV1_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageClassV1) validateSetAllowVolumeExpansionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageClassV1) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageClassV1) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageClassV1) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageClassV1) validateSetMountOptionsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageClassV1) validateSetParametersParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageClassV1) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageClassV1) validateSetReclaimPolicyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageClassV1) validateSetStorageProvisionerParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageClassV1) validateSetVolumeBindingModeParameters(val *string) error {
+	return nil
+}
+
+func validateNewStorageClassV1Parameters(scope constructs.Construct, id *string, config *StorageClassV1Config) error {
+	return nil
+}
+

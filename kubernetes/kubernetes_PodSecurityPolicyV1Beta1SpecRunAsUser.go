@@ -1,0 +1,15 @@
+// Prebuilt kubernetes Provider for Terraform CDK (cdktf)
+package kubernetes
+
+
+type PodSecurityPolicyV1Beta1SpecRunAsUser struct {
+	// rule is the strategy that will dictate the allowable RunAsUser values that may be set.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/pod_security_policy_v1beta1#rule PodSecurityPolicyV1Beta1#rule}
+	Rule *string `field:"required" json:"rule" yaml:"rule"`
+	// range block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/pod_security_policy_v1beta1#range PodSecurityPolicyV1Beta1#range}
+	Range interface{} `field:"optional" json:"range" yaml:"range"`
+}
+

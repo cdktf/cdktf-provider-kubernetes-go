@@ -1,0 +1,19 @@
+// Prebuilt kubernetes Provider for Terraform CDK (cdktf)
+package kubernetes
+
+
+type DataKubernetesPersistentVolumeClaimSpec struct {
+	// selector block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/d/persistent_volume_claim#selector DataKubernetesPersistentVolumeClaim#selector}
+	Selector interface{} `field:"optional" json:"selector" yaml:"selector"`
+	// Name of the storage class requested by the claim.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/d/persistent_volume_claim#storage_class_name DataKubernetesPersistentVolumeClaim#storage_class_name}
+	StorageClassName *string `field:"optional" json:"storageClassName" yaml:"storageClassName"`
+	// The binding reference to the PersistentVolume backing this claim.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/d/persistent_volume_claim#volume_name DataKubernetesPersistentVolumeClaim#volume_name}
+	VolumeName *string `field:"optional" json:"volumeName" yaml:"volumeName"`
+}
+

@@ -1,0 +1,15 @@
+// Prebuilt kubernetes Provider for Terraform CDK (cdktf)
+package kubernetes
+
+
+type DaemonsetSpecTemplateSpecDnsConfigOption struct {
+	// Name of the option.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/daemonset#name Daemonset#name}
+	Name *string `field:"required" json:"name" yaml:"name"`
+	// Value of the option. Optional: Defaults to empty.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/daemonset#value Daemonset#value}
+	Value *string `field:"optional" json:"value" yaml:"value"`
+}
+

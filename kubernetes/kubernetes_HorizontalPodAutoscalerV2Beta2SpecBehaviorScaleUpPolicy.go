@@ -1,0 +1,21 @@
+// Prebuilt kubernetes Provider for Terraform CDK (cdktf)
+package kubernetes
+
+
+type HorizontalPodAutoscalerV2Beta2SpecBehaviorScaleUpPolicy struct {
+	// Period specifies the window of time for which the policy should hold true.
+	//
+	// PeriodSeconds must be greater than zero and less than or equal to 1800 (30 min).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/horizontal_pod_autoscaler_v2beta2#period_seconds HorizontalPodAutoscalerV2Beta2#period_seconds}
+	PeriodSeconds *float64 `field:"required" json:"periodSeconds" yaml:"periodSeconds"`
+	// Type is used to specify the scaling policy: Percent or Pods.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/horizontal_pod_autoscaler_v2beta2#type HorizontalPodAutoscalerV2Beta2#type}
+	Type *string `field:"required" json:"type" yaml:"type"`
+	// Value contains the amount of change which is permitted by the policy. It must be greater than zero.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/horizontal_pod_autoscaler_v2beta2#value HorizontalPodAutoscalerV2Beta2#value}
+	Value *float64 `field:"required" json:"value" yaml:"value"`
+}
+
