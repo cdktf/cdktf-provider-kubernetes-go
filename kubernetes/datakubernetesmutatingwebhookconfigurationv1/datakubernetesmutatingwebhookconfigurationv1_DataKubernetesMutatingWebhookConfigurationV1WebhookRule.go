@@ -1,0 +1,6 @@
+package datakubernetesmutatingwebhookconfigurationv1
+
+
+type DataKubernetesMutatingWebhookConfigurationV1WebhookRule struct {
+}
+
