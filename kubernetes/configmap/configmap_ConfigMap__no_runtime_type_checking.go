@@ -77,6 +77,10 @@ func (j *jsiiProxy_ConfigMap) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_ConfigMap) validateSetImmutableParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigMap) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

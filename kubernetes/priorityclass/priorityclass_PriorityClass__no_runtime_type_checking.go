@@ -81,6 +81,10 @@ func (j *jsiiProxy_PriorityClass) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
+func (j *jsiiProxy_PriorityClass) validateSetPreemptionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PriorityClass) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

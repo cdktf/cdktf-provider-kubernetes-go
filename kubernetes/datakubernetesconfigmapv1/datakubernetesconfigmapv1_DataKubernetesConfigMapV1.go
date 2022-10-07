@@ -37,6 +37,9 @@ type DataKubernetesConfigMapV1 interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Immutable() interface{}
+	SetImmutable(val interface{})
+	ImmutableInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -84,6 +87,7 @@ type DataKubernetesConfigMapV1 interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMetadata(value *DataKubernetesConfigMapV1Metadata)
 	ResetId()
+	ResetImmutable()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -207,6 +211,26 @@ func (j *jsiiProxy_DataKubernetesConfigMapV1) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesConfigMapV1) Immutable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"immutable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesConfigMapV1) ImmutableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"immutableInput",
 		&returns,
 	)
 	return returns
@@ -363,6 +387,17 @@ func (j *jsiiProxy_DataKubernetesConfigMapV1)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataKubernetesConfigMapV1)SetImmutable(val interface{}) {
+	if err := j.validateSetImmutableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"immutable",
 		val,
 	)
 }
@@ -629,6 +664,14 @@ func (d *jsiiProxy_DataKubernetesConfigMapV1) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataKubernetesConfigMapV1) ResetImmutable() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetImmutable",
 		nil, // no parameters
 	)
 }

@@ -45,6 +45,9 @@ type ConfigMap interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Immutable() interface{}
+	SetImmutable(val interface{})
+	ImmutableInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -98,6 +101,7 @@ type ConfigMap interface {
 	ResetBinaryData()
 	ResetData()
 	ResetId()
+	ResetImmutable()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -251,6 +255,26 @@ func (j *jsiiProxy_ConfigMap) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConfigMap) Immutable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"immutable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConfigMap) ImmutableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"immutableInput",
 		&returns,
 	)
 	return returns
@@ -450,6 +474,17 @@ func (j *jsiiProxy_ConfigMap)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConfigMap)SetImmutable(val interface{}) {
+	if err := j.validateSetImmutableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"immutable",
 		val,
 	)
 }
@@ -743,6 +778,14 @@ func (c *jsiiProxy_ConfigMap) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConfigMap) ResetImmutable() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetImmutable",
 		nil, // no parameters
 	)
 }

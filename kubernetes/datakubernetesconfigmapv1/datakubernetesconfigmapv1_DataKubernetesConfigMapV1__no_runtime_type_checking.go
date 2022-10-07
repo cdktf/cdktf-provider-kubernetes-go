@@ -65,6 +65,10 @@ func (j *jsiiProxy_DataKubernetesConfigMapV1) validateSetIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataKubernetesConfigMapV1) validateSetImmutableParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataKubernetesConfigMapV1) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

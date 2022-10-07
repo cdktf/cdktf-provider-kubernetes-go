@@ -40,9 +40,17 @@ type SecretConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/secret#immutable Secret#immutable}
 	Immutable interface{} `field:"optional" json:"immutable" yaml:"immutable"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/secret#timeouts Secret#timeouts}
+	Timeouts *SecretTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Type of secret.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/secret#type Secret#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
+	// Terraform will wait for the service account token to be created.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/secret#wait_for_service_account_token Secret#wait_for_service_account_token}
+	WaitForServiceAccountToken interface{} `field:"optional" json:"waitForServiceAccountToken" yaml:"waitForServiceAccountToken"`
 }
 

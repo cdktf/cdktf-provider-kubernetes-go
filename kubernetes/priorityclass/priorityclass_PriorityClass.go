@@ -53,6 +53,9 @@ type PriorityClass interface {
 	MetadataInput() *PriorityClassMetadata
 	// The tree node.
 	Node() constructs.Node
+	PreemptionPolicy() *string
+	SetPreemptionPolicy(val *string)
+	PreemptionPolicyInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -104,6 +107,7 @@ type PriorityClass interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPreemptionPolicy()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -299,6 +303,26 @@ func (j *jsiiProxy_PriorityClass) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_PriorityClass) PreemptionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preemptionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PriorityClass) PreemptionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preemptionPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PriorityClass) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -484,6 +508,17 @@ func (j *jsiiProxy_PriorityClass)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PriorityClass)SetPreemptionPolicy(val *string) {
+	if err := j.validateSetPreemptionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preemptionPolicy",
 		val,
 	)
 }
@@ -785,6 +820,14 @@ func (p *jsiiProxy_PriorityClass) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PriorityClass) ResetPreemptionPolicy() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPreemptionPolicy",
 		nil, // no parameters
 	)
 }

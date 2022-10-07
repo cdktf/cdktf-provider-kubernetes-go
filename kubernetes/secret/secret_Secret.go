@@ -72,9 +72,14 @@ type Secret interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() SecretTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	WaitForServiceAccountToken() interface{}
+	SetWaitForServiceAccountToken(val interface{})
+	WaitForServiceAccountTokenInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -101,6 +106,7 @@ type Secret interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMetadata(value *SecretMetadata)
+	PutTimeouts(value *SecretTimeouts)
 	ResetBinaryData()
 	ResetData()
 	ResetId()
@@ -108,7 +114,9 @@ type Secret interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	ResetType()
+	ResetWaitForServiceAccountToken()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -384,6 +392,26 @@ func (j *jsiiProxy_Secret) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Secret) Timeouts() SecretTimeoutsOutputReference {
+	var returns SecretTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Secret) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Secret) Type() *string {
 	var returns *string
 	_jsii_.Get(
@@ -399,6 +427,26 @@ func (j *jsiiProxy_Secret) TypeInput() *string {
 	_jsii_.Get(
 		j,
 		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Secret) WaitForServiceAccountToken() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"waitForServiceAccountToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Secret) WaitForServiceAccountTokenInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"waitForServiceAccountTokenInput",
 		&returns,
 	)
 	return returns
@@ -550,6 +598,17 @@ func (j *jsiiProxy_Secret)SetType(val *string) {
 	_jsii_.Set(
 		j,
 		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Secret)SetWaitForServiceAccountToken(val interface{}) {
+	if err := j.validateSetWaitForServiceAccountTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"waitForServiceAccountToken",
 		val,
 	)
 }
@@ -793,6 +852,17 @@ func (s *jsiiProxy_Secret) PutMetadata(value *SecretMetadata) {
 	)
 }
 
+func (s *jsiiProxy_Secret) PutTimeouts(value *SecretTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_Secret) ResetBinaryData() {
 	_jsii_.InvokeVoid(
 		s,
@@ -833,10 +903,26 @@ func (s *jsiiProxy_Secret) ResetOverrideLogicalId() {
 	)
 }
 
+func (s *jsiiProxy_Secret) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_Secret) ResetType() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Secret) ResetWaitForServiceAccountToken() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetWaitForServiceAccountToken",
 		nil, // no parameters
 	)
 }

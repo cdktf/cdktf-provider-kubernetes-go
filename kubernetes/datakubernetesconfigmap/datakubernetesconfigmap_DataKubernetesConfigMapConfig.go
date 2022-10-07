@@ -28,5 +28,11 @@ type DataKubernetesConfigMapConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Immutable, if set to true, ensures that data stored in the ConfigMap cannot be updated (only object metadata can be modified).
+	//
+	// If not set to true, the field can be modified at any time. Defaulted to nil.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/d/config_map#immutable DataKubernetesConfigMap#immutable}
+	Immutable interface{} `field:"optional" json:"immutable" yaml:"immutable"`
 }
 

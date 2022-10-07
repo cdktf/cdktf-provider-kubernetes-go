@@ -57,6 +57,10 @@ func (s *jsiiProxy_Secret) validatePutMetadataParameters(value *SecretMetadata) 
 	return nil
 }
 
+func (s *jsiiProxy_Secret) validatePutTimeoutsParameters(value *SecretTimeouts) error {
+	return nil
+}
+
 func validateSecret_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -90,6 +94,10 @@ func (j *jsiiProxy_Secret) validateSetProvisionersParameters(val *[]interface{})
 }
 
 func (j *jsiiProxy_Secret) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Secret) validateSetWaitForServiceAccountTokenParameters(val interface{}) error {
 	return nil
 }
 
