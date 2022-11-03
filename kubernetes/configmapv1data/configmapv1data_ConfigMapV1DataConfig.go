@@ -27,6 +27,10 @@ type ConfigMapV1DataConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/config_map_v1_data#metadata ConfigMapV1Data#metadata}
 	Metadata *ConfigMapV1DataMetadata `field:"required" json:"metadata" yaml:"metadata"`
+	// Set the name of the field manager for the specified labels.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/config_map_v1_data#field_manager ConfigMapV1Data#field_manager}
+	FieldManager *string `field:"optional" json:"fieldManager" yaml:"fieldManager"`
 	// Force overwriting data that is managed outside of Terraform.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/config_map_v1_data#force ConfigMapV1Data#force}

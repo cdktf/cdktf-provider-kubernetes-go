@@ -31,6 +31,9 @@ type ConfigMapV1Data interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	FieldManager() *string
+	SetFieldManager(val *string)
+	FieldManagerInput() *string
 	Force() interface{}
 	SetForce(val interface{})
 	ForceInput() interface{}
@@ -95,6 +98,7 @@ type ConfigMapV1Data interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMetadata(value *ConfigMapV1DataMetadata)
+	ResetFieldManager()
 	ResetForce()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -180,6 +184,26 @@ func (j *jsiiProxy_ConfigMapV1Data) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConfigMapV1Data) FieldManager() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fieldManager",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConfigMapV1Data) FieldManagerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fieldManagerInput",
 		&returns,
 	)
 	return returns
@@ -419,6 +443,17 @@ func (j *jsiiProxy_ConfigMapV1Data)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConfigMapV1Data)SetFieldManager(val *string) {
+	if err := j.validateSetFieldManagerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fieldManager",
 		val,
 	)
 }
@@ -719,6 +754,14 @@ func (c *jsiiProxy_ConfigMapV1Data) PutMetadata(value *ConfigMapV1DataMetadata) 
 		c,
 		"putMetadata",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ConfigMapV1Data) ResetFieldManager() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFieldManager",
+		nil, // no parameters
 	)
 }
 

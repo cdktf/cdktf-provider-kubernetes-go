@@ -34,6 +34,9 @@ type Annotations interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	FieldManager() *string
+	SetFieldManager(val *string)
+	FieldManagerInput() *string
 	Force() interface{}
 	SetForce(val interface{})
 	ForceInput() interface{}
@@ -101,6 +104,7 @@ type Annotations interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMetadata(value *AnnotationsMetadata)
+	ResetFieldManager()
 	ResetForce()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -206,6 +210,26 @@ func (j *jsiiProxy_Annotations) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Annotations) FieldManager() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fieldManager",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Annotations) FieldManagerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fieldManagerInput",
 		&returns,
 	)
 	return returns
@@ -476,6 +500,17 @@ func (j *jsiiProxy_Annotations)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Annotations)SetFieldManager(val *string) {
+	if err := j.validateSetFieldManagerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fieldManager",
 		val,
 	)
 }
@@ -787,6 +822,14 @@ func (a *jsiiProxy_Annotations) PutMetadata(value *AnnotationsMetadata) {
 		a,
 		"putMetadata",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_Annotations) ResetFieldManager() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFieldManager",
+		nil, // no parameters
 	)
 }
 

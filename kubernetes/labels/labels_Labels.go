@@ -31,6 +31,9 @@ type Labels interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	FieldManager() *string
+	SetFieldManager(val *string)
+	FieldManagerInput() *string
 	Force() interface{}
 	SetForce(val interface{})
 	ForceInput() interface{}
@@ -101,6 +104,7 @@ type Labels interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMetadata(value *LabelsMetadata)
+	ResetFieldManager()
 	ResetForce()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -186,6 +190,26 @@ func (j *jsiiProxy_Labels) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Labels) FieldManager() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fieldManager",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Labels) FieldManagerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fieldManagerInput",
 		&returns,
 	)
 	return returns
@@ -465,6 +489,17 @@ func (j *jsiiProxy_Labels)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Labels)SetFieldManager(val *string) {
+	if err := j.validateSetFieldManagerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fieldManager",
 		val,
 	)
 }
@@ -787,6 +822,14 @@ func (l *jsiiProxy_Labels) PutMetadata(value *LabelsMetadata) {
 		l,
 		"putMetadata",
 		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_Labels) ResetFieldManager() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetFieldManager",
+		nil, // no parameters
 	)
 }
 

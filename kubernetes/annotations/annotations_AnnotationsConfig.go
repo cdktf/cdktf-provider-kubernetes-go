@@ -35,6 +35,10 @@ type AnnotationsConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/annotations#metadata Annotations#metadata}
 	Metadata *AnnotationsMetadata `field:"required" json:"metadata" yaml:"metadata"`
+	// Set the name of the field manager for the specified labels.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/annotations#field_manager Annotations#field_manager}
+	FieldManager *string `field:"optional" json:"fieldManager" yaml:"fieldManager"`
 	// Force overwriting annotations that were created or edited outside of Terraform.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/annotations#force Annotations#force}

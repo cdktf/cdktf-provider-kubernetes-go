@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package configmapv1data
 
@@ -165,6 +164,14 @@ func (j *jsiiProxy_ConfigMapV1Data) validateSetConnectionParameters(val interfac
 }
 
 func (j *jsiiProxy_ConfigMapV1Data) validateSetDataParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ConfigMapV1Data) validateSetFieldManagerParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

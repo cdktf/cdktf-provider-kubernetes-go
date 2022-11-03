@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package labels
 
@@ -66,6 +65,10 @@ func (j *jsiiProxy_Labels) validateSetApiVersionParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Labels) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Labels) validateSetFieldManagerParameters(val *string) error {
 	return nil
 }
 

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package annotations
 
@@ -70,6 +69,10 @@ func (j *jsiiProxy_Annotations) validateSetApiVersionParameters(val *string) err
 }
 
 func (j *jsiiProxy_Annotations) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Annotations) validateSetFieldManagerParameters(val *string) error {
 	return nil
 }
 

@@ -35,6 +35,10 @@ type LabelsConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/labels#metadata Labels#metadata}
 	Metadata *LabelsMetadata `field:"required" json:"metadata" yaml:"metadata"`
+	// Set the name of the field manager for the specified labels.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/labels#field_manager Labels#field_manager}
+	FieldManager *string `field:"optional" json:"fieldManager" yaml:"fieldManager"`
 	// Force overwriting labels that were created or edited outside of Terraform.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/labels#force Labels#force}
