@@ -68,6 +68,14 @@ func validateCertificateSigningRequestV1_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateCertificateSigningRequestV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCertificateSigningRequestV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CertificateSigningRequestV1) validateSetAutoApproveParameters(val interface{}) error {
 	return nil
 }

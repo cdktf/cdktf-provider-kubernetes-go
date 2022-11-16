@@ -64,6 +64,14 @@ func validateStorageClassV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStorageClassV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageClassV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageClassV1) validateSetAllowVolumeExpansionParameters(val interface{}) error {
 	return nil
 }

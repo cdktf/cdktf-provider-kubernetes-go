@@ -64,6 +64,14 @@ func validateCsiDriver_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCsiDriver_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCsiDriver_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CsiDriver) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

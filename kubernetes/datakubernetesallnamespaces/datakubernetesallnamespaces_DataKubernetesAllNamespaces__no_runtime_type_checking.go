@@ -56,6 +56,14 @@ func validateDataKubernetesAllNamespaces_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataKubernetesAllNamespaces_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataKubernetesAllNamespaces_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataKubernetesAllNamespaces) validateSetIdParameters(val *string) error {
 	return nil
 }

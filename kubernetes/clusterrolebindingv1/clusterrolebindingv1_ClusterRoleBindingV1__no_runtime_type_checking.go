@@ -68,6 +68,14 @@ func validateClusterRoleBindingV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateClusterRoleBindingV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateClusterRoleBindingV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClusterRoleBindingV1) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

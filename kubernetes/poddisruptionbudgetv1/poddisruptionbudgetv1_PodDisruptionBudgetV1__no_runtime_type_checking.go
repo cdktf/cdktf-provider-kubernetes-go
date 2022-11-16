@@ -64,6 +64,14 @@ func validatePodDisruptionBudgetV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePodDisruptionBudgetV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePodDisruptionBudgetV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PodDisruptionBudgetV1) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

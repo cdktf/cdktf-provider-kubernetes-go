@@ -68,6 +68,14 @@ func validateCronJob_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCronJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCronJob_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CronJob) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

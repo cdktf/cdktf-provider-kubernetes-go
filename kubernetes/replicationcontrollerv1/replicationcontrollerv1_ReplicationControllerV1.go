@@ -2,10 +2,10 @@ package replicationcontrollerv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v3/replicationcontrollerv1/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v4/replicationcontrollerv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -489,6 +489,44 @@ func ReplicationControllerV1_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ReplicationControllerV1_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateReplicationControllerV1_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ReplicationControllerV1_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateReplicationControllerV1_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

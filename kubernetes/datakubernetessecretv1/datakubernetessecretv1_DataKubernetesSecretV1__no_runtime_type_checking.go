@@ -60,6 +60,14 @@ func validateDataKubernetesSecretV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataKubernetesSecretV1_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataKubernetesSecretV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataKubernetesSecretV1) validateSetBinaryDataParameters(val *map[string]*string) error {
 	return nil
 }

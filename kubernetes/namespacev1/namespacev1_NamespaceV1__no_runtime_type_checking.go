@@ -64,6 +64,14 @@ func validateNamespaceV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNamespaceV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNamespaceV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NamespaceV1) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

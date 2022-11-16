@@ -60,6 +60,14 @@ func validateDataKubernetesMutatingWebhookConfigurationV1_IsConstructParameters(
 	return nil
 }
 
+func validateDataKubernetesMutatingWebhookConfigurationV1_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataKubernetesMutatingWebhookConfigurationV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1) validateSetIdParameters(val *string) error {
 	return nil
 }

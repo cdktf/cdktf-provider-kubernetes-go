@@ -68,6 +68,14 @@ func validateManifest_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateManifest_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateManifest_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Manifest) validateSetComputedFieldsParameters(val *[]*string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateConfigMapV1Data_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateConfigMapV1Data_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConfigMapV1Data_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigMapV1Data) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

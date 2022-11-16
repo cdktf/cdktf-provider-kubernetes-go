@@ -203,6 +203,22 @@ func validateServiceAccountV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateServiceAccountV1_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateServiceAccountV1_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ServiceAccountV1) validateSetAutomountServiceAccountTokenParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

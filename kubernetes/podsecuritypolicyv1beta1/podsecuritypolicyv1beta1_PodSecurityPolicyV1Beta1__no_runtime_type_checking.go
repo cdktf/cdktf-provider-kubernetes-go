@@ -64,6 +64,14 @@ func validatePodSecurityPolicyV1Beta1_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validatePodSecurityPolicyV1Beta1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePodSecurityPolicyV1Beta1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PodSecurityPolicyV1Beta1) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

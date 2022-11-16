@@ -64,6 +64,14 @@ func validateApiService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApiService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiService) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

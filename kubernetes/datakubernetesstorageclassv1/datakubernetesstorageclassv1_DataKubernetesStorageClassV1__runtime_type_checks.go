@@ -141,6 +141,22 @@ func validateDataKubernetesStorageClassV1_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataKubernetesStorageClassV1_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataKubernetesStorageClassV1_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataKubernetesStorageClassV1) validateSetAllowVolumeExpansionParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

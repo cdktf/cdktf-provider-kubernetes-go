@@ -68,6 +68,14 @@ func validateRoleBinding_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRoleBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoleBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RoleBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

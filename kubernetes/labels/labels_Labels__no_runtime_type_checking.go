@@ -60,6 +60,14 @@ func validateLabels_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLabels_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLabels_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Labels) validateSetApiVersionParameters(val *string) error {
 	return nil
 }

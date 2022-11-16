@@ -64,6 +64,14 @@ func validateDataKubernetesStorageClassV1_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataKubernetesStorageClassV1_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataKubernetesStorageClassV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataKubernetesStorageClassV1) validateSetAllowVolumeExpansionParameters(val interface{}) error {
 	return nil
 }

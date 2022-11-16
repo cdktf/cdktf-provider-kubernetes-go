@@ -64,6 +64,14 @@ func validateMutatingWebhookConfigurationV1_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateMutatingWebhookConfigurationV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMutatingWebhookConfigurationV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MutatingWebhookConfigurationV1) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

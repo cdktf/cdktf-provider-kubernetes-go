@@ -64,6 +64,14 @@ func validateHorizontalPodAutoscalerV2Beta2_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateHorizontalPodAutoscalerV2Beta2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHorizontalPodAutoscalerV2Beta2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

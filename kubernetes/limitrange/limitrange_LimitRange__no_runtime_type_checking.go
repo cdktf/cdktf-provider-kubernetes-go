@@ -64,6 +64,14 @@ func validateLimitRange_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLimitRange_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLimitRange_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LimitRange) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

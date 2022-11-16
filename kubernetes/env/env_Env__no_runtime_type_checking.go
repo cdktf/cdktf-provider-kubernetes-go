@@ -64,6 +64,14 @@ func validateEnv_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEnv_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEnv_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Env) validateSetApiVersionParameters(val *string) error {
 	return nil
 }

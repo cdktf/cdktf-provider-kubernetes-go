@@ -2,10 +2,10 @@ package poddisruptionbudget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v3/poddisruptionbudget/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v4/poddisruptionbudget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -465,6 +465,44 @@ func PodDisruptionBudget_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.podDisruptionBudget.PodDisruptionBudget",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PodDisruptionBudget_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePodDisruptionBudget_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-kubernetes.podDisruptionBudget.PodDisruptionBudget",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PodDisruptionBudget_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePodDisruptionBudget_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-kubernetes.podDisruptionBudget.PodDisruptionBudget",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

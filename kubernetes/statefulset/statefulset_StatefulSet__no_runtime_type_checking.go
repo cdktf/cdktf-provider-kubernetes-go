@@ -68,6 +68,14 @@ func validateStatefulSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStatefulSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStatefulSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StatefulSet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

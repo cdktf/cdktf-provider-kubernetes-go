@@ -68,6 +68,14 @@ func validatePersistentVolume_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePersistentVolume_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePersistentVolume_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PersistentVolume) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -72,6 +72,14 @@ func validateDefaultServiceAccountV1_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDefaultServiceAccountV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDefaultServiceAccountV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DefaultServiceAccountV1) validateSetAutomountServiceAccountTokenParameters(val interface{}) error {
 	return nil
 }

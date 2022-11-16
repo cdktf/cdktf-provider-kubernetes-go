@@ -60,6 +60,14 @@ func validateDataKubernetesServiceV1_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataKubernetesServiceV1_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataKubernetesServiceV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataKubernetesServiceV1) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validateReplicationController_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateReplicationController_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateReplicationController_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ReplicationController) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

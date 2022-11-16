@@ -64,6 +64,14 @@ func validateRoleV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRoleV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoleV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RoleV1) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

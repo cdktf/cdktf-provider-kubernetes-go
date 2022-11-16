@@ -16,6 +16,14 @@ func validateKubernetesProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKubernetesProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKubernetesProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesProvider) validateSetExecParameters(val *KubernetesProviderExec) error {
 	return nil
 }

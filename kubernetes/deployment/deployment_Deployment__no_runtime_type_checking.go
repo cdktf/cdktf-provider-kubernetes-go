@@ -68,6 +68,14 @@ func validateDeployment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDeployment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDeployment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Deployment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

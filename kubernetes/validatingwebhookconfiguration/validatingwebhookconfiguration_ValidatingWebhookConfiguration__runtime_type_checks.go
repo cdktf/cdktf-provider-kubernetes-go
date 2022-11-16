@@ -161,6 +161,22 @@ func validateValidatingWebhookConfiguration_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateValidatingWebhookConfiguration_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateValidatingWebhookConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ValidatingWebhookConfiguration) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

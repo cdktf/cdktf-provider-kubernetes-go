@@ -2,10 +2,10 @@ package validatingwebhookconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v3/validatingwebhookconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v4/validatingwebhookconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -465,6 +465,44 @@ func ValidatingWebhookConfiguration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfiguration",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ValidatingWebhookConfiguration_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateValidatingWebhookConfiguration_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfiguration",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ValidatingWebhookConfiguration_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateValidatingWebhookConfiguration_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfiguration",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

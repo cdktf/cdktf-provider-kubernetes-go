@@ -141,6 +141,22 @@ func validateHorizontalPodAutoscalerV1_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateHorizontalPodAutoscalerV1_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateHorizontalPodAutoscalerV1_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_HorizontalPodAutoscalerV1) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

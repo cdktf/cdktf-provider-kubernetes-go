@@ -64,6 +64,14 @@ func validateIngressClassV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIngressClassV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIngressClassV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IngressClassV1) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

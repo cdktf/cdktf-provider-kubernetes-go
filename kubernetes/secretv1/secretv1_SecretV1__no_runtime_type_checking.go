@@ -64,6 +64,14 @@ func validateSecretV1_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSecretV1_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecretV1_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretV1) validateSetBinaryDataParameters(val *map[string]*string) error {
 	return nil
 }

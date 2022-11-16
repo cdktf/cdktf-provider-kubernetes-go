@@ -60,6 +60,14 @@ func validatePriorityClass_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePriorityClass_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePriorityClass_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PriorityClass) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validateJob_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateJob_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Job) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package annotations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v3/annotations/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v4/annotations/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -614,6 +614,44 @@ func Annotations_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-kubernetes.annotations.Annotations",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Annotations_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAnnotations_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-kubernetes.annotations.Annotations",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Annotations_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAnnotations_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-kubernetes.annotations.Annotations",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)
