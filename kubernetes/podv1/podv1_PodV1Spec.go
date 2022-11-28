@@ -90,6 +90,12 @@ type PodV1Spec struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/pod_v1#restart_policy PodV1#restart_policy}
 	RestartPolicy *string `field:"optional" json:"restartPolicy" yaml:"restartPolicy"`
+	// RuntimeClassName is a feature for selecting the container runtime configuration.
+	//
+	// The container runtime configuration is used to run a Pod's containers. More info: https://kubernetes.io/docs/concepts/containers/runtime-class
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/pod_v1#runtime_class_name PodV1#runtime_class_name}
+	RuntimeClassName *string `field:"optional" json:"runtimeClassName" yaml:"runtimeClassName"`
 	// security_context block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/pod_v1#security_context PodV1#security_context}

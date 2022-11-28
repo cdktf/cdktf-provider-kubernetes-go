@@ -29,6 +29,9 @@ type PodV1SpecSecurityContextOutputReference interface {
 	Fqn() *string
 	FsGroup() *string
 	SetFsGroup(val *string)
+	FsGroupChangePolicy() *string
+	SetFsGroupChangePolicy(val *string)
+	FsGroupChangePolicyInput() *string
 	FsGroupInput() *string
 	InternalValue() *PodV1SpecSecurityContext
 	SetInternalValue(val *PodV1SpecSecurityContext)
@@ -86,6 +89,7 @@ type PodV1SpecSecurityContextOutputReference interface {
 	PutSeLinuxOptions(value *PodV1SpecSecurityContextSeLinuxOptions)
 	PutSysctl(value interface{})
 	ResetFsGroup()
+	ResetFsGroupChangePolicy()
 	ResetRunAsGroup()
 	ResetRunAsNonRoot()
 	ResetRunAsUser()
@@ -153,6 +157,26 @@ func (j *jsiiProxy_PodV1SpecSecurityContextOutputReference) FsGroup() *string {
 	_jsii_.Get(
 		j,
 		"fsGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecSecurityContextOutputReference) FsGroupChangePolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fsGroupChangePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecSecurityContextOutputReference) FsGroupChangePolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fsGroupChangePolicyInput",
 		&returns,
 	)
 	return returns
@@ -395,6 +419,17 @@ func (j *jsiiProxy_PodV1SpecSecurityContextOutputReference)SetFsGroup(val *strin
 	_jsii_.Set(
 		j,
 		"fsGroup",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PodV1SpecSecurityContextOutputReference)SetFsGroupChangePolicy(val *string) {
+	if err := j.validateSetFsGroupChangePolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fsGroupChangePolicy",
 		val,
 	)
 }
@@ -699,6 +734,14 @@ func (p *jsiiProxy_PodV1SpecSecurityContextOutputReference) ResetFsGroup() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetFsGroup",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PodV1SpecSecurityContextOutputReference) ResetFsGroupChangePolicy() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetFsGroupChangePolicy",
 		nil, // no parameters
 	)
 }

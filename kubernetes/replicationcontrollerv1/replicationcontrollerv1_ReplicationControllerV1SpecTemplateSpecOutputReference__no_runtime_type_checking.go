@@ -152,6 +152,10 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference) validateSetRuntimeClassNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference) validateSetServiceAccountNameParameters(val *string) error {
 	return nil
 }

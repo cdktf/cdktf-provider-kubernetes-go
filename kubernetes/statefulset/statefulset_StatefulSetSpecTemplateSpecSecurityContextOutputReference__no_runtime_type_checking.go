@@ -72,6 +72,10 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecSecurityContextOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecSecurityContextOutputReference) validateSetFsGroupChangePolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StatefulSetSpecTemplateSpecSecurityContextOutputReference) validateSetInternalValueParameters(val *StatefulSetSpecTemplateSpecSecurityContext) error {
 	return nil
 }

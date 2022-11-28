@@ -72,6 +72,10 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutput
 	return nil
 }
 
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference) validateSetFsGroupChangePolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference) validateSetInternalValueParameters(val *CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContext) error {
 	return nil
 }

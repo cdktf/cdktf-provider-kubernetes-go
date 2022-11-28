@@ -608,6 +608,14 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecOutputReference) validateSetResta
 	return nil
 }
 
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecOutputReference) validateSetRuntimeClassNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DeploymentV1SpecTemplateSpecOutputReference) validateSetServiceAccountNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -79,6 +79,9 @@ type DaemonSetV1SpecTemplateSpecOutputReference interface {
 	RestartPolicy() *string
 	SetRestartPolicy(val *string)
 	RestartPolicyInput() *string
+	RuntimeClassName() *string
+	SetRuntimeClassName(val *string)
+	RuntimeClassNameInput() *string
 	SecurityContext() DaemonSetV1SpecTemplateSpecSecurityContextOutputReference
 	SecurityContextInput() *DaemonSetV1SpecTemplateSpecSecurityContext
 	ServiceAccountName() *string
@@ -161,6 +164,7 @@ type DaemonSetV1SpecTemplateSpecOutputReference interface {
 	ResetPriorityClassName()
 	ResetReadinessGate()
 	ResetRestartPolicy()
+	ResetRuntimeClassName()
 	ResetSecurityContext()
 	ResetServiceAccountName()
 	ResetShareProcessNamespace()
@@ -614,6 +618,26 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecOutputReference) RestartPolicyInpu
 	return returns
 }
 
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecOutputReference) RuntimeClassName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeClassName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecOutputReference) RuntimeClassNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeClassNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecOutputReference) SecurityContext() DaemonSetV1SpecTemplateSpecSecurityContextOutputReference {
 	var returns DaemonSetV1SpecTemplateSpecSecurityContextOutputReference
 	_jsii_.Get(
@@ -983,6 +1007,17 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecOutputReference)SetRestartPolicy(v
 	_jsii_.Set(
 		j,
 		"restartPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecOutputReference)SetRuntimeClassName(val *string) {
+	if err := j.validateSetRuntimeClassNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtimeClassName",
 		val,
 	)
 }
@@ -1508,6 +1543,14 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecOutputReference) ResetRestartPolic
 	_jsii_.InvokeVoid(
 		d,
 		"resetRestartPolicy",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecOutputReference) ResetRuntimeClassName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRuntimeClassName",
 		nil, // no parameters
 	)
 }

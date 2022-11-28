@@ -72,6 +72,10 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference) validateSetFsGroupChangePolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference) validateSetInternalValueParameters(val *ReplicationControllerSpecTemplateSpecSecurityContext) error {
 	return nil
 }

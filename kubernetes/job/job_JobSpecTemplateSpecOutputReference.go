@@ -79,6 +79,9 @@ type JobSpecTemplateSpecOutputReference interface {
 	RestartPolicy() *string
 	SetRestartPolicy(val *string)
 	RestartPolicyInput() *string
+	RuntimeClassName() *string
+	SetRuntimeClassName(val *string)
+	RuntimeClassNameInput() *string
 	SecurityContext() JobSpecTemplateSpecSecurityContextOutputReference
 	SecurityContextInput() *JobSpecTemplateSpecSecurityContext
 	ServiceAccountName() *string
@@ -161,6 +164,7 @@ type JobSpecTemplateSpecOutputReference interface {
 	ResetPriorityClassName()
 	ResetReadinessGate()
 	ResetRestartPolicy()
+	ResetRuntimeClassName()
 	ResetSecurityContext()
 	ResetServiceAccountName()
 	ResetShareProcessNamespace()
@@ -614,6 +618,26 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) RestartPolicyInput() *str
 	return returns
 }
 
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) RuntimeClassName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeClassName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) RuntimeClassNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeClassNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SecurityContext() JobSpecTemplateSpecSecurityContextOutputReference {
 	var returns JobSpecTemplateSpecSecurityContextOutputReference
 	_jsii_.Get(
@@ -983,6 +1007,17 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetRestartPolicy(val *stri
 	_jsii_.Set(
 		j,
 		"restartPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetRuntimeClassName(val *string) {
+	if err := j.validateSetRuntimeClassNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtimeClassName",
 		val,
 	)
 }
@@ -1508,6 +1543,14 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ResetRestartPolicy() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetRestartPolicy",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ResetRuntimeClassName() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetRuntimeClassName",
 		nil, // no parameters
 	)
 }

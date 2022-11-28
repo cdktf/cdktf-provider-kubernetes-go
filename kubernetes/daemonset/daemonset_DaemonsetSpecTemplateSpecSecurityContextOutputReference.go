@@ -29,6 +29,9 @@ type DaemonsetSpecTemplateSpecSecurityContextOutputReference interface {
 	Fqn() *string
 	FsGroup() *string
 	SetFsGroup(val *string)
+	FsGroupChangePolicy() *string
+	SetFsGroupChangePolicy(val *string)
+	FsGroupChangePolicyInput() *string
 	FsGroupInput() *string
 	InternalValue() *DaemonsetSpecTemplateSpecSecurityContext
 	SetInternalValue(val *DaemonsetSpecTemplateSpecSecurityContext)
@@ -86,6 +89,7 @@ type DaemonsetSpecTemplateSpecSecurityContextOutputReference interface {
 	PutSeLinuxOptions(value *DaemonsetSpecTemplateSpecSecurityContextSeLinuxOptions)
 	PutSysctl(value interface{})
 	ResetFsGroup()
+	ResetFsGroupChangePolicy()
 	ResetRunAsGroup()
 	ResetRunAsNonRoot()
 	ResetRunAsUser()
@@ -153,6 +157,26 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecSecurityContextOutputReference) FsGr
 	_jsii_.Get(
 		j,
 		"fsGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecSecurityContextOutputReference) FsGroupChangePolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fsGroupChangePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecSecurityContextOutputReference) FsGroupChangePolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fsGroupChangePolicyInput",
 		&returns,
 	)
 	return returns
@@ -395,6 +419,17 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecSecurityContextOutputReference)SetFs
 	_jsii_.Set(
 		j,
 		"fsGroup",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecSecurityContextOutputReference)SetFsGroupChangePolicy(val *string) {
+	if err := j.validateSetFsGroupChangePolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fsGroupChangePolicy",
 		val,
 	)
 }
@@ -699,6 +734,14 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecSecurityContextOutputReference) Rese
 	_jsii_.InvokeVoid(
 		d,
 		"resetFsGroup",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecSecurityContextOutputReference) ResetFsGroupChangePolicy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFsGroupChangePolicy",
 		nil, // no parameters
 	)
 }

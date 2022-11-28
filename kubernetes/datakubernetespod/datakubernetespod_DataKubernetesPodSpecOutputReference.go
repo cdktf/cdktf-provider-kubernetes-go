@@ -48,6 +48,7 @@ type DataKubernetesPodSpecOutputReference interface {
 	PriorityClassName() *string
 	ReadinessGate() DataKubernetesPodSpecReadinessGateList
 	RestartPolicy() *string
+	RuntimeClassName() *string
 	SecurityContext() DataKubernetesPodSpecSecurityContextList
 	ServiceAccountName() *string
 	ShareProcessNamespace() cdktf.IResolvable
@@ -338,6 +339,16 @@ func (j *jsiiProxy_DataKubernetesPodSpecOutputReference) RestartPolicy() *string
 	_jsii_.Get(
 		j,
 		"restartPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesPodSpecOutputReference) RuntimeClassName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeClassName",
 		&returns,
 	)
 	return returns

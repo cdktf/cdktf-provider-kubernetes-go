@@ -90,6 +90,12 @@ type ReplicationControllerSpecTemplateSpec struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/replication_controller#restart_policy ReplicationController#restart_policy}
 	RestartPolicy *string `field:"optional" json:"restartPolicy" yaml:"restartPolicy"`
+	// RuntimeClassName is a feature for selecting the container runtime configuration.
+	//
+	// The container runtime configuration is used to run a Pod's containers. More info: https://kubernetes.io/docs/concepts/containers/runtime-class
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/replication_controller#runtime_class_name ReplicationController#runtime_class_name}
+	RuntimeClassName *string `field:"optional" json:"runtimeClassName" yaml:"runtimeClassName"`
 	// security_context block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/replication_controller#security_context ReplicationController#security_context}

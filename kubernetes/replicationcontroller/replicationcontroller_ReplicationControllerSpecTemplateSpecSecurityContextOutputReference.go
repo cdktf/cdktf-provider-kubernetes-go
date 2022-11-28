@@ -29,6 +29,9 @@ type ReplicationControllerSpecTemplateSpecSecurityContextOutputReference interfa
 	Fqn() *string
 	FsGroup() *string
 	SetFsGroup(val *string)
+	FsGroupChangePolicy() *string
+	SetFsGroupChangePolicy(val *string)
+	FsGroupChangePolicyInput() *string
 	FsGroupInput() *string
 	InternalValue() *ReplicationControllerSpecTemplateSpecSecurityContext
 	SetInternalValue(val *ReplicationControllerSpecTemplateSpecSecurityContext)
@@ -86,6 +89,7 @@ type ReplicationControllerSpecTemplateSpecSecurityContextOutputReference interfa
 	PutSeLinuxOptions(value *ReplicationControllerSpecTemplateSpecSecurityContextSeLinuxOptions)
 	PutSysctl(value interface{})
 	ResetFsGroup()
+	ResetFsGroupChangePolicy()
 	ResetRunAsGroup()
 	ResetRunAsNonRoot()
 	ResetRunAsUser()
@@ -153,6 +157,26 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputRef
 	_jsii_.Get(
 		j,
 		"fsGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference) FsGroupChangePolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fsGroupChangePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference) FsGroupChangePolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fsGroupChangePolicyInput",
 		&returns,
 	)
 	return returns
@@ -395,6 +419,17 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputRef
 	_jsii_.Set(
 		j,
 		"fsGroup",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference)SetFsGroupChangePolicy(val *string) {
+	if err := j.validateSetFsGroupChangePolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fsGroupChangePolicy",
 		val,
 	)
 }
@@ -699,6 +734,14 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputRef
 	_jsii_.InvokeVoid(
 		r,
 		"resetFsGroup",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference) ResetFsGroupChangePolicy() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetFsGroupChangePolicy",
 		nil, // no parameters
 	)
 }

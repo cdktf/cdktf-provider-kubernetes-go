@@ -72,6 +72,10 @@ func (j *jsiiProxy_PodV1SpecSecurityContextOutputReference) validateSetFsGroupPa
 	return nil
 }
 
+func (j *jsiiProxy_PodV1SpecSecurityContextOutputReference) validateSetFsGroupChangePolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PodV1SpecSecurityContextOutputReference) validateSetInternalValueParameters(val *PodV1SpecSecurityContext) error {
 	return nil
 }

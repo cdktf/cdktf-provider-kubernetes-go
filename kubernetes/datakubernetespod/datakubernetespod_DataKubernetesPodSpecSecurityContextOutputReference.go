@@ -28,6 +28,7 @@ type DataKubernetesPodSpecSecurityContextOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	FsGroup() *string
+	FsGroupChangePolicy() *string
 	InternalValue() *DataKubernetesPodSpecSecurityContext
 	SetInternalValue(val *DataKubernetesPodSpecSecurityContext)
 	RunAsGroup() *string
@@ -129,6 +130,16 @@ func (j *jsiiProxy_DataKubernetesPodSpecSecurityContextOutputReference) FsGroup(
 	_jsii_.Get(
 		j,
 		"fsGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesPodSpecSecurityContextOutputReference) FsGroupChangePolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fsGroupChangePolicy",
 		&returns,
 	)
 	return returns

@@ -8,6 +8,12 @@ type PodSpecSecurityContext struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/pod#fs_group Pod#fs_group}
 	FsGroup *string `field:"optional" json:"fsGroup" yaml:"fsGroup"`
+	// fsGroupChangePolicy defines behavior of changing ownership and permission of the volume before being exposed inside Pod.
+	//
+	// This field will only apply to volume types which support fsGroup based ownership(and permissions). It will have no effect on ephemeral volume types such as: secret, configmaps and emptydir.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/pod#fs_group_change_policy Pod#fs_group_change_policy}
+	FsGroupChangePolicy *string `field:"optional" json:"fsGroupChangePolicy" yaml:"fsGroupChangePolicy"`
 	// The GID to run the entrypoint of the container process.
 	//
 	// Uses runtime default if unset. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.

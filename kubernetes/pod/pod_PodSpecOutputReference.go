@@ -79,6 +79,9 @@ type PodSpecOutputReference interface {
 	RestartPolicy() *string
 	SetRestartPolicy(val *string)
 	RestartPolicyInput() *string
+	RuntimeClassName() *string
+	SetRuntimeClassName(val *string)
+	RuntimeClassNameInput() *string
 	SecurityContext() PodSpecSecurityContextOutputReference
 	SecurityContextInput() *PodSpecSecurityContext
 	ServiceAccountName() *string
@@ -161,6 +164,7 @@ type PodSpecOutputReference interface {
 	ResetPriorityClassName()
 	ResetReadinessGate()
 	ResetRestartPolicy()
+	ResetRuntimeClassName()
 	ResetSecurityContext()
 	ResetServiceAccountName()
 	ResetShareProcessNamespace()
@@ -614,6 +618,26 @@ func (j *jsiiProxy_PodSpecOutputReference) RestartPolicyInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PodSpecOutputReference) RuntimeClassName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeClassName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodSpecOutputReference) RuntimeClassNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeClassNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PodSpecOutputReference) SecurityContext() PodSpecSecurityContextOutputReference {
 	var returns PodSpecSecurityContextOutputReference
 	_jsii_.Get(
@@ -983,6 +1007,17 @@ func (j *jsiiProxy_PodSpecOutputReference)SetRestartPolicy(val *string) {
 	_jsii_.Set(
 		j,
 		"restartPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PodSpecOutputReference)SetRuntimeClassName(val *string) {
+	if err := j.validateSetRuntimeClassNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtimeClassName",
 		val,
 	)
 }
@@ -1508,6 +1543,14 @@ func (p *jsiiProxy_PodSpecOutputReference) ResetRestartPolicy() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetRestartPolicy",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PodSpecOutputReference) ResetRuntimeClassName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRuntimeClassName",
 		nil, // no parameters
 	)
 }

@@ -152,6 +152,10 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) validateSetRestartP
 	return nil
 }
 
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) validateSetRuntimeClassNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) validateSetServiceAccountNameParameters(val *string) error {
 	return nil
 }

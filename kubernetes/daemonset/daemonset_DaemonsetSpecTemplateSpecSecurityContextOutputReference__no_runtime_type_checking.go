@@ -72,6 +72,10 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecSecurityContextOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecSecurityContextOutputReference) validateSetFsGroupChangePolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DaemonsetSpecTemplateSpecSecurityContextOutputReference) validateSetInternalValueParameters(val *DaemonsetSpecTemplateSpecSecurityContext) error {
 	return nil
 }

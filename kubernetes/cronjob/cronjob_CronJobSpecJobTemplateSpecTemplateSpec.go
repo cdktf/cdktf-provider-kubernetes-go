@@ -90,6 +90,12 @@ type CronJobSpecJobTemplateSpecTemplateSpec struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/cron_job#restart_policy CronJob#restart_policy}
 	RestartPolicy *string `field:"optional" json:"restartPolicy" yaml:"restartPolicy"`
+	// RuntimeClassName is a feature for selecting the container runtime configuration.
+	//
+	// The container runtime configuration is used to run a Pod's containers. More info: https://kubernetes.io/docs/concepts/containers/runtime-class
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/cron_job#runtime_class_name CronJob#runtime_class_name}
+	RuntimeClassName *string `field:"optional" json:"runtimeClassName" yaml:"runtimeClassName"`
 	// security_context block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/cron_job#security_context CronJob#security_context}

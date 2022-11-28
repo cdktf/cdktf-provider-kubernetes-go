@@ -79,6 +79,9 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference interface {
 	RestartPolicy() *string
 	SetRestartPolicy(val *string)
 	RestartPolicyInput() *string
+	RuntimeClassName() *string
+	SetRuntimeClassName(val *string)
+	RuntimeClassNameInput() *string
 	SecurityContext() CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference
 	SecurityContextInput() *CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContext
 	ServiceAccountName() *string
@@ -161,6 +164,7 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference interface {
 	ResetPriorityClassName()
 	ResetReadinessGate()
 	ResetRestartPolicy()
+	ResetRuntimeClassName()
 	ResetSecurityContext()
 	ResetServiceAccountName()
 	ResetShareProcessNamespace()
@@ -614,6 +618,26 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) Rest
 	return returns
 }
 
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) RuntimeClassName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeClassName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) RuntimeClassNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeClassNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) SecurityContext() CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference {
 	var returns CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference
 	_jsii_.Get(
@@ -983,6 +1007,17 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference)SetRe
 	_jsii_.Set(
 		j,
 		"restartPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference)SetRuntimeClassName(val *string) {
+	if err := j.validateSetRuntimeClassNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtimeClassName",
 		val,
 	)
 }
@@ -1508,6 +1543,14 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) Rese
 	_jsii_.InvokeVoid(
 		c,
 		"resetRestartPolicy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) ResetRuntimeClassName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRuntimeClassName",
 		nil, // no parameters
 	)
 }

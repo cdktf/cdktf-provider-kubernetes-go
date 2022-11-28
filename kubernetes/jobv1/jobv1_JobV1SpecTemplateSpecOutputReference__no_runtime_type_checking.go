@@ -152,6 +152,10 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecOutputReference) validateSetRestartPolic
 	return nil
 }
 
+func (j *jsiiProxy_JobV1SpecTemplateSpecOutputReference) validateSetRuntimeClassNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobV1SpecTemplateSpecOutputReference) validateSetServiceAccountNameParameters(val *string) error {
 	return nil
 }

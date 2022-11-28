@@ -79,6 +79,9 @@ type StatefulSetV1SpecTemplateSpecOutputReference interface {
 	RestartPolicy() *string
 	SetRestartPolicy(val *string)
 	RestartPolicyInput() *string
+	RuntimeClassName() *string
+	SetRuntimeClassName(val *string)
+	RuntimeClassNameInput() *string
 	SecurityContext() StatefulSetV1SpecTemplateSpecSecurityContextOutputReference
 	SecurityContextInput() *StatefulSetV1SpecTemplateSpecSecurityContext
 	ServiceAccountName() *string
@@ -161,6 +164,7 @@ type StatefulSetV1SpecTemplateSpecOutputReference interface {
 	ResetPriorityClassName()
 	ResetReadinessGate()
 	ResetRestartPolicy()
+	ResetRuntimeClassName()
 	ResetSecurityContext()
 	ResetServiceAccountName()
 	ResetShareProcessNamespace()
@@ -614,6 +618,26 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) RestartPolicyIn
 	return returns
 }
 
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) RuntimeClassName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeClassName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) RuntimeClassNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeClassNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) SecurityContext() StatefulSetV1SpecTemplateSpecSecurityContextOutputReference {
 	var returns StatefulSetV1SpecTemplateSpecSecurityContextOutputReference
 	_jsii_.Get(
@@ -983,6 +1007,17 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference)SetRestartPolicy
 	_jsii_.Set(
 		j,
 		"restartPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference)SetRuntimeClassName(val *string) {
+	if err := j.validateSetRuntimeClassNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtimeClassName",
 		val,
 	)
 }
@@ -1508,6 +1543,14 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) ResetRestartPol
 	_jsii_.InvokeVoid(
 		s,
 		"resetRestartPolicy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) ResetRuntimeClassName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRuntimeClassName",
 		nil, // no parameters
 	)
 }

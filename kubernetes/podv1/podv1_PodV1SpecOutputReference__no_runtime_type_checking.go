@@ -152,6 +152,10 @@ func (j *jsiiProxy_PodV1SpecOutputReference) validateSetRestartPolicyParameters(
 	return nil
 }
 
+func (j *jsiiProxy_PodV1SpecOutputReference) validateSetRuntimeClassNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PodV1SpecOutputReference) validateSetServiceAccountNameParameters(val *string) error {
 	return nil
 }

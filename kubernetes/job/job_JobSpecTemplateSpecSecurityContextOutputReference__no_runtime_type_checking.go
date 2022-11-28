@@ -72,6 +72,10 @@ func (j *jsiiProxy_JobSpecTemplateSpecSecurityContextOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_JobSpecTemplateSpecSecurityContextOutputReference) validateSetFsGroupChangePolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobSpecTemplateSpecSecurityContextOutputReference) validateSetInternalValueParameters(val *JobSpecTemplateSpecSecurityContext) error {
 	return nil
 }
