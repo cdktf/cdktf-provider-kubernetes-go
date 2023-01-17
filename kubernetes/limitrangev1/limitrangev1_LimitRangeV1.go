@@ -2,10 +2,10 @@ package limitrangev1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v4/limitrangev1/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/limitrangev1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
