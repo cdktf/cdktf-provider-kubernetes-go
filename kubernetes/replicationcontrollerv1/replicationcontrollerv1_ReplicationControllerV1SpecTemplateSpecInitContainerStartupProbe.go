@@ -10,6 +10,10 @@ type ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbe struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/replication_controller_v1#failure_threshold ReplicationControllerV1#failure_threshold}
 	FailureThreshold *float64 `field:"optional" json:"failureThreshold" yaml:"failureThreshold"`
+	// grpc block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/replication_controller_v1#grpc ReplicationControllerV1#grpc}
+	Grpc interface{} `field:"optional" json:"grpc" yaml:"grpc"`
 	// http_get block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/replication_controller_v1#http_get ReplicationControllerV1#http_get}

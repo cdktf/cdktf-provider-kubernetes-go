@@ -48,6 +48,10 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerReadinessProbe
 	return nil
 }
 
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerReadinessProbeOutputReference) validatePutGrpcParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerReadinessProbeOutputReference) validatePutHttpGetParameters(value *CronJobSpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGet) error {
 	return nil
 }

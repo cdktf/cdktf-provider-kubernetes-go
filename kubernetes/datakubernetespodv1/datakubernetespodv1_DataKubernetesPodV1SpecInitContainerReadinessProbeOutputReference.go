@@ -29,6 +29,7 @@ type DataKubernetesPodV1SpecInitContainerReadinessProbeOutputReference interface
 	FailureThreshold() *float64
 	// Experimental.
 	Fqn() *string
+	Grpc() DataKubernetesPodV1SpecInitContainerReadinessProbeGrpcList
 	HttpGet() DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGetList
 	InitialDelaySeconds() *float64
 	InternalValue() *DataKubernetesPodV1SpecInitContainerReadinessProbe
@@ -139,6 +140,16 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecInitContainerReadinessProbeOutputRefer
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesPodV1SpecInitContainerReadinessProbeOutputReference) Grpc() DataKubernetesPodV1SpecInitContainerReadinessProbeGrpcList {
+	var returns DataKubernetesPodV1SpecInitContainerReadinessProbeGrpcList
+	_jsii_.Get(
+		j,
+		"grpc",
 		&returns,
 	)
 	return returns

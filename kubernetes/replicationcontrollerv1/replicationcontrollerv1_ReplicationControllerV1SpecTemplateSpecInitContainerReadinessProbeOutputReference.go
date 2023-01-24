@@ -32,6 +32,8 @@ type ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeOutputRef
 	FailureThresholdInput() *float64
 	// Experimental.
 	Fqn() *string
+	Grpc() ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeGrpcList
+	GrpcInput() interface{}
 	HttpGet() ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference
 	HttpGetInput() *ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGet
 	InitialDelaySeconds() *float64
@@ -83,10 +85,12 @@ type ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeOutputRef
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutExec(value *ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeExec)
+	PutGrpc(value interface{})
 	PutHttpGet(value *ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGet)
 	PutTcpSocket(value interface{})
 	ResetExec()
 	ResetFailureThreshold()
+	ResetGrpc()
 	ResetHttpGet()
 	ResetInitialDelaySeconds()
 	ResetPeriodSeconds()
@@ -183,6 +187,26 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerReadiness
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeOutputReference) Grpc() ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeGrpcList {
+	var returns ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeGrpcList
+	_jsii_.Get(
+		j,
+		"grpc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeOutputReference) GrpcInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"grpcInput",
 		&returns,
 	)
 	return returns
@@ -673,6 +697,17 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerReadiness
 	)
 }
 
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeOutputReference) PutGrpc(value interface{}) {
+	if err := r.validatePutGrpcParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putGrpc",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeOutputReference) PutHttpGet(value *ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeHttpGet) {
 	if err := r.validatePutHttpGetParameters(value); err != nil {
 		panic(err)
@@ -707,6 +742,14 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerReadiness
 	_jsii_.InvokeVoid(
 		r,
 		"resetFailureThreshold",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeOutputReference) ResetGrpc() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetGrpc",
 		nil, // no parameters
 	)
 }

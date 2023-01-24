@@ -32,6 +32,8 @@ type PodV1SpecContainerLivenessProbeOutputReference interface {
 	FailureThresholdInput() *float64
 	// Experimental.
 	Fqn() *string
+	Grpc() PodV1SpecContainerLivenessProbeGrpcList
+	GrpcInput() interface{}
 	HttpGet() PodV1SpecContainerLivenessProbeHttpGetOutputReference
 	HttpGetInput() *PodV1SpecContainerLivenessProbeHttpGet
 	InitialDelaySeconds() *float64
@@ -83,10 +85,12 @@ type PodV1SpecContainerLivenessProbeOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutExec(value *PodV1SpecContainerLivenessProbeExec)
+	PutGrpc(value interface{})
 	PutHttpGet(value *PodV1SpecContainerLivenessProbeHttpGet)
 	PutTcpSocket(value interface{})
 	ResetExec()
 	ResetFailureThreshold()
+	ResetGrpc()
 	ResetHttpGet()
 	ResetInitialDelaySeconds()
 	ResetPeriodSeconds()
@@ -183,6 +187,26 @@ func (j *jsiiProxy_PodV1SpecContainerLivenessProbeOutputReference) Fqn() *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecContainerLivenessProbeOutputReference) Grpc() PodV1SpecContainerLivenessProbeGrpcList {
+	var returns PodV1SpecContainerLivenessProbeGrpcList
+	_jsii_.Get(
+		j,
+		"grpc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecContainerLivenessProbeOutputReference) GrpcInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"grpcInput",
 		&returns,
 	)
 	return returns
@@ -673,6 +697,17 @@ func (p *jsiiProxy_PodV1SpecContainerLivenessProbeOutputReference) PutExec(value
 	)
 }
 
+func (p *jsiiProxy_PodV1SpecContainerLivenessProbeOutputReference) PutGrpc(value interface{}) {
+	if err := p.validatePutGrpcParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putGrpc",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PodV1SpecContainerLivenessProbeOutputReference) PutHttpGet(value *PodV1SpecContainerLivenessProbeHttpGet) {
 	if err := p.validatePutHttpGetParameters(value); err != nil {
 		panic(err)
@@ -707,6 +742,14 @@ func (p *jsiiProxy_PodV1SpecContainerLivenessProbeOutputReference) ResetFailureT
 	_jsii_.InvokeVoid(
 		p,
 		"resetFailureThreshold",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PodV1SpecContainerLivenessProbeOutputReference) ResetGrpc() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetGrpc",
 		nil, // no parameters
 	)
 }

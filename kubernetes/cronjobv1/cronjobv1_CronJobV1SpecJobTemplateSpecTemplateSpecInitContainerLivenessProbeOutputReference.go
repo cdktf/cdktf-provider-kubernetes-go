@@ -32,6 +32,8 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeOutputRef
 	FailureThresholdInput() *float64
 	// Experimental.
 	Fqn() *string
+	Grpc() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcList
+	GrpcInput() interface{}
 	HttpGet() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference
 	HttpGetInput() *CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGet
 	InitialDelaySeconds() *float64
@@ -83,10 +85,12 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeOutputRef
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutExec(value *CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExec)
+	PutGrpc(value interface{})
 	PutHttpGet(value *CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGet)
 	PutTcpSocket(value interface{})
 	ResetExec()
 	ResetFailureThreshold()
+	ResetGrpc()
 	ResetHttpGet()
 	ResetInitialDelaySeconds()
 	ResetPeriodSeconds()
@@ -183,6 +187,26 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLiveness
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeOutputReference) Grpc() CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcList {
+	var returns CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeGrpcList
+	_jsii_.Get(
+		j,
+		"grpc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeOutputReference) GrpcInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"grpcInput",
 		&returns,
 	)
 	return returns
@@ -673,6 +697,17 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLiveness
 	)
 }
 
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeOutputReference) PutGrpc(value interface{}) {
+	if err := c.validatePutGrpcParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putGrpc",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeOutputReference) PutHttpGet(value *CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGet) {
 	if err := c.validatePutHttpGetParameters(value); err != nil {
 		panic(err)
@@ -707,6 +742,14 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLiveness
 	_jsii_.InvokeVoid(
 		c,
 		"resetFailureThreshold",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeOutputReference) ResetGrpc() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGrpc",
 		nil, // no parameters
 	)
 }

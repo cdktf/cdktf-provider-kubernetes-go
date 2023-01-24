@@ -48,6 +48,10 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLivenessPro
 	return nil
 }
 
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeOutputReference) validatePutGrpcParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeOutputReference) validatePutHttpGetParameters(value *ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGet) error {
 	return nil
 }

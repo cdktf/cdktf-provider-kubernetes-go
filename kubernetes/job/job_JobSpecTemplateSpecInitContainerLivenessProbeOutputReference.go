@@ -32,6 +32,8 @@ type JobSpecTemplateSpecInitContainerLivenessProbeOutputReference interface {
 	FailureThresholdInput() *float64
 	// Experimental.
 	Fqn() *string
+	Grpc() JobSpecTemplateSpecInitContainerLivenessProbeGrpcList
+	GrpcInput() interface{}
 	HttpGet() JobSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference
 	HttpGetInput() *JobSpecTemplateSpecInitContainerLivenessProbeHttpGet
 	InitialDelaySeconds() *float64
@@ -83,10 +85,12 @@ type JobSpecTemplateSpecInitContainerLivenessProbeOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutExec(value *JobSpecTemplateSpecInitContainerLivenessProbeExec)
+	PutGrpc(value interface{})
 	PutHttpGet(value *JobSpecTemplateSpecInitContainerLivenessProbeHttpGet)
 	PutTcpSocket(value interface{})
 	ResetExec()
 	ResetFailureThreshold()
+	ResetGrpc()
 	ResetHttpGet()
 	ResetInitialDelaySeconds()
 	ResetPeriodSeconds()
@@ -183,6 +187,26 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLivenessProbeOutputReference)
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLivenessProbeOutputReference) Grpc() JobSpecTemplateSpecInitContainerLivenessProbeGrpcList {
+	var returns JobSpecTemplateSpecInitContainerLivenessProbeGrpcList
+	_jsii_.Get(
+		j,
+		"grpc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLivenessProbeOutputReference) GrpcInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"grpcInput",
 		&returns,
 	)
 	return returns
@@ -673,6 +697,17 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLivenessProbeOutputReference)
 	)
 }
 
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLivenessProbeOutputReference) PutGrpc(value interface{}) {
+	if err := j.validatePutGrpcParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putGrpc",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLivenessProbeOutputReference) PutHttpGet(value *JobSpecTemplateSpecInitContainerLivenessProbeHttpGet) {
 	if err := j.validatePutHttpGetParameters(value); err != nil {
 		panic(err)
@@ -707,6 +742,14 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLivenessProbeOutputReference)
 	_jsii_.InvokeVoid(
 		j,
 		"resetFailureThreshold",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLivenessProbeOutputReference) ResetGrpc() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetGrpc",
 		nil, // no parameters
 	)
 }

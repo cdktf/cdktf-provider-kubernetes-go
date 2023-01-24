@@ -101,6 +101,37 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerReadinessProbeOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerReadinessProbeOutputReference) validatePutGrpcParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*JobSpecTemplateSpecInitContainerReadinessProbeGrpc:
+		value := value.(*[]*JobSpecTemplateSpecInitContainerReadinessProbeGrpc)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*JobSpecTemplateSpecInitContainerReadinessProbeGrpc:
+		value_ := value.([]*JobSpecTemplateSpecInitContainerReadinessProbeGrpc)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*JobSpecTemplateSpecInitContainerReadinessProbeGrpc; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobSpecTemplateSpecInitContainerReadinessProbeOutputReference) validatePutHttpGetParameters(value *JobSpecTemplateSpecInitContainerReadinessProbeHttpGet) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

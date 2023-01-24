@@ -48,6 +48,10 @@ func (p *jsiiProxy_PodV1SpecContainerLivenessProbeOutputReference) validatePutEx
 	return nil
 }
 
+func (p *jsiiProxy_PodV1SpecContainerLivenessProbeOutputReference) validatePutGrpcParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PodV1SpecContainerLivenessProbeOutputReference) validatePutHttpGetParameters(value *PodV1SpecContainerLivenessProbeHttpGet) error {
 	return nil
 }

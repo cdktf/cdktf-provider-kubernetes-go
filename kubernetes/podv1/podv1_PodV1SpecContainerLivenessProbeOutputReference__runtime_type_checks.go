@@ -101,6 +101,37 @@ func (p *jsiiProxy_PodV1SpecContainerLivenessProbeOutputReference) validatePutEx
 	return nil
 }
 
+func (p *jsiiProxy_PodV1SpecContainerLivenessProbeOutputReference) validatePutGrpcParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*PodV1SpecContainerLivenessProbeGrpc:
+		value := value.(*[]*PodV1SpecContainerLivenessProbeGrpc)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*PodV1SpecContainerLivenessProbeGrpc:
+		value_ := value.([]*PodV1SpecContainerLivenessProbeGrpc)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*PodV1SpecContainerLivenessProbeGrpc; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PodV1SpecContainerLivenessProbeOutputReference) validatePutHttpGetParameters(value *PodV1SpecContainerLivenessProbeHttpGet) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

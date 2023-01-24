@@ -32,6 +32,8 @@ type JobSpecTemplateSpecContainerReadinessProbeOutputReference interface {
 	FailureThresholdInput() *float64
 	// Experimental.
 	Fqn() *string
+	Grpc() JobSpecTemplateSpecContainerReadinessProbeGrpcList
+	GrpcInput() interface{}
 	HttpGet() JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference
 	HttpGetInput() *JobSpecTemplateSpecContainerReadinessProbeHttpGet
 	InitialDelaySeconds() *float64
@@ -83,10 +85,12 @@ type JobSpecTemplateSpecContainerReadinessProbeOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutExec(value *JobSpecTemplateSpecContainerReadinessProbeExec)
+	PutGrpc(value interface{})
 	PutHttpGet(value *JobSpecTemplateSpecContainerReadinessProbeHttpGet)
 	PutTcpSocket(value interface{})
 	ResetExec()
 	ResetFailureThreshold()
+	ResetGrpc()
 	ResetHttpGet()
 	ResetInitialDelaySeconds()
 	ResetPeriodSeconds()
@@ -183,6 +187,26 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeOutputReference) Fq
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeOutputReference) Grpc() JobSpecTemplateSpecContainerReadinessProbeGrpcList {
+	var returns JobSpecTemplateSpecContainerReadinessProbeGrpcList
+	_jsii_.Get(
+		j,
+		"grpc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeOutputReference) GrpcInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"grpcInput",
 		&returns,
 	)
 	return returns
@@ -673,6 +697,17 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeOutputReference) Pu
 	)
 }
 
+func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeOutputReference) PutGrpc(value interface{}) {
+	if err := j.validatePutGrpcParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putGrpc",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeOutputReference) PutHttpGet(value *JobSpecTemplateSpecContainerReadinessProbeHttpGet) {
 	if err := j.validatePutHttpGetParameters(value); err != nil {
 		panic(err)
@@ -707,6 +742,14 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeOutputReference) Re
 	_jsii_.InvokeVoid(
 		j,
 		"resetFailureThreshold",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeOutputReference) ResetGrpc() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetGrpc",
 		nil, // no parameters
 	)
 }

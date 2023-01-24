@@ -133,6 +133,17 @@ func (i *jsiiProxy_IngressV1) validatePutSpecParameters(value *IngressV1Spec) er
 	return nil
 }
 
+func (i *jsiiProxy_IngressV1) validatePutTimeoutsParameters(value *IngressV1Timeouts) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateIngressV1_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")

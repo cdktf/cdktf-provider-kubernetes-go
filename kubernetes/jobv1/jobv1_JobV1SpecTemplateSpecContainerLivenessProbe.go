@@ -10,6 +10,10 @@ type JobV1SpecTemplateSpecContainerLivenessProbe struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/job_v1#failure_threshold JobV1#failure_threshold}
 	FailureThreshold *float64 `field:"optional" json:"failureThreshold" yaml:"failureThreshold"`
+	// grpc block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/job_v1#grpc JobV1#grpc}
+	Grpc interface{} `field:"optional" json:"grpc" yaml:"grpc"`
 	// http_get block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/job_v1#http_get JobV1#http_get}

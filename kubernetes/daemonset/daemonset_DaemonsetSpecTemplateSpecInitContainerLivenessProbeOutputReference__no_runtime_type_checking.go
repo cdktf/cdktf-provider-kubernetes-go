@@ -48,6 +48,10 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerLivenessProbeOutputRefe
 	return nil
 }
 
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerLivenessProbeOutputReference) validatePutGrpcParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerLivenessProbeOutputReference) validatePutHttpGetParameters(value *DaemonsetSpecTemplateSpecInitContainerLivenessProbeHttpGet) error {
 	return nil
 }

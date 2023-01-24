@@ -30,6 +30,9 @@ type ClusterRoleBindingMetadataOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GenerateName() *string
+	SetGenerateName(val *string)
+	GenerateNameInput() *string
 	Generation() *float64
 	InternalValue() *ClusterRoleBindingMetadata
 	SetInternalValue(val *ClusterRoleBindingMetadata)
@@ -74,6 +77,7 @@ type ClusterRoleBindingMetadataOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAnnotations()
+	ResetGenerateName()
 	ResetLabels()
 	ResetName()
 	// Produce the Token's value at resolution time.
@@ -146,6 +150,26 @@ func (j *jsiiProxy_ClusterRoleBindingMetadataOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterRoleBindingMetadataOutputReference) GenerateName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"generateName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClusterRoleBindingMetadataOutputReference) GenerateNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"generateNameInput",
 		&returns,
 	)
 	return returns
@@ -308,6 +332,17 @@ func (j *jsiiProxy_ClusterRoleBindingMetadataOutputReference)SetComplexObjectIsF
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClusterRoleBindingMetadataOutputReference)SetGenerateName(val *string) {
+	if err := j.validateSetGenerateNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"generateName",
 		val,
 	)
 }
@@ -557,6 +592,14 @@ func (c *jsiiProxy_ClusterRoleBindingMetadataOutputReference) ResetAnnotations()
 	_jsii_.InvokeVoid(
 		c,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClusterRoleBindingMetadataOutputReference) ResetGenerateName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGenerateName",
 		nil, // no parameters
 	)
 }

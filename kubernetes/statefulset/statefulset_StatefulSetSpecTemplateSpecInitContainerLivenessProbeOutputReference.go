@@ -32,6 +32,8 @@ type StatefulSetSpecTemplateSpecInitContainerLivenessProbeOutputReference interf
 	FailureThresholdInput() *float64
 	// Experimental.
 	Fqn() *string
+	Grpc() StatefulSetSpecTemplateSpecInitContainerLivenessProbeGrpcList
+	GrpcInput() interface{}
 	HttpGet() StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference
 	HttpGetInput() *StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGet
 	InitialDelaySeconds() *float64
@@ -83,10 +85,12 @@ type StatefulSetSpecTemplateSpecInitContainerLivenessProbeOutputReference interf
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutExec(value *StatefulSetSpecTemplateSpecInitContainerLivenessProbeExec)
+	PutGrpc(value interface{})
 	PutHttpGet(value *StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGet)
 	PutTcpSocket(value interface{})
 	ResetExec()
 	ResetFailureThreshold()
+	ResetGrpc()
 	ResetHttpGet()
 	ResetInitialDelaySeconds()
 	ResetPeriodSeconds()
@@ -183,6 +187,26 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerLivenessProbeOutputRe
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerLivenessProbeOutputReference) Grpc() StatefulSetSpecTemplateSpecInitContainerLivenessProbeGrpcList {
+	var returns StatefulSetSpecTemplateSpecInitContainerLivenessProbeGrpcList
+	_jsii_.Get(
+		j,
+		"grpc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerLivenessProbeOutputReference) GrpcInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"grpcInput",
 		&returns,
 	)
 	return returns
@@ -673,6 +697,17 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerLivenessProbeOutputRe
 	)
 }
 
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerLivenessProbeOutputReference) PutGrpc(value interface{}) {
+	if err := s.validatePutGrpcParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putGrpc",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerLivenessProbeOutputReference) PutHttpGet(value *StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGet) {
 	if err := s.validatePutHttpGetParameters(value); err != nil {
 		panic(err)
@@ -707,6 +742,14 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerLivenessProbeOutputRe
 	_jsii_.InvokeVoid(
 		s,
 		"resetFailureThreshold",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecInitContainerLivenessProbeOutputReference) ResetGrpc() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetGrpc",
 		nil, // no parameters
 	)
 }

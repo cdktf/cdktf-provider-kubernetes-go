@@ -60,6 +60,10 @@ func (j *jsiiProxy_ClusterRoleBindingMetadataOutputReference) validateSetComplex
 	return nil
 }
 
+func (j *jsiiProxy_ClusterRoleBindingMetadataOutputReference) validateSetGenerateNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClusterRoleBindingMetadataOutputReference) validateSetInternalValueParameters(val *ClusterRoleBindingMetadata) error {
 	return nil
 }

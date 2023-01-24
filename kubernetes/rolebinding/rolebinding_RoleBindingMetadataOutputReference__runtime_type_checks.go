@@ -171,6 +171,14 @@ func (j *jsiiProxy_RoleBindingMetadataOutputReference) validateSetComplexObjectI
 	return nil
 }
 
+func (j *jsiiProxy_RoleBindingMetadataOutputReference) validateSetGenerateNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RoleBindingMetadataOutputReference) validateSetInternalValueParameters(val *RoleBindingMetadata) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

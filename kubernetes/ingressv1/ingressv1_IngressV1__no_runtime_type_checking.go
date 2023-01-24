@@ -60,6 +60,10 @@ func (i *jsiiProxy_IngressV1) validatePutSpecParameters(value *IngressV1Spec) er
 	return nil
 }
 
+func (i *jsiiProxy_IngressV1) validatePutTimeoutsParameters(value *IngressV1Timeouts) error {
+	return nil
+}
+
 func validateIngressV1_IsConstructParameters(x interface{}) error {
 	return nil
 }

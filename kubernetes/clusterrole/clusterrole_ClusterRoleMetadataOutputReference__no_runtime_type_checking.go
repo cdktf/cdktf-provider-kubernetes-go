@@ -60,6 +60,10 @@ func (j *jsiiProxy_ClusterRoleMetadataOutputReference) validateSetComplexObjectI
 	return nil
 }
 
+func (j *jsiiProxy_ClusterRoleMetadataOutputReference) validateSetGenerateNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClusterRoleMetadataOutputReference) validateSetInternalValueParameters(val *ClusterRoleMetadata) error {
 	return nil
 }

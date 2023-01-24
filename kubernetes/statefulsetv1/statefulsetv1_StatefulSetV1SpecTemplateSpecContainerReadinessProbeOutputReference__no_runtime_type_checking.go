@@ -48,6 +48,10 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerReadinessProbeOutputRef
 	return nil
 }
 
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerReadinessProbeOutputReference) validatePutGrpcParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerReadinessProbeOutputReference) validatePutHttpGetParameters(value *StatefulSetV1SpecTemplateSpecContainerReadinessProbeHttpGet) error {
 	return nil
 }

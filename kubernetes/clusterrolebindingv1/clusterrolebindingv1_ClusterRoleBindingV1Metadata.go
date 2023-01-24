@@ -8,6 +8,12 @@ type ClusterRoleBindingV1Metadata struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/cluster_role_binding_v1#annotations ClusterRoleBindingV1#annotations}
 	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
+	// Prefix, used by the server, to generate a unique name ONLY IF the `name` field has not been provided.
+	//
+	// This value will also be combined with a unique suffix. Read more: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/cluster_role_binding_v1#generate_name ClusterRoleBindingV1#generate_name}
+	GenerateName *string `field:"optional" json:"generateName" yaml:"generateName"`
 	// Map of string keys and values that can be used to organize and categorize (scope and select) the clusterRoleBinding.
 	//
 	// May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels

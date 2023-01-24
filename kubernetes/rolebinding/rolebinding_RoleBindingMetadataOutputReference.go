@@ -30,6 +30,9 @@ type RoleBindingMetadataOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GenerateName() *string
+	SetGenerateName(val *string)
+	GenerateNameInput() *string
 	Generation() *float64
 	InternalValue() *RoleBindingMetadata
 	SetInternalValue(val *RoleBindingMetadata)
@@ -77,6 +80,7 @@ type RoleBindingMetadataOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAnnotations()
+	ResetGenerateName()
 	ResetLabels()
 	ResetName()
 	ResetNamespace()
@@ -150,6 +154,26 @@ func (j *jsiiProxy_RoleBindingMetadataOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RoleBindingMetadataOutputReference) GenerateName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"generateName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RoleBindingMetadataOutputReference) GenerateNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"generateNameInput",
 		&returns,
 	)
 	return returns
@@ -332,6 +356,17 @@ func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetComplexObjectIsFromSet(
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RoleBindingMetadataOutputReference)SetGenerateName(val *string) {
+	if err := j.validateSetGenerateNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"generateName",
 		val,
 	)
 }
@@ -592,6 +627,14 @@ func (r *jsiiProxy_RoleBindingMetadataOutputReference) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RoleBindingMetadataOutputReference) ResetGenerateName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetGenerateName",
 		nil, // no parameters
 	)
 }

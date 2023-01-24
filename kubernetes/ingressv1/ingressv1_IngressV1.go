@@ -66,6 +66,8 @@ type IngressV1 interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() IngressV1TimeoutsOutputReference
+	TimeoutsInput() interface{}
 	WaitForLoadBalancer() interface{}
 	SetWaitForLoadBalancer(val interface{})
 	WaitForLoadBalancerInput() interface{}
@@ -96,10 +98,12 @@ type IngressV1 interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMetadata(value *IngressV1Metadata)
 	PutSpec(value *IngressV1Spec)
+	PutTimeouts(value *IngressV1Timeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	ResetWaitForLoadBalancer()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -341,6 +345,26 @@ func (j *jsiiProxy_IngressV1) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IngressV1) Timeouts() IngressV1TimeoutsOutputReference {
+	var returns IngressV1TimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IngressV1) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -771,6 +795,17 @@ func (i *jsiiProxy_IngressV1) PutSpec(value *IngressV1Spec) {
 	)
 }
 
+func (i *jsiiProxy_IngressV1) PutTimeouts(value *IngressV1Timeouts) {
+	if err := i.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IngressV1) ResetId() {
 	_jsii_.InvokeVoid(
 		i,
@@ -783,6 +818,14 @@ func (i *jsiiProxy_IngressV1) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IngressV1) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

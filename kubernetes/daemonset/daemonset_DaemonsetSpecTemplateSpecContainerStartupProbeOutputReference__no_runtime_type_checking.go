@@ -48,6 +48,10 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerStartupProbeOutputReference
 	return nil
 }
 
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerStartupProbeOutputReference) validatePutGrpcParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerStartupProbeOutputReference) validatePutHttpGetParameters(value *DaemonsetSpecTemplateSpecContainerStartupProbeHttpGet) error {
 	return nil
 }

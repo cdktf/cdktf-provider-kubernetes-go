@@ -48,6 +48,10 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeOutputReference) validatePutGrpcParameters(value interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeOutputReference) validatePutHttpGetParameters(value *JobV1SpecTemplateSpecContainerStartupProbeHttpGet) error {
 	return nil
 }
