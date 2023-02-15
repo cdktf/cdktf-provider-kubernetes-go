@@ -1,6 +1,0 @@
-package datakubernetespod
-
-
-type DataKubernetesPodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm struct {
-}
-

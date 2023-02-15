@@ -1,0 +1,86 @@
+//go:build no_runtime_type_checking
+
+package deploymentv1
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateSetInternalValueParameters(val *DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef) error {
+	return nil
+}
+
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateSetKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateSetOptionalParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewDeploymentV1SpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

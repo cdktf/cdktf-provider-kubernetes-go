@@ -1,6 +1,0 @@
-package datakubernetespodv1
-
-
-type DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions struct {
-}
-

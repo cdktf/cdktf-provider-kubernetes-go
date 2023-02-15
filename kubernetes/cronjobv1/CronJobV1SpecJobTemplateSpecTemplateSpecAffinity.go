@@ -1,0 +1,18 @@
+package cronjobv1
+
+
+type CronJobV1SpecJobTemplateSpecTemplateSpecAffinity struct {
+	// node_affinity block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/cron_job_v1#node_affinity CronJobV1#node_affinity}
+	NodeAffinity *CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinity `field:"optional" json:"nodeAffinity" yaml:"nodeAffinity"`
+	// pod_affinity block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/cron_job_v1#pod_affinity CronJobV1#pod_affinity}
+	PodAffinity *CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinity `field:"optional" json:"podAffinity" yaml:"podAffinity"`
+	// pod_anti_affinity block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/cron_job_v1#pod_anti_affinity CronJobV1#pod_anti_affinity}
+	PodAntiAffinity *CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinity `field:"optional" json:"podAntiAffinity" yaml:"podAntiAffinity"`
+}
+

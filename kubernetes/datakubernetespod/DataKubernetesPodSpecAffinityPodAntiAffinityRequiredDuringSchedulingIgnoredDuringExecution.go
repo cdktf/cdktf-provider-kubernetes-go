@@ -1,0 +1,6 @@
+package datakubernetespod
+
+
+type DataKubernetesPodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution struct {
+}
+
