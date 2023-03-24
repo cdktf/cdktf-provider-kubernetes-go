@@ -96,6 +96,12 @@ type StatefulSetSpecTemplateSpec struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/stateful_set#runtime_class_name StatefulSet#runtime_class_name}
 	RuntimeClassName *string `field:"optional" json:"runtimeClassName" yaml:"runtimeClassName"`
+	// If specified, the pod will be dispatched by specified scheduler.
+	//
+	// If not specified, the pod will be dispatched by default scheduler.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/stateful_set#scheduler_name StatefulSet#scheduler_name}
+	SchedulerName *string `field:"optional" json:"schedulerName" yaml:"schedulerName"`
 	// security_context block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/stateful_set#security_context StatefulSet#security_context}

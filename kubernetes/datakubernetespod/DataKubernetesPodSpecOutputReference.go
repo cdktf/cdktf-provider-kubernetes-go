@@ -49,6 +49,7 @@ type DataKubernetesPodSpecOutputReference interface {
 	ReadinessGate() DataKubernetesPodSpecReadinessGateList
 	RestartPolicy() *string
 	RuntimeClassName() *string
+	SchedulerName() *string
 	SecurityContext() DataKubernetesPodSpecSecurityContextList
 	ServiceAccountName() *string
 	ShareProcessNamespace() cdktf.IResolvable
@@ -349,6 +350,16 @@ func (j *jsiiProxy_DataKubernetesPodSpecOutputReference) RuntimeClassName() *str
 	_jsii_.Get(
 		j,
 		"runtimeClassName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesPodSpecOutputReference) SchedulerName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schedulerName",
 		&returns,
 	)
 	return returns

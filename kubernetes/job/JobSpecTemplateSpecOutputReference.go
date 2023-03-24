@@ -82,6 +82,9 @@ type JobSpecTemplateSpecOutputReference interface {
 	RuntimeClassName() *string
 	SetRuntimeClassName(val *string)
 	RuntimeClassNameInput() *string
+	SchedulerName() *string
+	SetSchedulerName(val *string)
+	SchedulerNameInput() *string
 	SecurityContext() JobSpecTemplateSpecSecurityContextOutputReference
 	SecurityContextInput() *JobSpecTemplateSpecSecurityContext
 	ServiceAccountName() *string
@@ -165,6 +168,7 @@ type JobSpecTemplateSpecOutputReference interface {
 	ResetReadinessGate()
 	ResetRestartPolicy()
 	ResetRuntimeClassName()
+	ResetSchedulerName()
 	ResetSecurityContext()
 	ResetServiceAccountName()
 	ResetShareProcessNamespace()
@@ -638,6 +642,26 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) RuntimeClassNameInput() *
 	return returns
 }
 
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SchedulerName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schedulerName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SchedulerNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schedulerNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) SecurityContext() JobSpecTemplateSpecSecurityContextOutputReference {
 	var returns JobSpecTemplateSpecSecurityContextOutputReference
 	_jsii_.Get(
@@ -1018,6 +1042,17 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetRuntimeClassName(val *s
 	_jsii_.Set(
 		j,
 		"runtimeClassName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference)SetSchedulerName(val *string) {
+	if err := j.validateSetSchedulerNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"schedulerName",
 		val,
 	)
 }
@@ -1551,6 +1586,14 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ResetRuntimeClassName() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetRuntimeClassName",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ResetSchedulerName() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetSchedulerName",
 		nil, // no parameters
 	)
 }

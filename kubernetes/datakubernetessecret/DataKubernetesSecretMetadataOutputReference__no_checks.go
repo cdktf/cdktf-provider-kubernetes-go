@@ -60,6 +60,10 @@ func (j *jsiiProxy_DataKubernetesSecretMetadataOutputReference) validateSetCompl
 	return nil
 }
 
+func (j *jsiiProxy_DataKubernetesSecretMetadataOutputReference) validateSetGenerateNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataKubernetesSecretMetadataOutputReference) validateSetInternalValueParameters(val *DataKubernetesSecretMetadata) error {
 	return nil
 }

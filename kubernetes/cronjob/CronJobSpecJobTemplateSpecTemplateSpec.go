@@ -96,6 +96,12 @@ type CronJobSpecJobTemplateSpecTemplateSpec struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/cron_job#runtime_class_name CronJob#runtime_class_name}
 	RuntimeClassName *string `field:"optional" json:"runtimeClassName" yaml:"runtimeClassName"`
+	// If specified, the pod will be dispatched by specified scheduler.
+	//
+	// If not specified, the pod will be dispatched by default scheduler.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/cron_job#scheduler_name CronJob#scheduler_name}
+	SchedulerName *string `field:"optional" json:"schedulerName" yaml:"schedulerName"`
 	// security_context block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/cron_job#security_context CronJob#security_context}

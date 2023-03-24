@@ -616,6 +616,14 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference) validateSetSchedulerNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference) validateSetServiceAccountNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

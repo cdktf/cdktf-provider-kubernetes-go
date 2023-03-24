@@ -156,6 +156,10 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) validateSetSchedulerNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) validateSetServiceAccountNameParameters(val *string) error {
 	return nil
 }

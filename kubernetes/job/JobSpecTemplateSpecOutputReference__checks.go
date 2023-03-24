@@ -616,6 +616,14 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetRuntimeClassNa
 	return nil
 }
 
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetSchedulerNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetServiceAccountNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

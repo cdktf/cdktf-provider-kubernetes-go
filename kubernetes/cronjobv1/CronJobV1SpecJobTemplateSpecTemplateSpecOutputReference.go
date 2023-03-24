@@ -82,6 +82,9 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference interface {
 	RuntimeClassName() *string
 	SetRuntimeClassName(val *string)
 	RuntimeClassNameInput() *string
+	SchedulerName() *string
+	SetSchedulerName(val *string)
+	SchedulerNameInput() *string
 	SecurityContext() CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference
 	SecurityContextInput() *CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContext
 	ServiceAccountName() *string
@@ -165,6 +168,7 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference interface {
 	ResetReadinessGate()
 	ResetRestartPolicy()
 	ResetRuntimeClassName()
+	ResetSchedulerName()
 	ResetSecurityContext()
 	ResetServiceAccountName()
 	ResetShareProcessNamespace()
@@ -638,6 +642,26 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) Runt
 	return returns
 }
 
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) SchedulerName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schedulerName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) SchedulerNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schedulerNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) SecurityContext() CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference {
 	var returns CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference
 	_jsii_.Get(
@@ -1018,6 +1042,17 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference)SetRu
 	_jsii_.Set(
 		j,
 		"runtimeClassName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference)SetSchedulerName(val *string) {
+	if err := j.validateSetSchedulerNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"schedulerName",
 		val,
 	)
 }
@@ -1551,6 +1586,14 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) Rese
 	_jsii_.InvokeVoid(
 		c,
 		"resetRuntimeClassName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) ResetSchedulerName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSchedulerName",
 		nil, // no parameters
 	)
 }

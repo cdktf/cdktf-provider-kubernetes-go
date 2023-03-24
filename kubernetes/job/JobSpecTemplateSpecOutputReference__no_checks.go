@@ -156,6 +156,10 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetRuntimeClassNa
 	return nil
 }
 
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetSchedulerNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validateSetServiceAccountNameParameters(val *string) error {
 	return nil
 }

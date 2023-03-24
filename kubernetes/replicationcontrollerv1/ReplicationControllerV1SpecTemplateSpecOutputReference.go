@@ -82,6 +82,9 @@ type ReplicationControllerV1SpecTemplateSpecOutputReference interface {
 	RuntimeClassName() *string
 	SetRuntimeClassName(val *string)
 	RuntimeClassNameInput() *string
+	SchedulerName() *string
+	SetSchedulerName(val *string)
+	SchedulerNameInput() *string
 	SecurityContext() ReplicationControllerV1SpecTemplateSpecSecurityContextOutputReference
 	SecurityContextInput() *ReplicationControllerV1SpecTemplateSpecSecurityContext
 	ServiceAccountName() *string
@@ -165,6 +168,7 @@ type ReplicationControllerV1SpecTemplateSpecOutputReference interface {
 	ResetReadinessGate()
 	ResetRestartPolicy()
 	ResetRuntimeClassName()
+	ResetSchedulerName()
 	ResetSecurityContext()
 	ResetServiceAccountName()
 	ResetShareProcessNamespace()
@@ -638,6 +642,26 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference) Runti
 	return returns
 }
 
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference) SchedulerName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schedulerName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference) SchedulerNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schedulerNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference) SecurityContext() ReplicationControllerV1SpecTemplateSpecSecurityContextOutputReference {
 	var returns ReplicationControllerV1SpecTemplateSpecSecurityContextOutputReference
 	_jsii_.Get(
@@ -1018,6 +1042,17 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference)SetRun
 	_jsii_.Set(
 		j,
 		"runtimeClassName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference)SetSchedulerName(val *string) {
+	if err := j.validateSetSchedulerNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"schedulerName",
 		val,
 	)
 }
@@ -1551,6 +1586,14 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference) Reset
 	_jsii_.InvokeVoid(
 		r,
 		"resetRuntimeClassName",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference) ResetSchedulerName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSchedulerName",
 		nil, // no parameters
 	)
 }

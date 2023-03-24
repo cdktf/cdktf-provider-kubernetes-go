@@ -30,6 +30,9 @@ type DataKubernetesSecretV1MetadataOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GenerateName() *string
+	SetGenerateName(val *string)
+	GenerateNameInput() *string
 	Generation() *float64
 	InternalValue() *DataKubernetesSecretV1Metadata
 	SetInternalValue(val *DataKubernetesSecretV1Metadata)
@@ -77,6 +80,7 @@ type DataKubernetesSecretV1MetadataOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAnnotations()
+	ResetGenerateName()
 	ResetLabels()
 	ResetName()
 	ResetNamespace()
@@ -150,6 +154,26 @@ func (j *jsiiProxy_DataKubernetesSecretV1MetadataOutputReference) Fqn() *string 
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesSecretV1MetadataOutputReference) GenerateName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"generateName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesSecretV1MetadataOutputReference) GenerateNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"generateNameInput",
 		&returns,
 	)
 	return returns
@@ -332,6 +356,17 @@ func (j *jsiiProxy_DataKubernetesSecretV1MetadataOutputReference)SetComplexObjec
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataKubernetesSecretV1MetadataOutputReference)SetGenerateName(val *string) {
+	if err := j.validateSetGenerateNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"generateName",
 		val,
 	)
 }
@@ -592,6 +627,14 @@ func (d *jsiiProxy_DataKubernetesSecretV1MetadataOutputReference) ResetAnnotatio
 	_jsii_.InvokeVoid(
 		d,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataKubernetesSecretV1MetadataOutputReference) ResetGenerateName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGenerateName",
 		nil, // no parameters
 	)
 }

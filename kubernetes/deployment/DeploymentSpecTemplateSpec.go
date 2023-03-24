@@ -96,6 +96,12 @@ type DeploymentSpecTemplateSpec struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/deployment#runtime_class_name Deployment#runtime_class_name}
 	RuntimeClassName *string `field:"optional" json:"runtimeClassName" yaml:"runtimeClassName"`
+	// If specified, the pod will be dispatched by specified scheduler.
+	//
+	// If not specified, the pod will be dispatched by default scheduler.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/deployment#scheduler_name Deployment#scheduler_name}
+	SchedulerName *string `field:"optional" json:"schedulerName" yaml:"schedulerName"`
 	// security_context block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/deployment#security_context Deployment#security_context}

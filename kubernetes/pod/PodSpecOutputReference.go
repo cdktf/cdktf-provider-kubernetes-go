@@ -82,6 +82,9 @@ type PodSpecOutputReference interface {
 	RuntimeClassName() *string
 	SetRuntimeClassName(val *string)
 	RuntimeClassNameInput() *string
+	SchedulerName() *string
+	SetSchedulerName(val *string)
+	SchedulerNameInput() *string
 	SecurityContext() PodSpecSecurityContextOutputReference
 	SecurityContextInput() *PodSpecSecurityContext
 	ServiceAccountName() *string
@@ -165,6 +168,7 @@ type PodSpecOutputReference interface {
 	ResetReadinessGate()
 	ResetRestartPolicy()
 	ResetRuntimeClassName()
+	ResetSchedulerName()
 	ResetSecurityContext()
 	ResetServiceAccountName()
 	ResetShareProcessNamespace()
@@ -638,6 +642,26 @@ func (j *jsiiProxy_PodSpecOutputReference) RuntimeClassNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PodSpecOutputReference) SchedulerName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schedulerName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodSpecOutputReference) SchedulerNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schedulerNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PodSpecOutputReference) SecurityContext() PodSpecSecurityContextOutputReference {
 	var returns PodSpecSecurityContextOutputReference
 	_jsii_.Get(
@@ -1018,6 +1042,17 @@ func (j *jsiiProxy_PodSpecOutputReference)SetRuntimeClassName(val *string) {
 	_jsii_.Set(
 		j,
 		"runtimeClassName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PodSpecOutputReference)SetSchedulerName(val *string) {
+	if err := j.validateSetSchedulerNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"schedulerName",
 		val,
 	)
 }
@@ -1551,6 +1586,14 @@ func (p *jsiiProxy_PodSpecOutputReference) ResetRuntimeClassName() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetRuntimeClassName",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PodSpecOutputReference) ResetSchedulerName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSchedulerName",
 		nil, // no parameters
 	)
 }

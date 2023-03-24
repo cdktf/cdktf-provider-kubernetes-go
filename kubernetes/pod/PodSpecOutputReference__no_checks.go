@@ -156,6 +156,10 @@ func (j *jsiiProxy_PodSpecOutputReference) validateSetRuntimeClassNameParameters
 	return nil
 }
 
+func (j *jsiiProxy_PodSpecOutputReference) validateSetSchedulerNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PodSpecOutputReference) validateSetServiceAccountNameParameters(val *string) error {
 	return nil
 }

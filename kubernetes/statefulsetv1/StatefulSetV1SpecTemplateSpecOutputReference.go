@@ -82,6 +82,9 @@ type StatefulSetV1SpecTemplateSpecOutputReference interface {
 	RuntimeClassName() *string
 	SetRuntimeClassName(val *string)
 	RuntimeClassNameInput() *string
+	SchedulerName() *string
+	SetSchedulerName(val *string)
+	SchedulerNameInput() *string
 	SecurityContext() StatefulSetV1SpecTemplateSpecSecurityContextOutputReference
 	SecurityContextInput() *StatefulSetV1SpecTemplateSpecSecurityContext
 	ServiceAccountName() *string
@@ -165,6 +168,7 @@ type StatefulSetV1SpecTemplateSpecOutputReference interface {
 	ResetReadinessGate()
 	ResetRestartPolicy()
 	ResetRuntimeClassName()
+	ResetSchedulerName()
 	ResetSecurityContext()
 	ResetServiceAccountName()
 	ResetShareProcessNamespace()
@@ -638,6 +642,26 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) RuntimeClassNam
 	return returns
 }
 
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) SchedulerName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schedulerName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) SchedulerNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"schedulerNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) SecurityContext() StatefulSetV1SpecTemplateSpecSecurityContextOutputReference {
 	var returns StatefulSetV1SpecTemplateSpecSecurityContextOutputReference
 	_jsii_.Get(
@@ -1018,6 +1042,17 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference)SetRuntimeClassN
 	_jsii_.Set(
 		j,
 		"runtimeClassName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference)SetSchedulerName(val *string) {
+	if err := j.validateSetSchedulerNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"schedulerName",
 		val,
 	)
 }
@@ -1551,6 +1586,14 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) ResetRuntimeCla
 	_jsii_.InvokeVoid(
 		s,
 		"resetRuntimeClassName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) ResetSchedulerName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSchedulerName",
 		nil, // no parameters
 	)
 }

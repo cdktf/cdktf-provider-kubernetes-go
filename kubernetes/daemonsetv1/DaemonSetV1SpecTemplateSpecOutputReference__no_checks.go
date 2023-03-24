@@ -156,6 +156,10 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecOutputReference) validateSetRuntim
 	return nil
 }
 
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecOutputReference) validateSetSchedulerNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecOutputReference) validateSetServiceAccountNameParameters(val *string) error {
 	return nil
 }
