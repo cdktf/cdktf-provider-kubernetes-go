@@ -46,6 +46,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putFieldManager", GoMethod: "PutFieldManager"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putWait", GoMethod: "PutWait"},
+			_jsii_.MemberMethod{JsiiMethod: "putWaitFor", GoMethod: "PutWaitFor"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetComputedFields", GoMethod: "ResetComputedFields"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFieldManager", GoMethod: "ResetFieldManager"},

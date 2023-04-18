@@ -80,6 +80,10 @@ func (j *jsiiProxy_ReplicationController) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ReplicationController) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ReplicationController) validateSetIdParameters(val *string) error {
 	return nil
 }

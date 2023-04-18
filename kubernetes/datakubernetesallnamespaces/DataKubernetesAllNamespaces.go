@@ -2,14 +2,14 @@ package datakubernetesallnamespaces
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/datakubernetesallnamespaces/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/datakubernetesallnamespaces/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/kubernetes/d/all_namespaces kubernetes_all_namespaces}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/data-sources/all_namespaces kubernetes_all_namespaces}.
 type DataKubernetesAllNamespaces interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataKubernetesAllNamespaces interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataKubernetesAllNamespaces) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesAllNamespaces) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataKubernetesAllNamespaces) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataKubernetesAllNamespaces) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/d/all_namespaces kubernetes_all_namespaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/data-sources/all_namespaces kubernetes_all_namespaces} Data Source.
 func NewDataKubernetesAllNamespaces(scope constructs.Construct, id *string, config *DataKubernetesAllNamespacesConfig) DataKubernetesAllNamespaces {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataKubernetesAllNamespaces(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/d/all_namespaces kubernetes_all_namespaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/data-sources/all_namespaces kubernetes_all_namespaces} Data Source.
 func NewDataKubernetesAllNamespaces_Override(d DataKubernetesAllNamespaces, scope constructs.Construct, id *string, config *DataKubernetesAllNamespacesConfig) {
 	_init_.Initialize()
 
@@ -298,7 +298,10 @@ func NewDataKubernetesAllNamespaces_Override(d DataKubernetesAllNamespaces, scop
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesAllNamespaces)SetCount(val *float64) {
+func (j *jsiiProxy_DataKubernetesAllNamespaces)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

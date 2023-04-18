@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataKubernetesStorageClassV1) validateSetAllowVolumeExpansion
 	return nil
 }
 
+func (j *jsiiProxy_DataKubernetesStorageClassV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataKubernetesStorageClassV1) validateSetIdParameters(val *string) error {
 	return nil
 }

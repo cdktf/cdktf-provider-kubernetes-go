@@ -2,14 +2,14 @@ package datakubernetesstorageclass
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/datakubernetesstorageclass/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/datakubernetesstorageclass/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/kubernetes/d/storage_class kubernetes_storage_class}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/data-sources/storage_class kubernetes_storage_class}.
 type DataKubernetesStorageClass interface {
 	cdktf.TerraformDataSource
 	AllowedTopologies() DataKubernetesStorageClassAllowedTopologiesOutputReference
@@ -22,9 +22,9 @@ type DataKubernetesStorageClass interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -185,8 +185,8 @@ func (j *jsiiProxy_DataKubernetesStorageClass) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataKubernetesStorageClass) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -436,7 +436,7 @@ func (j *jsiiProxy_DataKubernetesStorageClass) VolumeBindingModeInput() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/d/storage_class kubernetes_storage_class} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/data-sources/storage_class kubernetes_storage_class} Data Source.
 func NewDataKubernetesStorageClass(scope constructs.Construct, id *string, config *DataKubernetesStorageClassConfig) DataKubernetesStorageClass {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewDataKubernetesStorageClass(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/d/storage_class kubernetes_storage_class} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/data-sources/storage_class kubernetes_storage_class} Data Source.
 func NewDataKubernetesStorageClass_Override(d DataKubernetesStorageClass, scope constructs.Construct, id *string, config *DataKubernetesStorageClassConfig) {
 	_init_.Initialize()
 
@@ -476,7 +476,10 @@ func (j *jsiiProxy_DataKubernetesStorageClass)SetAllowVolumeExpansion(val interf
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClass)SetCount(val *float64) {
+func (j *jsiiProxy_DataKubernetesStorageClass)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

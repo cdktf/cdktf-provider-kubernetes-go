@@ -4,11 +4,11 @@ package statefulset
 type StatefulSetSpecTemplateSpecVolumeFlexVolumeSecretRef struct {
 	// Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/stateful_set#name StatefulSet#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/stateful_set#name StatefulSet#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/stateful_set#namespace StatefulSet#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

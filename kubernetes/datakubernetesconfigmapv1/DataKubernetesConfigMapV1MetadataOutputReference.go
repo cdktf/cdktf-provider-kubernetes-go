@@ -2,9 +2,9 @@ package datakubernetesconfigmapv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/datakubernetesconfigmapv1/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/datakubernetesconfigmapv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

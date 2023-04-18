@@ -2,14 +2,14 @@ package manifest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/manifest/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/manifest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/kubernetes/r/manifest kubernetes_manifest}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/manifest kubernetes_manifest}.
 type Manifest interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type Manifest interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -72,8 +72,7 @@ type Manifest interface {
 	Timeouts() ManifestTimeoutsOutputReference
 	TimeoutsInput() *ManifestTimeouts
 	Wait() ManifestWaitOutputReference
-	WaitFor() interface{}
-	SetWaitFor(val interface{})
+	WaitFor() ManifestWaitForOutputReference
 	WaitForInput() interface{}
 	WaitInput() *ManifestWait
 	// Experimental.
@@ -104,6 +103,7 @@ type Manifest interface {
 	PutFieldManager(value *ManifestFieldManager)
 	PutTimeouts(value *ManifestTimeouts)
 	PutWait(value *ManifestWait)
+	PutWaitFor(value *ManifestWaitFor)
 	ResetComputedFields()
 	ResetFieldManager()
 	ResetObject()
@@ -178,8 +178,8 @@ func (j *jsiiProxy_Manifest) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Manifest) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Manifest) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_Manifest) Wait() ManifestWaitOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_Manifest) WaitFor() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Manifest) WaitFor() ManifestWaitForOutputReference {
+	var returns ManifestWaitForOutputReference
 	_jsii_.Get(
 		j,
 		"waitFor",
@@ -429,7 +429,7 @@ func (j *jsiiProxy_Manifest) WaitInput() *ManifestWait {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/manifest kubernetes_manifest} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/manifest kubernetes_manifest} Resource.
 func NewManifest(scope constructs.Construct, id *string, config *ManifestConfig) Manifest {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewManifest(scope constructs.Construct, id *string, config *ManifestConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/manifest kubernetes_manifest} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/manifest kubernetes_manifest} Resource.
 func NewManifest_Override(m Manifest, scope constructs.Construct, id *string, config *ManifestConfig) {
 	_init_.Initialize()
 
@@ -480,7 +480,10 @@ func (j *jsiiProxy_Manifest)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Manifest)SetCount(val *float64) {
+func (j *jsiiProxy_Manifest)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -552,17 +555,6 @@ func (j *jsiiProxy_Manifest)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Manifest)SetWaitFor(val interface{}) {
-	if err := j.validateSetWaitForParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"waitFor",
 		val,
 	)
 }
@@ -862,6 +854,17 @@ func (m *jsiiProxy_Manifest) PutWait(value *ManifestWait) {
 	_jsii_.InvokeVoid(
 		m,
 		"putWait",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_Manifest) PutWaitFor(value *ManifestWaitFor) {
+	if err := m.validatePutWaitForParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putWaitFor",
 		[]interface{}{value},
 	)
 }

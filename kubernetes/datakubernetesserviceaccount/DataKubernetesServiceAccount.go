@@ -2,14 +2,14 @@ package datakubernetesserviceaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/datakubernetesserviceaccount/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/datakubernetesserviceaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/kubernetes/d/service_account kubernetes_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/data-sources/service_account kubernetes_service_account}.
 type DataKubernetesServiceAccount interface {
 	cdktf.TerraformDataSource
 	AutomountServiceAccountToken() cdktf.IResolvable
@@ -18,9 +18,9 @@ type DataKubernetesServiceAccount interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultSecretName() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataKubernetesServiceAccount) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesServiceAccount) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataKubernetesServiceAccount) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -325,7 +325,7 @@ func (j *jsiiProxy_DataKubernetesServiceAccount) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/d/service_account kubernetes_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/data-sources/service_account kubernetes_service_account} Data Source.
 func NewDataKubernetesServiceAccount(scope constructs.Construct, id *string, config *DataKubernetesServiceAccountConfig) DataKubernetesServiceAccount {
 	_init_.Initialize()
 
@@ -343,7 +343,7 @@ func NewDataKubernetesServiceAccount(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/d/service_account kubernetes_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/data-sources/service_account kubernetes_service_account} Data Source.
 func NewDataKubernetesServiceAccount_Override(d DataKubernetesServiceAccount, scope constructs.Construct, id *string, config *DataKubernetesServiceAccountConfig) {
 	_init_.Initialize()
 
@@ -354,7 +354,10 @@ func NewDataKubernetesServiceAccount_Override(d DataKubernetesServiceAccount, sc
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesServiceAccount)SetCount(val *float64) {
+func (j *jsiiProxy_DataKubernetesServiceAccount)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

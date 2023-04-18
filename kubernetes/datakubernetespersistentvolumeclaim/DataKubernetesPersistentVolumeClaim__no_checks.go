@@ -72,6 +72,10 @@ func validateDataKubernetesPersistentVolumeClaim_IsTerraformElementParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_DataKubernetesPersistentVolumeClaim) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataKubernetesPersistentVolumeClaim) validateSetIdParameters(val *string) error {
 	return nil
 }

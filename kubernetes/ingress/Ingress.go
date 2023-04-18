@@ -2,14 +2,14 @@ package ingress
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/ingress/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/ingress/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/kubernetes/r/ingress kubernetes_ingress}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/ingress kubernetes_ingress}.
 type Ingress interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type Ingress interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_Ingress) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Ingress) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Ingress) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -367,7 +367,7 @@ func (j *jsiiProxy_Ingress) WaitForLoadBalancerInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/ingress kubernetes_ingress} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/ingress kubernetes_ingress} Resource.
 func NewIngress(scope constructs.Construct, id *string, config *IngressConfig) Ingress {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewIngress(scope constructs.Construct, id *string, config *IngressConfig) I
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/ingress kubernetes_ingress} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/ingress kubernetes_ingress} Resource.
 func NewIngress_Override(i Ingress, scope constructs.Construct, id *string, config *IngressConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_Ingress)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ingress)SetCount(val *float64) {
+func (j *jsiiProxy_Ingress)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

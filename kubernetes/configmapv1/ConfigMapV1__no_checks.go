@@ -76,6 +76,10 @@ func (j *jsiiProxy_ConfigMapV1) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_ConfigMapV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigMapV1) validateSetDataParameters(val *map[string]*string) error {
 	return nil
 }

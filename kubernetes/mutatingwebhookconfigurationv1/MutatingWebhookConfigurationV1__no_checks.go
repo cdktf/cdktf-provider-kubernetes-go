@@ -76,6 +76,10 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_MutatingWebhookConfigurationV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MutatingWebhookConfigurationV1) validateSetIdParameters(val *string) error {
 	return nil
 }

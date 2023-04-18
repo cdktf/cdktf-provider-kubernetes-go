@@ -4,11 +4,11 @@ package pod
 type PodSpecInitContainerSecurityContextCapabilities struct {
 	// Added capabilities.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/pod#add Pod#add}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/pod#add Pod#add}
 	Add *[]*string `field:"optional" json:"add" yaml:"add"`
 	// Removed capabilities.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/pod#drop Pod#drop}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/pod#drop Pod#drop}
 	Drop *[]*string `field:"optional" json:"drop" yaml:"drop"`
 }
 

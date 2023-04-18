@@ -80,6 +80,10 @@ func (j *jsiiProxy_PersistentVolumeV1) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_PersistentVolumeV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PersistentVolumeV1) validateSetIdParameters(val *string) error {
 	return nil
 }

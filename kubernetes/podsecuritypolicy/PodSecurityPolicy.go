@@ -2,14 +2,14 @@ package podsecuritypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/podsecuritypolicy/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/podsecuritypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/kubernetes/r/pod_security_policy kubernetes_pod_security_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/pod_security_policy kubernetes_pod_security_policy}.
 type PodSecurityPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type PodSecurityPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_PodSecurityPolicy) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PodSecurityPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_PodSecurityPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/pod_security_policy kubernetes_pod_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/pod_security_policy kubernetes_pod_security_policy} Resource.
 func NewPodSecurityPolicy(scope constructs.Construct, id *string, config *PodSecurityPolicyConfig) PodSecurityPolicy {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewPodSecurityPolicy(scope constructs.Construct, id *string, config *PodSec
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/pod_security_policy kubernetes_pod_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/pod_security_policy kubernetes_pod_security_policy} Resource.
 func NewPodSecurityPolicy_Override(p PodSecurityPolicy, scope constructs.Construct, id *string, config *PodSecurityPolicyConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_PodSecurityPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_PodSecurityPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

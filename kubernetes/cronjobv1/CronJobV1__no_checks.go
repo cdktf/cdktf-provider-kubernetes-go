@@ -80,6 +80,10 @@ func (j *jsiiProxy_CronJobV1) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_CronJobV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CronJobV1) validateSetIdParameters(val *string) error {
 	return nil
 }

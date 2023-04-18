@@ -80,6 +80,10 @@ func (j *jsiiProxy_RoleBinding) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_RoleBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RoleBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package cronjobv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/cronjobv1/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/cronjobv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/kubernetes/r/cron_job_v1 kubernetes_cron_job_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/cron_job_v1 kubernetes_cron_job_v1}.
 type CronJobV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CronJobV1 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_CronJobV1) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CronJobV1) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CronJobV1) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_CronJobV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/cron_job_v1 kubernetes_cron_job_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/cron_job_v1 kubernetes_cron_job_v1} Resource.
 func NewCronJobV1(scope constructs.Construct, id *string, config *CronJobV1Config) CronJobV1 {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewCronJobV1(scope constructs.Construct, id *string, config *CronJobV1Confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/cron_job_v1 kubernetes_cron_job_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/cron_job_v1 kubernetes_cron_job_v1} Resource.
 func NewCronJobV1_Override(c CronJobV1, scope constructs.Construct, id *string, config *CronJobV1Config) {
 	_init_.Initialize()
 
@@ -396,7 +396,10 @@ func (j *jsiiProxy_CronJobV1)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CronJobV1)SetCount(val *float64) {
+func (j *jsiiProxy_CronJobV1)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

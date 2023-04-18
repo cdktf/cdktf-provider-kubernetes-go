@@ -2,14 +2,14 @@ package persistentvolumev1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/persistentvolumev1/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/persistentvolumev1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/kubernetes/r/persistent_volume_v1 kubernetes_persistent_volume_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/persistent_volume_v1 kubernetes_persistent_volume_v1}.
 type PersistentVolumeV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type PersistentVolumeV1 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_PersistentVolumeV1) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_PersistentVolumeV1) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PersistentVolumeV1) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_PersistentVolumeV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/persistent_volume_v1 kubernetes_persistent_volume_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/persistent_volume_v1 kubernetes_persistent_volume_v1} Resource.
 func NewPersistentVolumeV1(scope constructs.Construct, id *string, config *PersistentVolumeV1Config) PersistentVolumeV1 {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewPersistentVolumeV1(scope constructs.Construct, id *string, config *Persi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/persistent_volume_v1 kubernetes_persistent_volume_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/persistent_volume_v1 kubernetes_persistent_volume_v1} Resource.
 func NewPersistentVolumeV1_Override(p PersistentVolumeV1, scope constructs.Construct, id *string, config *PersistentVolumeV1Config) {
 	_init_.Initialize()
 
@@ -396,7 +396,10 @@ func (j *jsiiProxy_PersistentVolumeV1)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PersistentVolumeV1)SetCount(val *float64) {
+func (j *jsiiProxy_PersistentVolumeV1)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

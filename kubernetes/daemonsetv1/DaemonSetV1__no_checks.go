@@ -80,6 +80,10 @@ func (j *jsiiProxy_DaemonSetV1) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DaemonSetV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DaemonSetV1) validateSetIdParameters(val *string) error {
 	return nil
 }

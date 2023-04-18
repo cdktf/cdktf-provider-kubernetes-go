@@ -68,6 +68,10 @@ func validateDataKubernetesIngressV1_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataKubernetesIngressV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataKubernetesIngressV1) validateSetIdParameters(val *string) error {
 	return nil
 }

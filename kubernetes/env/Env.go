@@ -2,14 +2,14 @@ package env
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/env/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/env/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/kubernetes/r/env kubernetes_env}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/env kubernetes_env}.
 type Env interface {
 	cdktf.TerraformResource
 	ApiVersion() *string
@@ -27,9 +27,9 @@ type Env interface {
 	SetContainer(val *string)
 	ContainerInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -198,8 +198,8 @@ func (j *jsiiProxy_Env) ContainerInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Env) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Env) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -449,7 +449,7 @@ func (j *jsiiProxy_Env) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/env kubernetes_env} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/env kubernetes_env} Resource.
 func NewEnv(scope constructs.Construct, id *string, config *EnvConfig) Env {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewEnv(scope constructs.Construct, id *string, config *EnvConfig) Env {
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/env kubernetes_env} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/env kubernetes_env} Resource.
 func NewEnv_Override(e Env, scope constructs.Construct, id *string, config *EnvConfig) {
 	_init_.Initialize()
 
@@ -511,7 +511,10 @@ func (j *jsiiProxy_Env)SetContainer(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Env)SetCount(val *float64) {
+func (j *jsiiProxy_Env)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_PriorityClassV1) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_PriorityClassV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PriorityClassV1) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

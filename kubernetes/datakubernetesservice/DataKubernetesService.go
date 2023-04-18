@@ -2,14 +2,14 @@ package datakubernetesservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/datakubernetesservice/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/datakubernetesservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/kubernetes/d/service kubernetes_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/data-sources/service kubernetes_service}.
 type DataKubernetesService interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataKubernetesService interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DataKubernetesService) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesService) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataKubernetesService) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataKubernetesService) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/d/service kubernetes_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/data-sources/service kubernetes_service} Data Source.
 func NewDataKubernetesService(scope constructs.Construct, id *string, config *DataKubernetesServiceConfig) DataKubernetesService {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDataKubernetesService(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/d/service kubernetes_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/data-sources/service kubernetes_service} Data Source.
 func NewDataKubernetesService_Override(d DataKubernetesService, scope constructs.Construct, id *string, config *DataKubernetesServiceConfig) {
 	_init_.Initialize()
 
@@ -332,7 +332,10 @@ func NewDataKubernetesService_Override(d DataKubernetesService, scope constructs
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesService)SetCount(val *float64) {
+func (j *jsiiProxy_DataKubernetesService)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

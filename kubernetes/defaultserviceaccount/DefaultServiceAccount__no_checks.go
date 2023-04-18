@@ -88,6 +88,10 @@ func (j *jsiiProxy_DefaultServiceAccount) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_DefaultServiceAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DefaultServiceAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataKubernetesAllNamespaces_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataKubernetesAllNamespaces) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataKubernetesAllNamespaces) validateSetIdParameters(val *string) error {
 	return nil
 }

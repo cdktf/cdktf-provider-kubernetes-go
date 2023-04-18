@@ -64,6 +64,10 @@ func (m *jsiiProxy_Manifest) validatePutWaitParameters(value *ManifestWait) erro
 	return nil
 }
 
+func (m *jsiiProxy_Manifest) validatePutWaitForParameters(value *ManifestWaitFor) error {
+	return nil
+}
+
 func validateManifest_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (j *jsiiProxy_Manifest) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_Manifest) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Manifest) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -97,10 +105,6 @@ func (j *jsiiProxy_Manifest) validateSetObjectParameters(val *map[string]interfa
 }
 
 func (j *jsiiProxy_Manifest) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_Manifest) validateSetWaitForParameters(val interface{}) error {
 	return nil
 }
 

@@ -76,6 +76,10 @@ func (j *jsiiProxy_PodDisruptionBudgetV1) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_PodDisruptionBudgetV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PodDisruptionBudgetV1) validateSetIdParameters(val *string) error {
 	return nil
 }

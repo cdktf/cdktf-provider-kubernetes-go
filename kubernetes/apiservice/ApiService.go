@@ -2,14 +2,14 @@ package apiservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/apiservice/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/apiservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/kubernetes/r/api_service kubernetes_api_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/api_service kubernetes_api_service}.
 type ApiService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ApiService interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_ApiService) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiService) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApiService) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_ApiService) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/api_service kubernetes_api_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/api_service kubernetes_api_service} Resource.
 func NewApiService(scope constructs.Construct, id *string, config *ApiServiceConfig) ApiService {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewApiService(scope constructs.Construct, id *string, config *ApiServiceCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/api_service kubernetes_api_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/api_service kubernetes_api_service} Resource.
 func NewApiService_Override(a ApiService, scope constructs.Construct, id *string, config *ApiServiceConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_ApiService)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiService)SetCount(val *float64) {
+func (j *jsiiProxy_ApiService)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -8,7 +8,7 @@ type DataKubernetesSecretConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -21,13 +21,13 @@ type DataKubernetesSecretConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// metadata block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/d/secret#metadata DataKubernetesSecret#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/data-sources/secret#metadata DataKubernetesSecret#metadata}
 	Metadata *DataKubernetesSecretMetadata `field:"required" json:"metadata" yaml:"metadata"`
 	// A map of the secret data with values encoded in base64 format.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/d/secret#binary_data DataKubernetesSecret#binary_data}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/data-sources/secret#binary_data DataKubernetesSecret#binary_data}
 	BinaryData *map[string]*string `field:"optional" json:"binaryData" yaml:"binaryData"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/d/secret#id DataKubernetesSecret#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/data-sources/secret#id DataKubernetesSecret#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -2,14 +2,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/provider/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/kubernetes kubernetes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs kubernetes}.
 type KubernetesProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -612,7 +612,7 @@ func (j *jsiiProxy_KubernetesProvider) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes kubernetes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs kubernetes} Resource.
 func NewKubernetesProvider(scope constructs.Construct, id *string, config *KubernetesProviderConfig) KubernetesProvider {
 	_init_.Initialize()
 
@@ -630,7 +630,7 @@ func NewKubernetesProvider(scope constructs.Construct, id *string, config *Kuber
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes kubernetes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs kubernetes} Resource.
 func NewKubernetesProvider_Override(k KubernetesProvider, scope constructs.Construct, id *string, config *KubernetesProviderConfig) {
 	_init_.Initialize()
 

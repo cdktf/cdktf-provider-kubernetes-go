@@ -76,6 +76,10 @@ func (j *jsiiProxy_HorizontalPodAutoscaler) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_HorizontalPodAutoscaler) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HorizontalPodAutoscaler) validateSetIdParameters(val *string) error {
 	return nil
 }

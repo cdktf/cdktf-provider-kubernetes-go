@@ -2,14 +2,14 @@ package rolebinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/rolebinding/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/rolebinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/kubernetes/r/role_binding kubernetes_role_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/role_binding kubernetes_role_binding}.
 type RoleBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type RoleBinding interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_RoleBinding) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_RoleBinding) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_RoleBinding) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,7 +355,7 @@ func (j *jsiiProxy_RoleBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/role_binding kubernetes_role_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/role_binding kubernetes_role_binding} Resource.
 func NewRoleBinding(scope constructs.Construct, id *string, config *RoleBindingConfig) RoleBinding {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewRoleBinding(scope constructs.Construct, id *string, config *RoleBindingC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/role_binding kubernetes_role_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/role_binding kubernetes_role_binding} Resource.
 func NewRoleBinding_Override(r RoleBinding, scope constructs.Construct, id *string, config *RoleBindingConfig) {
 	_init_.Initialize()
 
@@ -395,7 +395,10 @@ func (j *jsiiProxy_RoleBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RoleBinding)SetCount(val *float64) {
+func (j *jsiiProxy_RoleBinding)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

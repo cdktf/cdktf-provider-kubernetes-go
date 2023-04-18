@@ -2,14 +2,14 @@ package configmapv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/configmapv1/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/configmapv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/kubernetes/r/config_map_v1 kubernetes_config_map_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/config_map_v1 kubernetes_config_map_v1}.
 type ConfigMapV1 interface {
 	cdktf.TerraformResource
 	BinaryData() *map[string]*string
@@ -24,9 +24,9 @@ type ConfigMapV1 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Data() *map[string]*string
 	SetData(val *map[string]*string)
 	DataInput() *map[string]*string
@@ -170,8 +170,8 @@ func (j *jsiiProxy_ConfigMapV1) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_ConfigMapV1) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ConfigMapV1) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -381,7 +381,7 @@ func (j *jsiiProxy_ConfigMapV1) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/config_map_v1 kubernetes_config_map_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/config_map_v1 kubernetes_config_map_v1} Resource.
 func NewConfigMapV1(scope constructs.Construct, id *string, config *ConfigMapV1Config) ConfigMapV1 {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewConfigMapV1(scope constructs.Construct, id *string, config *ConfigMapV1C
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/config_map_v1 kubernetes_config_map_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/config_map_v1 kubernetes_config_map_v1} Resource.
 func NewConfigMapV1_Override(c ConfigMapV1, scope constructs.Construct, id *string, config *ConfigMapV1Config) {
 	_init_.Initialize()
 
@@ -432,7 +432,10 @@ func (j *jsiiProxy_ConfigMapV1)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConfigMapV1)SetCount(val *float64) {
+func (j *jsiiProxy_ConfigMapV1)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func validateDataKubernetesConfigMapV1_IsTerraformElementParameters(x interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataKubernetesConfigMapV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataKubernetesConfigMapV1) validateSetIdParameters(val *string) error {
 	return nil
 }

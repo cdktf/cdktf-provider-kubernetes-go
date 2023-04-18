@@ -4,19 +4,19 @@ package tokenrequestv1
 type TokenRequestV1SpecBoundObjectRef struct {
 	// API version of the referent.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/token_request_v1#api_version TokenRequestV1#api_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/token_request_v1#api_version TokenRequestV1#api_version}
 	ApiVersion *string `field:"optional" json:"apiVersion" yaml:"apiVersion"`
 	// Kind of the referent. Valid kinds are 'Pod' and 'Secret'.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/token_request_v1#kind TokenRequestV1#kind}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/token_request_v1#kind TokenRequestV1#kind}
 	Kind *string `field:"optional" json:"kind" yaml:"kind"`
 	// Name of the referent.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/token_request_v1#name TokenRequestV1#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/token_request_v1#name TokenRequestV1#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// UID of the referent.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/token_request_v1#uid TokenRequestV1#uid}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/token_request_v1#uid TokenRequestV1#uid}
 	Uid *string `field:"optional" json:"uid" yaml:"uid"`
 }
 

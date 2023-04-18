@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataKubernetesSecretV1) validateSetBinaryDataParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataKubernetesSecretV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataKubernetesSecretV1) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package resourcequota
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/resourcequota/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/resourcequota/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/kubernetes/r/resource_quota kubernetes_resource_quota}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/resource_quota kubernetes_resource_quota}.
 type ResourceQuota interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ResourceQuota interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_ResourceQuota) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_ResourceQuota) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ResourceQuota) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -357,7 +357,7 @@ func (j *jsiiProxy_ResourceQuota) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/resource_quota kubernetes_resource_quota} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/resource_quota kubernetes_resource_quota} Resource.
 func NewResourceQuota(scope constructs.Construct, id *string, config *ResourceQuotaConfig) ResourceQuota {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewResourceQuota(scope constructs.Construct, id *string, config *ResourceQu
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/resource_quota kubernetes_resource_quota} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/resource_quota kubernetes_resource_quota} Resource.
 func NewResourceQuota_Override(r ResourceQuota, scope constructs.Construct, id *string, config *ResourceQuotaConfig) {
 	_init_.Initialize()
 
@@ -397,7 +397,10 @@ func (j *jsiiProxy_ResourceQuota)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ResourceQuota)SetCount(val *float64) {
+func (j *jsiiProxy_ResourceQuota)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

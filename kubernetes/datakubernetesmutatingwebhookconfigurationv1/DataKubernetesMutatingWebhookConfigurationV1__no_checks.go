@@ -68,6 +68,10 @@ func validateDataKubernetesMutatingWebhookConfigurationV1_IsTerraformElementPara
 	return nil
 }
 
+func (j *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1) validateSetIdParameters(val *string) error {
 	return nil
 }

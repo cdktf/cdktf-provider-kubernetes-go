@@ -2,14 +2,14 @@ package horizontalpodautoscaler
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v5/horizontalpodautoscaler/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v6/horizontalpodautoscaler/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/kubernetes/r/horizontal_pod_autoscaler kubernetes_horizontal_pod_autoscaler}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/horizontal_pod_autoscaler kubernetes_horizontal_pod_autoscaler}.
 type HorizontalPodAutoscaler interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type HorizontalPodAutoscaler interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_HorizontalPodAutoscaler) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscaler) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_HorizontalPodAutoscaler) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_HorizontalPodAutoscaler) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/horizontal_pod_autoscaler kubernetes_horizontal_pod_autoscaler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/horizontal_pod_autoscaler kubernetes_horizontal_pod_autoscaler} Resource.
 func NewHorizontalPodAutoscaler(scope constructs.Construct, id *string, config *HorizontalPodAutoscalerConfig) HorizontalPodAutoscaler {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewHorizontalPodAutoscaler(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/kubernetes/r/horizontal_pod_autoscaler kubernetes_horizontal_pod_autoscaler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/horizontal_pod_autoscaler kubernetes_horizontal_pod_autoscaler} Resource.
 func NewHorizontalPodAutoscaler_Override(h HorizontalPodAutoscaler, scope constructs.Construct, id *string, config *HorizontalPodAutoscalerConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_HorizontalPodAutoscaler)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscaler)SetCount(val *float64) {
+func (j *jsiiProxy_HorizontalPodAutoscaler)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

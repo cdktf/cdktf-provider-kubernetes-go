@@ -76,6 +76,10 @@ func (j *jsiiProxy_Namespace) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_Namespace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Namespace) validateSetIdParameters(val *string) error {
 	return nil
 }

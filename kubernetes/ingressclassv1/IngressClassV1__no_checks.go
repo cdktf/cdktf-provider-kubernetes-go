@@ -76,6 +76,10 @@ func (j *jsiiProxy_IngressClassV1) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_IngressClassV1) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IngressClassV1) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_Annotations) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_Annotations) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Annotations) validateSetFieldManagerParameters(val *string) error {
 	return nil
 }

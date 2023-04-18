@@ -80,6 +80,10 @@ func (j *jsiiProxy_ClusterRoleBinding) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_ClusterRoleBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClusterRoleBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

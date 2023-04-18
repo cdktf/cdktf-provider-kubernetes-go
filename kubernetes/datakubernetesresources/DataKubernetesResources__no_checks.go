@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataKubernetesResources) validateSetApiVersionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataKubernetesResources) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataKubernetesResources) validateSetFieldSelectorParameters(val *string) error {
 	return nil
 }

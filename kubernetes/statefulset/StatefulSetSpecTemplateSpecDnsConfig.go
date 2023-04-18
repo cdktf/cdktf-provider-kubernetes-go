@@ -6,17 +6,17 @@ type StatefulSetSpecTemplateSpecDnsConfig struct {
 	//
 	// This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/stateful_set#nameservers StatefulSet#nameservers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/stateful_set#nameservers StatefulSet#nameservers}
 	Nameservers *[]*string `field:"optional" json:"nameservers" yaml:"nameservers"`
 	// option block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/stateful_set#option StatefulSet#option}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/stateful_set#option StatefulSet#option}
 	Option interface{} `field:"optional" json:"option" yaml:"option"`
 	// A list of DNS search domains for host-name lookup.
 	//
 	// This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/kubernetes/r/stateful_set#searches StatefulSet#searches}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/stateful_set#searches StatefulSet#searches}
 	Searches *[]*string `field:"optional" json:"searches" yaml:"searches"`
 }
 
