@@ -30,8 +30,8 @@ type NodeTaintTaintOutputReference interface {
 	EffectInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *NodeTaintTaint
-	SetInternalValue(val *NodeTaintTaint)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -145,8 +145,8 @@ func (j *jsiiProxy_NodeTaintTaintOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NodeTaintTaintOutputReference) InternalValue() *NodeTaintTaint {
-	var returns *NodeTaintTaint
+func (j *jsiiProxy_NodeTaintTaintOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -216,29 +216,29 @@ func (j *jsiiProxy_NodeTaintTaintOutputReference) ValueInput() *string {
 }
 
 
-func NewNodeTaintTaintOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NodeTaintTaintOutputReference {
+func NewNodeTaintTaintOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NodeTaintTaintOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewNodeTaintTaintOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewNodeTaintTaintOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_NodeTaintTaintOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.nodeTaint.NodeTaintTaintOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewNodeTaintTaintOutputReference_Override(n NodeTaintTaintOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewNodeTaintTaintOutputReference_Override(n NodeTaintTaintOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-kubernetes.nodeTaint.NodeTaintTaintOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
 }
@@ -276,7 +276,7 @@ func (j *jsiiProxy_NodeTaintTaintOutputReference)SetEffect(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NodeTaintTaintOutputReference)SetInternalValue(val *NodeTaintTaint) {
+func (j *jsiiProxy_NodeTaintTaintOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

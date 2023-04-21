@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/env kubernetes_env}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/env kubernetes_env}.
 type Env interface {
 	cdktf.TerraformResource
 	ApiVersion() *string
@@ -53,6 +53,9 @@ type Env interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InitContainer() *string
+	SetInitContainer(val *string)
+	InitContainerInput() *string
 	Kind() *string
 	SetKind(val *string)
 	KindInput() *string
@@ -107,9 +110,11 @@ type Env interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutEnv(value interface{})
 	PutMetadata(value *EnvMetadata)
+	ResetContainer()
 	ResetFieldManager()
 	ResetForce()
 	ResetId()
+	ResetInitContainer()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -328,6 +333,26 @@ func (j *jsiiProxy_Env) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Env) InitContainer() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"initContainer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Env) InitContainerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"initContainerInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Env) Kind() *string {
 	var returns *string
 	_jsii_.Get(
@@ -449,7 +474,7 @@ func (j *jsiiProxy_Env) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/env kubernetes_env} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/env kubernetes_env} Resource.
 func NewEnv(scope constructs.Construct, id *string, config *EnvConfig) Env {
 	_init_.Initialize()
 
@@ -467,7 +492,7 @@ func NewEnv(scope constructs.Construct, id *string, config *EnvConfig) Env {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/env kubernetes_env} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/env kubernetes_env} Resource.
 func NewEnv_Override(e Env, scope constructs.Construct, id *string, config *EnvConfig) {
 	_init_.Initialize()
 
@@ -567,6 +592,17 @@ func (j *jsiiProxy_Env)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Env)SetInitContainer(val *string) {
+	if err := j.validateSetInitContainerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"initContainer",
 		val,
 	)
 }
@@ -900,6 +936,14 @@ func (e *jsiiProxy_Env) PutMetadata(value *EnvMetadata) {
 	)
 }
 
+func (e *jsiiProxy_Env) ResetContainer() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetContainer",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_Env) ResetFieldManager() {
 	_jsii_.InvokeVoid(
 		e,
@@ -920,6 +964,14 @@ func (e *jsiiProxy_Env) ResetId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Env) ResetInitContainer() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetInitContainer",
 		nil, // no parameters
 	)
 }

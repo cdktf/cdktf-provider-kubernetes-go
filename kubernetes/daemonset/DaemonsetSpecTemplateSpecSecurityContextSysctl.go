@@ -4,11 +4,11 @@ package daemonset
 type DaemonsetSpecTemplateSpecSecurityContextSysctl struct {
 	// Name of a property to set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/daemonset#name Daemonset#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/daemonset#name Daemonset#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Value of a property to set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/daemonset#value Daemonset#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/daemonset#value Daemonset#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

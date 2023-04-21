@@ -6,15 +6,15 @@ type ReplicationControllerV1SpecTemplateSpecVolumeGitRepo struct {
 	//
 	// Must not contain or start with '..'. If '.' is supplied, the volume directory will be the git repository. Otherwise, if specified, the volume will contain the git repository in the subdirectory with the given name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/replication_controller_v1#directory ReplicationControllerV1#directory}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/replication_controller_v1#directory ReplicationControllerV1#directory}
 	Directory *string `field:"optional" json:"directory" yaml:"directory"`
 	// Repository URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/replication_controller_v1#repository ReplicationControllerV1#repository}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/replication_controller_v1#repository ReplicationControllerV1#repository}
 	Repository *string `field:"optional" json:"repository" yaml:"repository"`
 	// Commit hash for the specified revision.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/replication_controller_v1#revision ReplicationControllerV1#revision}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/replication_controller_v1#revision ReplicationControllerV1#revision}
 	Revision *string `field:"optional" json:"revision" yaml:"revision"`
 }
 

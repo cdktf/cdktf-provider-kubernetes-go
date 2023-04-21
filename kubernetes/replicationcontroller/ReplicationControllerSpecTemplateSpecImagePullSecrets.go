@@ -4,7 +4,7 @@ package replicationcontroller
 type ReplicationControllerSpecTemplateSpecImagePullSecrets struct {
 	// Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/replication_controller#name ReplicationController#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/replication_controller#name ReplicationController#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

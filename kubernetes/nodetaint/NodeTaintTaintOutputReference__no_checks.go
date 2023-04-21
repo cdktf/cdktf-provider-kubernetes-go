@@ -60,7 +60,7 @@ func (j *jsiiProxy_NodeTaintTaintOutputReference) validateSetEffectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_NodeTaintTaintOutputReference) validateSetInternalValueParameters(val *NodeTaintTaint) error {
+func (j *jsiiProxy_NodeTaintTaintOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_NodeTaintTaintOutputReference) validateSetValueParameters(val
 	return nil
 }
 
-func validateNewNodeTaintTaintOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNodeTaintTaintOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

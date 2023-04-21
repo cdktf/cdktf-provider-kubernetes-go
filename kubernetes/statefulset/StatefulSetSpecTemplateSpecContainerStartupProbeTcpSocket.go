@@ -6,7 +6,7 @@ type StatefulSetSpecTemplateSpecContainerStartupProbeTcpSocket struct {
 	//
 	// Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/stateful_set#port StatefulSet#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/stateful_set#port StatefulSet#port}
 	Port *string `field:"required" json:"port" yaml:"port"`
 }
 

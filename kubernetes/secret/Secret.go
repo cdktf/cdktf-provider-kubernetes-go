@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/secret kubernetes_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/secret kubernetes_secret}.
 type Secret interface {
 	cdktf.TerraformResource
 	BinaryData() *map[string]*string
@@ -453,7 +453,7 @@ func (j *jsiiProxy_Secret) WaitForServiceAccountTokenInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/secret kubernetes_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/secret kubernetes_secret} Resource.
 func NewSecret(scope constructs.Construct, id *string, config *SecretConfig) Secret {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewSecret(scope constructs.Construct, id *string, config *SecretConfig) Sec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/secret kubernetes_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/secret kubernetes_secret} Resource.
 func NewSecret_Override(s Secret, scope constructs.Construct, id *string, config *SecretConfig) {
 	_init_.Initialize()
 

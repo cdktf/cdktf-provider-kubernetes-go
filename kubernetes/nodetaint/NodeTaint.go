@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/node_taint kubernetes_node_taint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/node_taint kubernetes_node_taint}.
 type NodeTaint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,8 +63,8 @@ type NodeTaint interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	Taint() NodeTaintTaintOutputReference
-	TaintInput() *NodeTaintTaint
+	Taint() NodeTaintTaintList
+	TaintInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -97,7 +97,7 @@ type NodeTaint interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMetadata(value *NodeTaintMetadata)
-	PutTaint(value *NodeTaintTaint)
+	PutTaint(value interface{})
 	ResetFieldManager()
 	ResetForce()
 	ResetId()
@@ -329,8 +329,8 @@ func (j *jsiiProxy_NodeTaint) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NodeTaint) Taint() NodeTaintTaintOutputReference {
-	var returns NodeTaintTaintOutputReference
+func (j *jsiiProxy_NodeTaint) Taint() NodeTaintTaintList {
+	var returns NodeTaintTaintList
 	_jsii_.Get(
 		j,
 		"taint",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_NodeTaint) Taint() NodeTaintTaintOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_NodeTaint) TaintInput() *NodeTaintTaint {
-	var returns *NodeTaintTaint
+func (j *jsiiProxy_NodeTaint) TaintInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"taintInput",
@@ -380,7 +380,7 @@ func (j *jsiiProxy_NodeTaint) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/node_taint kubernetes_node_taint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/node_taint kubernetes_node_taint} Resource.
 func NewNodeTaint(scope constructs.Construct, id *string, config *NodeTaintConfig) NodeTaint {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewNodeTaint(scope constructs.Construct, id *string, config *NodeTaintConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/node_taint kubernetes_node_taint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/node_taint kubernetes_node_taint} Resource.
 func NewNodeTaint_Override(n NodeTaint, scope constructs.Construct, id *string, config *NodeTaintConfig) {
 	_init_.Initialize()
 
@@ -787,7 +787,7 @@ func (n *jsiiProxy_NodeTaint) PutMetadata(value *NodeTaintMetadata) {
 	)
 }
 
-func (n *jsiiProxy_NodeTaint) PutTaint(value *NodeTaintTaint) {
+func (n *jsiiProxy_NodeTaint) PutTaint(value interface{}) {
 	if err := n.validatePutTaintParameters(value); err != nil {
 		panic(err)
 	}

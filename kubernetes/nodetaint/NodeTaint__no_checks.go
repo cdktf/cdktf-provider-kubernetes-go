@@ -56,7 +56,7 @@ func (n *jsiiProxy_NodeTaint) validatePutMetadataParameters(value *NodeTaintMeta
 	return nil
 }
 
-func (n *jsiiProxy_NodeTaint) validatePutTaintParameters(value *NodeTaintTaint) error {
+func (n *jsiiProxy_NodeTaint) validatePutTaintParameters(value interface{}) error {
 	return nil
 }
 
