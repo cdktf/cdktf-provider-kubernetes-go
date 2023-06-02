@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/data-sources/storage_class_v1 kubernetes_storage_class_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/data-sources/storage_class_v1 kubernetes_storage_class_v1}.
 type DataKubernetesStorageClassV1 interface {
 	cdktf.TerraformDataSource
 	AllowedTopologies() DataKubernetesStorageClassV1AllowedTopologiesOutputReference
@@ -436,7 +436,7 @@ func (j *jsiiProxy_DataKubernetesStorageClassV1) VolumeBindingModeInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/data-sources/storage_class_v1 kubernetes_storage_class_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/data-sources/storage_class_v1 kubernetes_storage_class_v1} Data Source.
 func NewDataKubernetesStorageClassV1(scope constructs.Construct, id *string, config *DataKubernetesStorageClassV1Config) DataKubernetesStorageClassV1 {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewDataKubernetesStorageClassV1(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/data-sources/storage_class_v1 kubernetes_storage_class_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/data-sources/storage_class_v1 kubernetes_storage_class_v1} Data Source.
 func NewDataKubernetesStorageClassV1_Override(d DataKubernetesStorageClassV1, scope constructs.Construct, id *string, config *DataKubernetesStorageClassV1Config) {
 	_init_.Initialize()
 

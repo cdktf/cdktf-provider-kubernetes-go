@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/endpoints kubernetes_endpoints}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/endpoints kubernetes_endpoints}.
 type Endpoints interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_Endpoints) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/endpoints kubernetes_endpoints} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/endpoints kubernetes_endpoints} Resource.
 func NewEndpoints(scope constructs.Construct, id *string, config *EndpointsConfig) Endpoints {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewEndpoints(scope constructs.Construct, id *string, config *EndpointsConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/endpoints kubernetes_endpoints} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/endpoints kubernetes_endpoints} Resource.
 func NewEndpoints_Override(e Endpoints, scope constructs.Construct, id *string, config *EndpointsConfig) {
 	_init_.Initialize()
 

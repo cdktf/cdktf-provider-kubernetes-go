@@ -6,11 +6,11 @@ type ValidatingWebhookConfigurationV1WebhookClientConfig struct {
 	//
 	// If unspecified, system trust roots on the apiserver are used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/validating_webhook_configuration_v1#ca_bundle ValidatingWebhookConfigurationV1#ca_bundle}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/validating_webhook_configuration_v1#ca_bundle ValidatingWebhookConfigurationV1#ca_bundle}
 	CaBundle *string `field:"optional" json:"caBundle" yaml:"caBundle"`
 	// service block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/validating_webhook_configuration_v1#service ValidatingWebhookConfigurationV1#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/validating_webhook_configuration_v1#service ValidatingWebhookConfigurationV1#service}
 	Service *ValidatingWebhookConfigurationV1WebhookClientConfigService `field:"optional" json:"service" yaml:"service"`
 	// `url` gives the location of the webhook, in standard URL form (`scheme://host:port/path`).
 	//
@@ -26,7 +26,7 @@ type ValidatingWebhookConfigurationV1WebhookClientConfig struct {
 	//
 	// Attempting to use a user or basic auth e.g. "user:password@" is not allowed. Fragments ("#...") and query parameters ("?...") are not allowed, either.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/validating_webhook_configuration_v1#url ValidatingWebhookConfigurationV1#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/validating_webhook_configuration_v1#url ValidatingWebhookConfigurationV1#url}
 	Url *string `field:"optional" json:"url" yaml:"url"`
 }
 

@@ -4,7 +4,7 @@ package replicationcontroller
 type ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm struct {
 	// match_expressions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 	MatchExpressions interface{} `field:"optional" json:"matchExpressions" yaml:"matchExpressions"`
 }
 

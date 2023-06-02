@@ -6,7 +6,7 @@ type PodV1SpecInitContainerReadinessProbeTcpSocket struct {
 	//
 	// Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/pod_v1#port PodV1#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/pod_v1#port PodV1#port}
 	Port *string `field:"required" json:"port" yaml:"port"`
 }
 

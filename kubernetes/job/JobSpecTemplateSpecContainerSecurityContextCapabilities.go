@@ -4,11 +4,11 @@ package job
 type JobSpecTemplateSpecContainerSecurityContextCapabilities struct {
 	// Added capabilities.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/job#add Job#add}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/job#add Job#add}
 	Add *[]*string `field:"optional" json:"add" yaml:"add"`
 	// Removed capabilities.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/job#drop Job#drop}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/job#drop Job#drop}
 	Drop *[]*string `field:"optional" json:"drop" yaml:"drop"`
 }
 

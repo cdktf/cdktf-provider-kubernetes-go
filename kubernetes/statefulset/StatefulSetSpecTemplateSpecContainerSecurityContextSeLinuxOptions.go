@@ -4,19 +4,19 @@ package statefulset
 type StatefulSetSpecTemplateSpecContainerSecurityContextSeLinuxOptions struct {
 	// Level is SELinux level label that applies to the container.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/stateful_set#level StatefulSet#level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/stateful_set#level StatefulSet#level}
 	Level *string `field:"optional" json:"level" yaml:"level"`
 	// Role is a SELinux role label that applies to the container.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/stateful_set#role StatefulSet#role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/stateful_set#role StatefulSet#role}
 	Role *string `field:"optional" json:"role" yaml:"role"`
 	// Type is a SELinux type label that applies to the container.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/stateful_set#type StatefulSet#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/stateful_set#type StatefulSet#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 	// User is a SELinux user label that applies to the container.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/stateful_set#user StatefulSet#user}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/stateful_set#user StatefulSet#user}
 	User *string `field:"optional" json:"user" yaml:"user"`
 }
 

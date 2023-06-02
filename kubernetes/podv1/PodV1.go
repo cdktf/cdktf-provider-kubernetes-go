@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/pod_v1 kubernetes_pod_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/pod_v1 kubernetes_pod_v1}.
 type PodV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_PodV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/pod_v1 kubernetes_pod_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/pod_v1 kubernetes_pod_v1} Resource.
 func NewPodV1(scope constructs.Construct, id *string, config *PodV1Config) PodV1 {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewPodV1(scope constructs.Construct, id *string, config *PodV1Config) PodV1
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/pod_v1 kubernetes_pod_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/pod_v1 kubernetes_pod_v1} Resource.
 func NewPodV1_Override(p PodV1, scope constructs.Construct, id *string, config *PodV1Config) {
 	_init_.Initialize()
 

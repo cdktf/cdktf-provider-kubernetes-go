@@ -4,7 +4,7 @@ package pod
 type PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference struct {
 	// match_expressions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/pod#match_expressions Pod#match_expressions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/pod#match_expressions Pod#match_expressions}
 	MatchExpressions interface{} `field:"optional" json:"matchExpressions" yaml:"matchExpressions"`
 }
 

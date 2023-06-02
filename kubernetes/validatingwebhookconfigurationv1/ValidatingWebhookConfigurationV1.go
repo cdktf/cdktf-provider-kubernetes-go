@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/validating_webhook_configuration_v1 kubernetes_validating_webhook_configuration_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/validating_webhook_configuration_v1 kubernetes_validating_webhook_configuration_v1}.
 type ValidatingWebhookConfigurationV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1) WebhookInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/validating_webhook_configuration_v1 kubernetes_validating_webhook_configuration_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/validating_webhook_configuration_v1 kubernetes_validating_webhook_configuration_v1} Resource.
 func NewValidatingWebhookConfigurationV1(scope constructs.Construct, id *string, config *ValidatingWebhookConfigurationV1Config) ValidatingWebhookConfigurationV1 {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewValidatingWebhookConfigurationV1(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.20.0/docs/resources/validating_webhook_configuration_v1 kubernetes_validating_webhook_configuration_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/validating_webhook_configuration_v1 kubernetes_validating_webhook_configuration_v1} Resource.
 func NewValidatingWebhookConfigurationV1_Override(v ValidatingWebhookConfigurationV1, scope constructs.Construct, id *string, config *ValidatingWebhookConfigurationV1Config) {
 	_init_.Initialize()
 
