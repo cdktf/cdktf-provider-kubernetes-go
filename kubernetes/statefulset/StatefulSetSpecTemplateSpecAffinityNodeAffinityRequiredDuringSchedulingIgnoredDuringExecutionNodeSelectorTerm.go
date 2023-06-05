@@ -4,7 +4,7 @@ package statefulset
 type StatefulSetSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm struct {
 	// match_expressions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/stateful_set#match_expressions StatefulSet#match_expressions}
 	MatchExpressions interface{} `field:"optional" json:"matchExpressions" yaml:"matchExpressions"`
 }
 

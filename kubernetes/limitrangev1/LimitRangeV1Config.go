@@ -21,16 +21,16 @@ type LimitRangeV1Config struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// metadata block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/limit_range_v1#metadata LimitRangeV1#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/limit_range_v1#metadata LimitRangeV1#metadata}
 	Metadata *LimitRangeV1Metadata `field:"required" json:"metadata" yaml:"metadata"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/limit_range_v1#id LimitRangeV1#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/limit_range_v1#id LimitRangeV1#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// spec block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/limit_range_v1#spec LimitRangeV1#spec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/limit_range_v1#spec LimitRangeV1#spec}
 	Spec *LimitRangeV1Spec `field:"optional" json:"spec" yaml:"spec"`
 }
 

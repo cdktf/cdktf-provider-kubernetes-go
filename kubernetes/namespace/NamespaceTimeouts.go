@@ -2,7 +2,7 @@ package namespace
 
 
 type NamespaceTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/namespace#delete Namespace#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/namespace#delete Namespace#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

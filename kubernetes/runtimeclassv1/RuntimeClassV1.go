@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/runtime_class_v1 kubernetes_runtime_class_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/runtime_class_v1 kubernetes_runtime_class_v1}.
 type RuntimeClassV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_RuntimeClassV1) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/runtime_class_v1 kubernetes_runtime_class_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/runtime_class_v1 kubernetes_runtime_class_v1} Resource.
 func NewRuntimeClassV1(scope constructs.Construct, id *string, config *RuntimeClassV1Config) RuntimeClassV1 {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewRuntimeClassV1(scope constructs.Construct, id *string, config *RuntimeCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.0/docs/resources/runtime_class_v1 kubernetes_runtime_class_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/runtime_class_v1 kubernetes_runtime_class_v1} Resource.
 func NewRuntimeClassV1_Override(r RuntimeClassV1, scope constructs.Construct, id *string, config *RuntimeClassV1Config) {
 	_init_.Initialize()
 
