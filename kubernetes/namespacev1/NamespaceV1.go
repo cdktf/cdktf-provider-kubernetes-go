@@ -2,14 +2,14 @@ package namespacev1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/namespacev1/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/namespacev1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/namespace_v1 kubernetes_namespace_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/namespace_v1 kubernetes_namespace_v1}.
 type NamespaceV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,6 +65,9 @@ type NamespaceV1 interface {
 	TerraformResourceType() *string
 	Timeouts() NamespaceV1TimeoutsOutputReference
 	TimeoutsInput() interface{}
+	WaitForDefaultServiceAccount() interface{}
+	SetWaitForDefaultServiceAccount(val interface{})
+	WaitForDefaultServiceAccountInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -97,6 +100,7 @@ type NamespaceV1 interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
+	ResetWaitForDefaultServiceAccount()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -332,8 +336,28 @@ func (j *jsiiProxy_NamespaceV1) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NamespaceV1) WaitForDefaultServiceAccount() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"waitForDefaultServiceAccount",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/namespace_v1 kubernetes_namespace_v1} Resource.
+func (j *jsiiProxy_NamespaceV1) WaitForDefaultServiceAccountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"waitForDefaultServiceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/namespace_v1 kubernetes_namespace_v1} Resource.
 func NewNamespaceV1(scope constructs.Construct, id *string, config *NamespaceV1Config) NamespaceV1 {
 	_init_.Initialize()
 
@@ -351,7 +375,7 @@ func NewNamespaceV1(scope constructs.Construct, id *string, config *NamespaceV1C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/namespace_v1 kubernetes_namespace_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/namespace_v1 kubernetes_namespace_v1} Resource.
 func NewNamespaceV1_Override(n NamespaceV1, scope constructs.Construct, id *string, config *NamespaceV1Config) {
 	_init_.Initialize()
 
@@ -437,6 +461,17 @@ func (j *jsiiProxy_NamespaceV1)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NamespaceV1)SetWaitForDefaultServiceAccount(val interface{}) {
+	if err := j.validateSetWaitForDefaultServiceAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"waitForDefaultServiceAccount",
 		val,
 	)
 }
@@ -749,6 +784,14 @@ func (n *jsiiProxy_NamespaceV1) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NamespaceV1) ResetWaitForDefaultServiceAccount() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetWaitForDefaultServiceAccount",
 		nil, // no parameters
 	)
 }

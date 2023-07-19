@@ -2,14 +2,14 @@ package datakubernetesnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/datakubernetesnamespace/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/datakubernetesnamespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/data-sources/namespace kubernetes_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/data-sources/namespace kubernetes_namespace}.
 type DataKubernetesNamespace interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataKubernetesNamespace) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/data-sources/namespace kubernetes_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/data-sources/namespace kubernetes_namespace} Data Source.
 func NewDataKubernetesNamespace(scope constructs.Construct, id *string, config *DataKubernetesNamespaceConfig) DataKubernetesNamespace {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataKubernetesNamespace(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/data-sources/namespace kubernetes_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/data-sources/namespace kubernetes_namespace} Data Source.
 func NewDataKubernetesNamespace_Override(d DataKubernetesNamespace, scope constructs.Construct, id *string, config *DataKubernetesNamespaceConfig) {
 	_init_.Initialize()
 

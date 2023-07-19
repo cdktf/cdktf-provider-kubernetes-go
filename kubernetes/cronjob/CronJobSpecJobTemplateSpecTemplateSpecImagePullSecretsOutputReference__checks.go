@@ -165,6 +165,8 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecImagePullSecretsOutputR
 
 func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecImagePullSecretsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CronJobSpecJobTemplateSpecTemplateSpecImagePullSecrets:
 		val := val.(*CronJobSpecJobTemplateSpecTemplateSpecImagePullSecrets)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecImagePullSecretsOutputR
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CronJobSpecJobTemplateSpecTemplateSpecImagePullSecrets, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CronJobSpecJobTemplateSpecTemplateSpecImagePullSecrets; received %#v (a %T)", val, val)
 		}
 	}
 

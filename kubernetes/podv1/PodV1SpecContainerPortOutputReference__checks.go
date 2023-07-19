@@ -189,6 +189,8 @@ func (j *jsiiProxy_PodV1SpecContainerPortOutputReference) validateSetHostPortPar
 
 func (j *jsiiProxy_PodV1SpecContainerPortOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *PodV1SpecContainerPort:
 		val := val.(*PodV1SpecContainerPort)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -200,11 +202,9 @@ func (j *jsiiProxy_PodV1SpecContainerPortOutputReference) validateSetInternalVal
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *PodV1SpecContainerPort, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PodV1SpecContainerPort; received %#v (a %T)", val, val)
 		}
 	}
 

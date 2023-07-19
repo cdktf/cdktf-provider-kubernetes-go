@@ -2,14 +2,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/provider/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs kubernetes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs kubernetes}.
 type KubernetesProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -83,6 +83,9 @@ type KubernetesProvider interface {
 	TerraformProviderSource() *string
 	// Experimental.
 	TerraformResourceType() *string
+	TlsServerName() *string
+	SetTlsServerName(val *string)
+	TlsServerNameInput() *string
 	Token() *string
 	SetToken(val *string)
 	TokenInput() *string
@@ -114,6 +117,7 @@ type KubernetesProvider interface {
 	ResetOverrideLogicalId()
 	ResetPassword()
 	ResetProxyUrl()
+	ResetTlsServerName()
 	ResetToken()
 	ResetUsername()
 	SynthesizeAttributes() *map[string]interface{}
@@ -571,6 +575,26 @@ func (j *jsiiProxy_KubernetesProvider) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesProvider) TlsServerName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsServerName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesProvider) TlsServerNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsServerNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesProvider) Token() *string {
 	var returns *string
 	_jsii_.Get(
@@ -612,7 +636,7 @@ func (j *jsiiProxy_KubernetesProvider) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs kubernetes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs kubernetes} Resource.
 func NewKubernetesProvider(scope constructs.Construct, id *string, config *KubernetesProviderConfig) KubernetesProvider {
 	_init_.Initialize()
 
@@ -630,7 +654,7 @@ func NewKubernetesProvider(scope constructs.Construct, id *string, config *Kuber
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs kubernetes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs kubernetes} Resource.
 func NewKubernetesProvider_Override(k KubernetesProvider, scope constructs.Construct, id *string, config *KubernetesProviderConfig) {
 	_init_.Initialize()
 
@@ -782,6 +806,14 @@ func (j *jsiiProxy_KubernetesProvider)SetProxyUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"proxyUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesProvider)SetTlsServerName(val *string) {
+	_jsii_.Set(
+		j,
+		"tlsServerName",
 		val,
 	)
 }
@@ -1048,6 +1080,14 @@ func (k *jsiiProxy_KubernetesProvider) ResetProxyUrl() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetProxyUrl",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesProvider) ResetTlsServerName() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetTlsServerName",
 		nil, // no parameters
 	)
 }

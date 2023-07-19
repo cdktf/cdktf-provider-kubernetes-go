@@ -173,6 +173,8 @@ func (j *jsiiProxy_ClusterRoleBindingV1SubjectOutputReference) validateSetComple
 
 func (j *jsiiProxy_ClusterRoleBindingV1SubjectOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ClusterRoleBindingV1Subject:
 		val := val.(*ClusterRoleBindingV1Subject)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_ClusterRoleBindingV1SubjectOutputReference) validateSetIntern
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ClusterRoleBindingV1Subject, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ClusterRoleBindingV1Subject; received %#v (a %T)", val, val)
 		}
 	}
 

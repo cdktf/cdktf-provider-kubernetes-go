@@ -227,6 +227,8 @@ func (j *jsiiProxy_PersistentVolumeV1SpecNodeAffinityRequiredNodeSelectorTermOut
 
 func (j *jsiiProxy_PersistentVolumeV1SpecNodeAffinityRequiredNodeSelectorTermOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *PersistentVolumeV1SpecNodeAffinityRequiredNodeSelectorTerm:
 		val := val.(*PersistentVolumeV1SpecNodeAffinityRequiredNodeSelectorTerm)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -238,11 +240,9 @@ func (j *jsiiProxy_PersistentVolumeV1SpecNodeAffinityRequiredNodeSelectorTermOut
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *PersistentVolumeV1SpecNodeAffinityRequiredNodeSelectorTerm, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PersistentVolumeV1SpecNodeAffinityRequiredNodeSelectorTerm; received %#v (a %T)", val, val)
 		}
 	}
 

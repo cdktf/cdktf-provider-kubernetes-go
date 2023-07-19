@@ -218,6 +218,8 @@ func (j *jsiiProxy_PodSpecContainerLifecyclePostStartOutputReference) validateSe
 
 func (j *jsiiProxy_PodSpecContainerLifecyclePostStartOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *PodSpecContainerLifecyclePostStart:
 		val := val.(*PodSpecContainerLifecyclePostStart)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -229,11 +231,9 @@ func (j *jsiiProxy_PodSpecContainerLifecyclePostStartOutputReference) validateSe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *PodSpecContainerLifecyclePostStart, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PodSpecContainerLifecyclePostStart; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -6,7 +6,7 @@ type CertificateSigningRequestV1Spec struct {
 	//
 	// When serialized as JSON or YAML, the data is additionally base64-encoded.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/certificate_signing_request_v1#request CertificateSigningRequestV1#request}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/certificate_signing_request_v1#request CertificateSigningRequestV1#request}
 	Request *string `field:"required" json:"request" yaml:"request"`
 	// signerName indicates the requested signer, and is a qualified name.
 	//
@@ -30,7 +30,7 @@ type CertificateSigningRequestV1Spec struct {
 	// 5. Expiration/certificate lifetime: whether it is fixed by the signer, configurable by the admin.
 	// 6. Whether or not requests for CA certificates are allowed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/certificate_signing_request_v1#signer_name CertificateSigningRequestV1#signer_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/certificate_signing_request_v1#signer_name CertificateSigningRequestV1#signer_name}
 	SignerName *string `field:"required" json:"signerName" yaml:"signerName"`
 	// usages specifies a set of key usages requested in the issued certificate.
 	//
@@ -47,7 +47,7 @@ type CertificateSigningRequestV1Spec struct {
 	// "ipsec end system", "ipsec tunnel", "ipsec user",
 	// "timestamping", "ocsp signing", "microsoft sgc", "netscape sgc"
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/certificate_signing_request_v1#usages CertificateSigningRequestV1#usages}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/certificate_signing_request_v1#usages CertificateSigningRequestV1#usages}
 	Usages *[]*string `field:"optional" json:"usages" yaml:"usages"`
 }
 

@@ -196,6 +196,8 @@ func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecOutputReference) val
 
 func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataKubernetesPersistentVolumeClaimV1Spec:
 		val := val.(*DataKubernetesPersistentVolumeClaimV1Spec)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -207,11 +209,9 @@ func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecOutputReference) val
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataKubernetesPersistentVolumeClaimV1Spec, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataKubernetesPersistentVolumeClaimV1Spec; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -165,6 +165,8 @@ func (j *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressi
 
 func (j *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressions:
 		val := val.(*StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressions)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressi
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressions, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressions; received %#v (a %T)", val, val)
 		}
 	}
 

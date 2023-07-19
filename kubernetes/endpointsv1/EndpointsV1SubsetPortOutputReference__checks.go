@@ -165,6 +165,8 @@ func (j *jsiiProxy_EndpointsV1SubsetPortOutputReference) validateSetComplexObjec
 
 func (j *jsiiProxy_EndpointsV1SubsetPortOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *EndpointsV1SubsetPort:
 		val := val.(*EndpointsV1SubsetPort)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_EndpointsV1SubsetPortOutputReference) validateSetInternalValu
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *EndpointsV1SubsetPort, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *EndpointsV1SubsetPort; received %#v (a %T)", val, val)
 		}
 	}
 

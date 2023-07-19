@@ -181,6 +181,8 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) v
 
 func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ValidatingWebhookConfigurationV1WebhookRule:
 		val := val.(*ValidatingWebhookConfigurationV1WebhookRule)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference) v
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ValidatingWebhookConfigurationV1WebhookRule, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ValidatingWebhookConfigurationV1WebhookRule; received %#v (a %T)", val, val)
 		}
 	}
 

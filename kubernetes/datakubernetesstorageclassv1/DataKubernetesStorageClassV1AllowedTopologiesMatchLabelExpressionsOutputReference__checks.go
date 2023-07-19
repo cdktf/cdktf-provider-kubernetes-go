@@ -165,6 +165,8 @@ func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpres
 
 func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpressions:
 		val := val.(*DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpressions)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpres
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpressions, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpressions; received %#v (a %T)", val, val)
 		}
 	}
 

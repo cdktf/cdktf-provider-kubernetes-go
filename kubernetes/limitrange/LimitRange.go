@@ -2,14 +2,14 @@ package limitrange
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/limitrange/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/limitrange/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/limit_range kubernetes_limit_range}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/limit_range kubernetes_limit_range}.
 type LimitRange interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_LimitRange) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/limit_range kubernetes_limit_range} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/limit_range kubernetes_limit_range} Resource.
 func NewLimitRange(scope constructs.Construct, id *string, config *LimitRangeConfig) LimitRange {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewLimitRange(scope constructs.Construct, id *string, config *LimitRangeCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/limit_range kubernetes_limit_range} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/limit_range kubernetes_limit_range} Resource.
 func NewLimitRange_Override(l LimitRange, scope constructs.Construct, id *string, config *LimitRangeConfig) {
 	_init_.Initialize()
 

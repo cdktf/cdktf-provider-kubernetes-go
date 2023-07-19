@@ -165,6 +165,8 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSock
 
 func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocket:
 		val := val.(*DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocket)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSock
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocket, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeTcpSocket; received %#v (a %T)", val, val)
 		}
 	}
 

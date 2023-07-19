@@ -165,6 +165,8 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorScaleUpPolicyOutputRefer
 
 func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorScaleUpPolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *HorizontalPodAutoscalerV2SpecBehaviorScaleUpPolicy:
 		val := val.(*HorizontalPodAutoscalerV2SpecBehaviorScaleUpPolicy)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorScaleUpPolicyOutputRefer
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *HorizontalPodAutoscalerV2SpecBehaviorScaleUpPolicy, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *HorizontalPodAutoscalerV2SpecBehaviorScaleUpPolicy; received %#v (a %T)", val, val)
 		}
 	}
 

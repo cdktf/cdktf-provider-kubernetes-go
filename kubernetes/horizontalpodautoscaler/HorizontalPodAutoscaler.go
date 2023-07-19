@@ -2,14 +2,14 @@ package horizontalpodautoscaler
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/horizontalpodautoscaler/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/horizontalpodautoscaler/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/horizontal_pod_autoscaler kubernetes_horizontal_pod_autoscaler}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/horizontal_pod_autoscaler kubernetes_horizontal_pod_autoscaler}.
 type HorizontalPodAutoscaler interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_HorizontalPodAutoscaler) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/horizontal_pod_autoscaler kubernetes_horizontal_pod_autoscaler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/horizontal_pod_autoscaler kubernetes_horizontal_pod_autoscaler} Resource.
 func NewHorizontalPodAutoscaler(scope constructs.Construct, id *string, config *HorizontalPodAutoscalerConfig) HorizontalPodAutoscaler {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewHorizontalPodAutoscaler(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/horizontal_pod_autoscaler kubernetes_horizontal_pod_autoscaler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/horizontal_pod_autoscaler kubernetes_horizontal_pod_autoscaler} Resource.
 func NewHorizontalPodAutoscaler_Override(h HorizontalPodAutoscaler, scope constructs.Construct, id *string, config *HorizontalPodAutoscalerConfig) {
 	_init_.Initialize()
 

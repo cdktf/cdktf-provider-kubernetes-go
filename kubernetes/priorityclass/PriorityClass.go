@@ -2,14 +2,14 @@ package priorityclass
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/priorityclass/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/priorityclass/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/priority_class kubernetes_priority_class}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/priority_class kubernetes_priority_class}.
 type PriorityClass interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_PriorityClass) ValueInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/priority_class kubernetes_priority_class} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/priority_class kubernetes_priority_class} Resource.
 func NewPriorityClass(scope constructs.Construct, id *string, config *PriorityClassConfig) PriorityClass {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewPriorityClass(scope constructs.Construct, id *string, config *PriorityCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/priority_class kubernetes_priority_class} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/priority_class kubernetes_priority_class} Resource.
 func NewPriorityClass_Override(p PriorityClass, scope constructs.Construct, id *string, config *PriorityClassConfig) {
 	_init_.Initialize()
 

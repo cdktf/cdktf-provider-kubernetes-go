@@ -387,6 +387,8 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference) validateSetImagePullPolicy
 
 func (j *jsiiProxy_PodV1SpecContainerOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *PodV1SpecContainer:
 		val := val.(*PodV1SpecContainer)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -398,11 +400,9 @@ func (j *jsiiProxy_PodV1SpecContainerOutputReference) validateSetInternalValuePa
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *PodV1SpecContainer, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PodV1SpecContainer; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -227,6 +227,8 @@ func (j *jsiiProxy_NetworkPolicyV1SpecIngressOutputReference) validateSetComplex
 
 func (j *jsiiProxy_NetworkPolicyV1SpecIngressOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *NetworkPolicyV1SpecIngress:
 		val := val.(*NetworkPolicyV1SpecIngress)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -238,11 +240,9 @@ func (j *jsiiProxy_NetworkPolicyV1SpecIngressOutputReference) validateSetInterna
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *NetworkPolicyV1SpecIngress, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *NetworkPolicyV1SpecIngress; received %#v (a %T)", val, val)
 		}
 	}
 

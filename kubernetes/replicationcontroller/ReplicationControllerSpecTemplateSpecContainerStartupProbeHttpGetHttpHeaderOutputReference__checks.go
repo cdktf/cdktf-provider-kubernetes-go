@@ -165,6 +165,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerStartupProbeHtt
 
 func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader:
 		val := val.(*ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerStartupProbeHtt
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ReplicationControllerSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader; received %#v (a %T)", val, val)
 		}
 	}
 

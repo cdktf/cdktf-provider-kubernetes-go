@@ -2,14 +2,14 @@ package datakubernetesstorageclass
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/datakubernetesstorageclass/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/datakubernetesstorageclass/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/data-sources/storage_class kubernetes_storage_class}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/data-sources/storage_class kubernetes_storage_class}.
 type DataKubernetesStorageClass interface {
 	cdktf.TerraformDataSource
 	AllowedTopologies() DataKubernetesStorageClassAllowedTopologiesOutputReference
@@ -436,7 +436,7 @@ func (j *jsiiProxy_DataKubernetesStorageClass) VolumeBindingModeInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/data-sources/storage_class kubernetes_storage_class} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/data-sources/storage_class kubernetes_storage_class} Data Source.
 func NewDataKubernetesStorageClass(scope constructs.Construct, id *string, config *DataKubernetesStorageClassConfig) DataKubernetesStorageClass {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewDataKubernetesStorageClass(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/data-sources/storage_class kubernetes_storage_class} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/data-sources/storage_class kubernetes_storage_class} Data Source.
 func NewDataKubernetesStorageClass_Override(d DataKubernetesStorageClass, scope constructs.Construct, id *string, config *DataKubernetesStorageClassConfig) {
 	_init_.Initialize()
 

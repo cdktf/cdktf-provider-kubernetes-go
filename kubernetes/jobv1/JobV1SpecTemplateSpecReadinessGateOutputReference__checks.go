@@ -173,6 +173,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecReadinessGateOutputReference) validateSe
 
 func (j *jsiiProxy_JobV1SpecTemplateSpecReadinessGateOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *JobV1SpecTemplateSpecReadinessGate:
 		val := val.(*JobV1SpecTemplateSpecReadinessGate)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecReadinessGateOutputReference) validateSe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *JobV1SpecTemplateSpecReadinessGate, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *JobV1SpecTemplateSpecReadinessGate; received %#v (a %T)", val, val)
 		}
 	}
 

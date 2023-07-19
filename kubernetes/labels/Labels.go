@@ -2,14 +2,14 @@ package labels
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/labels/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/labels/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/labels kubernetes_labels}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/labels kubernetes_labels}.
 type Labels interface {
 	cdktf.TerraformResource
 	ApiVersion() *string
@@ -426,7 +426,7 @@ func (j *jsiiProxy_Labels) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/labels kubernetes_labels} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/labels kubernetes_labels} Resource.
 func NewLabels(scope constructs.Construct, id *string, config *LabelsConfig) Labels {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewLabels(scope constructs.Construct, id *string, config *LabelsConfig) Lab
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/labels kubernetes_labels} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/labels kubernetes_labels} Resource.
 func NewLabels_Override(l Labels, scope constructs.Construct, id *string, config *LabelsConfig) {
 	_init_.Initialize()
 

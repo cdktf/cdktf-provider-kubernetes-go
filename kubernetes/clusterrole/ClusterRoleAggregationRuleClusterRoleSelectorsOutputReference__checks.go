@@ -196,6 +196,8 @@ func (j *jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference
 
 func (j *jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ClusterRoleAggregationRuleClusterRoleSelectors:
 		val := val.(*ClusterRoleAggregationRuleClusterRoleSelectors)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -207,11 +209,9 @@ func (j *jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ClusterRoleAggregationRuleClusterRoleSelectors, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ClusterRoleAggregationRuleClusterRoleSelectors; received %#v (a %T)", val, val)
 		}
 	}
 

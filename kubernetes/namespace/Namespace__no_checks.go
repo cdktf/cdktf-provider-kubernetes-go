@@ -92,6 +92,10 @@ func (j *jsiiProxy_Namespace) validateSetProvisionersParameters(val *[]interface
 	return nil
 }
 
+func (j *jsiiProxy_Namespace) validateSetWaitForDefaultServiceAccountParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewNamespaceParameters(scope constructs.Construct, id *string, config *NamespaceConfig) error {
 	return nil
 }

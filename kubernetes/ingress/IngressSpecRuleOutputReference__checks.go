@@ -184,6 +184,8 @@ func (j *jsiiProxy_IngressSpecRuleOutputReference) validateSetHostParameters(val
 
 func (j *jsiiProxy_IngressSpecRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *IngressSpecRule:
 		val := val.(*IngressSpecRule)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -195,11 +197,9 @@ func (j *jsiiProxy_IngressSpecRuleOutputReference) validateSetInternalValueParam
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *IngressSpecRule, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *IngressSpecRule; received %#v (a %T)", val, val)
 		}
 	}
 

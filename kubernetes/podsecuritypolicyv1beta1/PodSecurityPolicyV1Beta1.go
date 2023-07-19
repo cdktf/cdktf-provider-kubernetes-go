@@ -2,14 +2,14 @@ package podsecuritypolicyv1beta1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/podsecuritypolicyv1beta1/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/podsecuritypolicyv1beta1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/pod_security_policy_v1beta1 kubernetes_pod_security_policy_v1beta1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/pod_security_policy_v1beta1 kubernetes_pod_security_policy_v1beta1}.
 type PodSecurityPolicyV1Beta1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/pod_security_policy_v1beta1 kubernetes_pod_security_policy_v1beta1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/pod_security_policy_v1beta1 kubernetes_pod_security_policy_v1beta1} Resource.
 func NewPodSecurityPolicyV1Beta1(scope constructs.Construct, id *string, config *PodSecurityPolicyV1Beta1Config) PodSecurityPolicyV1Beta1 {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewPodSecurityPolicyV1Beta1(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/pod_security_policy_v1beta1 kubernetes_pod_security_policy_v1beta1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/pod_security_policy_v1beta1 kubernetes_pod_security_policy_v1beta1} Resource.
 func NewPodSecurityPolicyV1Beta1_Override(p PodSecurityPolicyV1Beta1, scope constructs.Construct, id *string, config *PodSecurityPolicyV1Beta1Config) {
 	_init_.Initialize()
 

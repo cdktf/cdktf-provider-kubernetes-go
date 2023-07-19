@@ -176,6 +176,8 @@ func (j *jsiiProxy_PodV1SpecInitContainerEnvOutputReference) validateSetComplexO
 
 func (j *jsiiProxy_PodV1SpecInitContainerEnvOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *PodV1SpecInitContainerEnv:
 		val := val.(*PodV1SpecInitContainerEnv)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -187,11 +189,9 @@ func (j *jsiiProxy_PodV1SpecInitContainerEnvOutputReference) validateSetInternal
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *PodV1SpecInitContainerEnv, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PodV1SpecInitContainerEnv; received %#v (a %T)", val, val)
 		}
 	}
 

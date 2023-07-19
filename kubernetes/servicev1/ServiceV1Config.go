@@ -21,24 +21,24 @@ type ServiceV1Config struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// metadata block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/service_v1#metadata ServiceV1#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/service_v1#metadata ServiceV1#metadata}
 	Metadata *ServiceV1Metadata `field:"required" json:"metadata" yaml:"metadata"`
 	// spec block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/service_v1#spec ServiceV1#spec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/service_v1#spec ServiceV1#spec}
 	Spec *ServiceV1Spec `field:"required" json:"spec" yaml:"spec"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/service_v1#id ServiceV1#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/service_v1#id ServiceV1#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/service_v1#timeouts ServiceV1#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/service_v1#timeouts ServiceV1#timeouts}
 	Timeouts *ServiceV1Timeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Terraform will wait for the load balancer to have at least 1 endpoint before considering the resource created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/service_v1#wait_for_load_balancer ServiceV1#wait_for_load_balancer}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/service_v1#wait_for_load_balancer ServiceV1#wait_for_load_balancer}
 	WaitForLoadBalancer interface{} `field:"optional" json:"waitForLoadBalancer" yaml:"waitForLoadBalancer"`
 }
 

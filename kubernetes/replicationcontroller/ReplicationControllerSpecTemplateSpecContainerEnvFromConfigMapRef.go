@@ -4,11 +4,11 @@ package replicationcontroller
 type ReplicationControllerSpecTemplateSpecContainerEnvFromConfigMapRef struct {
 	// Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/replication_controller#name ReplicationController#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/replication_controller#name ReplicationController#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Specify whether the ConfigMap must be defined.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/replication_controller#optional ReplicationController#optional}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/replication_controller#optional ReplicationController#optional}
 	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
 }
 

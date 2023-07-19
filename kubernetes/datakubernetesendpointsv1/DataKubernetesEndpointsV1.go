@@ -2,14 +2,14 @@ package datakubernetesendpointsv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/datakubernetesendpointsv1/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/datakubernetesendpointsv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/data-sources/endpoints_v1 kubernetes_endpoints_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/data-sources/endpoints_v1 kubernetes_endpoints_v1}.
 type DataKubernetesEndpointsV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -305,7 +305,7 @@ func (j *jsiiProxy_DataKubernetesEndpointsV1) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/data-sources/endpoints_v1 kubernetes_endpoints_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/data-sources/endpoints_v1 kubernetes_endpoints_v1} Data Source.
 func NewDataKubernetesEndpointsV1(scope constructs.Construct, id *string, config *DataKubernetesEndpointsV1Config) DataKubernetesEndpointsV1 {
 	_init_.Initialize()
 
@@ -323,7 +323,7 @@ func NewDataKubernetesEndpointsV1(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/data-sources/endpoints_v1 kubernetes_endpoints_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/data-sources/endpoints_v1 kubernetes_endpoints_v1} Data Source.
 func NewDataKubernetesEndpointsV1_Override(d DataKubernetesEndpointsV1, scope constructs.Construct, id *string, config *DataKubernetesEndpointsV1Config) {
 	_init_.Initialize()
 

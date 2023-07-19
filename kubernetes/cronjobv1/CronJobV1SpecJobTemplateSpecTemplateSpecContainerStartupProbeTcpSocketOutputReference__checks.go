@@ -165,6 +165,8 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe
 
 func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocket:
 		val := val.(*CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocket)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocket, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocket; received %#v (a %T)", val, val)
 		}
 	}
 

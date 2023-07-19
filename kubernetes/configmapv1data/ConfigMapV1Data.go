@@ -2,14 +2,14 @@ package configmapv1data
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/configmapv1data/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/configmapv1data/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/config_map_v1_data kubernetes_config_map_v1_data}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/config_map_v1_data kubernetes_config_map_v1_data}.
 type ConfigMapV1Data interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_ConfigMapV1Data) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/config_map_v1_data kubernetes_config_map_v1_data} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/config_map_v1_data kubernetes_config_map_v1_data} Resource.
 func NewConfigMapV1Data(scope constructs.Construct, id *string, config *ConfigMapV1DataConfig) ConfigMapV1Data {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewConfigMapV1Data(scope constructs.Construct, id *string, config *ConfigMa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/config_map_v1_data kubernetes_config_map_v1_data} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/config_map_v1_data kubernetes_config_map_v1_data} Resource.
 func NewConfigMapV1Data_Override(c ConfigMapV1Data, scope constructs.Construct, id *string, config *ConfigMapV1DataConfig) {
 	_init_.Initialize()
 

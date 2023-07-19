@@ -196,6 +196,8 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretOutput
 
 func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecret:
 		val := val.(*StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecret)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -207,11 +209,9 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretOutput
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecret, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecret; received %#v (a %T)", val, val)
 		}
 	}
 

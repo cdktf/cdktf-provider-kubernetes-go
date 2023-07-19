@@ -196,6 +196,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSe
 
 func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecret:
 		val := val.(*ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecret)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -207,11 +209,9 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecret, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesSecret; received %#v (a %T)", val, val)
 		}
 	}
 

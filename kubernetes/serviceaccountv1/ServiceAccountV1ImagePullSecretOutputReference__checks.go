@@ -165,6 +165,8 @@ func (j *jsiiProxy_ServiceAccountV1ImagePullSecretOutputReference) validateSetCo
 
 func (j *jsiiProxy_ServiceAccountV1ImagePullSecretOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ServiceAccountV1ImagePullSecret:
 		val := val.(*ServiceAccountV1ImagePullSecret)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_ServiceAccountV1ImagePullSecretOutputReference) validateSetIn
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ServiceAccountV1ImagePullSecret, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ServiceAccountV1ImagePullSecret; received %#v (a %T)", val, val)
 		}
 	}
 

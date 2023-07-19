@@ -187,6 +187,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOu
 
 func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItems:
 		val := val.(*JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItems)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -198,11 +200,9 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOu
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItems, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItems; received %#v (a %T)", val, val)
 		}
 	}
 

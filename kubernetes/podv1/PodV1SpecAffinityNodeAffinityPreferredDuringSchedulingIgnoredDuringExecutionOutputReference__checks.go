@@ -176,6 +176,8 @@ func (j *jsiiProxy_PodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnored
 
 func (j *jsiiProxy_PodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *PodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution:
 		val := val.(*PodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -187,11 +189,9 @@ func (j *jsiiProxy_PodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnored
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *PodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution; received %#v (a %T)", val, val)
 		}
 	}
 

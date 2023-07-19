@@ -165,6 +165,8 @@ func (j *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsOutputRefere
 
 func (j *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *PodDisruptionBudgetV1SpecSelectorMatchExpressions:
 		val := val.(*PodDisruptionBudgetV1SpecSelectorMatchExpressions)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsOutputRefere
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *PodDisruptionBudgetV1SpecSelectorMatchExpressions, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PodDisruptionBudgetV1SpecSelectorMatchExpressions; received %#v (a %T)", val, val)
 		}
 	}
 

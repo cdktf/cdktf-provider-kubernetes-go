@@ -173,6 +173,8 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesOutputRefe
 
 func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CronJobV1SpecJobTemplateSpecTemplateSpecHostAliases:
 		val := val.(*CronJobV1SpecJobTemplateSpecTemplateSpecHostAliases)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesOutputRefe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CronJobV1SpecJobTemplateSpecTemplateSpecHostAliases, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CronJobV1SpecJobTemplateSpecTemplateSpecHostAliases; received %#v (a %T)", val, val)
 		}
 	}
 

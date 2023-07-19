@@ -165,6 +165,8 @@ func (j *jsiiProxy_PodV1SpecDnsConfigOptionOutputReference) validateSetComplexOb
 
 func (j *jsiiProxy_PodV1SpecDnsConfigOptionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *PodV1SpecDnsConfigOption:
 		val := val.(*PodV1SpecDnsConfigOption)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_PodV1SpecDnsConfigOptionOutputReference) validateSetInternalV
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *PodV1SpecDnsConfigOption, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PodV1SpecDnsConfigOption; received %#v (a %T)", val, val)
 		}
 	}
 

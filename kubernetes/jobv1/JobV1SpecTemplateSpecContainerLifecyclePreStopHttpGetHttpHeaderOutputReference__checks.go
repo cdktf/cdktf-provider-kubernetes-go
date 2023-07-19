@@ -165,6 +165,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHead
 
 func (j *jsiiProxy_JobV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *JobV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader:
 		val := val.(*JobV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHead
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *JobV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *JobV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader; received %#v (a %T)", val, val)
 		}
 	}
 

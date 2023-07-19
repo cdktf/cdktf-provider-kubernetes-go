@@ -2,14 +2,14 @@ package datakubernetesservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/datakubernetesservice/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/datakubernetesservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/data-sources/service kubernetes_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/data-sources/service kubernetes_service}.
 type DataKubernetesService interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataKubernetesService) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/data-sources/service kubernetes_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/data-sources/service kubernetes_service} Data Source.
 func NewDataKubernetesService(scope constructs.Construct, id *string, config *DataKubernetesServiceConfig) DataKubernetesService {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDataKubernetesService(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/data-sources/service kubernetes_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/data-sources/service kubernetes_service} Data Source.
 func NewDataKubernetesService_Override(d DataKubernetesService, scope constructs.Construct, id *string, config *DataKubernetesServiceConfig) {
 	_init_.Initialize()
 

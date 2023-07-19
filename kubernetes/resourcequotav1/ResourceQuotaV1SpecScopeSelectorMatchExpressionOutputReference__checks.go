@@ -165,6 +165,8 @@ func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReferenc
 
 func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ResourceQuotaV1SpecScopeSelectorMatchExpression:
 		val := val.(*ResourceQuotaV1SpecScopeSelectorMatchExpression)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorMatchExpressionOutputReferenc
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ResourceQuotaV1SpecScopeSelectorMatchExpression, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ResourceQuotaV1SpecScopeSelectorMatchExpression; received %#v (a %T)", val, val)
 		}
 	}
 

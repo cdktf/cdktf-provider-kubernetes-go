@@ -2,14 +2,14 @@ package datakubernetesconfigmapv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/datakubernetesconfigmapv1/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/datakubernetesconfigmapv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/data-sources/config_map_v1 kubernetes_config_map_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/data-sources/config_map_v1 kubernetes_config_map_v1}.
 type DataKubernetesConfigMapV1 interface {
 	cdktf.TerraformDataSource
 	BinaryData() cdktf.StringMap
@@ -327,7 +327,7 @@ func (j *jsiiProxy_DataKubernetesConfigMapV1) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/data-sources/config_map_v1 kubernetes_config_map_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/data-sources/config_map_v1 kubernetes_config_map_v1} Data Source.
 func NewDataKubernetesConfigMapV1(scope constructs.Construct, id *string, config *DataKubernetesConfigMapV1Config) DataKubernetesConfigMapV1 {
 	_init_.Initialize()
 
@@ -345,7 +345,7 @@ func NewDataKubernetesConfigMapV1(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/data-sources/config_map_v1 kubernetes_config_map_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/data-sources/config_map_v1 kubernetes_config_map_v1} Data Source.
 func NewDataKubernetesConfigMapV1_Override(d DataKubernetesConfigMapV1, scope constructs.Construct, id *string, config *DataKubernetesConfigMapV1Config) {
 	_init_.Initialize()
 

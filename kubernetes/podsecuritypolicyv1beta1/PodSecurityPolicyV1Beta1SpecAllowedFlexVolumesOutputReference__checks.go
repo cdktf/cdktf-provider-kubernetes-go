@@ -173,6 +173,8 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesOutputReference
 
 func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *PodSecurityPolicyV1Beta1SpecAllowedFlexVolumes:
 		val := val.(*PodSecurityPolicyV1Beta1SpecAllowedFlexVolumes)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesOutputReference
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *PodSecurityPolicyV1Beta1SpecAllowedFlexVolumes, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PodSecurityPolicyV1Beta1SpecAllowedFlexVolumes; received %#v (a %T)", val, val)
 		}
 	}
 

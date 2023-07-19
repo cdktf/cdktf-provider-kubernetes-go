@@ -2,14 +2,14 @@ package serviceaccountv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/serviceaccountv1/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/serviceaccountv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/service_account_v1 kubernetes_service_account_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/service_account_v1 kubernetes_service_account_v1}.
 type ServiceAccountV1 interface {
 	cdktf.TerraformResource
 	AutomountServiceAccountToken() interface{}
@@ -416,7 +416,7 @@ func (j *jsiiProxy_ServiceAccountV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/service_account_v1 kubernetes_service_account_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/service_account_v1 kubernetes_service_account_v1} Resource.
 func NewServiceAccountV1(scope constructs.Construct, id *string, config *ServiceAccountV1Config) ServiceAccountV1 {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewServiceAccountV1(scope constructs.Construct, id *string, config *Service
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.21.1/docs/resources/service_account_v1 kubernetes_service_account_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/service_account_v1 kubernetes_service_account_v1} Resource.
 func NewServiceAccountV1_Override(s ServiceAccountV1, scope constructs.Construct, id *string, config *ServiceAccountV1Config) {
 	_init_.Initialize()
 

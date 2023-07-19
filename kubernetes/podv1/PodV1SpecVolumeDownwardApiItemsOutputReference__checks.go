@@ -187,6 +187,8 @@ func (j *jsiiProxy_PodV1SpecVolumeDownwardApiItemsOutputReference) validateSetCo
 
 func (j *jsiiProxy_PodV1SpecVolumeDownwardApiItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *PodV1SpecVolumeDownwardApiItems:
 		val := val.(*PodV1SpecVolumeDownwardApiItems)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -198,11 +200,9 @@ func (j *jsiiProxy_PodV1SpecVolumeDownwardApiItemsOutputReference) validateSetIn
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *PodV1SpecVolumeDownwardApiItems, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PodV1SpecVolumeDownwardApiItems; received %#v (a %T)", val, val)
 		}
 	}
 

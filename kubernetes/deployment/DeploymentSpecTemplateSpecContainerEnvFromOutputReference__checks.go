@@ -187,6 +187,8 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) va
 
 func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DeploymentSpecTemplateSpecContainerEnvFrom:
 		val := val.(*DeploymentSpecTemplateSpecContainerEnvFrom)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -198,11 +200,9 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) va
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DeploymentSpecTemplateSpecContainerEnvFrom, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DeploymentSpecTemplateSpecContainerEnvFrom; received %#v (a %T)", val, val)
 		}
 	}
 

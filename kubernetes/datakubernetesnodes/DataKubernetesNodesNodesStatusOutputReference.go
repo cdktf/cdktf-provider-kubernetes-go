@@ -2,14 +2,15 @@ package datakubernetesnodes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/jsii"
 
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v7/datakubernetesnodes/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v8/datakubernetesnodes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type DataKubernetesNodesNodesStatusOutputReference interface {
 	cdktf.ComplexObject
+	Addresses() DataKubernetesNodesNodesStatusAddressesList
 	Allocatable() cdktf.StringMap
 	Capacity() cdktf.StringMap
 	// the index of the complex object in a list.
@@ -77,6 +78,16 @@ type DataKubernetesNodesNodesStatusOutputReference interface {
 // The jsii proxy struct for DataKubernetesNodesNodesStatusOutputReference
 type jsiiProxy_DataKubernetesNodesNodesStatusOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataKubernetesNodesNodesStatusOutputReference) Addresses() DataKubernetesNodesNodesStatusAddressesList {
+	var returns DataKubernetesNodesNodesStatusAddressesList
+	_jsii_.Get(
+		j,
+		"addresses",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataKubernetesNodesNodesStatusOutputReference) Allocatable() cdktf.StringMap {

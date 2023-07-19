@@ -196,6 +196,8 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecTopologySpreadConstraintOutputRe
 
 func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *StatefulSetV1SpecTemplateSpecTopologySpreadConstraint:
 		val := val.(*StatefulSetV1SpecTemplateSpecTopologySpreadConstraint)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -207,11 +209,9 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecTopologySpreadConstraintOutputRe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *StatefulSetV1SpecTemplateSpecTopologySpreadConstraint, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *StatefulSetV1SpecTemplateSpecTopologySpreadConstraint; received %#v (a %T)", val, val)
 		}
 	}
 

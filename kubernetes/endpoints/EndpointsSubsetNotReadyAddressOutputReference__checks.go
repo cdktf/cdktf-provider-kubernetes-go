@@ -173,6 +173,8 @@ func (j *jsiiProxy_EndpointsSubsetNotReadyAddressOutputReference) validateSetHos
 
 func (j *jsiiProxy_EndpointsSubsetNotReadyAddressOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *EndpointsSubsetNotReadyAddress:
 		val := val.(*EndpointsSubsetNotReadyAddress)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_EndpointsSubsetNotReadyAddressOutputReference) validateSetInt
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *EndpointsSubsetNotReadyAddress, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *EndpointsSubsetNotReadyAddress; received %#v (a %T)", val, val)
 		}
 	}
 

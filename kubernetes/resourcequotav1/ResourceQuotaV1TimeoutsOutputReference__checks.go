@@ -173,6 +173,8 @@ func (j *jsiiProxy_ResourceQuotaV1TimeoutsOutputReference) validateSetCreatePara
 
 func (j *jsiiProxy_ResourceQuotaV1TimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ResourceQuotaV1Timeouts:
 		val := val.(*ResourceQuotaV1Timeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_ResourceQuotaV1TimeoutsOutputReference) validateSetInternalVa
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ResourceQuotaV1Timeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ResourceQuotaV1Timeouts; received %#v (a %T)", val, val)
 		}
 	}
 

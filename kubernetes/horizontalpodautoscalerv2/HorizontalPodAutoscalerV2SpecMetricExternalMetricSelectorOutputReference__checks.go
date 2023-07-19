@@ -196,6 +196,8 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricExternalMetricSelectorOutp
 
 func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricExternalMetricSelectorOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *HorizontalPodAutoscalerV2SpecMetricExternalMetricSelector:
 		val := val.(*HorizontalPodAutoscalerV2SpecMetricExternalMetricSelector)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -207,11 +209,9 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricExternalMetricSelectorOutp
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *HorizontalPodAutoscalerV2SpecMetricExternalMetricSelector, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *HorizontalPodAutoscalerV2SpecMetricExternalMetricSelector; received %#v (a %T)", val, val)
 		}
 	}
 
