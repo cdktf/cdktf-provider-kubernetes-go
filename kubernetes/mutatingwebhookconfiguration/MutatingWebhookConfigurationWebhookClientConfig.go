@@ -6,11 +6,11 @@ type MutatingWebhookConfigurationWebhookClientConfig struct {
 	//
 	// If unspecified, system trust roots on the apiserver are used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/mutating_webhook_configuration#ca_bundle MutatingWebhookConfiguration#ca_bundle}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/mutating_webhook_configuration#ca_bundle MutatingWebhookConfiguration#ca_bundle}
 	CaBundle *string `field:"optional" json:"caBundle" yaml:"caBundle"`
 	// service block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/mutating_webhook_configuration#service MutatingWebhookConfiguration#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/mutating_webhook_configuration#service MutatingWebhookConfiguration#service}
 	Service *MutatingWebhookConfigurationWebhookClientConfigService `field:"optional" json:"service" yaml:"service"`
 	// `url` gives the location of the webhook, in standard URL form (`scheme://host:port/path`).
 	//
@@ -26,7 +26,7 @@ type MutatingWebhookConfigurationWebhookClientConfig struct {
 	//
 	// Attempting to use a user or basic auth e.g. "user:password@" is not allowed. Fragments ("#...") and query parameters ("?...") are not allowed, either.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/mutating_webhook_configuration#url MutatingWebhookConfiguration#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/mutating_webhook_configuration#url MutatingWebhookConfiguration#url}
 	Url *string `field:"optional" json:"url" yaml:"url"`
 }
 

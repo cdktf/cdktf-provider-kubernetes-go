@@ -80,6 +80,10 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeOutputReference) validatePutEmptyDir
 	return nil
 }
 
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeOutputReference) validatePutEphemeralParameters(value *JobSpecTemplateSpecVolumeEphemeral) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobSpecTemplateSpecVolumeOutputReference) validatePutFcParameters(value *JobSpecTemplateSpecVolumeFc) error {
 	return nil
 }

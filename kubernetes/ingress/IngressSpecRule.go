@@ -4,7 +4,7 @@ package ingress
 type IngressSpecRule struct {
 	// http block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/ingress#http Ingress#http}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/ingress#http Ingress#http}
 	Http *IngressSpecRuleHttp `field:"required" json:"http" yaml:"http"`
 	// Host is the fully qualified domain name of a network host, as defined by RFC 3986.
 	//
@@ -17,7 +17,7 @@ type IngressSpecRule struct {
 	//
 	// Host can be "precise" which is a domain name without the terminating dot of a network host (e.g. "foo.bar.com") or "wildcard", which is a domain name prefixed with a single wildcard label (e.g. "*.foo.com"). The wildcard character '*' must appear by itself as the first DNS label and matches only a single label. You cannot have a wildcard label by itself (e.g. Host == "*"). Requests will be matched against the Host field in the following way: 1. If Host is precise, the request matches this rule if the http host header is equal to Host. 2. If Host is a wildcard, then the request matches this rule if the http host header is to equal to the suffix (removing the first label) of the wildcard rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/ingress#host Ingress#host}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/ingress#host Ingress#host}
 	Host *string `field:"optional" json:"host" yaml:"host"`
 }
 

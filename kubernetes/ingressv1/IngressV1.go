@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/ingress_v1 kubernetes_ingress_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/ingress_v1 kubernetes_ingress_v1}.
 type IngressV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_IngressV1) WaitForLoadBalancerInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/ingress_v1 kubernetes_ingress_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/ingress_v1 kubernetes_ingress_v1} Resource.
 func NewIngressV1(scope constructs.Construct, id *string, config *IngressV1Config) IngressV1 {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewIngressV1(scope constructs.Construct, id *string, config *IngressV1Confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/ingress_v1 kubernetes_ingress_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/ingress_v1 kubernetes_ingress_v1} Resource.
 func NewIngressV1_Override(i IngressV1, scope constructs.Construct, id *string, config *IngressV1Config) {
 	_init_.Initialize()
 

@@ -80,6 +80,10 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) validatePutEm
 	return nil
 }
 
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) validatePutEphemeralParameters(value *DaemonsetSpecTemplateSpecVolumeEphemeral) error {
+	return nil
+}
+
 func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) validatePutFcParameters(value *DaemonsetSpecTemplateSpecVolumeFc) error {
 	return nil
 }

@@ -4,29 +4,29 @@ package statefulset
 type StatefulSetSpecVolumeClaimTemplateMetadata struct {
 	// An unstructured key value map stored with the persistent volume claim that may be used to store arbitrary metadata.
 	//
-	// More info: http://kubernetes.io/docs/user-guide/annotations
+	// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/stateful_set#annotations StatefulSet#annotations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/stateful_set#annotations StatefulSet#annotations}
 	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
 	// Prefix, used by the server, to generate a unique name ONLY IF the `name` field has not been provided.
 	//
-	// This value will also be combined with a unique suffix. Read more: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
+	// This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/stateful_set#generate_name StatefulSet#generate_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/stateful_set#generate_name StatefulSet#generate_name}
 	GenerateName *string `field:"optional" json:"generateName" yaml:"generateName"`
 	// Map of string keys and values that can be used to organize and categorize (scope and select) the persistent volume claim.
 	//
-	// May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels
+	// May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/stateful_set#labels StatefulSet#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/stateful_set#labels StatefulSet#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
-	// Name of the persistent volume claim, must be unique. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names.
+	// Name of the persistent volume claim, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/stateful_set#name StatefulSet#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/stateful_set#name StatefulSet#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Namespace defines the space within which name of the persistent volume claim must be unique.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/stateful_set#namespace StatefulSet#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

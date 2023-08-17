@@ -43,6 +43,8 @@ type CronJobSpecJobTemplateSpecTemplateSpecVolumeOutputReference interface {
 	DownwardApiInput() *CronJobSpecJobTemplateSpecTemplateSpecVolumeDownwardApi
 	EmptyDir() CronJobSpecJobTemplateSpecTemplateSpecVolumeEmptyDirOutputReference
 	EmptyDirInput() *CronJobSpecJobTemplateSpecTemplateSpecVolumeEmptyDir
+	Ephemeral() CronJobSpecJobTemplateSpecTemplateSpecVolumeEphemeralOutputReference
+	EphemeralInput() *CronJobSpecJobTemplateSpecTemplateSpecVolumeEphemeral
 	Fc() CronJobSpecJobTemplateSpecTemplateSpecVolumeFcOutputReference
 	FcInput() *CronJobSpecJobTemplateSpecTemplateSpecVolumeFc
 	FlexVolume() CronJobSpecJobTemplateSpecTemplateSpecVolumeFlexVolumeOutputReference
@@ -125,6 +127,7 @@ type CronJobSpecJobTemplateSpecTemplateSpecVolumeOutputReference interface {
 	PutCsi(value *CronJobSpecJobTemplateSpecTemplateSpecVolumeCsi)
 	PutDownwardApi(value *CronJobSpecJobTemplateSpecTemplateSpecVolumeDownwardApi)
 	PutEmptyDir(value *CronJobSpecJobTemplateSpecTemplateSpecVolumeEmptyDir)
+	PutEphemeral(value *CronJobSpecJobTemplateSpecTemplateSpecVolumeEphemeral)
 	PutFc(value *CronJobSpecJobTemplateSpecTemplateSpecVolumeFc)
 	PutFlexVolume(value *CronJobSpecJobTemplateSpecTemplateSpecVolumeFlexVolume)
 	PutFlocker(value *CronJobSpecJobTemplateSpecTemplateSpecVolumeFlocker)
@@ -151,6 +154,7 @@ type CronJobSpecJobTemplateSpecTemplateSpecVolumeOutputReference interface {
 	ResetCsi()
 	ResetDownwardApi()
 	ResetEmptyDir()
+	ResetEphemeral()
 	ResetFc()
 	ResetFlexVolume()
 	ResetFlocker()
@@ -389,6 +393,26 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeOutputReference) 
 	_jsii_.Get(
 		j,
 		"emptyDirInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeOutputReference) Ephemeral() CronJobSpecJobTemplateSpecTemplateSpecVolumeEphemeralOutputReference {
+	var returns CronJobSpecJobTemplateSpecTemplateSpecVolumeEphemeralOutputReference
+	_jsii_.Get(
+		j,
+		"ephemeral",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeOutputReference) EphemeralInput() *CronJobSpecJobTemplateSpecTemplateSpecVolumeEphemeral {
+	var returns *CronJobSpecJobTemplateSpecTemplateSpecVolumeEphemeral
+	_jsii_.Get(
+		j,
+		"ephemeralInput",
 		&returns,
 	)
 	return returns
@@ -1173,6 +1197,17 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeOutputReference) 
 	)
 }
 
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeOutputReference) PutEphemeral(value *CronJobSpecJobTemplateSpecTemplateSpecVolumeEphemeral) {
+	if err := c.validatePutEphemeralParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putEphemeral",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeOutputReference) PutFc(value *CronJobSpecJobTemplateSpecTemplateSpecVolumeFc) {
 	if err := c.validatePutFcParameters(value); err != nil {
 		panic(err)
@@ -1428,6 +1463,14 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeOutputReference) 
 	_jsii_.InvokeVoid(
 		c,
 		"resetEmptyDir",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeOutputReference) ResetEphemeral() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEphemeral",
 		nil, // no parameters
 	)
 }

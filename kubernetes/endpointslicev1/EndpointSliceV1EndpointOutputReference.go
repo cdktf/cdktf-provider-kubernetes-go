@@ -79,6 +79,7 @@ type EndpointSliceV1EndpointOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCondition(value *EndpointSliceV1EndpointCondition)
 	PutTargetRef(value *EndpointSliceV1EndpointTargetRef)
+	ResetCondition()
 	ResetHostname()
 	ResetNodeName()
 	ResetTargetRef()
@@ -620,6 +621,14 @@ func (e *jsiiProxy_EndpointSliceV1EndpointOutputReference) PutTargetRef(value *E
 		e,
 		"putTargetRef",
 		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EndpointSliceV1EndpointOutputReference) ResetCondition() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetCondition",
+		nil, // no parameters
 	)
 }
 

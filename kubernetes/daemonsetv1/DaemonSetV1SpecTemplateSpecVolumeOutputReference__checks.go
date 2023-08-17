@@ -189,6 +189,17 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) validatePut
 	return nil
 }
 
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) validatePutEphemeralParameters(value *DaemonSetV1SpecTemplateSpecVolumeEphemeral) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeOutputReference) validatePutFcParameters(value *DaemonSetV1SpecTemplateSpecVolumeFc) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

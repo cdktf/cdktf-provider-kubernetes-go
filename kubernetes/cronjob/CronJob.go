@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/cron_job kubernetes_cron_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/cron_job kubernetes_cron_job}.
 type CronJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_CronJob) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/cron_job kubernetes_cron_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/cron_job kubernetes_cron_job} Resource.
 func NewCronJob(scope constructs.Construct, id *string, config *CronJobConfig) CronJob {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewCronJob(scope constructs.Construct, id *string, config *CronJobConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/cron_job kubernetes_cron_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/cron_job kubernetes_cron_job} Resource.
 func NewCronJob_Override(c CronJob, scope constructs.Construct, id *string, config *CronJobConfig) {
 	_init_.Initialize()
 

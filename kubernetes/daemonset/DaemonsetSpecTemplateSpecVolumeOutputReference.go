@@ -43,6 +43,8 @@ type DaemonsetSpecTemplateSpecVolumeOutputReference interface {
 	DownwardApiInput() *DaemonsetSpecTemplateSpecVolumeDownwardApi
 	EmptyDir() DaemonsetSpecTemplateSpecVolumeEmptyDirOutputReference
 	EmptyDirInput() *DaemonsetSpecTemplateSpecVolumeEmptyDir
+	Ephemeral() DaemonsetSpecTemplateSpecVolumeEphemeralOutputReference
+	EphemeralInput() *DaemonsetSpecTemplateSpecVolumeEphemeral
 	Fc() DaemonsetSpecTemplateSpecVolumeFcOutputReference
 	FcInput() *DaemonsetSpecTemplateSpecVolumeFc
 	FlexVolume() DaemonsetSpecTemplateSpecVolumeFlexVolumeOutputReference
@@ -125,6 +127,7 @@ type DaemonsetSpecTemplateSpecVolumeOutputReference interface {
 	PutCsi(value *DaemonsetSpecTemplateSpecVolumeCsi)
 	PutDownwardApi(value *DaemonsetSpecTemplateSpecVolumeDownwardApi)
 	PutEmptyDir(value *DaemonsetSpecTemplateSpecVolumeEmptyDir)
+	PutEphemeral(value *DaemonsetSpecTemplateSpecVolumeEphemeral)
 	PutFc(value *DaemonsetSpecTemplateSpecVolumeFc)
 	PutFlexVolume(value *DaemonsetSpecTemplateSpecVolumeFlexVolume)
 	PutFlocker(value *DaemonsetSpecTemplateSpecVolumeFlocker)
@@ -151,6 +154,7 @@ type DaemonsetSpecTemplateSpecVolumeOutputReference interface {
 	ResetCsi()
 	ResetDownwardApi()
 	ResetEmptyDir()
+	ResetEphemeral()
 	ResetFc()
 	ResetFlexVolume()
 	ResetFlocker()
@@ -389,6 +393,26 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) EmptyDirInput
 	_jsii_.Get(
 		j,
 		"emptyDirInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) Ephemeral() DaemonsetSpecTemplateSpecVolumeEphemeralOutputReference {
+	var returns DaemonsetSpecTemplateSpecVolumeEphemeralOutputReference
+	_jsii_.Get(
+		j,
+		"ephemeral",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) EphemeralInput() *DaemonsetSpecTemplateSpecVolumeEphemeral {
+	var returns *DaemonsetSpecTemplateSpecVolumeEphemeral
+	_jsii_.Get(
+		j,
+		"ephemeralInput",
 		&returns,
 	)
 	return returns
@@ -1173,6 +1197,17 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) PutEmptyDir(v
 	)
 }
 
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) PutEphemeral(value *DaemonsetSpecTemplateSpecVolumeEphemeral) {
+	if err := d.validatePutEphemeralParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putEphemeral",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) PutFc(value *DaemonsetSpecTemplateSpecVolumeFc) {
 	if err := d.validatePutFcParameters(value); err != nil {
 		panic(err)
@@ -1428,6 +1463,14 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) ResetEmptyDir
 	_jsii_.InvokeVoid(
 		d,
 		"resetEmptyDir",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeOutputReference) ResetEphemeral() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEphemeral",
 		nil, // no parameters
 	)
 }

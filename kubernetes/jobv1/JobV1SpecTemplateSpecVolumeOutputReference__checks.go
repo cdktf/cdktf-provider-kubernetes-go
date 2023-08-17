@@ -189,6 +189,17 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) validatePutEmptyD
 	return nil
 }
 
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) validatePutEphemeralParameters(value *JobV1SpecTemplateSpecVolumeEphemeral) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeOutputReference) validatePutFcParameters(value *JobV1SpecTemplateSpecVolumeFc) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

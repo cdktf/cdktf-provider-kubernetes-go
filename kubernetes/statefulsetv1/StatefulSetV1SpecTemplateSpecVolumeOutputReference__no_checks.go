@@ -80,6 +80,10 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeOutputReference) validateP
 	return nil
 }
 
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeOutputReference) validatePutEphemeralParameters(value *StatefulSetV1SpecTemplateSpecVolumeEphemeral) error {
+	return nil
+}
+
 func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeOutputReference) validatePutFcParameters(value *StatefulSetV1SpecTemplateSpecVolumeFc) error {
 	return nil
 }

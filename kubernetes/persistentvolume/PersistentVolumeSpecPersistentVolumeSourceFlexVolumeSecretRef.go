@@ -2,13 +2,13 @@ package persistentvolume
 
 
 type PersistentVolumeSpecPersistentVolumeSourceFlexVolumeSecretRef struct {
-	// Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names.
+	// Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/persistent_volume#name PersistentVolume#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/persistent_volume#name PersistentVolume#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names.
+	// Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/persistent_volume#namespace PersistentVolume#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/persistent_volume#namespace PersistentVolume#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

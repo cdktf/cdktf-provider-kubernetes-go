@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/pod kubernetes_pod}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/pod kubernetes_pod}.
 type Pod interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -59,6 +59,9 @@ type Pod interface {
 	RawOverrides() interface{}
 	Spec() PodSpecOutputReference
 	SpecInput() *PodSpec
+	TargetState() *[]*string
+	SetTargetState(val *[]*string)
+	TargetStateInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -99,6 +102,7 @@ type Pod interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTargetState()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -305,6 +309,26 @@ func (j *jsiiProxy_Pod) SpecInput() *PodSpec {
 	return returns
 }
 
+func (j *jsiiProxy_Pod) TargetState() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pod) TargetStateInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"targetStateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Pod) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_Pod) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/pod kubernetes_pod} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/pod kubernetes_pod} Resource.
 func NewPod(scope constructs.Construct, id *string, config *PodConfig) Pod {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewPod(scope constructs.Construct, id *string, config *PodConfig) Pod {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/pod kubernetes_pod} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/pod kubernetes_pod} Resource.
 func NewPod_Override(p Pod, scope constructs.Construct, id *string, config *PodConfig) {
 	_init_.Initialize()
 
@@ -460,6 +484,17 @@ func (j *jsiiProxy_Pod)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Pod)SetTargetState(val *[]*string) {
+	if err := j.validateSetTargetStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetState",
 		val,
 	)
 }
@@ -775,6 +810,14 @@ func (p *jsiiProxy_Pod) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Pod) ResetTargetState() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTargetState",
 		nil, // no parameters
 	)
 }

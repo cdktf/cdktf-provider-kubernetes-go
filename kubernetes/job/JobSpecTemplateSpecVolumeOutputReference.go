@@ -43,6 +43,8 @@ type JobSpecTemplateSpecVolumeOutputReference interface {
 	DownwardApiInput() *JobSpecTemplateSpecVolumeDownwardApi
 	EmptyDir() JobSpecTemplateSpecVolumeEmptyDirOutputReference
 	EmptyDirInput() *JobSpecTemplateSpecVolumeEmptyDir
+	Ephemeral() JobSpecTemplateSpecVolumeEphemeralOutputReference
+	EphemeralInput() *JobSpecTemplateSpecVolumeEphemeral
 	Fc() JobSpecTemplateSpecVolumeFcOutputReference
 	FcInput() *JobSpecTemplateSpecVolumeFc
 	FlexVolume() JobSpecTemplateSpecVolumeFlexVolumeOutputReference
@@ -125,6 +127,7 @@ type JobSpecTemplateSpecVolumeOutputReference interface {
 	PutCsi(value *JobSpecTemplateSpecVolumeCsi)
 	PutDownwardApi(value *JobSpecTemplateSpecVolumeDownwardApi)
 	PutEmptyDir(value *JobSpecTemplateSpecVolumeEmptyDir)
+	PutEphemeral(value *JobSpecTemplateSpecVolumeEphemeral)
 	PutFc(value *JobSpecTemplateSpecVolumeFc)
 	PutFlexVolume(value *JobSpecTemplateSpecVolumeFlexVolume)
 	PutFlocker(value *JobSpecTemplateSpecVolumeFlocker)
@@ -151,6 +154,7 @@ type JobSpecTemplateSpecVolumeOutputReference interface {
 	ResetCsi()
 	ResetDownwardApi()
 	ResetEmptyDir()
+	ResetEphemeral()
 	ResetFc()
 	ResetFlexVolume()
 	ResetFlocker()
@@ -389,6 +393,26 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeOutputReference) EmptyDirInput() *Jo
 	_jsii_.Get(
 		j,
 		"emptyDirInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeOutputReference) Ephemeral() JobSpecTemplateSpecVolumeEphemeralOutputReference {
+	var returns JobSpecTemplateSpecVolumeEphemeralOutputReference
+	_jsii_.Get(
+		j,
+		"ephemeral",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeOutputReference) EphemeralInput() *JobSpecTemplateSpecVolumeEphemeral {
+	var returns *JobSpecTemplateSpecVolumeEphemeral
+	_jsii_.Get(
+		j,
+		"ephemeralInput",
 		&returns,
 	)
 	return returns
@@ -1173,6 +1197,17 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeOutputReference) PutEmptyDir(value *
 	)
 }
 
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeOutputReference) PutEphemeral(value *JobSpecTemplateSpecVolumeEphemeral) {
+	if err := j.validatePutEphemeralParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putEphemeral",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobSpecTemplateSpecVolumeOutputReference) PutFc(value *JobSpecTemplateSpecVolumeFc) {
 	if err := j.validatePutFcParameters(value); err != nil {
 		panic(err)
@@ -1428,6 +1463,14 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeOutputReference) ResetEmptyDir() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetEmptyDir",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeOutputReference) ResetEphemeral() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetEphemeral",
 		nil, // no parameters
 	)
 }

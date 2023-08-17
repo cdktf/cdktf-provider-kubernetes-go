@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs kubernetes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs kubernetes}.
 type KubernetesProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -636,7 +636,7 @@ func (j *jsiiProxy_KubernetesProvider) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs kubernetes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs kubernetes} Resource.
 func NewKubernetesProvider(scope constructs.Construct, id *string, config *KubernetesProviderConfig) KubernetesProvider {
 	_init_.Initialize()
 
@@ -654,7 +654,7 @@ func NewKubernetesProvider(scope constructs.Construct, id *string, config *Kuber
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs kubernetes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs kubernetes} Resource.
 func NewKubernetesProvider_Override(k KubernetesProvider, scope constructs.Construct, id *string, config *KubernetesProviderConfig) {
 	_init_.Initialize()
 

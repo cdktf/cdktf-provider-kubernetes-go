@@ -320,6 +320,14 @@ func (j *jsiiProxy_Pod) validateSetProvisionersParameters(val *[]interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_Pod) validateSetTargetStateParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewPodParameters(scope constructs.Construct, id *string, config *PodConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

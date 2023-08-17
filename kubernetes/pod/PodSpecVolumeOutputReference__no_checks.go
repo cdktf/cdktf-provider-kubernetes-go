@@ -80,6 +80,10 @@ func (p *jsiiProxy_PodSpecVolumeOutputReference) validatePutEmptyDirParameters(v
 	return nil
 }
 
+func (p *jsiiProxy_PodSpecVolumeOutputReference) validatePutEphemeralParameters(value *PodSpecVolumeEphemeral) error {
+	return nil
+}
+
 func (p *jsiiProxy_PodSpecVolumeOutputReference) validatePutFcParameters(value *PodSpecVolumeFc) error {
 	return nil
 }

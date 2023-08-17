@@ -80,6 +80,10 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeOutputReference) v
 	return nil
 }
 
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeOutputReference) validatePutEphemeralParameters(value *ReplicationControllerSpecTemplateSpecVolumeEphemeral) error {
+	return nil
+}
+
 func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeOutputReference) validatePutFcParameters(value *ReplicationControllerSpecTemplateSpecVolumeFc) error {
 	return nil
 }

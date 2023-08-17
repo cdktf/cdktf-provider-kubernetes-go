@@ -189,6 +189,17 @@ func (p *jsiiProxy_PodSpecVolumeOutputReference) validatePutEmptyDirParameters(v
 	return nil
 }
 
+func (p *jsiiProxy_PodSpecVolumeOutputReference) validatePutEphemeralParameters(value *PodSpecVolumeEphemeral) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PodSpecVolumeOutputReference) validatePutFcParameters(value *PodSpecVolumeFc) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

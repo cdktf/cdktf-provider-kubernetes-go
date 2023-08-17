@@ -96,6 +96,10 @@ func (j *jsiiProxy_Pod) validateSetProvisionersParameters(val *[]interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_Pod) validateSetTargetStateParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewPodParameters(scope constructs.Construct, id *string, config *PodConfig) error {
 	return nil
 }

@@ -43,6 +43,8 @@ type PodV1SpecVolumeOutputReference interface {
 	DownwardApiInput() *PodV1SpecVolumeDownwardApi
 	EmptyDir() PodV1SpecVolumeEmptyDirOutputReference
 	EmptyDirInput() *PodV1SpecVolumeEmptyDir
+	Ephemeral() PodV1SpecVolumeEphemeralOutputReference
+	EphemeralInput() *PodV1SpecVolumeEphemeral
 	Fc() PodV1SpecVolumeFcOutputReference
 	FcInput() *PodV1SpecVolumeFc
 	FlexVolume() PodV1SpecVolumeFlexVolumeOutputReference
@@ -125,6 +127,7 @@ type PodV1SpecVolumeOutputReference interface {
 	PutCsi(value *PodV1SpecVolumeCsi)
 	PutDownwardApi(value *PodV1SpecVolumeDownwardApi)
 	PutEmptyDir(value *PodV1SpecVolumeEmptyDir)
+	PutEphemeral(value *PodV1SpecVolumeEphemeral)
 	PutFc(value *PodV1SpecVolumeFc)
 	PutFlexVolume(value *PodV1SpecVolumeFlexVolume)
 	PutFlocker(value *PodV1SpecVolumeFlocker)
@@ -151,6 +154,7 @@ type PodV1SpecVolumeOutputReference interface {
 	ResetCsi()
 	ResetDownwardApi()
 	ResetEmptyDir()
+	ResetEphemeral()
 	ResetFc()
 	ResetFlexVolume()
 	ResetFlocker()
@@ -389,6 +393,26 @@ func (j *jsiiProxy_PodV1SpecVolumeOutputReference) EmptyDirInput() *PodV1SpecVol
 	_jsii_.Get(
 		j,
 		"emptyDirInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecVolumeOutputReference) Ephemeral() PodV1SpecVolumeEphemeralOutputReference {
+	var returns PodV1SpecVolumeEphemeralOutputReference
+	_jsii_.Get(
+		j,
+		"ephemeral",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecVolumeOutputReference) EphemeralInput() *PodV1SpecVolumeEphemeral {
+	var returns *PodV1SpecVolumeEphemeral
+	_jsii_.Get(
+		j,
+		"ephemeralInput",
 		&returns,
 	)
 	return returns
@@ -1173,6 +1197,17 @@ func (p *jsiiProxy_PodV1SpecVolumeOutputReference) PutEmptyDir(value *PodV1SpecV
 	)
 }
 
+func (p *jsiiProxy_PodV1SpecVolumeOutputReference) PutEphemeral(value *PodV1SpecVolumeEphemeral) {
+	if err := p.validatePutEphemeralParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putEphemeral",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PodV1SpecVolumeOutputReference) PutFc(value *PodV1SpecVolumeFc) {
 	if err := p.validatePutFcParameters(value); err != nil {
 		panic(err)
@@ -1428,6 +1463,14 @@ func (p *jsiiProxy_PodV1SpecVolumeOutputReference) ResetEmptyDir() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetEmptyDir",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PodV1SpecVolumeOutputReference) ResetEphemeral() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEphemeral",
 		nil, // no parameters
 	)
 }

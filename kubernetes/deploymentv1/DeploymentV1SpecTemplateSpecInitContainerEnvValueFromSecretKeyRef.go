@@ -4,15 +4,15 @@ package deploymentv1
 type DeploymentV1SpecTemplateSpecInitContainerEnvValueFromSecretKeyRef struct {
 	// The key of the secret to select from. Must be a valid secret key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/deployment_v1#key DeploymentV1#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/deployment_v1#key DeploymentV1#key}
 	Key *string `field:"optional" json:"key" yaml:"key"`
-	// Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names.
+	// Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/deployment_v1#name DeploymentV1#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/deployment_v1#name DeploymentV1#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Specify whether the Secret or its key must be defined.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/deployment_v1#optional DeploymentV1#optional}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/deployment_v1#optional DeploymentV1#optional}
 	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
 }
 

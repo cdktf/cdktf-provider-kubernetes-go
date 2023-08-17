@@ -34,6 +34,7 @@ type DataKubernetesPodV1SpecVolumeOutputReference interface {
 	Csi() DataKubernetesPodV1SpecVolumeCsiList
 	DownwardApi() DataKubernetesPodV1SpecVolumeDownwardApiList
 	EmptyDir() DataKubernetesPodV1SpecVolumeEmptyDirList
+	Ephemeral() DataKubernetesPodV1SpecVolumeEphemeralList
 	Fc() DataKubernetesPodV1SpecVolumeFcList
 	FlexVolume() DataKubernetesPodV1SpecVolumeFlexVolumeList
 	Flocker() DataKubernetesPodV1SpecVolumeFlockerList
@@ -218,6 +219,16 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecVolumeOutputReference) EmptyDir() Data
 	_jsii_.Get(
 		j,
 		"emptyDir",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesPodV1SpecVolumeOutputReference) Ephemeral() DataKubernetesPodV1SpecVolumeEphemeralList {
+	var returns DataKubernetesPodV1SpecVolumeEphemeralList
+	_jsii_.Get(
+		j,
+		"ephemeral",
 		&returns,
 	)
 	return returns

@@ -80,6 +80,10 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeOutputReference) 
 	return nil
 }
 
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeOutputReference) validatePutEphemeralParameters(value *CronJobSpecJobTemplateSpecTemplateSpecVolumeEphemeral) error {
+	return nil
+}
+
 func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeOutputReference) validatePutFcParameters(value *CronJobSpecJobTemplateSpecTemplateSpecVolumeFc) error {
 	return nil
 }

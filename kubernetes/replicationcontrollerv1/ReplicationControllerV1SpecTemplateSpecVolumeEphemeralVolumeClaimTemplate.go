@@ -1,0 +1,14 @@
+package replicationcontrollerv1
+
+
+type ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplate struct {
+	// spec block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/replication_controller_v1#spec ReplicationControllerV1#spec}
+	Spec *ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec `field:"required" json:"spec" yaml:"spec"`
+	// metadata block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/replication_controller_v1#metadata ReplicationControllerV1#metadata}
+	Metadata *ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMetadata `field:"optional" json:"metadata" yaml:"metadata"`
+}
+

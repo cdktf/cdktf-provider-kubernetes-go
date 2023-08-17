@@ -2,13 +2,13 @@ package persistentvolumev1
 
 
 type PersistentVolumeV1SpecPersistentVolumeSourceCsiNodeStageSecretRef struct {
-	// Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names.
+	// Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/persistent_volume_v1#name PersistentVolumeV1#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/persistent_volume_v1#name PersistentVolumeV1#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names.
+	// Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.22.0/docs/resources/persistent_volume_v1#namespace PersistentVolumeV1#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/persistent_volume_v1#namespace PersistentVolumeV1#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

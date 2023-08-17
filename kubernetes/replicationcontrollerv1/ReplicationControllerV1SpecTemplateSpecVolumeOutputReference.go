@@ -43,6 +43,8 @@ type ReplicationControllerV1SpecTemplateSpecVolumeOutputReference interface {
 	DownwardApiInput() *ReplicationControllerV1SpecTemplateSpecVolumeDownwardApi
 	EmptyDir() ReplicationControllerV1SpecTemplateSpecVolumeEmptyDirOutputReference
 	EmptyDirInput() *ReplicationControllerV1SpecTemplateSpecVolumeEmptyDir
+	Ephemeral() ReplicationControllerV1SpecTemplateSpecVolumeEphemeralOutputReference
+	EphemeralInput() *ReplicationControllerV1SpecTemplateSpecVolumeEphemeral
 	Fc() ReplicationControllerV1SpecTemplateSpecVolumeFcOutputReference
 	FcInput() *ReplicationControllerV1SpecTemplateSpecVolumeFc
 	FlexVolume() ReplicationControllerV1SpecTemplateSpecVolumeFlexVolumeOutputReference
@@ -125,6 +127,7 @@ type ReplicationControllerV1SpecTemplateSpecVolumeOutputReference interface {
 	PutCsi(value *ReplicationControllerV1SpecTemplateSpecVolumeCsi)
 	PutDownwardApi(value *ReplicationControllerV1SpecTemplateSpecVolumeDownwardApi)
 	PutEmptyDir(value *ReplicationControllerV1SpecTemplateSpecVolumeEmptyDir)
+	PutEphemeral(value *ReplicationControllerV1SpecTemplateSpecVolumeEphemeral)
 	PutFc(value *ReplicationControllerV1SpecTemplateSpecVolumeFc)
 	PutFlexVolume(value *ReplicationControllerV1SpecTemplateSpecVolumeFlexVolume)
 	PutFlocker(value *ReplicationControllerV1SpecTemplateSpecVolumeFlocker)
@@ -151,6 +154,7 @@ type ReplicationControllerV1SpecTemplateSpecVolumeOutputReference interface {
 	ResetCsi()
 	ResetDownwardApi()
 	ResetEmptyDir()
+	ResetEphemeral()
 	ResetFc()
 	ResetFlexVolume()
 	ResetFlocker()
@@ -389,6 +393,26 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeOutputReference)
 	_jsii_.Get(
 		j,
 		"emptyDirInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeOutputReference) Ephemeral() ReplicationControllerV1SpecTemplateSpecVolumeEphemeralOutputReference {
+	var returns ReplicationControllerV1SpecTemplateSpecVolumeEphemeralOutputReference
+	_jsii_.Get(
+		j,
+		"ephemeral",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeOutputReference) EphemeralInput() *ReplicationControllerV1SpecTemplateSpecVolumeEphemeral {
+	var returns *ReplicationControllerV1SpecTemplateSpecVolumeEphemeral
+	_jsii_.Get(
+		j,
+		"ephemeralInput",
 		&returns,
 	)
 	return returns
@@ -1173,6 +1197,17 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeOutputReference)
 	)
 }
 
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeOutputReference) PutEphemeral(value *ReplicationControllerV1SpecTemplateSpecVolumeEphemeral) {
+	if err := r.validatePutEphemeralParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putEphemeral",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeOutputReference) PutFc(value *ReplicationControllerV1SpecTemplateSpecVolumeFc) {
 	if err := r.validatePutFcParameters(value); err != nil {
 		panic(err)
@@ -1428,6 +1463,14 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeOutputReference)
 	_jsii_.InvokeVoid(
 		r,
 		"resetEmptyDir",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeOutputReference) ResetEphemeral() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetEphemeral",
 		nil, // no parameters
 	)
 }
