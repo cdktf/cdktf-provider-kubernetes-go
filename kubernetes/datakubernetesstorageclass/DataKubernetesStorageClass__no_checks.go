@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataKubernetesStorageClass) validatePutMetadataParameters(val
 	return nil
 }
 
+func validateDataKubernetesStorageClass_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataKubernetesStorageClass_IsConstructParameters(x interface{}) error {
 	return nil
 }

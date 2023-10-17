@@ -7,6 +7,10 @@ package runtimeclassv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RuntimeClassV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RuntimeClassV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RuntimeClassV1) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (r *jsiiProxy_RuntimeClassV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RuntimeClassV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RuntimeClassV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_RuntimeClassV1) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (r *jsiiProxy_RuntimeClassV1) validatePutMetadataParameters(value *RuntimeClassV1Metadata) error {
+	return nil
+}
+
+func validateRuntimeClassV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

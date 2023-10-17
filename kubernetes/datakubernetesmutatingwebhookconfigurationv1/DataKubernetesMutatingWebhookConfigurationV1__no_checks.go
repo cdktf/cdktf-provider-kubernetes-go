@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1) validatePutMeta
 	return nil
 }
 
+func validateDataKubernetesMutatingWebhookConfigurationV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataKubernetesMutatingWebhookConfigurationV1_IsConstructParameters(x interface{}) error {
 	return nil
 }

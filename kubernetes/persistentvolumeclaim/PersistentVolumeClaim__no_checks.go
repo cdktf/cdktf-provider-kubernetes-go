@@ -7,6 +7,10 @@ package persistentvolumeclaim
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PersistentVolumeClaim) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PersistentVolumeClaim) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PersistentVolumeClaim) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (p *jsiiProxy_PersistentVolumeClaim) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PersistentVolumeClaim) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PersistentVolumeClaim) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (p *jsiiProxy_PersistentVolumeClaim) validatePutSpecParameters(value *Persi
 }
 
 func (p *jsiiProxy_PersistentVolumeClaim) validatePutTimeoutsParameters(value *PersistentVolumeClaimTimeouts) error {
+	return nil
+}
+
+func validatePersistentVolumeClaim_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

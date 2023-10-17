@@ -7,6 +7,10 @@ package replicationcontroller
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_ReplicationController) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ReplicationController) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_ReplicationController) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (r *jsiiProxy_ReplicationController) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ReplicationController) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_ReplicationController) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (r *jsiiProxy_ReplicationController) validatePutSpecParameters(value *Repli
 }
 
 func (r *jsiiProxy_ReplicationController) validatePutTimeoutsParameters(value *ReplicationControllerTimeouts) error {
+	return nil
+}
+
+func validateReplicationController_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

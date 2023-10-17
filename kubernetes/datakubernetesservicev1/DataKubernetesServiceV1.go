@@ -5,10 +5,10 @@ package datakubernetesservicev1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v9/datakubernetesservicev1/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v10/datakubernetesservicev1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -390,6 +390,25 @@ func (j *jsiiProxy_DataKubernetesServiceV1)SetProvider(val cdktf.TerraformProvid
 		"provider",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataKubernetesServiceV1 resource upon running "cdktf plan <stack-name>".
+func DataKubernetesServiceV1_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataKubernetesServiceV1_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-kubernetes.dataKubernetesServiceV1.DataKubernetesServiceV1",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

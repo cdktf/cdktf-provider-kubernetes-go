@@ -7,6 +7,10 @@ package csidriver
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CsiDriver) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CsiDriver) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CsiDriver) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (c *jsiiProxy_CsiDriver) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CsiDriver) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CsiDriver) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_CsiDriver) validatePutMetadataParameters(value *CsiDriverMeta
 }
 
 func (c *jsiiProxy_CsiDriver) validatePutSpecParameters(value *CsiDriverSpec) error {
+	return nil
+}
+
+func validateCsiDriver_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

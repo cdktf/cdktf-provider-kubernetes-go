@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataKubernetesAllNamespaces) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func validateDataKubernetesAllNamespaces_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataKubernetesAllNamespaces_IsConstructParameters(x interface{}) error {
 	return nil
 }

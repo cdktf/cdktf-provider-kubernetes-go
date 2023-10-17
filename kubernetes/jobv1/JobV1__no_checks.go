@@ -7,6 +7,10 @@ package jobv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (j *jsiiProxy_JobV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (j *jsiiProxy_JobV1) validateGetStringMapAttributeParameters(terraformAttri
 	return nil
 }
 
+func (j *jsiiProxy_JobV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (j *jsiiProxy_JobV1) validatePutSpecParameters(value *JobV1Spec) error {
 }
 
 func (j *jsiiProxy_JobV1) validatePutTimeoutsParameters(value *JobV1Timeouts) error {
+	return nil
+}
+
+func validateJobV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

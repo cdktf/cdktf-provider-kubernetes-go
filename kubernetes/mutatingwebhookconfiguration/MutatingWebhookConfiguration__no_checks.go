@@ -7,6 +7,10 @@ package mutatingwebhookconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MutatingWebhookConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MutatingWebhookConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MutatingWebhookConfiguration) validateGetStringMapAttributePa
 	return nil
 }
 
+func (m *jsiiProxy_MutatingWebhookConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MutatingWebhookConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MutatingWebhookConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MutatingWebhookConfiguration) validatePutMetadataParameters(v
 }
 
 func (m *jsiiProxy_MutatingWebhookConfiguration) validatePutWebhookParameters(value interface{}) error {
+	return nil
+}
+
+func validateMutatingWebhookConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

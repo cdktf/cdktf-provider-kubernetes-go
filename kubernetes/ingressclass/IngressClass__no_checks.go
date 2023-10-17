@@ -7,6 +7,10 @@ package ingressclass
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IngressClass) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IngressClass) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IngressClass) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (i *jsiiProxy_IngressClass) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IngressClass) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IngressClass) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (i *jsiiProxy_IngressClass) validatePutMetadataParameters(value *IngressCla
 }
 
 func (i *jsiiProxy_IngressClass) validatePutSpecParameters(value *IngressClassSpec) error {
+	return nil
+}
+
+func validateIngressClass_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package podsecuritypolicyv1beta1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PodSecurityPolicyV1Beta1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PodSecurityPolicyV1Beta1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1) validatePutMetadataParameters(value
 }
 
 func (p *jsiiProxy_PodSecurityPolicyV1Beta1) validatePutSpecParameters(value *PodSecurityPolicyV1Beta1Spec) error {
+	return nil
+}
+
+func validatePodSecurityPolicyV1Beta1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

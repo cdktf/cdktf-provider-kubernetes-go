@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataKubernetesResources) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func validateDataKubernetesResources_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataKubernetesResources_IsConstructParameters(x interface{}) error {
 	return nil
 }

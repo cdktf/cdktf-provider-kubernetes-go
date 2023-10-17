@@ -7,6 +7,10 @@ package manifest
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_Manifest) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Manifest) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_Manifest) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (m *jsiiProxy_Manifest) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Manifest) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_Manifest) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (m *jsiiProxy_Manifest) validatePutWaitParameters(value *ManifestWait) erro
 }
 
 func (m *jsiiProxy_Manifest) validatePutWaitForParameters(value *ManifestWaitFor) error {
+	return nil
+}
+
+func validateManifest_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

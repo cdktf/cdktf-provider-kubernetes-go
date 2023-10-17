@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataKubernetesEndpointsV1) validatePutSubsetParameters(value 
 	return nil
 }
 
+func validateDataKubernetesEndpointsV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataKubernetesEndpointsV1_IsConstructParameters(x interface{}) error {
 	return nil
 }

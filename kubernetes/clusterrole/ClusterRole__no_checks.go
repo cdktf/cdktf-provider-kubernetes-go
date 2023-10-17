@@ -7,6 +7,10 @@ package clusterrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ClusterRole) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClusterRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ClusterRole) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (c *jsiiProxy_ClusterRole) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClusterRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClusterRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_ClusterRole) validatePutMetadataParameters(value *ClusterRole
 }
 
 func (c *jsiiProxy_ClusterRole) validatePutRuleParameters(value interface{}) error {
+	return nil
+}
+
+func validateClusterRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package nodetaint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NodeTaint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NodeTaint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NodeTaint) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (n *jsiiProxy_NodeTaint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NodeTaint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NodeTaint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (n *jsiiProxy_NodeTaint) validatePutMetadataParameters(value *NodeTaintMeta
 }
 
 func (n *jsiiProxy_NodeTaint) validatePutTaintParameters(value interface{}) error {
+	return nil
+}
+
+func validateNodeTaint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataKubernetesIngress) validatePutMetadataParameters(value *D
 	return nil
 }
 
+func validateDataKubernetesIngress_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataKubernetesIngress_IsConstructParameters(x interface{}) error {
 	return nil
 }

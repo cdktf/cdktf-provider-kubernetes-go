@@ -7,6 +7,10 @@ package rolev1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RoleV1) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RoleV1) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RoleV1) validateGetStringMapAttributeParameters(terraformAttr
 	return nil
 }
 
+func (r *jsiiProxy_RoleV1) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RoleV1) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RoleV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (r *jsiiProxy_RoleV1) validatePutMetadataParameters(value *RoleV1Metadata) 
 }
 
 func (r *jsiiProxy_RoleV1) validatePutRuleParameters(value interface{}) error {
+	return nil
+}
+
+func validateRoleV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 
