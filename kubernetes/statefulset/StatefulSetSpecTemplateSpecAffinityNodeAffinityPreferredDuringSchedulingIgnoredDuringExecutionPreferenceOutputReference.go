@@ -34,6 +34,8 @@ type StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgn
 	SetInternalValue(val *StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference)
 	MatchExpressions() StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList
 	MatchExpressionsInput() interface{}
+	MatchFields() StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList
+	MatchFieldsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgn
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutMatchExpressions(value interface{})
+	PutMatchFields(value interface{})
 	ResetMatchExpressions()
+	ResetMatchFields()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDurin
 	_jsii_.Get(
 		j,
 		"matchExpressionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference) MatchFields() StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList {
+	var returns StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList
+	_jsii_.Get(
+		j,
+		"matchFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference) MatchFieldsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"matchFieldsInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDurin
 	)
 }
 
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference) PutMatchFields(value interface{}) {
+	if err := s.validatePutMatchFieldsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putMatchFields",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference) ResetMatchExpressions() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetMatchExpressions",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference) ResetMatchFields() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMatchFields",
 		nil, // no parameters
 	)
 }

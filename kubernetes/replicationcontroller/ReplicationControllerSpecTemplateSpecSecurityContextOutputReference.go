@@ -64,6 +64,8 @@ type ReplicationControllerSpecTemplateSpecSecurityContextOutputReference interfa
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WindowsOptions() ReplicationControllerSpecTemplateSpecSecurityContextWindowsOptionsOutputReference
+	WindowsOptionsInput() *ReplicationControllerSpecTemplateSpecSecurityContextWindowsOptions
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -91,6 +93,7 @@ type ReplicationControllerSpecTemplateSpecSecurityContextOutputReference interfa
 	PutSeccompProfile(value *ReplicationControllerSpecTemplateSpecSecurityContextSeccompProfile)
 	PutSeLinuxOptions(value *ReplicationControllerSpecTemplateSpecSecurityContextSeLinuxOptions)
 	PutSysctl(value interface{})
+	PutWindowsOptions(value *ReplicationControllerSpecTemplateSpecSecurityContextWindowsOptions)
 	ResetFsGroup()
 	ResetFsGroupChangePolicy()
 	ResetRunAsGroup()
@@ -100,6 +103,7 @@ type ReplicationControllerSpecTemplateSpecSecurityContextOutputReference interfa
 	ResetSeLinuxOptions()
 	ResetSupplementalGroups()
 	ResetSysctl()
+	ResetWindowsOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -360,6 +364,26 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputRef
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference) WindowsOptions() ReplicationControllerSpecTemplateSpecSecurityContextWindowsOptionsOutputReference {
+	var returns ReplicationControllerSpecTemplateSpecSecurityContextWindowsOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"windowsOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference) WindowsOptionsInput() *ReplicationControllerSpecTemplateSpecSecurityContextWindowsOptions {
+	var returns *ReplicationControllerSpecTemplateSpecSecurityContextWindowsOptions
+	_jsii_.Get(
+		j,
+		"windowsOptionsInput",
 		&returns,
 	)
 	return returns
@@ -733,6 +757,17 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputRef
 	)
 }
 
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference) PutWindowsOptions(value *ReplicationControllerSpecTemplateSpecSecurityContextWindowsOptions) {
+	if err := r.validatePutWindowsOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putWindowsOptions",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference) ResetFsGroup() {
 	_jsii_.InvokeVoid(
 		r,
@@ -801,6 +836,14 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputRef
 	_jsii_.InvokeVoid(
 		r,
 		"resetSysctl",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference) ResetWindowsOptions() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetWindowsOptions",
 		nil, // no parameters
 	)
 }

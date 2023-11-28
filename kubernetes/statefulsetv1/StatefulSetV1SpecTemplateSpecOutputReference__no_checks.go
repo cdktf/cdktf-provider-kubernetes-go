@@ -71,6 +71,10 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) validatePutInit
 	return nil
 }
 
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) validatePutOsParameters(value *StatefulSetV1SpecTemplateSpecOs) error {
+	return nil
+}
+
 func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) validatePutReadinessGateParameters(value interface{}) error {
 	return nil
 }

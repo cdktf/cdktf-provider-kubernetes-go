@@ -48,6 +48,7 @@ type DataKubernetesPodSpecOutputReference interface {
 	SetInternalValue(val *DataKubernetesPodSpec)
 	NodeName() *string
 	NodeSelector() cdktf.StringMap
+	Os() DataKubernetesPodSpecOsList
 	PriorityClassName() *string
 	ReadinessGate() DataKubernetesPodSpecReadinessGateList
 	RestartPolicy() *string
@@ -313,6 +314,16 @@ func (j *jsiiProxy_DataKubernetesPodSpecOutputReference) NodeSelector() cdktf.St
 	_jsii_.Get(
 		j,
 		"nodeSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesPodSpecOutputReference) Os() DataKubernetesPodSpecOsList {
+	var returns DataKubernetesPodSpecOsList
+	_jsii_.Get(
+		j,
+		"os",
 		&returns,
 	)
 	return returns

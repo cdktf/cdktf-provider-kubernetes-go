@@ -7,15 +7,15 @@ package persistentvolume
 type PersistentVolumeSpecPersistentVolumeSourceNfs struct {
 	// Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/persistent_volume#path PersistentVolume#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/persistent_volume#path PersistentVolume#path}
 	Path *string `field:"required" json:"path" yaml:"path"`
 	// Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/persistent_volume#server PersistentVolume#server}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/persistent_volume#server PersistentVolume#server}
 	Server *string `field:"required" json:"server" yaml:"server"`
 	// Whether to force the NFS export to be mounted with read-only permissions. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/persistent_volume#read_only PersistentVolume#read_only}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/persistent_volume#read_only PersistentVolume#read_only}
 	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
 

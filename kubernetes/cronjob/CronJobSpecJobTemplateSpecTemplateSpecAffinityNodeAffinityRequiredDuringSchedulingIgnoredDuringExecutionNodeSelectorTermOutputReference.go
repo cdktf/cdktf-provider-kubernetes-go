@@ -34,6 +34,8 @@ type CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSch
 	SetInternalValue(val interface{})
 	MatchExpressions() CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList
 	MatchExpressionsInput() interface{}
+	MatchFields() CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList
+	MatchFieldsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSch
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutMatchExpressions(value interface{})
+	PutMatchFields(value interface{})
 	ResetMatchExpressions()
+	ResetMatchFields()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityReq
 	_jsii_.Get(
 		j,
 		"matchExpressionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference) MatchFields() CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList {
+	var returns CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList
+	_jsii_.Get(
+		j,
+		"matchFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference) MatchFieldsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"matchFieldsInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityReq
 	)
 }
 
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference) PutMatchFields(value interface{}) {
+	if err := c.validatePutMatchFieldsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putMatchFields",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference) ResetMatchExpressions() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetMatchExpressions",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference) ResetMatchFields() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMatchFields",
 		nil, // no parameters
 	)
 }

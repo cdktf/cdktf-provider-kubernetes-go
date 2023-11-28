@@ -64,6 +64,8 @@ type JobV1SpecTemplateSpecSecurityContextOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WindowsOptions() JobV1SpecTemplateSpecSecurityContextWindowsOptionsOutputReference
+	WindowsOptionsInput() *JobV1SpecTemplateSpecSecurityContextWindowsOptions
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -91,6 +93,7 @@ type JobV1SpecTemplateSpecSecurityContextOutputReference interface {
 	PutSeccompProfile(value *JobV1SpecTemplateSpecSecurityContextSeccompProfile)
 	PutSeLinuxOptions(value *JobV1SpecTemplateSpecSecurityContextSeLinuxOptions)
 	PutSysctl(value interface{})
+	PutWindowsOptions(value *JobV1SpecTemplateSpecSecurityContextWindowsOptions)
 	ResetFsGroup()
 	ResetFsGroupChangePolicy()
 	ResetRunAsGroup()
@@ -100,6 +103,7 @@ type JobV1SpecTemplateSpecSecurityContextOutputReference interface {
 	ResetSeLinuxOptions()
 	ResetSupplementalGroups()
 	ResetSysctl()
+	ResetWindowsOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -360,6 +364,26 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecSecurityContextOutputReference) Terrafor
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobV1SpecTemplateSpecSecurityContextOutputReference) WindowsOptions() JobV1SpecTemplateSpecSecurityContextWindowsOptionsOutputReference {
+	var returns JobV1SpecTemplateSpecSecurityContextWindowsOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"windowsOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobV1SpecTemplateSpecSecurityContextOutputReference) WindowsOptionsInput() *JobV1SpecTemplateSpecSecurityContextWindowsOptions {
+	var returns *JobV1SpecTemplateSpecSecurityContextWindowsOptions
+	_jsii_.Get(
+		j,
+		"windowsOptionsInput",
 		&returns,
 	)
 	return returns
@@ -733,6 +757,17 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecSecurityContextOutputReference) PutSysct
 	)
 }
 
+func (j *jsiiProxy_JobV1SpecTemplateSpecSecurityContextOutputReference) PutWindowsOptions(value *JobV1SpecTemplateSpecSecurityContextWindowsOptions) {
+	if err := j.validatePutWindowsOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putWindowsOptions",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobV1SpecTemplateSpecSecurityContextOutputReference) ResetFsGroup() {
 	_jsii_.InvokeVoid(
 		j,
@@ -801,6 +836,14 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecSecurityContextOutputReference) ResetSys
 	_jsii_.InvokeVoid(
 		j,
 		"resetSysctl",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobV1SpecTemplateSpecSecurityContextOutputReference) ResetWindowsOptions() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetWindowsOptions",
 		nil, // no parameters
 	)
 }

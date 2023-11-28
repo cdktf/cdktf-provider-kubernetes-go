@@ -59,6 +59,10 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutput
 	return nil
 }
 
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference) validatePutWindowsOptionsParameters(value *CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextWindowsOptions) error {
+	return nil
+}
+
 func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

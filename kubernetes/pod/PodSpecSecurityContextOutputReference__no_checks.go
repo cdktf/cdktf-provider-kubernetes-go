@@ -59,6 +59,10 @@ func (p *jsiiProxy_PodSpecSecurityContextOutputReference) validatePutSysctlParam
 	return nil
 }
 
+func (p *jsiiProxy_PodSpecSecurityContextOutputReference) validatePutWindowsOptionsParameters(value *PodSpecSecurityContextWindowsOptions) error {
+	return nil
+}
+
 func (p *jsiiProxy_PodSpecSecurityContextOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

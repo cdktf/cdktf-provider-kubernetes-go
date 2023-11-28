@@ -34,6 +34,8 @@ type ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSche
 	SetInternalValue(val interface{})
 	MatchExpressions() ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList
 	MatchExpressionsInput() interface{}
+	MatchFields() ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList
+	MatchFieldsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSche
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutMatchExpressions(value interface{})
+	PutMatchFields(value interface{})
 	ResetMatchExpressions()
+	ResetMatchFields()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequ
 	_jsii_.Get(
 		j,
 		"matchExpressionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference) MatchFields() ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList {
+	var returns ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList
+	_jsii_.Get(
+		j,
+		"matchFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference) MatchFieldsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"matchFieldsInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequ
 	)
 }
 
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference) PutMatchFields(value interface{}) {
+	if err := r.validatePutMatchFieldsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putMatchFields",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference) ResetMatchExpressions() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetMatchExpressions",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference) ResetMatchFields() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMatchFields",
 		nil, // no parameters
 	)
 }

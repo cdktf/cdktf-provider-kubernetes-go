@@ -74,6 +74,8 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference interface {
 	NodeSelector() *map[string]*string
 	SetNodeSelector(val *map[string]*string)
 	NodeSelectorInput() *map[string]*string
+	Os() CronJobV1SpecJobTemplateSpecTemplateSpecOsOutputReference
+	OsInput() *CronJobV1SpecJobTemplateSpecTemplateSpecOs
 	PriorityClassName() *string
 	SetPriorityClassName(val *string)
 	PriorityClassNameInput() *string
@@ -146,6 +148,7 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference interface {
 	PutHostAliases(value interface{})
 	PutImagePullSecrets(value interface{})
 	PutInitContainer(value interface{})
+	PutOs(value *CronJobV1SpecJobTemplateSpecTemplateSpecOs)
 	PutReadinessGate(value interface{})
 	PutSecurityContext(value *CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContext)
 	PutToleration(value interface{})
@@ -167,6 +170,7 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference interface {
 	ResetInitContainer()
 	ResetNodeName()
 	ResetNodeSelector()
+	ResetOs()
 	ResetPriorityClassName()
 	ResetReadinessGate()
 	ResetRestartPolicy()
@@ -560,6 +564,26 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) Node
 	_jsii_.Get(
 		j,
 		"nodeSelectorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) Os() CronJobV1SpecJobTemplateSpecTemplateSpecOsOutputReference {
+	var returns CronJobV1SpecJobTemplateSpecTemplateSpecOsOutputReference
+	_jsii_.Get(
+		j,
+		"os",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) OsInput() *CronJobV1SpecJobTemplateSpecTemplateSpecOs {
+	var returns *CronJobV1SpecJobTemplateSpecTemplateSpecOs
+	_jsii_.Get(
+		j,
+		"osInput",
 		&returns,
 	)
 	return returns
@@ -1378,6 +1402,17 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) PutI
 	)
 }
 
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) PutOs(value *CronJobV1SpecJobTemplateSpecTemplateSpecOs) {
+	if err := c.validatePutOsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putOs",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) PutReadinessGate(value interface{}) {
 	if err := c.validatePutReadinessGateParameters(value); err != nil {
 		panic(err)
@@ -1557,6 +1592,14 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) Rese
 	_jsii_.InvokeVoid(
 		c,
 		"resetNodeSelector",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference) ResetOs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOs",
 		nil, // no parameters
 	)
 }

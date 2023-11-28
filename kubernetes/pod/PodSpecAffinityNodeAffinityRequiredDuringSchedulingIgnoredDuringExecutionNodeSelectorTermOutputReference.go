@@ -34,6 +34,8 @@ type PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNo
 	SetInternalValue(val interface{})
 	MatchExpressions() PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList
 	MatchExpressionsInput() interface{}
+	MatchFields() PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList
+	MatchFieldsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNo
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutMatchExpressions(value interface{})
+	PutMatchFields(value interface{})
 	ResetMatchExpressions()
+	ResetMatchFields()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDur
 	_jsii_.Get(
 		j,
 		"matchExpressionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference) MatchFields() PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList {
+	var returns PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList
+	_jsii_.Get(
+		j,
+		"matchFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference) MatchFieldsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"matchFieldsInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (p *jsiiProxy_PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDur
 	)
 }
 
+func (p *jsiiProxy_PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference) PutMatchFields(value interface{}) {
+	if err := p.validatePutMatchFieldsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putMatchFields",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference) ResetMatchExpressions() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetMatchExpressions",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference) ResetMatchFields() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMatchFields",
 		nil, // no parameters
 	)
 }

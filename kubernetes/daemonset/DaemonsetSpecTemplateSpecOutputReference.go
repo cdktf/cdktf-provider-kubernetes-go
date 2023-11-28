@@ -74,6 +74,8 @@ type DaemonsetSpecTemplateSpecOutputReference interface {
 	NodeSelector() *map[string]*string
 	SetNodeSelector(val *map[string]*string)
 	NodeSelectorInput() *map[string]*string
+	Os() DaemonsetSpecTemplateSpecOsOutputReference
+	OsInput() *DaemonsetSpecTemplateSpecOs
 	PriorityClassName() *string
 	SetPriorityClassName(val *string)
 	PriorityClassNameInput() *string
@@ -146,6 +148,7 @@ type DaemonsetSpecTemplateSpecOutputReference interface {
 	PutHostAliases(value interface{})
 	PutImagePullSecrets(value interface{})
 	PutInitContainer(value interface{})
+	PutOs(value *DaemonsetSpecTemplateSpecOs)
 	PutReadinessGate(value interface{})
 	PutSecurityContext(value *DaemonsetSpecTemplateSpecSecurityContext)
 	PutToleration(value interface{})
@@ -167,6 +170,7 @@ type DaemonsetSpecTemplateSpecOutputReference interface {
 	ResetInitContainer()
 	ResetNodeName()
 	ResetNodeSelector()
+	ResetOs()
 	ResetPriorityClassName()
 	ResetReadinessGate()
 	ResetRestartPolicy()
@@ -560,6 +564,26 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) NodeSelectorInput()
 	_jsii_.Get(
 		j,
 		"nodeSelectorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) Os() DaemonsetSpecTemplateSpecOsOutputReference {
+	var returns DaemonsetSpecTemplateSpecOsOutputReference
+	_jsii_.Get(
+		j,
+		"os",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) OsInput() *DaemonsetSpecTemplateSpecOs {
+	var returns *DaemonsetSpecTemplateSpecOs
+	_jsii_.Get(
+		j,
+		"osInput",
 		&returns,
 	)
 	return returns
@@ -1378,6 +1402,17 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutInitContainer(va
 	)
 }
 
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutOs(value *DaemonsetSpecTemplateSpecOs) {
+	if err := d.validatePutOsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOs",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) PutReadinessGate(value interface{}) {
 	if err := d.validatePutReadinessGateParameters(value); err != nil {
 		panic(err)
@@ -1557,6 +1592,14 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ResetNodeSelector()
 	_jsii_.InvokeVoid(
 		d,
 		"resetNodeSelector",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) ResetOs() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOs",
 		nil, // no parameters
 	)
 }

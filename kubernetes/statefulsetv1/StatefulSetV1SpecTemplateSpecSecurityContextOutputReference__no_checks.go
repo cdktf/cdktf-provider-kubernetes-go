@@ -59,6 +59,10 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextOutputReference) 
 	return nil
 }
 
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextOutputReference) validatePutWindowsOptionsParameters(value *StatefulSetV1SpecTemplateSpecSecurityContextWindowsOptions) error {
+	return nil
+}
+
 func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -51,6 +51,10 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuring
 	return nil
 }
 
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference) validatePutMatchFieldsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

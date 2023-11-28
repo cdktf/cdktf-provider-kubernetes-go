@@ -71,6 +71,10 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) validatePutInitCont
 	return nil
 }
 
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) validatePutOsParameters(value *DaemonsetSpecTemplateSpecOs) error {
+	return nil
+}
+
 func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) validatePutReadinessGateParameters(value interface{}) error {
 	return nil
 }

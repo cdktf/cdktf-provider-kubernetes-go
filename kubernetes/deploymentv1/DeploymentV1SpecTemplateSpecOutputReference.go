@@ -74,6 +74,8 @@ type DeploymentV1SpecTemplateSpecOutputReference interface {
 	NodeSelector() *map[string]*string
 	SetNodeSelector(val *map[string]*string)
 	NodeSelectorInput() *map[string]*string
+	Os() DeploymentV1SpecTemplateSpecOsOutputReference
+	OsInput() *DeploymentV1SpecTemplateSpecOs
 	PriorityClassName() *string
 	SetPriorityClassName(val *string)
 	PriorityClassNameInput() *string
@@ -146,6 +148,7 @@ type DeploymentV1SpecTemplateSpecOutputReference interface {
 	PutHostAliases(value interface{})
 	PutImagePullSecrets(value interface{})
 	PutInitContainer(value interface{})
+	PutOs(value *DeploymentV1SpecTemplateSpecOs)
 	PutReadinessGate(value interface{})
 	PutSecurityContext(value *DeploymentV1SpecTemplateSpecSecurityContext)
 	PutToleration(value interface{})
@@ -167,6 +170,7 @@ type DeploymentV1SpecTemplateSpecOutputReference interface {
 	ResetInitContainer()
 	ResetNodeName()
 	ResetNodeSelector()
+	ResetOs()
 	ResetPriorityClassName()
 	ResetReadinessGate()
 	ResetRestartPolicy()
@@ -560,6 +564,26 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecOutputReference) NodeSelectorInpu
 	_jsii_.Get(
 		j,
 		"nodeSelectorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecOutputReference) Os() DeploymentV1SpecTemplateSpecOsOutputReference {
+	var returns DeploymentV1SpecTemplateSpecOsOutputReference
+	_jsii_.Get(
+		j,
+		"os",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecOutputReference) OsInput() *DeploymentV1SpecTemplateSpecOs {
+	var returns *DeploymentV1SpecTemplateSpecOs
+	_jsii_.Get(
+		j,
+		"osInput",
 		&returns,
 	)
 	return returns
@@ -1378,6 +1402,17 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecOutputReference) PutInitContainer
 	)
 }
 
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecOutputReference) PutOs(value *DeploymentV1SpecTemplateSpecOs) {
+	if err := d.validatePutOsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOs",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DeploymentV1SpecTemplateSpecOutputReference) PutReadinessGate(value interface{}) {
 	if err := d.validatePutReadinessGateParameters(value); err != nil {
 		panic(err)
@@ -1557,6 +1592,14 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecOutputReference) ResetNodeSelecto
 	_jsii_.InvokeVoid(
 		d,
 		"resetNodeSelector",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecOutputReference) ResetOs() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOs",
 		nil, // no parameters
 	)
 }

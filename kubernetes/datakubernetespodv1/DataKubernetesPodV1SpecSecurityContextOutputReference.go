@@ -49,6 +49,7 @@ type DataKubernetesPodV1SpecSecurityContextOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WindowsOptions() DataKubernetesPodV1SpecSecurityContextWindowsOptionsList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -243,6 +244,16 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecSecurityContextOutputReference) Terraf
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesPodV1SpecSecurityContextOutputReference) WindowsOptions() DataKubernetesPodV1SpecSecurityContextWindowsOptionsList {
+	var returns DataKubernetesPodV1SpecSecurityContextWindowsOptionsList
+	_jsii_.Get(
+		j,
+		"windowsOptions",
 		&returns,
 	)
 	return returns

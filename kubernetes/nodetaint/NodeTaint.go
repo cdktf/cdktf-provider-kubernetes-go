@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/node_taint kubernetes_node_taint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/node_taint kubernetes_node_taint}.
 type NodeTaint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_NodeTaint) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/node_taint kubernetes_node_taint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/node_taint kubernetes_node_taint} Resource.
 func NewNodeTaint(scope constructs.Construct, id *string, config *NodeTaintConfig) NodeTaint {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewNodeTaint(scope constructs.Construct, id *string, config *NodeTaintConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/node_taint kubernetes_node_taint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/node_taint kubernetes_node_taint} Resource.
 func NewNodeTaint_Override(n NodeTaint, scope constructs.Construct, id *string, config *NodeTaintConfig) {
 	_init_.Initialize()
 

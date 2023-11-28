@@ -24,36 +24,36 @@ type SecretV1Config struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// metadata block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/secret_v1#metadata SecretV1#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/secret_v1#metadata SecretV1#metadata}
 	Metadata *SecretV1Metadata `field:"required" json:"metadata" yaml:"metadata"`
 	// A map of the secret data in base64 encoding. Use this for binary data.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/secret_v1#binary_data SecretV1#binary_data}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/secret_v1#binary_data SecretV1#binary_data}
 	BinaryData *map[string]*string `field:"optional" json:"binaryData" yaml:"binaryData"`
 	// A map of the secret data.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/secret_v1#data SecretV1#data}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/secret_v1#data SecretV1#data}
 	Data *map[string]*string `field:"optional" json:"data" yaml:"data"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/secret_v1#id SecretV1#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/secret_v1#id SecretV1#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Ensures that data stored in the Secret cannot be updated (only object metadata can be modified).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/secret_v1#immutable SecretV1#immutable}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/secret_v1#immutable SecretV1#immutable}
 	Immutable interface{} `field:"optional" json:"immutable" yaml:"immutable"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/secret_v1#timeouts SecretV1#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/secret_v1#timeouts SecretV1#timeouts}
 	Timeouts *SecretV1Timeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Type of secret.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/secret_v1#type SecretV1#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/secret_v1#type SecretV1#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 	// Terraform will wait for the service account token to be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/secret_v1#wait_for_service_account_token SecretV1#wait_for_service_account_token}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/secret_v1#wait_for_service_account_token SecretV1#wait_for_service_account_token}
 	WaitForServiceAccountToken interface{} `field:"optional" json:"waitForServiceAccountToken" yaml:"waitForServiceAccountToken"`
 }
 

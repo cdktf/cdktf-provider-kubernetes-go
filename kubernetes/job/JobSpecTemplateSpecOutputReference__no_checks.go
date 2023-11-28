@@ -71,6 +71,10 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutInitContainerP
 	return nil
 }
 
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutOsParameters(value *JobSpecTemplateSpecOs) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) validatePutReadinessGateParameters(value interface{}) error {
 	return nil
 }

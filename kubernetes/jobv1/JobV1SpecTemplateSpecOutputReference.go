@@ -74,6 +74,8 @@ type JobV1SpecTemplateSpecOutputReference interface {
 	NodeSelector() *map[string]*string
 	SetNodeSelector(val *map[string]*string)
 	NodeSelectorInput() *map[string]*string
+	Os() JobV1SpecTemplateSpecOsOutputReference
+	OsInput() *JobV1SpecTemplateSpecOs
 	PriorityClassName() *string
 	SetPriorityClassName(val *string)
 	PriorityClassNameInput() *string
@@ -146,6 +148,7 @@ type JobV1SpecTemplateSpecOutputReference interface {
 	PutHostAliases(value interface{})
 	PutImagePullSecrets(value interface{})
 	PutInitContainer(value interface{})
+	PutOs(value *JobV1SpecTemplateSpecOs)
 	PutReadinessGate(value interface{})
 	PutSecurityContext(value *JobV1SpecTemplateSpecSecurityContext)
 	PutToleration(value interface{})
@@ -167,6 +170,7 @@ type JobV1SpecTemplateSpecOutputReference interface {
 	ResetInitContainer()
 	ResetNodeName()
 	ResetNodeSelector()
+	ResetOs()
 	ResetPriorityClassName()
 	ResetReadinessGate()
 	ResetRestartPolicy()
@@ -560,6 +564,26 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecOutputReference) NodeSelectorInput() *ma
 	_jsii_.Get(
 		j,
 		"nodeSelectorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobV1SpecTemplateSpecOutputReference) Os() JobV1SpecTemplateSpecOsOutputReference {
+	var returns JobV1SpecTemplateSpecOsOutputReference
+	_jsii_.Get(
+		j,
+		"os",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobV1SpecTemplateSpecOutputReference) OsInput() *JobV1SpecTemplateSpecOs {
+	var returns *JobV1SpecTemplateSpecOs
+	_jsii_.Get(
+		j,
+		"osInput",
 		&returns,
 	)
 	return returns
@@ -1378,6 +1402,17 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecOutputReference) PutInitContainer(value 
 	)
 }
 
+func (j *jsiiProxy_JobV1SpecTemplateSpecOutputReference) PutOs(value *JobV1SpecTemplateSpecOs) {
+	if err := j.validatePutOsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putOs",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobV1SpecTemplateSpecOutputReference) PutReadinessGate(value interface{}) {
 	if err := j.validatePutReadinessGateParameters(value); err != nil {
 		panic(err)
@@ -1557,6 +1592,14 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecOutputReference) ResetNodeSelector() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetNodeSelector",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobV1SpecTemplateSpecOutputReference) ResetOs() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetOs",
 		nil, // no parameters
 	)
 }

@@ -71,6 +71,10 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutInitCon
 	return nil
 }
 
+func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutOsParameters(value *DeploymentSpecTemplateSpecOs) error {
+	return nil
+}
+
 func (d *jsiiProxy_DeploymentSpecTemplateSpecOutputReference) validatePutReadinessGateParameters(value interface{}) error {
 	return nil
 }

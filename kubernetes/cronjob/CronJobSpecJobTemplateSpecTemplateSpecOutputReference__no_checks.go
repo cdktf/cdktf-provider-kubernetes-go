@@ -71,6 +71,10 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecOutputReference) valida
 	return nil
 }
 
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecOutputReference) validatePutOsParameters(value *CronJobSpecJobTemplateSpecTemplateSpecOs) error {
+	return nil
+}
+
 func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecOutputReference) validatePutReadinessGateParameters(value interface{}) error {
 	return nil
 }

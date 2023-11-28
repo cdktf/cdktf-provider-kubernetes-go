@@ -64,6 +64,8 @@ type PodV1SpecSecurityContextOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WindowsOptions() PodV1SpecSecurityContextWindowsOptionsOutputReference
+	WindowsOptionsInput() *PodV1SpecSecurityContextWindowsOptions
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -91,6 +93,7 @@ type PodV1SpecSecurityContextOutputReference interface {
 	PutSeccompProfile(value *PodV1SpecSecurityContextSeccompProfile)
 	PutSeLinuxOptions(value *PodV1SpecSecurityContextSeLinuxOptions)
 	PutSysctl(value interface{})
+	PutWindowsOptions(value *PodV1SpecSecurityContextWindowsOptions)
 	ResetFsGroup()
 	ResetFsGroupChangePolicy()
 	ResetRunAsGroup()
@@ -100,6 +103,7 @@ type PodV1SpecSecurityContextOutputReference interface {
 	ResetSeLinuxOptions()
 	ResetSupplementalGroups()
 	ResetSysctl()
+	ResetWindowsOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -360,6 +364,26 @@ func (j *jsiiProxy_PodV1SpecSecurityContextOutputReference) TerraformResource() 
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecSecurityContextOutputReference) WindowsOptions() PodV1SpecSecurityContextWindowsOptionsOutputReference {
+	var returns PodV1SpecSecurityContextWindowsOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"windowsOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecSecurityContextOutputReference) WindowsOptionsInput() *PodV1SpecSecurityContextWindowsOptions {
+	var returns *PodV1SpecSecurityContextWindowsOptions
+	_jsii_.Get(
+		j,
+		"windowsOptionsInput",
 		&returns,
 	)
 	return returns
@@ -733,6 +757,17 @@ func (p *jsiiProxy_PodV1SpecSecurityContextOutputReference) PutSysctl(value inte
 	)
 }
 
+func (p *jsiiProxy_PodV1SpecSecurityContextOutputReference) PutWindowsOptions(value *PodV1SpecSecurityContextWindowsOptions) {
+	if err := p.validatePutWindowsOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putWindowsOptions",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PodV1SpecSecurityContextOutputReference) ResetFsGroup() {
 	_jsii_.InvokeVoid(
 		p,
@@ -801,6 +836,14 @@ func (p *jsiiProxy_PodV1SpecSecurityContextOutputReference) ResetSysctl() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetSysctl",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PodV1SpecSecurityContextOutputReference) ResetWindowsOptions() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetWindowsOptions",
 		nil, // no parameters
 	)
 }

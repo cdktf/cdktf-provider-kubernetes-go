@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/pod_disruption_budget kubernetes_pod_disruption_budget}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/pod_disruption_budget kubernetes_pod_disruption_budget}.
 type PodDisruptionBudget interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_PodDisruptionBudget) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/pod_disruption_budget kubernetes_pod_disruption_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/pod_disruption_budget kubernetes_pod_disruption_budget} Resource.
 func NewPodDisruptionBudget(scope constructs.Construct, id *string, config *PodDisruptionBudgetConfig) PodDisruptionBudget {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewPodDisruptionBudget(scope constructs.Construct, id *string, config *PodD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.23.0/docs/resources/pod_disruption_budget kubernetes_pod_disruption_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/pod_disruption_budget kubernetes_pod_disruption_budget} Resource.
 func NewPodDisruptionBudget_Override(p PodDisruptionBudget, scope constructs.Construct, id *string, config *PodDisruptionBudgetConfig) {
 	_init_.Initialize()
 

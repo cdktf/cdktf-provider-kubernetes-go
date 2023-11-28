@@ -74,6 +74,8 @@ type ReplicationControllerV1SpecTemplateSpecOutputReference interface {
 	NodeSelector() *map[string]*string
 	SetNodeSelector(val *map[string]*string)
 	NodeSelectorInput() *map[string]*string
+	Os() ReplicationControllerV1SpecTemplateSpecOsOutputReference
+	OsInput() *ReplicationControllerV1SpecTemplateSpecOs
 	PriorityClassName() *string
 	SetPriorityClassName(val *string)
 	PriorityClassNameInput() *string
@@ -146,6 +148,7 @@ type ReplicationControllerV1SpecTemplateSpecOutputReference interface {
 	PutHostAliases(value interface{})
 	PutImagePullSecrets(value interface{})
 	PutInitContainer(value interface{})
+	PutOs(value *ReplicationControllerV1SpecTemplateSpecOs)
 	PutReadinessGate(value interface{})
 	PutSecurityContext(value *ReplicationControllerV1SpecTemplateSpecSecurityContext)
 	PutToleration(value interface{})
@@ -167,6 +170,7 @@ type ReplicationControllerV1SpecTemplateSpecOutputReference interface {
 	ResetInitContainer()
 	ResetNodeName()
 	ResetNodeSelector()
+	ResetOs()
 	ResetPriorityClassName()
 	ResetReadinessGate()
 	ResetRestartPolicy()
@@ -560,6 +564,26 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference) NodeS
 	_jsii_.Get(
 		j,
 		"nodeSelectorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference) Os() ReplicationControllerV1SpecTemplateSpecOsOutputReference {
+	var returns ReplicationControllerV1SpecTemplateSpecOsOutputReference
+	_jsii_.Get(
+		j,
+		"os",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference) OsInput() *ReplicationControllerV1SpecTemplateSpecOs {
+	var returns *ReplicationControllerV1SpecTemplateSpecOs
+	_jsii_.Get(
+		j,
+		"osInput",
 		&returns,
 	)
 	return returns
@@ -1378,6 +1402,17 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference) PutIn
 	)
 }
 
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference) PutOs(value *ReplicationControllerV1SpecTemplateSpecOs) {
+	if err := r.validatePutOsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putOs",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference) PutReadinessGate(value interface{}) {
 	if err := r.validatePutReadinessGateParameters(value); err != nil {
 		panic(err)
@@ -1557,6 +1592,14 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference) Reset
 	_jsii_.InvokeVoid(
 		r,
 		"resetNodeSelector",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecOutputReference) ResetOs() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetOs",
 		nil, // no parameters
 	)
 }

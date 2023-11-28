@@ -71,6 +71,10 @@ func (p *jsiiProxy_PodV1SpecOutputReference) validatePutInitContainerParameters(
 	return nil
 }
 
+func (p *jsiiProxy_PodV1SpecOutputReference) validatePutOsParameters(value *PodV1SpecOs) error {
+	return nil
+}
+
 func (p *jsiiProxy_PodV1SpecOutputReference) validatePutReadinessGateParameters(value interface{}) error {
 	return nil
 }

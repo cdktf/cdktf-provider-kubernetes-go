@@ -74,6 +74,8 @@ type PodV1SpecOutputReference interface {
 	NodeSelector() *map[string]*string
 	SetNodeSelector(val *map[string]*string)
 	NodeSelectorInput() *map[string]*string
+	Os() PodV1SpecOsOutputReference
+	OsInput() *PodV1SpecOs
 	PriorityClassName() *string
 	SetPriorityClassName(val *string)
 	PriorityClassNameInput() *string
@@ -146,6 +148,7 @@ type PodV1SpecOutputReference interface {
 	PutHostAliases(value interface{})
 	PutImagePullSecrets(value interface{})
 	PutInitContainer(value interface{})
+	PutOs(value *PodV1SpecOs)
 	PutReadinessGate(value interface{})
 	PutSecurityContext(value *PodV1SpecSecurityContext)
 	PutToleration(value interface{})
@@ -167,6 +170,7 @@ type PodV1SpecOutputReference interface {
 	ResetInitContainer()
 	ResetNodeName()
 	ResetNodeSelector()
+	ResetOs()
 	ResetPriorityClassName()
 	ResetReadinessGate()
 	ResetRestartPolicy()
@@ -560,6 +564,26 @@ func (j *jsiiProxy_PodV1SpecOutputReference) NodeSelectorInput() *map[string]*st
 	_jsii_.Get(
 		j,
 		"nodeSelectorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecOutputReference) Os() PodV1SpecOsOutputReference {
+	var returns PodV1SpecOsOutputReference
+	_jsii_.Get(
+		j,
+		"os",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecOutputReference) OsInput() *PodV1SpecOs {
+	var returns *PodV1SpecOs
+	_jsii_.Get(
+		j,
+		"osInput",
 		&returns,
 	)
 	return returns
@@ -1378,6 +1402,17 @@ func (p *jsiiProxy_PodV1SpecOutputReference) PutInitContainer(value interface{})
 	)
 }
 
+func (p *jsiiProxy_PodV1SpecOutputReference) PutOs(value *PodV1SpecOs) {
+	if err := p.validatePutOsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putOs",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PodV1SpecOutputReference) PutReadinessGate(value interface{}) {
 	if err := p.validatePutReadinessGateParameters(value); err != nil {
 		panic(err)
@@ -1557,6 +1592,14 @@ func (p *jsiiProxy_PodV1SpecOutputReference) ResetNodeSelector() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetNodeSelector",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PodV1SpecOutputReference) ResetOs() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOs",
 		nil, // no parameters
 	)
 }

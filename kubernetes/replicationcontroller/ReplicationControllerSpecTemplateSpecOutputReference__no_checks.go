@@ -71,6 +71,10 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference) validat
 	return nil
 }
 
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference) validatePutOsParameters(value *ReplicationControllerSpecTemplateSpecOs) error {
+	return nil
+}
+
 func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference) validatePutReadinessGateParameters(value interface{}) error {
 	return nil
 }

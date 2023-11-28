@@ -74,6 +74,8 @@ type StatefulSetSpecTemplateSpecOutputReference interface {
 	NodeSelector() *map[string]*string
 	SetNodeSelector(val *map[string]*string)
 	NodeSelectorInput() *map[string]*string
+	Os() StatefulSetSpecTemplateSpecOsOutputReference
+	OsInput() *StatefulSetSpecTemplateSpecOs
 	PriorityClassName() *string
 	SetPriorityClassName(val *string)
 	PriorityClassNameInput() *string
@@ -146,6 +148,7 @@ type StatefulSetSpecTemplateSpecOutputReference interface {
 	PutHostAliases(value interface{})
 	PutImagePullSecrets(value interface{})
 	PutInitContainer(value interface{})
+	PutOs(value *StatefulSetSpecTemplateSpecOs)
 	PutReadinessGate(value interface{})
 	PutSecurityContext(value *StatefulSetSpecTemplateSpecSecurityContext)
 	PutToleration(value interface{})
@@ -167,6 +170,7 @@ type StatefulSetSpecTemplateSpecOutputReference interface {
 	ResetInitContainer()
 	ResetNodeName()
 	ResetNodeSelector()
+	ResetOs()
 	ResetPriorityClassName()
 	ResetReadinessGate()
 	ResetRestartPolicy()
@@ -560,6 +564,26 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) NodeSelectorInput
 	_jsii_.Get(
 		j,
 		"nodeSelectorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) Os() StatefulSetSpecTemplateSpecOsOutputReference {
+	var returns StatefulSetSpecTemplateSpecOsOutputReference
+	_jsii_.Get(
+		j,
+		"os",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) OsInput() *StatefulSetSpecTemplateSpecOs {
+	var returns *StatefulSetSpecTemplateSpecOs
+	_jsii_.Get(
+		j,
+		"osInput",
 		&returns,
 	)
 	return returns
@@ -1378,6 +1402,17 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) PutInitContainer(
 	)
 }
 
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) PutOs(value *StatefulSetSpecTemplateSpecOs) {
+	if err := s.validatePutOsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putOs",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) PutReadinessGate(value interface{}) {
 	if err := s.validatePutReadinessGateParameters(value); err != nil {
 		panic(err)
@@ -1557,6 +1592,14 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) ResetNodeSelector
 	_jsii_.InvokeVoid(
 		s,
 		"resetNodeSelector",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) ResetOs() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOs",
 		nil, // no parameters
 	)
 }

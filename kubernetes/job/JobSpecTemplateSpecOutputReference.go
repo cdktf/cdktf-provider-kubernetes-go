@@ -74,6 +74,8 @@ type JobSpecTemplateSpecOutputReference interface {
 	NodeSelector() *map[string]*string
 	SetNodeSelector(val *map[string]*string)
 	NodeSelectorInput() *map[string]*string
+	Os() JobSpecTemplateSpecOsOutputReference
+	OsInput() *JobSpecTemplateSpecOs
 	PriorityClassName() *string
 	SetPriorityClassName(val *string)
 	PriorityClassNameInput() *string
@@ -146,6 +148,7 @@ type JobSpecTemplateSpecOutputReference interface {
 	PutHostAliases(value interface{})
 	PutImagePullSecrets(value interface{})
 	PutInitContainer(value interface{})
+	PutOs(value *JobSpecTemplateSpecOs)
 	PutReadinessGate(value interface{})
 	PutSecurityContext(value *JobSpecTemplateSpecSecurityContext)
 	PutToleration(value interface{})
@@ -167,6 +170,7 @@ type JobSpecTemplateSpecOutputReference interface {
 	ResetInitContainer()
 	ResetNodeName()
 	ResetNodeSelector()
+	ResetOs()
 	ResetPriorityClassName()
 	ResetReadinessGate()
 	ResetRestartPolicy()
@@ -560,6 +564,26 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) NodeSelectorInput() *map[
 	_jsii_.Get(
 		j,
 		"nodeSelectorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) Os() JobSpecTemplateSpecOsOutputReference {
+	var returns JobSpecTemplateSpecOsOutputReference
+	_jsii_.Get(
+		j,
+		"os",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) OsInput() *JobSpecTemplateSpecOs {
+	var returns *JobSpecTemplateSpecOs
+	_jsii_.Get(
+		j,
+		"osInput",
 		&returns,
 	)
 	return returns
@@ -1378,6 +1402,17 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutInitContainer(value in
 	)
 }
 
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutOs(value *JobSpecTemplateSpecOs) {
+	if err := j.validatePutOsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putOs",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) PutReadinessGate(value interface{}) {
 	if err := j.validatePutReadinessGateParameters(value); err != nil {
 		panic(err)
@@ -1557,6 +1592,14 @@ func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ResetNodeSelector() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetNodeSelector",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecOutputReference) ResetOs() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetOs",
 		nil, // no parameters
 	)
 }

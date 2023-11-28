@@ -239,6 +239,17 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference) validat
 	return nil
 }
 
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference) validatePutOsParameters(value *ReplicationControllerSpecTemplateSpecOs) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference) validatePutReadinessGateParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

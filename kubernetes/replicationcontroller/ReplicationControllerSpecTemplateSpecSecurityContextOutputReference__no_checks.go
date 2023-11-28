@@ -59,6 +59,10 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputRef
 	return nil
 }
 
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference) validatePutWindowsOptionsParameters(value *ReplicationControllerSpecTemplateSpecSecurityContextWindowsOptions) error {
+	return nil
+}
+
 func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
