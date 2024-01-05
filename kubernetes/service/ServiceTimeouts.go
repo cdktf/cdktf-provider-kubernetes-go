@@ -5,7 +5,7 @@ package service
 
 
 type ServiceTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/service#create Service#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/service#create Service#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

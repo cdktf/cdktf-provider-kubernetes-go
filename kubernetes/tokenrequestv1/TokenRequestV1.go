@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/token_request_v1 kubernetes_token_request_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/token_request_v1 kubernetes_token_request_v1}.
 type TokenRequestV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -93,12 +93,22 @@ type TokenRequestV1 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -355,7 +365,7 @@ func (j *jsiiProxy_TokenRequestV1) Token() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/token_request_v1 kubernetes_token_request_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/token_request_v1 kubernetes_token_request_v1} Resource.
 func NewTokenRequestV1(scope constructs.Construct, id *string, config *TokenRequestV1Config) TokenRequestV1 {
 	_init_.Initialize()
 
@@ -373,7 +383,7 @@ func NewTokenRequestV1(scope constructs.Construct, id *string, config *TokenRequ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/token_request_v1 kubernetes_token_request_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/token_request_v1 kubernetes_token_request_v1} Resource.
 func NewTokenRequestV1_Override(t TokenRequestV1, scope constructs.Construct, id *string, config *TokenRequestV1Config) {
 	_init_.Initialize()
 
@@ -732,6 +742,19 @@ func (t *jsiiProxy_TokenRequestV1) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
+func (t *jsiiProxy_TokenRequestV1) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		t,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (t *jsiiProxy_TokenRequestV1) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := t.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -759,6 +782,17 @@ func (t *jsiiProxy_TokenRequestV1) InterpolationForAttribute(terraformAttribute 
 	return returns
 }
 
+func (t *jsiiProxy_TokenRequestV1) MoveFromId(id *string) {
+	if err := t.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (t *jsiiProxy_TokenRequestV1) MoveTo(moveTarget *string, index interface{}) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -767,6 +801,17 @@ func (t *jsiiProxy_TokenRequestV1) MoveTo(moveTarget *string, index interface{})
 		t,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (t *jsiiProxy_TokenRequestV1) MoveToId(id *string) {
+	if err := t.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

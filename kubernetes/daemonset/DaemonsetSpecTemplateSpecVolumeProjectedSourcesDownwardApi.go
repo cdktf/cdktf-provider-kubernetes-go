@@ -7,7 +7,7 @@ package daemonset
 type DaemonsetSpecTemplateSpecVolumeProjectedSourcesDownwardApi struct {
 	// items block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/daemonset#items Daemonset#items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/daemonset#items Daemonset#items}
 	Items interface{} `field:"optional" json:"items" yaml:"items"`
 }
 

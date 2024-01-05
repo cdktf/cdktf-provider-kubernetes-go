@@ -93,6 +93,37 @@ func (s *jsiiProxy_StatefulSetV1SpecOutputReference) validateInterpolationForAtt
 	return nil
 }
 
+func (s *jsiiProxy_StatefulSetV1SpecOutputReference) validatePutPersistentVolumeClaimRetentionPolicyParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*StatefulSetV1SpecPersistentVolumeClaimRetentionPolicy:
+		value := value.(*[]*StatefulSetV1SpecPersistentVolumeClaimRetentionPolicy)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*StatefulSetV1SpecPersistentVolumeClaimRetentionPolicy:
+		value_ := value.([]*StatefulSetV1SpecPersistentVolumeClaimRetentionPolicy)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*StatefulSetV1SpecPersistentVolumeClaimRetentionPolicy; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_StatefulSetV1SpecOutputReference) validatePutSelectorParameters(value *StatefulSetV1SpecSelector) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

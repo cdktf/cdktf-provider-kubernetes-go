@@ -59,7 +59,15 @@ func (r *jsiiProxy_ResourceQuotaV1) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (r *jsiiProxy_ResourceQuotaV1) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceQuotaV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourceQuotaV1) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -45,6 +45,9 @@ type DaemonsetSpecTemplateMetadataOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Namespace() *string
+	SetNamespace(val *string)
+	NamespaceInput() *string
 	ResourceVersion() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -83,6 +86,7 @@ type DaemonsetSpecTemplateMetadataOutputReference interface {
 	ResetGenerateName()
 	ResetLabels()
 	ResetName()
+	ResetNamespace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -238,6 +242,26 @@ func (j *jsiiProxy_DaemonsetSpecTemplateMetadataOutputReference) NameInput() *st
 	return returns
 }
 
+func (j *jsiiProxy_DaemonsetSpecTemplateMetadataOutputReference) Namespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DaemonsetSpecTemplateMetadataOutputReference) NamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DaemonsetSpecTemplateMetadataOutputReference) ResourceVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -379,6 +403,17 @@ func (j *jsiiProxy_DaemonsetSpecTemplateMetadataOutputReference)SetName(val *str
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DaemonsetSpecTemplateMetadataOutputReference)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namespace",
 		val,
 	)
 }
@@ -619,6 +654,14 @@ func (d *jsiiProxy_DaemonsetSpecTemplateMetadataOutputReference) ResetName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DaemonsetSpecTemplateMetadataOutputReference) ResetNamespace() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNamespace",
 		nil, // no parameters
 	)
 }

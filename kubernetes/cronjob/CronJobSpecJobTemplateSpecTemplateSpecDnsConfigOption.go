@@ -7,11 +7,11 @@ package cronjob
 type CronJobSpecJobTemplateSpecTemplateSpecDnsConfigOption struct {
 	// Name of the option.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/cron_job#name CronJob#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/cron_job#name CronJob#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Value of the option. Optional: Defaults to empty.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/cron_job#value CronJob#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/cron_job#value CronJob#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

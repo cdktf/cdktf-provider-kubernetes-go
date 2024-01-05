@@ -9,11 +9,11 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDir struct {
 	//
 	// The default is "" which means to use the node's default medium. Must be an empty string (default) or Memory. More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/cron_job_v1#medium CronJobV1#medium}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/cron_job_v1#medium CronJobV1#medium}
 	Medium *string `field:"optional" json:"medium" yaml:"medium"`
 	// Total amount of local storage required for this EmptyDir volume.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/cron_job_v1#size_limit CronJobV1#size_limit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/cron_job_v1#size_limit CronJobV1#size_limit}
 	SizeLimit *string `field:"optional" json:"sizeLimit" yaml:"sizeLimit"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/data-sources/service_v1 kubernetes_service_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/data-sources/service_v1 kubernetes_service_v1}.
 type DataKubernetesServiceV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -306,7 +306,7 @@ func (j *jsiiProxy_DataKubernetesServiceV1) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/data-sources/service_v1 kubernetes_service_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/data-sources/service_v1 kubernetes_service_v1} Data Source.
 func NewDataKubernetesServiceV1(scope constructs.Construct, id *string, config *DataKubernetesServiceV1Config) DataKubernetesServiceV1 {
 	_init_.Initialize()
 
@@ -324,7 +324,7 @@ func NewDataKubernetesServiceV1(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/data-sources/service_v1 kubernetes_service_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/data-sources/service_v1 kubernetes_service_v1} Data Source.
 func NewDataKubernetesServiceV1_Override(d DataKubernetesServiceV1, scope constructs.Construct, id *string, config *DataKubernetesServiceV1Config) {
 	_init_.Initialize()
 

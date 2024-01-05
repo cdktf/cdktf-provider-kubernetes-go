@@ -44,6 +44,7 @@ type DataKubernetesPodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference 
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VolumeMode() *string
 	VolumeName() *string
 	// Experimental.
 	ComputeFqn() *string
@@ -189,6 +190,16 @@ func (j *jsiiProxy_DataKubernetesPodSpecVolumeEphemeralVolumeClaimTemplateSpecOu
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesPodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference) VolumeMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volumeMode",
 		&returns,
 	)
 	return returns

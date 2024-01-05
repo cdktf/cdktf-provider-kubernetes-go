@@ -228,6 +228,14 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSp
 	return nil
 }
 
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference) validateSetVolumeModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DaemonsetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference) validateSetVolumeNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -50,6 +50,9 @@ type StatefulSetV1SpecVolumeClaimTemplateSpecOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VolumeMode() *string
+	SetVolumeMode(val *string)
+	VolumeModeInput() *string
 	VolumeName() *string
 	SetVolumeName(val *string)
 	VolumeNameInput() *string
@@ -81,6 +84,7 @@ type StatefulSetV1SpecVolumeClaimTemplateSpecOutputReference interface {
 	PutSelector(value *StatefulSetV1SpecVolumeClaimTemplateSpecSelector)
 	ResetSelector()
 	ResetStorageClassName()
+	ResetVolumeMode()
 	ResetVolumeName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecOutputReference) Terr
 	return returns
 }
 
+func (j *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecOutputReference) VolumeMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volumeMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecOutputReference) VolumeModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volumeModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecOutputReference) VolumeName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -368,6 +392,17 @@ func (j *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecOutputReference)SetTe
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecOutputReference)SetVolumeMode(val *string) {
+	if err := j.validateSetVolumeModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"volumeMode",
 		val,
 	)
 }
@@ -603,6 +638,14 @@ func (s *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecOutputReference) Rese
 	_jsii_.InvokeVoid(
 		s,
 		"resetStorageClassName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecOutputReference) ResetVolumeMode() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetVolumeMode",
 		nil, // no parameters
 	)
 }

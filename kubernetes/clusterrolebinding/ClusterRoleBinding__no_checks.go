@@ -59,7 +59,15 @@ func (c *jsiiProxy_ClusterRoleBinding) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (c *jsiiProxy_ClusterRoleBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClusterRoleBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClusterRoleBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

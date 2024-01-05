@@ -59,7 +59,15 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2) validateInterpolationForAttri
 	return nil
 }
 
+func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

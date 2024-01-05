@@ -59,7 +59,15 @@ func (m *jsiiProxy_MutatingWebhookConfiguration) validateInterpolationForAttribu
 	return nil
 }
 
+func (m *jsiiProxy_MutatingWebhookConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MutatingWebhookConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MutatingWebhookConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_Deployment) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (d *jsiiProxy_Deployment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Deployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_Deployment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

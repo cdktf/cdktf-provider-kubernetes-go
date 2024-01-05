@@ -50,6 +50,9 @@ type PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VolumeMode() *string
+	SetVolumeMode(val *string)
+	VolumeModeInput() *string
 	VolumeName() *string
 	SetVolumeName(val *string)
 	VolumeNameInput() *string
@@ -81,6 +84,7 @@ type PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference interface {
 	PutSelector(value *PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelector)
 	ResetSelector()
 	ResetStorageClassName()
+	ResetVolumeMode()
 	ResetVolumeName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference) VolumeMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volumeMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference) VolumeModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volumeModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference) VolumeName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -368,6 +392,17 @@ func (j *jsiiProxy_PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference)
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference)SetVolumeMode(val *string) {
+	if err := j.validateSetVolumeModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"volumeMode",
 		val,
 	)
 }
@@ -603,6 +638,14 @@ func (p *jsiiProxy_PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference)
 	_jsii_.InvokeVoid(
 		p,
 		"resetStorageClassName",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference) ResetVolumeMode() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetVolumeMode",
 		nil, // no parameters
 	)
 }

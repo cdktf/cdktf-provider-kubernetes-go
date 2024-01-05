@@ -45,6 +45,9 @@ type StatefulSetV1SpecTemplateMetadataOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Namespace() *string
+	SetNamespace(val *string)
+	NamespaceInput() *string
 	ResourceVersion() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -83,6 +86,7 @@ type StatefulSetV1SpecTemplateMetadataOutputReference interface {
 	ResetGenerateName()
 	ResetLabels()
 	ResetName()
+	ResetNamespace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -238,6 +242,26 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateMetadataOutputReference) NameInput()
 	return returns
 }
 
+func (j *jsiiProxy_StatefulSetV1SpecTemplateMetadataOutputReference) Namespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetV1SpecTemplateMetadataOutputReference) NamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StatefulSetV1SpecTemplateMetadataOutputReference) ResourceVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -379,6 +403,17 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateMetadataOutputReference)SetName(val 
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulSetV1SpecTemplateMetadataOutputReference)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namespace",
 		val,
 	)
 }
@@ -619,6 +654,14 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateMetadataOutputReference) ResetName()
 	_jsii_.InvokeVoid(
 		s,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulSetV1SpecTemplateMetadataOutputReference) ResetNamespace() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNamespace",
 		nil, // no parameters
 	)
 }

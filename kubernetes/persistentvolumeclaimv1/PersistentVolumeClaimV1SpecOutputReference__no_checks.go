@@ -87,6 +87,10 @@ func (j *jsiiProxy_PersistentVolumeClaimV1SpecOutputReference) validateSetTerraf
 	return nil
 }
 
+func (j *jsiiProxy_PersistentVolumeClaimV1SpecOutputReference) validateSetVolumeModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PersistentVolumeClaimV1SpecOutputReference) validateSetVolumeNameParameters(val *string) error {
 	return nil
 }

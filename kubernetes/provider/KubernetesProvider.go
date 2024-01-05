@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs kubernetes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs kubernetes}.
 type KubernetesProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -46,12 +46,12 @@ type KubernetesProvider interface {
 	ConfigPathsInput() *[]*string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
-	Exec() *KubernetesProviderExec
-	SetExec(val *KubernetesProviderExec)
-	ExecInput() *KubernetesProviderExec
-	Experiments() *KubernetesProviderExperiments
-	SetExperiments(val *KubernetesProviderExperiments)
-	ExperimentsInput() *KubernetesProviderExperiments
+	Exec() interface{}
+	SetExec(val interface{})
+	ExecInput() interface{}
+	Experiments() interface{}
+	SetExperiments(val interface{})
+	ExperimentsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -338,8 +338,8 @@ func (j *jsiiProxy_KubernetesProvider) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesProvider) Exec() *KubernetesProviderExec {
-	var returns *KubernetesProviderExec
+func (j *jsiiProxy_KubernetesProvider) Exec() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"exec",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_KubernetesProvider) Exec() *KubernetesProviderExec {
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesProvider) ExecInput() *KubernetesProviderExec {
-	var returns *KubernetesProviderExec
+func (j *jsiiProxy_KubernetesProvider) ExecInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"execInput",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_KubernetesProvider) ExecInput() *KubernetesProviderExec {
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesProvider) Experiments() *KubernetesProviderExperiments {
-	var returns *KubernetesProviderExperiments
+func (j *jsiiProxy_KubernetesProvider) Experiments() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"experiments",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_KubernetesProvider) Experiments() *KubernetesProviderExperime
 	return returns
 }
 
-func (j *jsiiProxy_KubernetesProvider) ExperimentsInput() *KubernetesProviderExperiments {
-	var returns *KubernetesProviderExperiments
+func (j *jsiiProxy_KubernetesProvider) ExperimentsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"experimentsInput",
@@ -639,7 +639,7 @@ func (j *jsiiProxy_KubernetesProvider) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs kubernetes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs kubernetes} Resource.
 func NewKubernetesProvider(scope constructs.Construct, id *string, config *KubernetesProviderConfig) KubernetesProvider {
 	_init_.Initialize()
 
@@ -657,7 +657,7 @@ func NewKubernetesProvider(scope constructs.Construct, id *string, config *Kuber
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs kubernetes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs kubernetes} Resource.
 func NewKubernetesProvider_Override(k KubernetesProvider, scope constructs.Construct, id *string, config *KubernetesProviderConfig) {
 	_init_.Initialize()
 
@@ -740,7 +740,7 @@ func (j *jsiiProxy_KubernetesProvider)SetConfigPaths(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetExec(val *KubernetesProviderExec) {
+func (j *jsiiProxy_KubernetesProvider)SetExec(val interface{}) {
 	if err := j.validateSetExecParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +751,7 @@ func (j *jsiiProxy_KubernetesProvider)SetExec(val *KubernetesProviderExec) {
 	)
 }
 
-func (j *jsiiProxy_KubernetesProvider)SetExperiments(val *KubernetesProviderExperiments) {
+func (j *jsiiProxy_KubernetesProvider)SetExperiments(val interface{}) {
 	if err := j.validateSetExperimentsParameters(val); err != nil {
 		panic(err)
 	}

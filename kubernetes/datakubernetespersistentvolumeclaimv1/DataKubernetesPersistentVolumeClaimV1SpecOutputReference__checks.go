@@ -245,6 +245,14 @@ func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecOutputReference) validateSetVolumeModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecOutputReference) validateSetVolumeNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/namespace_v1 kubernetes_namespace_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/namespace_v1 kubernetes_namespace_v1}.
 type NamespaceV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -95,12 +95,22 @@ type NamespaceV1 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -368,7 +378,7 @@ func (j *jsiiProxy_NamespaceV1) WaitForDefaultServiceAccountInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/namespace_v1 kubernetes_namespace_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/namespace_v1 kubernetes_namespace_v1} Resource.
 func NewNamespaceV1(scope constructs.Construct, id *string, config *NamespaceV1Config) NamespaceV1 {
 	_init_.Initialize()
 
@@ -386,7 +396,7 @@ func NewNamespaceV1(scope constructs.Construct, id *string, config *NamespaceV1C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/namespace_v1 kubernetes_namespace_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/namespace_v1 kubernetes_namespace_v1} Resource.
 func NewNamespaceV1_Override(n NamespaceV1, scope constructs.Construct, id *string, config *NamespaceV1Config) {
 	_init_.Initialize()
 
@@ -756,6 +766,19 @@ func (n *jsiiProxy_NamespaceV1) GetStringMapAttribute(terraformAttribute *string
 	return returns
 }
 
+func (n *jsiiProxy_NamespaceV1) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NamespaceV1) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -783,6 +806,17 @@ func (n *jsiiProxy_NamespaceV1) InterpolationForAttribute(terraformAttribute *st
 	return returns
 }
 
+func (n *jsiiProxy_NamespaceV1) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NamespaceV1) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -791,6 +825,17 @@ func (n *jsiiProxy_NamespaceV1) MoveTo(moveTarget *string, index interface{}) {
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NamespaceV1) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

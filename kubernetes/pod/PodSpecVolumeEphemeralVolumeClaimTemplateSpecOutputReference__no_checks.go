@@ -87,6 +87,10 @@ func (j *jsiiProxy_PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference) validateSetVolumeModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference) validateSetVolumeNameParameters(val *string) error {
 	return nil
 }

@@ -7,11 +7,11 @@ package replicationcontroller
 type ReplicationControllerSpecTemplateSpecSecurityContextSysctl struct {
 	// Name of a property to set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/replication_controller#name ReplicationController#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/replication_controller#name ReplicationController#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Value of a property to set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/replication_controller#value ReplicationController#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/replication_controller#value ReplicationController#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

@@ -47,6 +47,10 @@ func (s *jsiiProxy_StatefulSetV1SpecOutputReference) validateInterpolationForAtt
 	return nil
 }
 
+func (s *jsiiProxy_StatefulSetV1SpecOutputReference) validatePutPersistentVolumeClaimRetentionPolicyParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StatefulSetV1SpecOutputReference) validatePutSelectorParameters(value *StatefulSetV1SpecSelector) error {
 	return nil
 }

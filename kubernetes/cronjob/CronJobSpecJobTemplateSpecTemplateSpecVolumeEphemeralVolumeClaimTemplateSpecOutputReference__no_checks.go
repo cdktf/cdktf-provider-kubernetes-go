@@ -87,6 +87,10 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeCl
 	return nil
 }
 
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference) validateSetVolumeModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference) validateSetVolumeNameParameters(val *string) error {
 	return nil
 }

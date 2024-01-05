@@ -59,7 +59,15 @@ func (p *jsiiProxy_PodDisruptionBudget) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (p *jsiiProxy_PodDisruptionBudget) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PodDisruptionBudget) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PodDisruptionBudget) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

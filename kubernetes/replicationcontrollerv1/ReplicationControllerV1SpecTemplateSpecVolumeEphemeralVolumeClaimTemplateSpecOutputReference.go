@@ -50,6 +50,9 @@ type ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSp
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VolumeMode() *string
+	SetVolumeMode(val *string)
+	VolumeModeInput() *string
 	VolumeName() *string
 	SetVolumeName(val *string)
 	VolumeNameInput() *string
@@ -81,6 +84,7 @@ type ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSp
 	PutSelector(value *ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector)
 	ResetSelector()
 	ResetStorageClassName()
+	ResetVolumeMode()
 	ResetVolumeName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeC
 	return returns
 }
 
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference) VolumeMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volumeMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference) VolumeModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volumeModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference) VolumeName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -368,6 +392,17 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeC
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference)SetVolumeMode(val *string) {
+	if err := j.validateSetVolumeModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"volumeMode",
 		val,
 	)
 }
@@ -603,6 +638,14 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeC
 	_jsii_.InvokeVoid(
 		r,
 		"resetStorageClassName",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference) ResetVolumeMode() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetVolumeMode",
 		nil, // no parameters
 	)
 }

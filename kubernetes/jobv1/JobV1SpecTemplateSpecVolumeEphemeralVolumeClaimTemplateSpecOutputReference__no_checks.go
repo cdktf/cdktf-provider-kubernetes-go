@@ -87,6 +87,10 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOu
 	return nil
 }
 
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference) validateSetVolumeModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference) validateSetVolumeNameParameters(val *string) error {
 	return nil
 }

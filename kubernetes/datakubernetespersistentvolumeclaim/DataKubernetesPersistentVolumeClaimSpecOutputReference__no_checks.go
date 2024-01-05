@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimSpecOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimSpecOutputReference) validateSetVolumeModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimSpecOutputReference) validateSetVolumeNameParameters(val *string) error {
 	return nil
 }

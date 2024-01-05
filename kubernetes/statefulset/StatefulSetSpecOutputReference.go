@@ -32,6 +32,8 @@ type StatefulSetSpecOutputReference interface {
 	Fqn() *string
 	InternalValue() *StatefulSetSpec
 	SetInternalValue(val *StatefulSetSpec)
+	PersistentVolumeClaimRetentionPolicy() StatefulSetSpecPersistentVolumeClaimRetentionPolicyList
+	PersistentVolumeClaimRetentionPolicyInput() interface{}
 	PodManagementPolicy() *string
 	SetPodManagementPolicy(val *string)
 	PodManagementPolicyInput() *string
@@ -84,10 +86,12 @@ type StatefulSetSpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPersistentVolumeClaimRetentionPolicy(value interface{})
 	PutSelector(value *StatefulSetSpecSelector)
 	PutTemplate(value *StatefulSetSpecTemplate)
 	PutUpdateStrategy(value interface{})
 	PutVolumeClaimTemplate(value interface{})
+	ResetPersistentVolumeClaimRetentionPolicy()
 	ResetPodManagementPolicy()
 	ResetReplicas()
 	ResetRevisionHistoryLimit()
@@ -153,6 +157,26 @@ func (j *jsiiProxy_StatefulSetSpecOutputReference) InternalValue() *StatefulSetS
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetSpecOutputReference) PersistentVolumeClaimRetentionPolicy() StatefulSetSpecPersistentVolumeClaimRetentionPolicyList {
+	var returns StatefulSetSpecPersistentVolumeClaimRetentionPolicyList
+	_jsii_.Get(
+		j,
+		"persistentVolumeClaimRetentionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetSpecOutputReference) PersistentVolumeClaimRetentionPolicyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"persistentVolumeClaimRetentionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -651,6 +675,17 @@ func (s *jsiiProxy_StatefulSetSpecOutputReference) InterpolationForAttribute(pro
 	return returns
 }
 
+func (s *jsiiProxy_StatefulSetSpecOutputReference) PutPersistentVolumeClaimRetentionPolicy(value interface{}) {
+	if err := s.validatePutPersistentVolumeClaimRetentionPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putPersistentVolumeClaimRetentionPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StatefulSetSpecOutputReference) PutSelector(value *StatefulSetSpecSelector) {
 	if err := s.validatePutSelectorParameters(value); err != nil {
 		panic(err)
@@ -692,6 +727,14 @@ func (s *jsiiProxy_StatefulSetSpecOutputReference) PutVolumeClaimTemplate(value 
 		s,
 		"putVolumeClaimTemplate",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StatefulSetSpecOutputReference) ResetPersistentVolumeClaimRetentionPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPersistentVolumeClaimRetentionPolicy",
+		nil, // no parameters
 	)
 }
 

@@ -31,11 +31,11 @@ func validateKubernetesProvider_IsTerraformProviderParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_KubernetesProvider) validateSetExecParameters(val *KubernetesProviderExec) error {
+func (j *jsiiProxy_KubernetesProvider) validateSetExecParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_KubernetesProvider) validateSetExperimentsParameters(val *KubernetesProviderExperiments) error {
+func (j *jsiiProxy_KubernetesProvider) validateSetExperimentsParameters(val interface{}) error {
 	return nil
 }
 

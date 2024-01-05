@@ -59,7 +59,15 @@ func (p *jsiiProxy_PersistentVolumeV1) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (p *jsiiProxy_PersistentVolumeV1) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PersistentVolumeV1) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PersistentVolumeV1) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

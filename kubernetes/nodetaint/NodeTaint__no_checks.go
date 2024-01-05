@@ -59,7 +59,15 @@ func (n *jsiiProxy_NodeTaint) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (n *jsiiProxy_NodeTaint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NodeTaint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NodeTaint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

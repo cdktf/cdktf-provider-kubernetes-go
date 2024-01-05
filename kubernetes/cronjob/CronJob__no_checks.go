@@ -59,7 +59,15 @@ func (c *jsiiProxy_CronJob) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (c *jsiiProxy_CronJob) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CronJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CronJob) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

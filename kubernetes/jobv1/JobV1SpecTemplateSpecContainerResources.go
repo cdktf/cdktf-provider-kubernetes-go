@@ -7,13 +7,13 @@ package jobv1
 type JobV1SpecTemplateSpecContainerResources struct {
 	// Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/job_v1#limits JobV1#limits}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/job_v1#limits JobV1#limits}
 	Limits *map[string]*string `field:"optional" json:"limits" yaml:"limits"`
 	// Requests describes the minimum amount of compute resources required.
 	//
 	// If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/job_v1#requests JobV1#requests}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/job_v1#requests JobV1#requests}
 	Requests *map[string]*string `field:"optional" json:"requests" yaml:"requests"`
 }
 

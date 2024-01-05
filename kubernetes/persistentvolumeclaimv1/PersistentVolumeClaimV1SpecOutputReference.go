@@ -50,6 +50,9 @@ type PersistentVolumeClaimV1SpecOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VolumeMode() *string
+	SetVolumeMode(val *string)
+	VolumeModeInput() *string
 	VolumeName() *string
 	SetVolumeName(val *string)
 	VolumeNameInput() *string
@@ -81,6 +84,7 @@ type PersistentVolumeClaimV1SpecOutputReference interface {
 	PutSelector(value *PersistentVolumeClaimV1SpecSelector)
 	ResetSelector()
 	ResetStorageClassName()
+	ResetVolumeMode()
 	ResetVolumeName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_PersistentVolumeClaimV1SpecOutputReference) TerraformResource
 	return returns
 }
 
+func (j *jsiiProxy_PersistentVolumeClaimV1SpecOutputReference) VolumeMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volumeMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PersistentVolumeClaimV1SpecOutputReference) VolumeModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volumeModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PersistentVolumeClaimV1SpecOutputReference) VolumeName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -368,6 +392,17 @@ func (j *jsiiProxy_PersistentVolumeClaimV1SpecOutputReference)SetTerraformResour
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PersistentVolumeClaimV1SpecOutputReference)SetVolumeMode(val *string) {
+	if err := j.validateSetVolumeModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"volumeMode",
 		val,
 	)
 }
@@ -603,6 +638,14 @@ func (p *jsiiProxy_PersistentVolumeClaimV1SpecOutputReference) ResetStorageClass
 	_jsii_.InvokeVoid(
 		p,
 		"resetStorageClassName",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PersistentVolumeClaimV1SpecOutputReference) ResetVolumeMode() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetVolumeMode",
 		nil, // no parameters
 	)
 }

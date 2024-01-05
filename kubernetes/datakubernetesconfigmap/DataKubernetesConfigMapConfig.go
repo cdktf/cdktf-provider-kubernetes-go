@@ -24,9 +24,9 @@ type DataKubernetesConfigMapConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// metadata block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/data-sources/config_map#metadata DataKubernetesConfigMap#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/data-sources/config_map#metadata DataKubernetesConfigMap#metadata}
 	Metadata *DataKubernetesConfigMapMetadata `field:"required" json:"metadata" yaml:"metadata"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/data-sources/config_map#id DataKubernetesConfigMap#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/data-sources/config_map#id DataKubernetesConfigMap#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,7 +35,7 @@ type DataKubernetesConfigMapConfig struct {
 	//
 	// If not set to true, the field can be modified at any time. Defaulted to nil.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/data-sources/config_map#immutable DataKubernetesConfigMap#immutable}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/data-sources/config_map#immutable DataKubernetesConfigMap#immutable}
 	Immutable interface{} `field:"optional" json:"immutable" yaml:"immutable"`
 }
 

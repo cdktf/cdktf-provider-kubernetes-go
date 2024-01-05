@@ -50,6 +50,9 @@ type StatefulSetSpecVolumeClaimTemplateSpecOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VolumeMode() *string
+	SetVolumeMode(val *string)
+	VolumeModeInput() *string
 	VolumeName() *string
 	SetVolumeName(val *string)
 	VolumeNameInput() *string
@@ -81,6 +84,7 @@ type StatefulSetSpecVolumeClaimTemplateSpecOutputReference interface {
 	PutSelector(value *StatefulSetSpecVolumeClaimTemplateSpecSelector)
 	ResetSelector()
 	ResetStorageClassName()
+	ResetVolumeMode()
 	ResetVolumeName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecOutputReference) Terraf
 	return returns
 }
 
+func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecOutputReference) VolumeMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volumeMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecOutputReference) VolumeModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volumeModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecOutputReference) VolumeName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -368,6 +392,17 @@ func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecOutputReference)SetTerr
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecOutputReference)SetVolumeMode(val *string) {
+	if err := j.validateSetVolumeModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"volumeMode",
 		val,
 	)
 }
@@ -603,6 +638,14 @@ func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecOutputReference) ResetS
 	_jsii_.InvokeVoid(
 		s,
 		"resetStorageClassName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecOutputReference) ResetVolumeMode() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetVolumeMode",
 		nil, // no parameters
 	)
 }

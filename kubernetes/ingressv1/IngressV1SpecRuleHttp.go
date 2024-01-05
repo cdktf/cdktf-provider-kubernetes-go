@@ -7,7 +7,7 @@ package ingressv1
 type IngressV1SpecRuleHttp struct {
 	// path block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/ingress_v1#path IngressV1#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/ingress_v1#path IngressV1#path}
 	Path interface{} `field:"required" json:"path" yaml:"path"`
 }
 

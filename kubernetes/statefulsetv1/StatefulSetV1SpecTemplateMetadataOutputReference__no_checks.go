@@ -79,6 +79,10 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateMetadataOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_StatefulSetV1SpecTemplateMetadataOutputReference) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StatefulSetV1SpecTemplateMetadataOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -32,6 +32,8 @@ type StatefulSetV1SpecOutputReference interface {
 	Fqn() *string
 	InternalValue() *StatefulSetV1Spec
 	SetInternalValue(val *StatefulSetV1Spec)
+	PersistentVolumeClaimRetentionPolicy() StatefulSetV1SpecPersistentVolumeClaimRetentionPolicyList
+	PersistentVolumeClaimRetentionPolicyInput() interface{}
 	PodManagementPolicy() *string
 	SetPodManagementPolicy(val *string)
 	PodManagementPolicyInput() *string
@@ -84,10 +86,12 @@ type StatefulSetV1SpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPersistentVolumeClaimRetentionPolicy(value interface{})
 	PutSelector(value *StatefulSetV1SpecSelector)
 	PutTemplate(value *StatefulSetV1SpecTemplate)
 	PutUpdateStrategy(value interface{})
 	PutVolumeClaimTemplate(value interface{})
+	ResetPersistentVolumeClaimRetentionPolicy()
 	ResetPodManagementPolicy()
 	ResetReplicas()
 	ResetRevisionHistoryLimit()
@@ -153,6 +157,26 @@ func (j *jsiiProxy_StatefulSetV1SpecOutputReference) InternalValue() *StatefulSe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetV1SpecOutputReference) PersistentVolumeClaimRetentionPolicy() StatefulSetV1SpecPersistentVolumeClaimRetentionPolicyList {
+	var returns StatefulSetV1SpecPersistentVolumeClaimRetentionPolicyList
+	_jsii_.Get(
+		j,
+		"persistentVolumeClaimRetentionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetV1SpecOutputReference) PersistentVolumeClaimRetentionPolicyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"persistentVolumeClaimRetentionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -651,6 +675,17 @@ func (s *jsiiProxy_StatefulSetV1SpecOutputReference) InterpolationForAttribute(p
 	return returns
 }
 
+func (s *jsiiProxy_StatefulSetV1SpecOutputReference) PutPersistentVolumeClaimRetentionPolicy(value interface{}) {
+	if err := s.validatePutPersistentVolumeClaimRetentionPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putPersistentVolumeClaimRetentionPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StatefulSetV1SpecOutputReference) PutSelector(value *StatefulSetV1SpecSelector) {
 	if err := s.validatePutSelectorParameters(value); err != nil {
 		panic(err)
@@ -692,6 +727,14 @@ func (s *jsiiProxy_StatefulSetV1SpecOutputReference) PutVolumeClaimTemplate(valu
 		s,
 		"putVolumeClaimTemplate",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StatefulSetV1SpecOutputReference) ResetPersistentVolumeClaimRetentionPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPersistentVolumeClaimRetentionPolicy",
+		nil, // no parameters
 	)
 }
 

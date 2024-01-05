@@ -9,19 +9,19 @@ type DeploymentSpecTemplateSpecVolumeSecret struct {
 	//
 	// Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/deployment#default_mode Deployment#default_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/deployment#default_mode Deployment#default_mode}
 	DefaultMode *string `field:"optional" json:"defaultMode" yaml:"defaultMode"`
 	// items block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/deployment#items Deployment#items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/deployment#items Deployment#items}
 	Items interface{} `field:"optional" json:"items" yaml:"items"`
 	// Optional: Specify whether the Secret or its keys must be defined.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/deployment#optional Deployment#optional}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/deployment#optional Deployment#optional}
 	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
 	// Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.24.0/docs/resources/deployment#secret_name Deployment#secret_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/deployment#secret_name Deployment#secret_name}
 	SecretName *string `field:"optional" json:"secretName" yaml:"secretName"`
 }
 
