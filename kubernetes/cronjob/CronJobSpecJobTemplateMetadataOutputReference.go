@@ -45,6 +45,9 @@ type CronJobSpecJobTemplateMetadataOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Namespace() *string
+	SetNamespace(val *string)
+	NamespaceInput() *string
 	ResourceVersion() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -83,6 +86,7 @@ type CronJobSpecJobTemplateMetadataOutputReference interface {
 	ResetGenerateName()
 	ResetLabels()
 	ResetName()
+	ResetNamespace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -238,6 +242,26 @@ func (j *jsiiProxy_CronJobSpecJobTemplateMetadataOutputReference) NameInput() *s
 	return returns
 }
 
+func (j *jsiiProxy_CronJobSpecJobTemplateMetadataOutputReference) Namespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobSpecJobTemplateMetadataOutputReference) NamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CronJobSpecJobTemplateMetadataOutputReference) ResourceVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -379,6 +403,17 @@ func (j *jsiiProxy_CronJobSpecJobTemplateMetadataOutputReference)SetName(val *st
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CronJobSpecJobTemplateMetadataOutputReference)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namespace",
 		val,
 	)
 }
@@ -619,6 +654,14 @@ func (c *jsiiProxy_CronJobSpecJobTemplateMetadataOutputReference) ResetName() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CronJobSpecJobTemplateMetadataOutputReference) ResetNamespace() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNamespace",
 		nil, // no parameters
 	)
 }

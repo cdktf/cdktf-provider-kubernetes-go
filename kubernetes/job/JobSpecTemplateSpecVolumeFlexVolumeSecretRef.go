@@ -7,11 +7,11 @@ package job
 type JobSpecTemplateSpecVolumeFlexVolumeSecretRef struct {
 	// Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/job#name Job#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/job#name Job#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/job#namespace Job#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/job#namespace Job#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/data-sources/resource kubernetes_resource}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/data-sources/resource kubernetes_resource}.
 type DataKubernetesResource interface {
 	cdktf.TerraformDataSource
 	ApiVersion() *string
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataKubernetesResource) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/data-sources/resource kubernetes_resource} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/data-sources/resource kubernetes_resource} Data Source.
 func NewDataKubernetesResource(scope constructs.Construct, id *string, config *DataKubernetesResourceConfig) DataKubernetesResource {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataKubernetesResource(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/data-sources/resource kubernetes_resource} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/data-sources/resource kubernetes_resource} Data Source.
 func NewDataKubernetesResource_Override(d DataKubernetesResource, scope constructs.Construct, id *string, config *DataKubernetesResourceConfig) {
 	_init_.Initialize()
 

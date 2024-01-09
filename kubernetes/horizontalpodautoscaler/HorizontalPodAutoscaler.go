@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/horizontal_pod_autoscaler kubernetes_horizontal_pod_autoscaler}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/horizontal_pod_autoscaler kubernetes_horizontal_pod_autoscaler}.
 type HorizontalPodAutoscaler interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_HorizontalPodAutoscaler) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/horizontal_pod_autoscaler kubernetes_horizontal_pod_autoscaler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/horizontal_pod_autoscaler kubernetes_horizontal_pod_autoscaler} Resource.
 func NewHorizontalPodAutoscaler(scope constructs.Construct, id *string, config *HorizontalPodAutoscalerConfig) HorizontalPodAutoscaler {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewHorizontalPodAutoscaler(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/horizontal_pod_autoscaler kubernetes_horizontal_pod_autoscaler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/horizontal_pod_autoscaler kubernetes_horizontal_pod_autoscaler} Resource.
 func NewHorizontalPodAutoscaler_Override(h HorizontalPodAutoscaler, scope constructs.Construct, id *string, config *HorizontalPodAutoscalerConfig) {
 	_init_.Initialize()
 

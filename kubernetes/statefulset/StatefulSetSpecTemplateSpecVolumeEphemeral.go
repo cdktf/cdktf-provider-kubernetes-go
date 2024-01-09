@@ -7,7 +7,7 @@ package statefulset
 type StatefulSetSpecTemplateSpecVolumeEphemeral struct {
 	// volume_claim_template block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/stateful_set#volume_claim_template StatefulSet#volume_claim_template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/stateful_set#volume_claim_template StatefulSet#volume_claim_template}
 	VolumeClaimTemplate *StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate `field:"required" json:"volumeClaimTemplate" yaml:"volumeClaimTemplate"`
 }
 

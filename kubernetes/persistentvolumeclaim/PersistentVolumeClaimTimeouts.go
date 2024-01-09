@@ -5,7 +5,7 @@ package persistentvolumeclaim
 
 
 type PersistentVolumeClaimTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.1/docs/resources/persistent_volume_claim#create PersistentVolumeClaim#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/persistent_volume_claim#create PersistentVolumeClaim#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

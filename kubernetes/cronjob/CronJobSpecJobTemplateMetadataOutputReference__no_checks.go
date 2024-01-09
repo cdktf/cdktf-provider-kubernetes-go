@@ -79,6 +79,10 @@ func (j *jsiiProxy_CronJobSpecJobTemplateMetadataOutputReference) validateSetNam
 	return nil
 }
 
+func (j *jsiiProxy_CronJobSpecJobTemplateMetadataOutputReference) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CronJobSpecJobTemplateMetadataOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
