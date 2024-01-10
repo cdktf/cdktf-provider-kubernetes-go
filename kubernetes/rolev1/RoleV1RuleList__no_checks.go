@@ -7,6 +7,10 @@ package rolev1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RoleV1RuleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RoleV1RuleList) validateGetParameters(index *float64) error {
 	return nil
 }

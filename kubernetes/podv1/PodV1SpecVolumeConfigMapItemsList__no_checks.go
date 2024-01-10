@@ -7,6 +7,10 @@ package podv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PodV1SpecVolumeConfigMapItemsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PodV1SpecVolumeConfigMapItemsList) validateGetParameters(index *float64) error {
 	return nil
 }

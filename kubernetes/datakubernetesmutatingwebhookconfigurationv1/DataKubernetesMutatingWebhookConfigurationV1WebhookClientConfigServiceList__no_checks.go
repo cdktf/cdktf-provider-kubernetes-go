@@ -7,6 +7,10 @@ package datakubernetesmutatingwebhookconfigurationv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigServiceList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigServiceList) validateGetParameters(index *float64) error {
 	return nil
 }

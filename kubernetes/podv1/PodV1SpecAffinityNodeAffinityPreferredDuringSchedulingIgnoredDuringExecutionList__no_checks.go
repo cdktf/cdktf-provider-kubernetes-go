@@ -7,6 +7,10 @@ package podv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList) validateGetParameters(index *float64) error {
 	return nil
 }

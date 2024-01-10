@@ -7,6 +7,10 @@ package ingressv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IngressV1StatusLoadBalancerList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IngressV1StatusLoadBalancerList) validateGetParameters(index *float64) error {
 	return nil
 }

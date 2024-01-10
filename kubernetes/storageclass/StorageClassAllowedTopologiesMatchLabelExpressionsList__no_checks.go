@@ -7,6 +7,10 @@ package storageclass
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsList) validateGetParameters(index *float64) error {
 	return nil
 }

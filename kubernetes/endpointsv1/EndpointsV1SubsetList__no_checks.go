@@ -7,6 +7,10 @@ package endpointsv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EndpointsV1SubsetList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EndpointsV1SubsetList) validateGetParameters(index *float64) error {
 	return nil
 }

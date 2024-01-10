@@ -7,6 +7,10 @@ package statefulsetv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecHostAliasesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecHostAliasesList) validateGetParameters(index *float64) error {
 	return nil
 }

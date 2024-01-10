@@ -7,6 +7,10 @@ package datakubernetesserviceaccountv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataKubernetesServiceAccountV1SecretList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataKubernetesServiceAccountV1SecretList) validateGetParameters(index *float64) error {
 	return nil
 }

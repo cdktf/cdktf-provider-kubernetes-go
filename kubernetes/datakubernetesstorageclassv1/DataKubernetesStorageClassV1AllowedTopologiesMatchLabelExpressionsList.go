@@ -5,9 +5,9 @@ package datakubernetesstorageclassv1
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v10/datakubernetesstorageclassv1/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v11/datakubernetesstorageclassv1/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,6 +31,11 @@ type DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpressionsList inte
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
+	// Creating an iterator for this complex list.
+	//
+	// The list will be converted into a map with the mapKeyAttributeName as the key.
+	// Experimental.
+	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpressionsOutputReference
@@ -179,6 +184,22 @@ func (j *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpres
 		"wrapsSet",
 		val,
 	)
+}
+
+func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpressionsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
+		panic(err)
+	}
+	var returns cdktf.DynamicListTerraformIterator
+
+	_jsii_.Invoke(
+		d,
+		"allWithMapKey",
+		[]interface{}{mapKeyAttributeName},
+		&returns,
+	)
+
+	return returns
 }
 
 func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpressionsList) ComputeFqn() *string {

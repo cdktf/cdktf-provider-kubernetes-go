@@ -7,6 +7,10 @@ package limitrangev1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LimitRangeV1SpecLimitList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LimitRangeV1SpecLimitList) validateGetParameters(index *float64) error {
 	return nil
 }

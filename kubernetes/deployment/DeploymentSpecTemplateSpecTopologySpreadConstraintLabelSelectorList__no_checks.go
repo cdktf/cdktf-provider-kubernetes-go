@@ -7,6 +7,10 @@ package deployment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DeploymentSpecTemplateSpecTopologySpreadConstraintLabelSelectorList) validateGetParameters(index *float64) error {
 	return nil
 }

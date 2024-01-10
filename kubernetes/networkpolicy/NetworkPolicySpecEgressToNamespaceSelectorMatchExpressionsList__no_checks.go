@@ -7,6 +7,10 @@ package networkpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList) validateGetParameters(index *float64) error {
 	return nil
 }

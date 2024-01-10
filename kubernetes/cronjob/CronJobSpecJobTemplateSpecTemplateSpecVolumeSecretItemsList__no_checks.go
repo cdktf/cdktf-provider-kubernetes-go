@@ -7,6 +7,10 @@ package cronjob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeSecretItemsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeSecretItemsList) validateGetParameters(index *float64) error {
 	return nil
 }

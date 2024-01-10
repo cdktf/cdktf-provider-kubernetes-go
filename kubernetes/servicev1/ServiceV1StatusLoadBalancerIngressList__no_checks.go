@@ -7,6 +7,10 @@ package servicev1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServiceV1StatusLoadBalancerIngressList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceV1StatusLoadBalancerIngressList) validateGetParameters(index *float64) error {
 	return nil
 }

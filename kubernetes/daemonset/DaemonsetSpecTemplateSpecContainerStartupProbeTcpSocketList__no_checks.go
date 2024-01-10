@@ -7,6 +7,10 @@ package daemonset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerStartupProbeTcpSocketList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerStartupProbeTcpSocketList) validateGetParameters(index *float64) error {
 	return nil
 }

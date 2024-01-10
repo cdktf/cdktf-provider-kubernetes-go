@@ -7,6 +7,10 @@ package daemonset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeList) validateGetParameters(index *float64) error {
 	return nil
 }

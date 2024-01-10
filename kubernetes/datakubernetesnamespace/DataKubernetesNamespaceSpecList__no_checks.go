@@ -7,6 +7,10 @@ package datakubernetesnamespace
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataKubernetesNamespaceSpecList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataKubernetesNamespaceSpecList) validateGetParameters(index *float64) error {
 	return nil
 }

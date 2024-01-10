@@ -7,6 +7,10 @@ package datakubernetesstorageclassv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpressionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpressionsList) validateGetParameters(index *float64) error {
 	return nil
 }

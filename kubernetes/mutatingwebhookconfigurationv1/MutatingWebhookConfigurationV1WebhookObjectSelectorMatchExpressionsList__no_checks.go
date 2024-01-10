@@ -7,6 +7,10 @@ package mutatingwebhookconfigurationv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package validatingwebhookconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsList) validateGetParameters(index *float64) error {
 	return nil
 }

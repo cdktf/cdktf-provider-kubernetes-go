@@ -7,6 +7,10 @@ package replicationcontroller
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecHostAliasesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecHostAliasesList) validateGetParameters(index *float64) error {
 	return nil
 }

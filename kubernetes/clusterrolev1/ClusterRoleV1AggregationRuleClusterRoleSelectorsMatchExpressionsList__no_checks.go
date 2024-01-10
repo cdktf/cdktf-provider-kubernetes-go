@@ -7,6 +7,10 @@ package clusterrolev1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsList) validateGetParameters(index *float64) error {
 	return nil
 }

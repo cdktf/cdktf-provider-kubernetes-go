@@ -7,6 +7,10 @@ package daemonsetv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList) validateGetParameters(index *float64) error {
 	return nil
 }

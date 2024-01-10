@@ -7,6 +7,10 @@ package datakubernetespodv1
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataKubernetesPodV1SpecContainerLivenessProbeTcpSocketList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataKubernetesPodV1SpecContainerLivenessProbeTcpSocketList) validateGetParameters(index *float64) error {
 	return nil
 }

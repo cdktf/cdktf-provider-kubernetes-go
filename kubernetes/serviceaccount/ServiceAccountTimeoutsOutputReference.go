@@ -5,9 +5,9 @@ package serviceaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v10/serviceaccount/internal"
+	"github.com/cdktf/cdktf-provider-kubernetes-go/kubernetes/v11/serviceaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

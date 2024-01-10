@@ -7,6 +7,10 @@ package replicationcontroller
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocketList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLivenessProbeTcpSocketList) validateGetParameters(index *float64) error {
 	return nil
 }

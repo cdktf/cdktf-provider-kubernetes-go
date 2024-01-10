@@ -7,6 +7,10 @@ package horizontalpodautoscalerv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricExternalMetricSelectorMatchExpressionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricExternalMetricSelectorMatchExpressionsList) validateGetParameters(index *float64) error {
 	return nil
 }

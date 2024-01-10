@@ -7,6 +7,10 @@ package datakubernetesnodes
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataKubernetesNodesNodesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataKubernetesNodesNodesList) validateGetParameters(index *float64) error {
 	return nil
 }
