@@ -9,19 +9,19 @@ type DeploymentSpecTemplateSpecVolumeConfigMap struct {
 	//
 	// Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/deployment#default_mode Deployment#default_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/deployment#default_mode Deployment#default_mode}
 	DefaultMode *string `field:"optional" json:"defaultMode" yaml:"defaultMode"`
 	// items block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/deployment#items Deployment#items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/deployment#items Deployment#items}
 	Items interface{} `field:"optional" json:"items" yaml:"items"`
 	// Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/deployment#name Deployment#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/deployment#name Deployment#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Optional: Specify whether the ConfigMap or its keys must be defined.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/deployment#optional Deployment#optional}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/deployment#optional Deployment#optional}
 	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
 }
 

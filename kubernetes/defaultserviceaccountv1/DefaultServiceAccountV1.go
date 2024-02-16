@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/default_service_account_v1 kubernetes_default_service_account_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/default_service_account_v1 kubernetes_default_service_account_v1}.
 type DefaultServiceAccountV1 interface {
 	cdktf.TerraformResource
 	AutomountServiceAccountToken() interface{}
@@ -440,7 +440,7 @@ func (j *jsiiProxy_DefaultServiceAccountV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/default_service_account_v1 kubernetes_default_service_account_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/default_service_account_v1 kubernetes_default_service_account_v1} Resource.
 func NewDefaultServiceAccountV1(scope constructs.Construct, id *string, config *DefaultServiceAccountV1Config) DefaultServiceAccountV1 {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewDefaultServiceAccountV1(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/default_service_account_v1 kubernetes_default_service_account_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/default_service_account_v1 kubernetes_default_service_account_v1} Resource.
 func NewDefaultServiceAccountV1_Override(d DefaultServiceAccountV1, scope constructs.Construct, id *string, config *DefaultServiceAccountV1Config) {
 	_init_.Initialize()
 

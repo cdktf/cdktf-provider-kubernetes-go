@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/limit_range_v1 kubernetes_limit_range_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/limit_range_v1 kubernetes_limit_range_v1}.
 type LimitRangeV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_LimitRangeV1) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/limit_range_v1 kubernetes_limit_range_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/limit_range_v1 kubernetes_limit_range_v1} Resource.
 func NewLimitRangeV1(scope constructs.Construct, id *string, config *LimitRangeV1Config) LimitRangeV1 {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewLimitRangeV1(scope constructs.Construct, id *string, config *LimitRangeV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/limit_range_v1 kubernetes_limit_range_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/limit_range_v1 kubernetes_limit_range_v1} Resource.
 func NewLimitRangeV1_Override(l LimitRangeV1, scope constructs.Construct, id *string, config *LimitRangeV1Config) {
 	_init_.Initialize()
 

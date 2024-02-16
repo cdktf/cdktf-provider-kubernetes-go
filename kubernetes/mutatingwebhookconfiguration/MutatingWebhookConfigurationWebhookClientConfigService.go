@@ -7,21 +7,21 @@ package mutatingwebhookconfiguration
 type MutatingWebhookConfigurationWebhookClientConfigService struct {
 	// `name` is the name of the service. Required.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/mutating_webhook_configuration#name MutatingWebhookConfiguration#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/mutating_webhook_configuration#name MutatingWebhookConfiguration#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// `namespace` is the namespace of the service. Required.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/mutating_webhook_configuration#namespace MutatingWebhookConfiguration#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/mutating_webhook_configuration#namespace MutatingWebhookConfiguration#namespace}
 	Namespace *string `field:"required" json:"namespace" yaml:"namespace"`
 	// `path` is an optional URL path which will be sent in any request to this service.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/mutating_webhook_configuration#path MutatingWebhookConfiguration#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/mutating_webhook_configuration#path MutatingWebhookConfiguration#path}
 	Path *string `field:"optional" json:"path" yaml:"path"`
 	// If specified, the port on the service that hosting webhook.
 	//
 	// Default to 443 for backward compatibility. `port` should be a valid port number (1-65535, inclusive).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/mutating_webhook_configuration#port MutatingWebhookConfiguration#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/mutating_webhook_configuration#port MutatingWebhookConfiguration#port}
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
 }
 

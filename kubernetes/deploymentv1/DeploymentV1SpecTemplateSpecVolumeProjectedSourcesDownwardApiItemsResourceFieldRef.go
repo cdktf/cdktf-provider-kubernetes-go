@@ -5,13 +5,13 @@ package deploymentv1
 
 
 type DeploymentV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/deployment_v1#container_name DeploymentV1#container_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/deployment_v1#container_name DeploymentV1#container_name}.
 	ContainerName *string `field:"required" json:"containerName" yaml:"containerName"`
 	// Resource to select.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/deployment_v1#resource DeploymentV1#resource}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/deployment_v1#resource DeploymentV1#resource}
 	Resource *string `field:"required" json:"resource" yaml:"resource"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/deployment_v1#divisor DeploymentV1#divisor}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/deployment_v1#divisor DeploymentV1#divisor}.
 	Divisor *string `field:"optional" json:"divisor" yaml:"divisor"`
 }
 

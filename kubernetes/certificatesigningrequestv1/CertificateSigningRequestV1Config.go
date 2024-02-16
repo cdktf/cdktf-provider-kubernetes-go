@@ -24,24 +24,24 @@ type CertificateSigningRequestV1Config struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// metadata block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/certificate_signing_request_v1#metadata CertificateSigningRequestV1#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/certificate_signing_request_v1#metadata CertificateSigningRequestV1#metadata}
 	Metadata *CertificateSigningRequestV1Metadata `field:"required" json:"metadata" yaml:"metadata"`
 	// spec block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/certificate_signing_request_v1#spec CertificateSigningRequestV1#spec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/certificate_signing_request_v1#spec CertificateSigningRequestV1#spec}
 	Spec *CertificateSigningRequestV1Spec `field:"required" json:"spec" yaml:"spec"`
 	// Automatically approve the CertificateSigningRequest.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/certificate_signing_request_v1#auto_approve CertificateSigningRequestV1#auto_approve}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/certificate_signing_request_v1#auto_approve CertificateSigningRequestV1#auto_approve}
 	AutoApprove interface{} `field:"optional" json:"autoApprove" yaml:"autoApprove"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/certificate_signing_request_v1#id CertificateSigningRequestV1#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/certificate_signing_request_v1#id CertificateSigningRequestV1#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/certificate_signing_request_v1#timeouts CertificateSigningRequestV1#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/certificate_signing_request_v1#timeouts CertificateSigningRequestV1#timeouts}
 	Timeouts *CertificateSigningRequestV1Timeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -93,6 +93,17 @@ func (j *jsiiProxy_JobSpecOutputReference) validateInterpolationForAttributePara
 	return nil
 }
 
+func (j *jsiiProxy_JobSpecOutputReference) validatePutPodFailurePolicyParameters(value *JobSpecPodFailurePolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_JobSpecOutputReference) validatePutSelectorParameters(value *JobSpecSelector) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

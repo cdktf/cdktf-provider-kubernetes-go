@@ -50,6 +50,8 @@ type CronJobSpecJobTemplateSpecOutputReference interface {
 	Parallelism() *float64
 	SetParallelism(val *float64)
 	ParallelismInput() *float64
+	PodFailurePolicy() CronJobSpecJobTemplateSpecPodFailurePolicyOutputReference
+	PodFailurePolicyInput() *CronJobSpecJobTemplateSpecPodFailurePolicy
 	Selector() CronJobSpecJobTemplateSpecSelectorOutputReference
 	SelectorInput() *CronJobSpecJobTemplateSpecSelector
 	Template() CronJobSpecJobTemplateSpecTemplateOutputReference
@@ -89,6 +91,7 @@ type CronJobSpecJobTemplateSpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPodFailurePolicy(value *CronJobSpecJobTemplateSpecPodFailurePolicy)
 	PutSelector(value *CronJobSpecJobTemplateSpecSelector)
 	PutTemplate(value *CronJobSpecJobTemplateSpecTemplate)
 	ResetActiveDeadlineSeconds()
@@ -97,6 +100,7 @@ type CronJobSpecJobTemplateSpecOutputReference interface {
 	ResetCompletions()
 	ResetManualSelector()
 	ResetParallelism()
+	ResetPodFailurePolicy()
 	ResetSelector()
 	ResetTtlSecondsAfterFinished()
 	// Produce the Token's value at resolution time.
@@ -279,6 +283,26 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) ParallelismInput()
 	_jsii_.Get(
 		j,
 		"parallelismInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) PodFailurePolicy() CronJobSpecJobTemplateSpecPodFailurePolicyOutputReference {
+	var returns CronJobSpecJobTemplateSpecPodFailurePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"podFailurePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) PodFailurePolicyInput() *CronJobSpecJobTemplateSpecPodFailurePolicy {
+	var returns *CronJobSpecJobTemplateSpecPodFailurePolicy
+	_jsii_.Get(
+		j,
+		"podFailurePolicyInput",
 		&returns,
 	)
 	return returns
@@ -710,6 +734,17 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) InterpolationForAt
 	return returns
 }
 
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) PutPodFailurePolicy(value *CronJobSpecJobTemplateSpecPodFailurePolicy) {
+	if err := c.validatePutPodFailurePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPodFailurePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) PutSelector(value *CronJobSpecJobTemplateSpecSelector) {
 	if err := c.validatePutSelectorParameters(value); err != nil {
 		panic(err)
@@ -776,6 +811,14 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) ResetParallelism()
 	_jsii_.InvokeVoid(
 		c,
 		"resetParallelism",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) ResetPodFailurePolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPodFailurePolicy",
 		nil, // no parameters
 	)
 }

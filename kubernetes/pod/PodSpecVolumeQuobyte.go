@@ -7,23 +7,23 @@ package pod
 type PodSpecVolumeQuobyte struct {
 	// Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/pod#registry Pod#registry}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/pod#registry Pod#registry}
 	Registry *string `field:"required" json:"registry" yaml:"registry"`
 	// Volume is a string that references an already created Quobyte volume by name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/pod#volume Pod#volume}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/pod#volume Pod#volume}
 	Volume *string `field:"required" json:"volume" yaml:"volume"`
 	// Group to map volume access to Default is no group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/pod#group Pod#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/pod#group Pod#group}
 	Group *string `field:"optional" json:"group" yaml:"group"`
 	// Whether to force the Quobyte volume to be mounted with read-only permissions. Defaults to false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/pod#read_only Pod#read_only}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/pod#read_only Pod#read_only}
 	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
 	// User to map volume access to Defaults to serivceaccount user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/pod#user Pod#user}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/pod#user Pod#user}
 	User *string `field:"optional" json:"user" yaml:"user"`
 }
 

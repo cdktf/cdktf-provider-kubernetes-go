@@ -47,6 +47,10 @@ func (j *jsiiProxy_JobSpecOutputReference) validateInterpolationForAttributePara
 	return nil
 }
 
+func (j *jsiiProxy_JobSpecOutputReference) validatePutPodFailurePolicyParameters(value *JobSpecPodFailurePolicy) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobSpecOutputReference) validatePutSelectorParameters(value *JobSpecSelector) error {
 	return nil
 }

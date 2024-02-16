@@ -7,7 +7,7 @@ package statefulset
 type StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApi struct {
 	// items block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/stateful_set#items StatefulSet#items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/stateful_set#items StatefulSet#items}
 	Items interface{} `field:"optional" json:"items" yaml:"items"`
 }
 

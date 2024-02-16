@@ -50,6 +50,8 @@ type JobSpecOutputReference interface {
 	Parallelism() *float64
 	SetParallelism(val *float64)
 	ParallelismInput() *float64
+	PodFailurePolicy() JobSpecPodFailurePolicyOutputReference
+	PodFailurePolicyInput() *JobSpecPodFailurePolicy
 	Selector() JobSpecSelectorOutputReference
 	SelectorInput() *JobSpecSelector
 	Template() JobSpecTemplateOutputReference
@@ -89,6 +91,7 @@ type JobSpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPodFailurePolicy(value *JobSpecPodFailurePolicy)
 	PutSelector(value *JobSpecSelector)
 	PutTemplate(value *JobSpecTemplate)
 	ResetActiveDeadlineSeconds()
@@ -97,6 +100,7 @@ type JobSpecOutputReference interface {
 	ResetCompletions()
 	ResetManualSelector()
 	ResetParallelism()
+	ResetPodFailurePolicy()
 	ResetSelector()
 	ResetTtlSecondsAfterFinished()
 	// Produce the Token's value at resolution time.
@@ -279,6 +283,26 @@ func (j *jsiiProxy_JobSpecOutputReference) ParallelismInput() *float64 {
 	_jsii_.Get(
 		j,
 		"parallelismInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobSpecOutputReference) PodFailurePolicy() JobSpecPodFailurePolicyOutputReference {
+	var returns JobSpecPodFailurePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"podFailurePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobSpecOutputReference) PodFailurePolicyInput() *JobSpecPodFailurePolicy {
+	var returns *JobSpecPodFailurePolicy
+	_jsii_.Get(
+		j,
+		"podFailurePolicyInput",
 		&returns,
 	)
 	return returns
@@ -710,6 +734,17 @@ func (j *jsiiProxy_JobSpecOutputReference) InterpolationForAttribute(property *s
 	return returns
 }
 
+func (j *jsiiProxy_JobSpecOutputReference) PutPodFailurePolicy(value *JobSpecPodFailurePolicy) {
+	if err := j.validatePutPodFailurePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putPodFailurePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobSpecOutputReference) PutSelector(value *JobSpecSelector) {
 	if err := j.validatePutSelectorParameters(value); err != nil {
 		panic(err)
@@ -776,6 +811,14 @@ func (j *jsiiProxy_JobSpecOutputReference) ResetParallelism() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetParallelism",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobSpecOutputReference) ResetPodFailurePolicy() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetPodFailurePolicy",
 		nil, // no parameters
 	)
 }

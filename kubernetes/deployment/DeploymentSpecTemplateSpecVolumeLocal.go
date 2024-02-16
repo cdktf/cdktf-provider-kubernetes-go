@@ -7,7 +7,7 @@ package deployment
 type DeploymentSpecTemplateSpecVolumeLocal struct {
 	// Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#local.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.25.2/docs/resources/deployment#path Deployment#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/deployment#path Deployment#path}
 	Path *string `field:"optional" json:"path" yaml:"path"`
 }
 

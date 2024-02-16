@@ -47,6 +47,10 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) validateInterpolat
 	return nil
 }
 
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) validatePutPodFailurePolicyParameters(value *CronJobSpecJobTemplateSpecPodFailurePolicy) error {
+	return nil
+}
+
 func (c *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) validatePutSelectorParameters(value *CronJobSpecJobTemplateSpecSelector) error {
 	return nil
 }
