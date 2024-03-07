@@ -221,7 +221,39 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstra
 	return nil
 }
 
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetMatchLabelKeysParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetMaxSkewParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetMinDomainsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetNodeAffinityPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetNodeTaintsPolicyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -7,11 +7,11 @@ package statefulset
 type StatefulSetSpecTemplate struct {
 	// metadata block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/stateful_set#metadata StatefulSet#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/stateful_set#metadata StatefulSet#metadata}
 	Metadata *StatefulSetSpecTemplateMetadata `field:"required" json:"metadata" yaml:"metadata"`
 	// spec block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/stateful_set#spec StatefulSet#spec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/stateful_set#spec StatefulSet#spec}
 	Spec *StatefulSetSpecTemplateSpec `field:"optional" json:"spec" yaml:"spec"`
 }
 

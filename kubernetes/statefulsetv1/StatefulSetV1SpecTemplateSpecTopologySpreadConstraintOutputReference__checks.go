@@ -221,7 +221,39 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecTopologySpreadConstraintOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetMatchLabelKeysParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetMaxSkewParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetMinDomainsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetNodeAffinityPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetNodeTaintsPolicyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

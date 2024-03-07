@@ -67,7 +67,23 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstra
 	return nil
 }
 
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetMatchLabelKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetMaxSkewParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetMinDomainsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetNodeAffinityPolicyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetNodeTaintsPolicyParameters(val *string) error {
 	return nil
 }
 

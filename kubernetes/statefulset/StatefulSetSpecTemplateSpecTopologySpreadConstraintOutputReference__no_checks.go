@@ -67,7 +67,23 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetMatchLabelKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetMaxSkewParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetMinDomainsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetNodeAffinityPolicyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) validateSetNodeTaintsPolicyParameters(val *string) error {
 	return nil
 }
 

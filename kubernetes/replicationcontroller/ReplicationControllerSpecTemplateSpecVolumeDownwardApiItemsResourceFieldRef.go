@@ -5,13 +5,13 @@ package replicationcontroller
 
 
 type ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/replication_controller#container_name ReplicationController#container_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/replication_controller#container_name ReplicationController#container_name}.
 	ContainerName *string `field:"required" json:"containerName" yaml:"containerName"`
 	// Resource to select.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/replication_controller#resource ReplicationController#resource}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/replication_controller#resource ReplicationController#resource}
 	Resource *string `field:"required" json:"resource" yaml:"resource"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/replication_controller#divisor ReplicationController#divisor}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/replication_controller#divisor ReplicationController#divisor}.
 	Divisor *string `field:"optional" json:"divisor" yaml:"divisor"`
 }
 

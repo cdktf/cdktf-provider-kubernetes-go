@@ -5,7 +5,7 @@ package manifest
 
 
 type ManifestWaitFor struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/manifest#fields Manifest#fields}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/manifest#fields Manifest#fields}.
 	Fields *map[string]*string `field:"optional" json:"fields" yaml:"fields"`
 }
 

@@ -34,9 +34,21 @@ type StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference interfac
 	SetInternalValue(val interface{})
 	LabelSelector() StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorList
 	LabelSelectorInput() interface{}
+	MatchLabelKeys() *[]*string
+	SetMatchLabelKeys(val *[]*string)
+	MatchLabelKeysInput() *[]*string
 	MaxSkew() *float64
 	SetMaxSkew(val *float64)
 	MaxSkewInput() *float64
+	MinDomains() *float64
+	SetMinDomains(val *float64)
+	MinDomainsInput() *float64
+	NodeAffinityPolicy() *string
+	SetNodeAffinityPolicy(val *string)
+	NodeAffinityPolicyInput() *string
+	NodeTaintsPolicy() *string
+	SetNodeTaintsPolicy(val *string)
+	NodeTaintsPolicyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -77,7 +89,11 @@ type StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference interfac
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLabelSelector(value interface{})
 	ResetLabelSelector()
+	ResetMatchLabelKeys()
 	ResetMaxSkew()
+	ResetMinDomains()
+	ResetNodeAffinityPolicy()
+	ResetNodeTaintsPolicy()
 	ResetTopologyKey()
 	ResetWhenUnsatisfiable()
 	// Produce the Token's value at resolution time.
@@ -165,6 +181,26 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) MatchLabelKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"matchLabelKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) MatchLabelKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"matchLabelKeysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) MaxSkew() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -180,6 +216,66 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputRefe
 	_jsii_.Get(
 		j,
 		"maxSkewInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) MinDomains() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) MinDomainsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minDomainsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) NodeAffinityPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeAffinityPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) NodeAffinityPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeAffinityPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) NodeTaintsPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeTaintsPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) NodeTaintsPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeTaintsPolicyInput",
 		&returns,
 	)
 	return returns
@@ -306,6 +402,17 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputRefe
 	)
 }
 
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference)SetMatchLabelKeys(val *[]*string) {
+	if err := j.validateSetMatchLabelKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"matchLabelKeys",
+		val,
+	)
+}
+
 func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference)SetMaxSkew(val *float64) {
 	if err := j.validateSetMaxSkewParameters(val); err != nil {
 		panic(err)
@@ -313,6 +420,39 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputRefe
 	_jsii_.Set(
 		j,
 		"maxSkew",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference)SetMinDomains(val *float64) {
+	if err := j.validateSetMinDomainsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minDomains",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference)SetNodeAffinityPolicy(val *string) {
+	if err := j.validateSetNodeAffinityPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeAffinityPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference)SetNodeTaintsPolicy(val *string) {
+	if err := j.validateSetNodeTaintsPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeTaintsPolicy",
 		val,
 	)
 }
@@ -566,10 +706,42 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputRefe
 	)
 }
 
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) ResetMatchLabelKeys() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMatchLabelKeys",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) ResetMaxSkew() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetMaxSkew",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) ResetMinDomains() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMinDomains",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) ResetNodeAffinityPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNodeAffinityPolicy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintOutputReference) ResetNodeTaintsPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNodeTaintsPolicy",
 		nil, // no parameters
 	)
 }

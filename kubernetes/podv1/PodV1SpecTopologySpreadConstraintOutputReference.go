@@ -34,9 +34,21 @@ type PodV1SpecTopologySpreadConstraintOutputReference interface {
 	SetInternalValue(val interface{})
 	LabelSelector() PodV1SpecTopologySpreadConstraintLabelSelectorList
 	LabelSelectorInput() interface{}
+	MatchLabelKeys() *[]*string
+	SetMatchLabelKeys(val *[]*string)
+	MatchLabelKeysInput() *[]*string
 	MaxSkew() *float64
 	SetMaxSkew(val *float64)
 	MaxSkewInput() *float64
+	MinDomains() *float64
+	SetMinDomains(val *float64)
+	MinDomainsInput() *float64
+	NodeAffinityPolicy() *string
+	SetNodeAffinityPolicy(val *string)
+	NodeAffinityPolicyInput() *string
+	NodeTaintsPolicy() *string
+	SetNodeTaintsPolicy(val *string)
+	NodeTaintsPolicyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -77,7 +89,11 @@ type PodV1SpecTopologySpreadConstraintOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLabelSelector(value interface{})
 	ResetLabelSelector()
+	ResetMatchLabelKeys()
 	ResetMaxSkew()
+	ResetMinDomains()
+	ResetNodeAffinityPolicy()
+	ResetNodeTaintsPolicy()
 	ResetTopologyKey()
 	ResetWhenUnsatisfiable()
 	// Produce the Token's value at resolution time.
@@ -165,6 +181,26 @@ func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference) LabelSelect
 	return returns
 }
 
+func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference) MatchLabelKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"matchLabelKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference) MatchLabelKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"matchLabelKeysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference) MaxSkew() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -180,6 +216,66 @@ func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference) MaxSkewInpu
 	_jsii_.Get(
 		j,
 		"maxSkewInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference) MinDomains() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference) MinDomainsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minDomainsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference) NodeAffinityPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeAffinityPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference) NodeAffinityPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeAffinityPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference) NodeTaintsPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeTaintsPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference) NodeTaintsPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeTaintsPolicyInput",
 		&returns,
 	)
 	return returns
@@ -306,6 +402,17 @@ func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference)SetInternalV
 	)
 }
 
+func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference)SetMatchLabelKeys(val *[]*string) {
+	if err := j.validateSetMatchLabelKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"matchLabelKeys",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference)SetMaxSkew(val *float64) {
 	if err := j.validateSetMaxSkewParameters(val); err != nil {
 		panic(err)
@@ -313,6 +420,39 @@ func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference)SetMaxSkew(v
 	_jsii_.Set(
 		j,
 		"maxSkew",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference)SetMinDomains(val *float64) {
+	if err := j.validateSetMinDomainsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minDomains",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference)SetNodeAffinityPolicy(val *string) {
+	if err := j.validateSetNodeAffinityPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeAffinityPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference)SetNodeTaintsPolicy(val *string) {
+	if err := j.validateSetNodeTaintsPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeTaintsPolicy",
 		val,
 	)
 }
@@ -566,10 +706,42 @@ func (p *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference) ResetLabelS
 	)
 }
 
+func (p *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference) ResetMatchLabelKeys() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMatchLabelKeys",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference) ResetMaxSkew() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetMaxSkew",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference) ResetMinDomains() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMinDomains",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference) ResetNodeAffinityPolicy() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNodeAffinityPolicy",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PodV1SpecTopologySpreadConstraintOutputReference) ResetNodeTaintsPolicy() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNodeTaintsPolicy",
 		nil, // no parameters
 	)
 }

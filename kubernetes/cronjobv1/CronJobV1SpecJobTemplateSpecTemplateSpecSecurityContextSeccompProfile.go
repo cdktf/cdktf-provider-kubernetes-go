@@ -9,11 +9,11 @@ type CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfile struc
 	//
 	// The profile must be preconfigured on the node to work.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/cron_job_v1#localhost_profile CronJobV1#localhost_profile}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/cron_job_v1#localhost_profile CronJobV1#localhost_profile}
 	LocalhostProfile *string `field:"optional" json:"localhostProfile" yaml:"localhostProfile"`
 	// Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.26.0/docs/resources/cron_job_v1#type CronJobV1#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/cron_job_v1#type CronJobV1#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

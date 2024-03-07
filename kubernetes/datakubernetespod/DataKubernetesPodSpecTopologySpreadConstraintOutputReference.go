@@ -33,7 +33,11 @@ type DataKubernetesPodSpecTopologySpreadConstraintOutputReference interface {
 	InternalValue() *DataKubernetesPodSpecTopologySpreadConstraint
 	SetInternalValue(val *DataKubernetesPodSpecTopologySpreadConstraint)
 	LabelSelector() DataKubernetesPodSpecTopologySpreadConstraintLabelSelectorList
+	MatchLabelKeys() *[]*string
 	MaxSkew() *float64
+	MinDomains() *float64
+	NodeAffinityPolicy() *string
+	NodeTaintsPolicy() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -143,11 +147,51 @@ func (j *jsiiProxy_DataKubernetesPodSpecTopologySpreadConstraintOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_DataKubernetesPodSpecTopologySpreadConstraintOutputReference) MatchLabelKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"matchLabelKeys",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataKubernetesPodSpecTopologySpreadConstraintOutputReference) MaxSkew() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"maxSkew",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesPodSpecTopologySpreadConstraintOutputReference) MinDomains() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesPodSpecTopologySpreadConstraintOutputReference) NodeAffinityPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeAffinityPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesPodSpecTopologySpreadConstraintOutputReference) NodeTaintsPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeTaintsPolicy",
 		&returns,
 	)
 	return returns
