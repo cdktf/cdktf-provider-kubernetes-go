@@ -7,11 +7,11 @@ package cronjob
 type CronJobSpecJobTemplateSpecTemplateSpecContainerSecurityContextCapabilities struct {
 	// Added capabilities.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/cron_job#add CronJob#add}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/resources/cron_job#add CronJob#add}
 	Add *[]*string `field:"optional" json:"add" yaml:"add"`
 	// Removed capabilities.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/cron_job#drop CronJob#drop}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/resources/cron_job#drop CronJob#drop}
 	Drop *[]*string `field:"optional" json:"drop" yaml:"drop"`
 }
 

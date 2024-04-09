@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/data-sources/namespace_v1 kubernetes_namespace_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/data-sources/namespace_v1 kubernetes_namespace_v1}.
 type DataKubernetesNamespaceV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataKubernetesNamespaceV1) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/data-sources/namespace_v1 kubernetes_namespace_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/data-sources/namespace_v1 kubernetes_namespace_v1} Data Source.
 func NewDataKubernetesNamespaceV1(scope constructs.Construct, id *string, config *DataKubernetesNamespaceV1Config) DataKubernetesNamespaceV1 {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataKubernetesNamespaceV1(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/data-sources/namespace_v1 kubernetes_namespace_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/data-sources/namespace_v1 kubernetes_namespace_v1} Data Source.
 func NewDataKubernetesNamespaceV1_Override(d DataKubernetesNamespaceV1, scope constructs.Construct, id *string, config *DataKubernetesNamespaceV1Config) {
 	_init_.Initialize()
 

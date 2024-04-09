@@ -9,7 +9,7 @@ type DeploymentSpecTemplateSpecInitContainerStartupProbeTcpSocket struct {
 	//
 	// Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/deployment#port Deployment#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/resources/deployment#port Deployment#port}
 	Port *string `field:"required" json:"port" yaml:"port"`
 }
 

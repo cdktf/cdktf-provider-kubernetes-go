@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/cron_job_v1 kubernetes_cron_job_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/resources/cron_job_v1 kubernetes_cron_job_v1}.
 type CronJobV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_CronJobV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/cron_job_v1 kubernetes_cron_job_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/resources/cron_job_v1 kubernetes_cron_job_v1} Resource.
 func NewCronJobV1(scope constructs.Construct, id *string, config *CronJobV1Config) CronJobV1 {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewCronJobV1(scope constructs.Construct, id *string, config *CronJobV1Confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/cron_job_v1 kubernetes_cron_job_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/resources/cron_job_v1 kubernetes_cron_job_v1} Resource.
 func NewCronJobV1_Override(c CronJobV1, scope constructs.Construct, id *string, config *CronJobV1Config) {
 	_init_.Initialize()
 

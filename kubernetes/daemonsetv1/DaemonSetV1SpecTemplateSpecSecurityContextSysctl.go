@@ -7,11 +7,11 @@ package daemonsetv1
 type DaemonSetV1SpecTemplateSpecSecurityContextSysctl struct {
 	// Name of a property to set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/resources/daemon_set_v1#name DaemonSetV1#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Value of a property to set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/resources/daemon_set_v1#value DaemonSetV1#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

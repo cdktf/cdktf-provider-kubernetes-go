@@ -7,21 +7,21 @@ package deploymentv1
 type DeploymentV1SpecTemplateSpecVolumeFc struct {
 	// FC target lun number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/deployment_v1#lun DeploymentV1#lun}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/resources/deployment_v1#lun DeploymentV1#lun}
 	Lun *float64 `field:"required" json:"lun" yaml:"lun"`
 	// FC target worldwide names (WWNs).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/deployment_v1#target_ww_ns DeploymentV1#target_ww_ns}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/resources/deployment_v1#target_ww_ns DeploymentV1#target_ww_ns}
 	TargetWwNs *[]*string `field:"required" json:"targetWwNs" yaml:"targetWwNs"`
 	// Filesystem type to mount.
 	//
 	// Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/deployment_v1#fs_type DeploymentV1#fs_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/resources/deployment_v1#fs_type DeploymentV1#fs_type}
 	FsType *string `field:"optional" json:"fsType" yaml:"fsType"`
 	// Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.27.0/docs/resources/deployment_v1#read_only DeploymentV1#read_only}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/resources/deployment_v1#read_only DeploymentV1#read_only}
 	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
 
