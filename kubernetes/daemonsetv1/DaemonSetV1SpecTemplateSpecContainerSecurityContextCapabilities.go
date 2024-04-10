@@ -7,11 +7,11 @@ package daemonsetv1
 type DaemonSetV1SpecTemplateSpecContainerSecurityContextCapabilities struct {
 	// Added capabilities.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/resources/daemon_set_v1#add DaemonSetV1#add}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.1/docs/resources/daemon_set_v1#add DaemonSetV1#add}
 	Add *[]*string `field:"optional" json:"add" yaml:"add"`
 	// Removed capabilities.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/resources/daemon_set_v1#drop DaemonSetV1#drop}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.1/docs/resources/daemon_set_v1#drop DaemonSetV1#drop}
 	Drop *[]*string `field:"optional" json:"drop" yaml:"drop"`
 }
 

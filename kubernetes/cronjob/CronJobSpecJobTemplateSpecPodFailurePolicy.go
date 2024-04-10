@@ -7,7 +7,7 @@ package cronjob
 type CronJobSpecJobTemplateSpecPodFailurePolicy struct {
 	// rule block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/resources/cron_job#rule CronJob#rule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.1/docs/resources/cron_job#rule CronJob#rule}
 	Rule interface{} `field:"required" json:"rule" yaml:"rule"`
 }
 

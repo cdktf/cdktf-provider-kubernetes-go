@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/resources/certificate_signing_request kubernetes_certificate_signing_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.1/docs/resources/certificate_signing_request kubernetes_certificate_signing_request}.
 type CertificateSigningRequest interface {
 	cdktf.TerraformResource
 	AutoApprove() interface{}
@@ -415,7 +415,7 @@ func (j *jsiiProxy_CertificateSigningRequest) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/resources/certificate_signing_request kubernetes_certificate_signing_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.1/docs/resources/certificate_signing_request kubernetes_certificate_signing_request} Resource.
 func NewCertificateSigningRequest(scope constructs.Construct, id *string, config *CertificateSigningRequestConfig) CertificateSigningRequest {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewCertificateSigningRequest(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.0/docs/resources/certificate_signing_request kubernetes_certificate_signing_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.1/docs/resources/certificate_signing_request kubernetes_certificate_signing_request} Resource.
 func NewCertificateSigningRequest_Override(c CertificateSigningRequest, scope constructs.Construct, id *string, config *CertificateSigningRequestConfig) {
 	_init_.Initialize()
 
