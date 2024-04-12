@@ -5,13 +5,13 @@ package provider
 
 
 type KubernetesProviderExec struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.1/docs#api_version KubernetesProvider#api_version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs#api_version KubernetesProvider#api_version}.
 	ApiVersion *string `field:"required" json:"apiVersion" yaml:"apiVersion"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.1/docs#command KubernetesProvider#command}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs#command KubernetesProvider#command}.
 	Command *string `field:"required" json:"command" yaml:"command"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.1/docs#args KubernetesProvider#args}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs#args KubernetesProvider#args}.
 	Args *[]*string `field:"optional" json:"args" yaml:"args"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.1/docs#env KubernetesProvider#env}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs#env KubernetesProvider#env}.
 	Env *map[string]*string `field:"optional" json:"env" yaml:"env"`
 }
 

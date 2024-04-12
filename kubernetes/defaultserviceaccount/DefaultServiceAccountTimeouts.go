@@ -5,7 +5,7 @@ package defaultserviceaccount
 
 
 type DefaultServiceAccountTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.1/docs/resources/default_service_account#create DefaultServiceAccount#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/default_service_account#create DefaultServiceAccount#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

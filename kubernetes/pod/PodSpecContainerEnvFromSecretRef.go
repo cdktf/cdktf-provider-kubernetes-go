@@ -7,11 +7,11 @@ package pod
 type PodSpecContainerEnvFromSecretRef struct {
 	// Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.1/docs/resources/pod#name Pod#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/pod#name Pod#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Specify whether the Secret must be defined.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.1/docs/resources/pod#optional Pod#optional}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/pod#optional Pod#optional}
 	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
 }
 

@@ -7,7 +7,7 @@ package job
 type JobSpecTemplateSpecVolumeProjectedSourcesDownwardApi struct {
 	// items block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.28.1/docs/resources/job#items Job#items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/job#items Job#items}
 	Items interface{} `field:"optional" json:"items" yaml:"items"`
 }
 
