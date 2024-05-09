@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/stateful_set_v1 kubernetes_stateful_set_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/stateful_set_v1 kubernetes_stateful_set_v1}.
 type StatefulSetV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_StatefulSetV1) WaitForRolloutInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/stateful_set_v1 kubernetes_stateful_set_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/stateful_set_v1 kubernetes_stateful_set_v1} Resource.
 func NewStatefulSetV1(scope constructs.Construct, id *string, config *StatefulSetV1Config) StatefulSetV1 {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewStatefulSetV1(scope constructs.Construct, id *string, config *StatefulSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/stateful_set_v1 kubernetes_stateful_set_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/stateful_set_v1 kubernetes_stateful_set_v1} Resource.
 func NewStatefulSetV1_Override(s StatefulSetV1, scope constructs.Construct, id *string, config *StatefulSetV1Config) {
 	_init_.Initialize()
 

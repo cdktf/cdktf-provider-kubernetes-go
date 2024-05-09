@@ -9,15 +9,15 @@ type StatefulSetSpecTemplateSpecVolumeGitRepo struct {
 	//
 	// Must not contain or start with '..'. If '.' is supplied, the volume directory will be the git repository. Otherwise, if specified, the volume will contain the git repository in the subdirectory with the given name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/stateful_set#directory StatefulSet#directory}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/stateful_set#directory StatefulSet#directory}
 	Directory *string `field:"optional" json:"directory" yaml:"directory"`
 	// Repository URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/stateful_set#repository StatefulSet#repository}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/stateful_set#repository StatefulSet#repository}
 	Repository *string `field:"optional" json:"repository" yaml:"repository"`
 	// Commit hash for the specified revision.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/stateful_set#revision StatefulSet#revision}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/stateful_set#revision StatefulSet#revision}
 	Revision *string `field:"optional" json:"revision" yaml:"revision"`
 }
 

@@ -9,7 +9,7 @@ type ServiceV1SpecSessionAffinityConfigClientIp struct {
 	//
 	// The value must be > 0 and <= 86400(for 1 day) if `ServiceAffinity` == `ClientIP`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/service_v1#timeout_seconds ServiceV1#timeout_seconds}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/service_v1#timeout_seconds ServiceV1#timeout_seconds}
 	TimeoutSeconds *float64 `field:"optional" json:"timeoutSeconds" yaml:"timeoutSeconds"`
 }
 

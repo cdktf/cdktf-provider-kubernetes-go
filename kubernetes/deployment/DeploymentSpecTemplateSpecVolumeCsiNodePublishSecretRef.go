@@ -7,7 +7,7 @@ package deployment
 type DeploymentSpecTemplateSpecVolumeCsiNodePublishSecretRef struct {
 	// Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/deployment#name Deployment#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/deployment#name Deployment#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

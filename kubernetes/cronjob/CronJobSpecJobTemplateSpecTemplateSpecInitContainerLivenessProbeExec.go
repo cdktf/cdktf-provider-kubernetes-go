@@ -9,7 +9,7 @@ type CronJobSpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExec struct
 	//
 	// The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/cron_job#command CronJob#command}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/cron_job#command CronJob#command}
 	Command *[]*string `field:"optional" json:"command" yaml:"command"`
 }
 

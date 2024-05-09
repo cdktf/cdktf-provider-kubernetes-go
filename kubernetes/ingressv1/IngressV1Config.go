@@ -24,24 +24,24 @@ type IngressV1Config struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// metadata block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/ingress_v1#metadata IngressV1#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/ingress_v1#metadata IngressV1#metadata}
 	Metadata *IngressV1Metadata `field:"required" json:"metadata" yaml:"metadata"`
 	// spec block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/ingress_v1#spec IngressV1#spec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/ingress_v1#spec IngressV1#spec}
 	Spec *IngressV1Spec `field:"required" json:"spec" yaml:"spec"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/ingress_v1#id IngressV1#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/ingress_v1#id IngressV1#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/ingress_v1#timeouts IngressV1#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/ingress_v1#timeouts IngressV1#timeouts}
 	Timeouts *IngressV1Timeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Terraform will wait for the load balancer to have at least 1 endpoint before considering the resource created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/ingress_v1#wait_for_load_balancer IngressV1#wait_for_load_balancer}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/ingress_v1#wait_for_load_balancer IngressV1#wait_for_load_balancer}
 	WaitForLoadBalancer interface{} `field:"optional" json:"waitForLoadBalancer" yaml:"waitForLoadBalancer"`
 }
 

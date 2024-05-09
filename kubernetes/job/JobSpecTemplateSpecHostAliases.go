@@ -7,11 +7,11 @@ package job
 type JobSpecTemplateSpecHostAliases struct {
 	// Hostnames for the IP address.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/job#hostnames Job#hostnames}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/job#hostnames Job#hostnames}
 	Hostnames *[]*string `field:"required" json:"hostnames" yaml:"hostnames"`
 	// IP address of the host file entry.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.29.0/docs/resources/job#ip Job#ip}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/job#ip Job#ip}
 	Ip *string `field:"required" json:"ip" yaml:"ip"`
 }
 
