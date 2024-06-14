@@ -7,7 +7,7 @@ package defaultserviceaccount
 type DefaultServiceAccountSecret struct {
 	// Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/default_service_account#name DefaultServiceAccount#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.31.0/docs/resources/default_service_account#name DefaultServiceAccount#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/data-sources/all_namespaces kubernetes_all_namespaces}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.31.0/docs/data-sources/all_namespaces kubernetes_all_namespaces}.
 type DataKubernetesAllNamespaces interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataKubernetesAllNamespaces) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/data-sources/all_namespaces kubernetes_all_namespaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.31.0/docs/data-sources/all_namespaces kubernetes_all_namespaces} Data Source.
 func NewDataKubernetesAllNamespaces(scope constructs.Construct, id *string, config *DataKubernetesAllNamespacesConfig) DataKubernetesAllNamespaces {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataKubernetesAllNamespaces(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/data-sources/all_namespaces kubernetes_all_namespaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.31.0/docs/data-sources/all_namespaces kubernetes_all_namespaces} Data Source.
 func NewDataKubernetesAllNamespaces_Override(d DataKubernetesAllNamespaces, scope constructs.Construct, id *string, config *DataKubernetesAllNamespacesConfig) {
 	_init_.Initialize()
 

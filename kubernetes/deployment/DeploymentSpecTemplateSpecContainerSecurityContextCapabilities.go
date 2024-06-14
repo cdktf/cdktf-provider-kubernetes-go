@@ -7,11 +7,11 @@ package deployment
 type DeploymentSpecTemplateSpecContainerSecurityContextCapabilities struct {
 	// Added capabilities.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/deployment#add Deployment#add}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.31.0/docs/resources/deployment#add Deployment#add}
 	Add *[]*string `field:"optional" json:"add" yaml:"add"`
 	// Removed capabilities.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/deployment#drop Deployment#drop}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.31.0/docs/resources/deployment#drop Deployment#drop}
 	Drop *[]*string `field:"optional" json:"drop" yaml:"drop"`
 }
 

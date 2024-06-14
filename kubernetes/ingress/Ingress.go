@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/ingress kubernetes_ingress}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.31.0/docs/resources/ingress kubernetes_ingress}.
 type Ingress interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_Ingress) WaitForLoadBalancerInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/ingress kubernetes_ingress} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.31.0/docs/resources/ingress kubernetes_ingress} Resource.
 func NewIngress(scope constructs.Construct, id *string, config *IngressConfig) Ingress {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewIngress(scope constructs.Construct, id *string, config *IngressConfig) I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/ingress kubernetes_ingress} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.31.0/docs/resources/ingress kubernetes_ingress} Resource.
 func NewIngress_Override(i Ingress, scope constructs.Construct, id *string, config *IngressConfig) {
 	_init_.Initialize()
 

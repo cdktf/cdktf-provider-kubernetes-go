@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/service_v1 kubernetes_service_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.31.0/docs/resources/service_v1 kubernetes_service_v1}.
 type ServiceV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_ServiceV1) WaitForLoadBalancerInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/service_v1 kubernetes_service_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.31.0/docs/resources/service_v1 kubernetes_service_v1} Resource.
 func NewServiceV1(scope constructs.Construct, id *string, config *ServiceV1Config) ServiceV1 {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewServiceV1(scope constructs.Construct, id *string, config *ServiceV1Confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/service_v1 kubernetes_service_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.31.0/docs/resources/service_v1 kubernetes_service_v1} Resource.
 func NewServiceV1_Override(s ServiceV1, scope constructs.Construct, id *string, config *ServiceV1Config) {
 	_init_.Initialize()
 

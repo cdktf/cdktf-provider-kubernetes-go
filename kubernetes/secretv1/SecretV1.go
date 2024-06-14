@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/secret_v1 kubernetes_secret_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.31.0/docs/resources/secret_v1 kubernetes_secret_v1}.
 type SecretV1 interface {
 	cdktf.TerraformResource
 	BinaryData() *map[string]*string
@@ -477,7 +477,7 @@ func (j *jsiiProxy_SecretV1) WaitForServiceAccountTokenInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/secret_v1 kubernetes_secret_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.31.0/docs/resources/secret_v1 kubernetes_secret_v1} Resource.
 func NewSecretV1(scope constructs.Construct, id *string, config *SecretV1Config) SecretV1 {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewSecretV1(scope constructs.Construct, id *string, config *SecretV1Config)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.30.0/docs/resources/secret_v1 kubernetes_secret_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.31.0/docs/resources/secret_v1 kubernetes_secret_v1} Resource.
 func NewSecretV1_Override(s SecretV1, scope constructs.Construct, id *string, config *SecretV1Config) {
 	_init_.Initialize()
 
