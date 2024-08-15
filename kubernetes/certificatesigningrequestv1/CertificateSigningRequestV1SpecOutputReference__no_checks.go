@@ -59,6 +59,10 @@ func (j *jsiiProxy_CertificateSigningRequestV1SpecOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_CertificateSigningRequestV1SpecOutputReference) validateSetExpirationSecondsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CertificateSigningRequestV1SpecOutputReference) validateSetInternalValueParameters(val *CertificateSigningRequestV1Spec) error {
 	return nil
 }

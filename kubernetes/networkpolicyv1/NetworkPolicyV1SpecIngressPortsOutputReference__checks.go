@@ -166,6 +166,14 @@ func (j *jsiiProxy_NetworkPolicyV1SpecIngressPortsOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_NetworkPolicyV1SpecIngressPortsOutputReference) validateSetEndPortParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetworkPolicyV1SpecIngressPortsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:

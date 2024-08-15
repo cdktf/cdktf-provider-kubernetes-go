@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.31.0/docs/resources/csi_driver kubernetes_csi_driver}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/csi_driver kubernetes_csi_driver}.
 type CsiDriver interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_CsiDriver) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.31.0/docs/resources/csi_driver kubernetes_csi_driver} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/csi_driver kubernetes_csi_driver} Resource.
 func NewCsiDriver(scope constructs.Construct, id *string, config *CsiDriverConfig) CsiDriver {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewCsiDriver(scope constructs.Construct, id *string, config *CsiDriverConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.31.0/docs/resources/csi_driver kubernetes_csi_driver} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/csi_driver kubernetes_csi_driver} Resource.
 func NewCsiDriver_Override(c CsiDriver, scope constructs.Construct, id *string, config *CsiDriverConfig) {
 	_init_.Initialize()
 

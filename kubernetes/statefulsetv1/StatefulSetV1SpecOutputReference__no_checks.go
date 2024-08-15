@@ -83,6 +83,10 @@ func (j *jsiiProxy_StatefulSetV1SpecOutputReference) validateSetInternalValuePar
 	return nil
 }
 
+func (j *jsiiProxy_StatefulSetV1SpecOutputReference) validateSetMinReadySecondsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_StatefulSetV1SpecOutputReference) validateSetPodManagementPolicyParameters(val *string) error {
 	return nil
 }

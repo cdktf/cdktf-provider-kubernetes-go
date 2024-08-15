@@ -28,6 +28,9 @@ type NetworkPolicySpecIngressPortsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EndPort() *float64
+	SetEndPort(val *float64)
+	EndPortInput() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -70,6 +73,7 @@ type NetworkPolicySpecIngressPortsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEndPort()
 	ResetPort()
 	ResetProtocol()
 	// Produce the Token's value at resolution time.
@@ -112,6 +116,26 @@ func (j *jsiiProxy_NetworkPolicySpecIngressPortsOutputReference) CreationStack()
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkPolicySpecIngressPortsOutputReference) EndPort() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"endPort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkPolicySpecIngressPortsOutputReference) EndPortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"endPortInput",
 		&returns,
 	)
 	return returns
@@ -243,6 +267,17 @@ func (j *jsiiProxy_NetworkPolicySpecIngressPortsOutputReference)SetComplexObject
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkPolicySpecIngressPortsOutputReference)SetEndPort(val *float64) {
+	if err := j.validateSetEndPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endPort",
 		val,
 	)
 }
@@ -486,6 +521,14 @@ func (n *jsiiProxy_NetworkPolicySpecIngressPortsOutputReference) InterpolationFo
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NetworkPolicySpecIngressPortsOutputReference) ResetEndPort() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetEndPort",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NetworkPolicySpecIngressPortsOutputReference) ResetPort() {

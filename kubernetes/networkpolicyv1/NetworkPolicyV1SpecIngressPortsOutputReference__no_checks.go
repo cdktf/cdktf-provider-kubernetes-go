@@ -59,6 +59,10 @@ func (j *jsiiProxy_NetworkPolicyV1SpecIngressPortsOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_NetworkPolicyV1SpecIngressPortsOutputReference) validateSetEndPortParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkPolicyV1SpecIngressPortsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

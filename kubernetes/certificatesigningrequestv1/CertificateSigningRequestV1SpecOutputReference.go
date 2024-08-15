@@ -28,6 +28,9 @@ type CertificateSigningRequestV1SpecOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExpirationSeconds() *float64
+	SetExpirationSeconds(val *float64)
+	ExpirationSecondsInput() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() *CertificateSigningRequestV1Spec
@@ -73,6 +76,7 @@ type CertificateSigningRequestV1SpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetExpirationSeconds()
 	ResetUsages()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -114,6 +118,26 @@ func (j *jsiiProxy_CertificateSigningRequestV1SpecOutputReference) CreationStack
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificateSigningRequestV1SpecOutputReference) ExpirationSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expirationSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificateSigningRequestV1SpecOutputReference) ExpirationSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expirationSecondsInput",
 		&returns,
 	)
 	return returns
@@ -265,6 +289,17 @@ func (j *jsiiProxy_CertificateSigningRequestV1SpecOutputReference)SetComplexObje
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificateSigningRequestV1SpecOutputReference)SetExpirationSeconds(val *float64) {
+	if err := j.validateSetExpirationSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expirationSeconds",
 		val,
 	)
 }
@@ -519,6 +554,14 @@ func (c *jsiiProxy_CertificateSigningRequestV1SpecOutputReference) Interpolation
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CertificateSigningRequestV1SpecOutputReference) ResetExpirationSeconds() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExpirationSeconds",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CertificateSigningRequestV1SpecOutputReference) ResetUsages() {

@@ -32,6 +32,9 @@ type StatefulSetV1SpecOutputReference interface {
 	Fqn() *string
 	InternalValue() *StatefulSetV1Spec
 	SetInternalValue(val *StatefulSetV1Spec)
+	MinReadySeconds() *float64
+	SetMinReadySeconds(val *float64)
+	MinReadySecondsInput() *float64
 	PersistentVolumeClaimRetentionPolicy() StatefulSetV1SpecPersistentVolumeClaimRetentionPolicyList
 	PersistentVolumeClaimRetentionPolicyInput() interface{}
 	PodManagementPolicy() *string
@@ -91,6 +94,7 @@ type StatefulSetV1SpecOutputReference interface {
 	PutTemplate(value *StatefulSetV1SpecTemplate)
 	PutUpdateStrategy(value interface{})
 	PutVolumeClaimTemplate(value interface{})
+	ResetMinReadySeconds()
 	ResetPersistentVolumeClaimRetentionPolicy()
 	ResetPodManagementPolicy()
 	ResetReplicas()
@@ -157,6 +161,26 @@ func (j *jsiiProxy_StatefulSetV1SpecOutputReference) InternalValue() *StatefulSe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetV1SpecOutputReference) MinReadySeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minReadySeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetV1SpecOutputReference) MinReadySecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minReadySecondsInput",
 		&returns,
 	)
 	return returns
@@ -419,6 +443,17 @@ func (j *jsiiProxy_StatefulSetV1SpecOutputReference)SetInternalValue(val *Statef
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulSetV1SpecOutputReference)SetMinReadySeconds(val *float64) {
+	if err := j.validateSetMinReadySecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minReadySeconds",
 		val,
 	)
 }
@@ -727,6 +762,14 @@ func (s *jsiiProxy_StatefulSetV1SpecOutputReference) PutVolumeClaimTemplate(valu
 		s,
 		"putVolumeClaimTemplate",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StatefulSetV1SpecOutputReference) ResetMinReadySeconds() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMinReadySeconds",
+		nil, // no parameters
 	)
 }
 

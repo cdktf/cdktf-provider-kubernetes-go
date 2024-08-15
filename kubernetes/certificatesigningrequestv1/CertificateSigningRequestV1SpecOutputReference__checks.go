@@ -166,6 +166,14 @@ func (j *jsiiProxy_CertificateSigningRequestV1SpecOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_CertificateSigningRequestV1SpecOutputReference) validateSetExpirationSecondsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CertificateSigningRequestV1SpecOutputReference) validateSetInternalValueParameters(val *CertificateSigningRequestV1Spec) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

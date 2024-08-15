@@ -289,6 +289,14 @@ func (j *jsiiProxy_StatefulSetSpecOutputReference) validateSetInternalValueParam
 	return nil
 }
 
+func (j *jsiiProxy_StatefulSetSpecOutputReference) validateSetMinReadySecondsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_StatefulSetSpecOutputReference) validateSetPodManagementPolicyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
