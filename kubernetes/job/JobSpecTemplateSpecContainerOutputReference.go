@@ -88,6 +88,8 @@ type JobSpecTemplateSpecContainerOutputReference interface {
 	Tty() interface{}
 	SetTty(val interface{})
 	TtyInput() interface{}
+	VolumeDevice() JobSpecTemplateSpecContainerVolumeDeviceList
+	VolumeDeviceInput() interface{}
 	VolumeMount() JobSpecTemplateSpecContainerVolumeMountList
 	VolumeMountInput() interface{}
 	WorkingDir() *string
@@ -126,6 +128,7 @@ type JobSpecTemplateSpecContainerOutputReference interface {
 	PutResources(value *JobSpecTemplateSpecContainerResources)
 	PutSecurityContext(value *JobSpecTemplateSpecContainerSecurityContext)
 	PutStartupProbe(value *JobSpecTemplateSpecContainerStartupProbe)
+	PutVolumeDevice(value interface{})
 	PutVolumeMount(value interface{})
 	ResetArgs()
 	ResetCommand()
@@ -145,6 +148,7 @@ type JobSpecTemplateSpecContainerOutputReference interface {
 	ResetTerminationMessagePath()
 	ResetTerminationMessagePolicy()
 	ResetTty()
+	ResetVolumeDevice()
 	ResetVolumeMount()
 	ResetWorkingDir()
 	// Produce the Token's value at resolution time.
@@ -607,6 +611,26 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerOutputReference) TtyInput() inter
 	_jsii_.Get(
 		j,
 		"ttyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecContainerOutputReference) VolumeDevice() JobSpecTemplateSpecContainerVolumeDeviceList {
+	var returns JobSpecTemplateSpecContainerVolumeDeviceList
+	_jsii_.Get(
+		j,
+		"volumeDevice",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecContainerOutputReference) VolumeDeviceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"volumeDeviceInput",
 		&returns,
 	)
 	return returns
@@ -1141,6 +1165,17 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerOutputReference) PutStartupProbe(
 	)
 }
 
+func (j *jsiiProxy_JobSpecTemplateSpecContainerOutputReference) PutVolumeDevice(value interface{}) {
+	if err := j.validatePutVolumeDeviceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putVolumeDevice",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobSpecTemplateSpecContainerOutputReference) PutVolumeMount(value interface{}) {
 	if err := j.validatePutVolumeMountParameters(value); err != nil {
 		panic(err)
@@ -1292,6 +1327,14 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerOutputReference) ResetTty() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetTty",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecContainerOutputReference) ResetVolumeDevice() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetVolumeDevice",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/job_v1 kubernetes_job_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/job_v1 kubernetes_job_v1}.
 type JobV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_JobV1) WaitForCompletionInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/job_v1 kubernetes_job_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/job_v1 kubernetes_job_v1} Resource.
 func NewJobV1(scope constructs.Construct, id *string, config *JobV1Config) JobV1 {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewJobV1(scope constructs.Construct, id *string, config *JobV1Config) JobV1
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/job_v1 kubernetes_job_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/job_v1 kubernetes_job_v1} Resource.
 func NewJobV1_Override(j JobV1, scope constructs.Construct, id *string, config *JobV1Config) {
 	_init_.Initialize()
 

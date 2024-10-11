@@ -36,6 +36,8 @@ type JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredD
 	LabelSelectorInput() interface{}
 	Namespaces() *[]*string
 	SetNamespaces(val *[]*string)
+	NamespaceSelector() JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
+	NamespaceSelectorInput() interface{}
 	NamespacesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
@@ -73,8 +75,10 @@ type JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredD
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLabelSelector(value interface{})
+	PutNamespaceSelector(value interface{})
 	ResetLabelSelector()
 	ResetNamespaces()
+	ResetNamespaceSelector()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -165,6 +169,26 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSche
 	_jsii_.Get(
 		j,
 		"namespaces",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference) NamespaceSelector() JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList {
+	var returns JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
+	_jsii_.Get(
+		j,
+		"namespaceSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference) NamespaceSelectorInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"namespaceSelectorInput",
 		&returns,
 	)
 	return returns
@@ -522,6 +546,17 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSche
 	)
 }
 
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference) PutNamespaceSelector(value interface{}) {
+	if err := j.validatePutNamespaceSelectorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"putNamespaceSelector",
+		[]interface{}{value},
+	)
+}
+
 func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference) ResetLabelSelector() {
 	_jsii_.InvokeVoid(
 		j,
@@ -534,6 +569,14 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSche
 	_jsii_.InvokeVoid(
 		j,
 		"resetNamespaces",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference) ResetNamespaceSelector() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetNamespaceSelector",
 		nil, // no parameters
 	)
 }

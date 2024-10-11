@@ -36,6 +36,8 @@ type StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIg
 	LabelSelectorInput() interface{}
 	Namespaces() *[]*string
 	SetNamespaces(val *[]*string)
+	NamespaceSelector() StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
+	NamespaceSelectorInput() interface{}
 	NamespacesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
@@ -73,8 +75,10 @@ type StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIg
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLabelSelector(value interface{})
+	PutNamespaceSelector(value interface{})
 	ResetLabelSelector()
 	ResetNamespaces()
+	ResetNamespaceSelector()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -165,6 +169,26 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuri
 	_jsii_.Get(
 		j,
 		"namespaces",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference) NamespaceSelector() StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList {
+	var returns StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
+	_jsii_.Get(
+		j,
+		"namespaceSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference) NamespaceSelectorInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"namespaceSelectorInput",
 		&returns,
 	)
 	return returns
@@ -522,6 +546,17 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuri
 	)
 }
 
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference) PutNamespaceSelector(value interface{}) {
+	if err := s.validatePutNamespaceSelectorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putNamespaceSelector",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference) ResetLabelSelector() {
 	_jsii_.InvokeVoid(
 		s,
@@ -534,6 +569,14 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuri
 	_jsii_.InvokeVoid(
 		s,
 		"resetNamespaces",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference) ResetNamespaceSelector() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNamespaceSelector",
 		nil, // no parameters
 	)
 }

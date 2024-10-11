@@ -51,6 +51,10 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinit
 	return nil
 }
 
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference) validatePutNamespaceSelectorParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

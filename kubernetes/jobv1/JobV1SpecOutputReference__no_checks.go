@@ -71,6 +71,10 @@ func (j *jsiiProxy_JobV1SpecOutputReference) validateSetBackoffLimitParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_JobV1SpecOutputReference) validateSetBackoffLimitPerIndexParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobV1SpecOutputReference) validateSetCompletionModeParameters(val *string) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (j *jsiiProxy_JobV1SpecOutputReference) validateSetInternalValueParameters(
 }
 
 func (j *jsiiProxy_JobV1SpecOutputReference) validateSetManualSelectorParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_JobV1SpecOutputReference) validateSetMaxFailedIndexesParameters(val *float64) error {
 	return nil
 }
 

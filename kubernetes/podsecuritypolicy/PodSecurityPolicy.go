@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/pod_security_policy kubernetes_pod_security_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/pod_security_policy kubernetes_pod_security_policy}.
 type PodSecurityPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_PodSecurityPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/pod_security_policy kubernetes_pod_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/pod_security_policy kubernetes_pod_security_policy} Resource.
 func NewPodSecurityPolicy(scope constructs.Construct, id *string, config *PodSecurityPolicyConfig) PodSecurityPolicy {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewPodSecurityPolicy(scope constructs.Construct, id *string, config *PodSec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/pod_security_policy kubernetes_pod_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/pod_security_policy kubernetes_pod_security_policy} Resource.
 func NewPodSecurityPolicy_Override(p PodSecurityPolicy, scope constructs.Construct, id *string, config *PodSecurityPolicyConfig) {
 	_init_.Initialize()
 

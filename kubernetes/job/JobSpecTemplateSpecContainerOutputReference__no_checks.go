@@ -83,6 +83,10 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerOutputReference) validatePutStart
 	return nil
 }
 
+func (j *jsiiProxy_JobSpecTemplateSpecContainerOutputReference) validatePutVolumeDeviceParameters(value interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobSpecTemplateSpecContainerOutputReference) validatePutVolumeMountParameters(value interface{}) error {
 	return nil
 }

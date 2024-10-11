@@ -88,6 +88,8 @@ type PodSpecContainerOutputReference interface {
 	Tty() interface{}
 	SetTty(val interface{})
 	TtyInput() interface{}
+	VolumeDevice() PodSpecContainerVolumeDeviceList
+	VolumeDeviceInput() interface{}
 	VolumeMount() PodSpecContainerVolumeMountList
 	VolumeMountInput() interface{}
 	WorkingDir() *string
@@ -126,6 +128,7 @@ type PodSpecContainerOutputReference interface {
 	PutResources(value *PodSpecContainerResources)
 	PutSecurityContext(value *PodSpecContainerSecurityContext)
 	PutStartupProbe(value *PodSpecContainerStartupProbe)
+	PutVolumeDevice(value interface{})
 	PutVolumeMount(value interface{})
 	ResetArgs()
 	ResetCommand()
@@ -145,6 +148,7 @@ type PodSpecContainerOutputReference interface {
 	ResetTerminationMessagePath()
 	ResetTerminationMessagePolicy()
 	ResetTty()
+	ResetVolumeDevice()
 	ResetVolumeMount()
 	ResetWorkingDir()
 	// Produce the Token's value at resolution time.
@@ -607,6 +611,26 @@ func (j *jsiiProxy_PodSpecContainerOutputReference) TtyInput() interface{} {
 	_jsii_.Get(
 		j,
 		"ttyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodSpecContainerOutputReference) VolumeDevice() PodSpecContainerVolumeDeviceList {
+	var returns PodSpecContainerVolumeDeviceList
+	_jsii_.Get(
+		j,
+		"volumeDevice",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodSpecContainerOutputReference) VolumeDeviceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"volumeDeviceInput",
 		&returns,
 	)
 	return returns
@@ -1141,6 +1165,17 @@ func (p *jsiiProxy_PodSpecContainerOutputReference) PutStartupProbe(value *PodSp
 	)
 }
 
+func (p *jsiiProxy_PodSpecContainerOutputReference) PutVolumeDevice(value interface{}) {
+	if err := p.validatePutVolumeDeviceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putVolumeDevice",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PodSpecContainerOutputReference) PutVolumeMount(value interface{}) {
 	if err := p.validatePutVolumeMountParameters(value); err != nil {
 		panic(err)
@@ -1292,6 +1327,14 @@ func (p *jsiiProxy_PodSpecContainerOutputReference) ResetTty() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetTty",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PodSpecContainerOutputReference) ResetVolumeDevice() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetVolumeDevice",
 		nil, // no parameters
 	)
 }

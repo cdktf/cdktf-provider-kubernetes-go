@@ -51,6 +51,10 @@ func (p *jsiiProxy_PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuri
 	return nil
 }
 
+func (p *jsiiProxy_PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference) validatePutNamespaceSelectorParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

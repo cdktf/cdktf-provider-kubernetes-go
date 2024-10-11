@@ -24,21 +24,21 @@ type ConfigMapV1DataConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The data we want to add to the ConfigMap.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/config_map_v1_data#data ConfigMapV1Data#data}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/config_map_v1_data#data ConfigMapV1Data#data}
 	Data *map[string]*string `field:"required" json:"data" yaml:"data"`
 	// metadata block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/config_map_v1_data#metadata ConfigMapV1Data#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/config_map_v1_data#metadata ConfigMapV1Data#metadata}
 	Metadata *ConfigMapV1DataMetadata `field:"required" json:"metadata" yaml:"metadata"`
 	// Set the name of the field manager for the specified labels.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/config_map_v1_data#field_manager ConfigMapV1Data#field_manager}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/config_map_v1_data#field_manager ConfigMapV1Data#field_manager}
 	FieldManager *string `field:"optional" json:"fieldManager" yaml:"fieldManager"`
 	// Force overwriting data that is managed outside of Terraform.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/config_map_v1_data#force ConfigMapV1Data#force}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/config_map_v1_data#force ConfigMapV1Data#force}
 	Force interface{} `field:"optional" json:"force" yaml:"force"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/config_map_v1_data#id ConfigMapV1Data#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/config_map_v1_data#id ConfigMapV1Data#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

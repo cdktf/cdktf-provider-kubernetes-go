@@ -88,6 +88,8 @@ type CronJobSpecJobTemplateSpecTemplateSpecContainerOutputReference interface {
 	Tty() interface{}
 	SetTty(val interface{})
 	TtyInput() interface{}
+	VolumeDevice() CronJobSpecJobTemplateSpecTemplateSpecContainerVolumeDeviceList
+	VolumeDeviceInput() interface{}
 	VolumeMount() CronJobSpecJobTemplateSpecTemplateSpecContainerVolumeMountList
 	VolumeMountInput() interface{}
 	WorkingDir() *string
@@ -126,6 +128,7 @@ type CronJobSpecJobTemplateSpecTemplateSpecContainerOutputReference interface {
 	PutResources(value *CronJobSpecJobTemplateSpecTemplateSpecContainerResources)
 	PutSecurityContext(value *CronJobSpecJobTemplateSpecTemplateSpecContainerSecurityContext)
 	PutStartupProbe(value *CronJobSpecJobTemplateSpecTemplateSpecContainerStartupProbe)
+	PutVolumeDevice(value interface{})
 	PutVolumeMount(value interface{})
 	ResetArgs()
 	ResetCommand()
@@ -145,6 +148,7 @@ type CronJobSpecJobTemplateSpecTemplateSpecContainerOutputReference interface {
 	ResetTerminationMessagePath()
 	ResetTerminationMessagePolicy()
 	ResetTty()
+	ResetVolumeDevice()
 	ResetVolumeMount()
 	ResetWorkingDir()
 	// Produce the Token's value at resolution time.
@@ -607,6 +611,26 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerOutputReferenc
 	_jsii_.Get(
 		j,
 		"ttyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerOutputReference) VolumeDevice() CronJobSpecJobTemplateSpecTemplateSpecContainerVolumeDeviceList {
+	var returns CronJobSpecJobTemplateSpecTemplateSpecContainerVolumeDeviceList
+	_jsii_.Get(
+		j,
+		"volumeDevice",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerOutputReference) VolumeDeviceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"volumeDeviceInput",
 		&returns,
 	)
 	return returns
@@ -1141,6 +1165,17 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerOutputReferenc
 	)
 }
 
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerOutputReference) PutVolumeDevice(value interface{}) {
+	if err := c.validatePutVolumeDeviceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putVolumeDevice",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerOutputReference) PutVolumeMount(value interface{}) {
 	if err := c.validatePutVolumeMountParameters(value); err != nil {
 		panic(err)
@@ -1292,6 +1327,14 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerOutputReferenc
 	_jsii_.InvokeVoid(
 		c,
 		"resetTty",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerOutputReference) ResetVolumeDevice() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVolumeDevice",
 		nil, // no parameters
 	)
 }

@@ -252,6 +252,37 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerOutputReference) vali
 	return nil
 }
 
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerOutputReference) validatePutVolumeDeviceParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DaemonSetV1SpecTemplateSpecInitContainerVolumeDevice:
+		value := value.(*[]*DaemonSetV1SpecTemplateSpecInitContainerVolumeDevice)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DaemonSetV1SpecTemplateSpecInitContainerVolumeDevice:
+		value_ := value.([]*DaemonSetV1SpecTemplateSpecInitContainerVolumeDevice)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DaemonSetV1SpecTemplateSpecInitContainerVolumeDevice; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerOutputReference) validatePutVolumeMountParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -83,6 +83,10 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputRe
 	return nil
 }
 
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference) validatePutVolumeDeviceParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference) validatePutVolumeMountParameters(value interface{}) error {
 	return nil
 }

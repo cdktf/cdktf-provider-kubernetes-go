@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/token_request_v1 kubernetes_token_request_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/token_request_v1 kubernetes_token_request_v1}.
 type TokenRequestV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_TokenRequestV1) Token() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/token_request_v1 kubernetes_token_request_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/token_request_v1 kubernetes_token_request_v1} Resource.
 func NewTokenRequestV1(scope constructs.Construct, id *string, config *TokenRequestV1Config) TokenRequestV1 {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewTokenRequestV1(scope constructs.Construct, id *string, config *TokenRequ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/token_request_v1 kubernetes_token_request_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/token_request_v1 kubernetes_token_request_v1} Resource.
 func NewTokenRequestV1_Override(t TokenRequestV1, scope constructs.Construct, id *string, config *TokenRequestV1Config) {
 	_init_.Initialize()
 

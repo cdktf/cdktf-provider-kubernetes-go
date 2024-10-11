@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/namespace_v1 kubernetes_namespace_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/namespace_v1 kubernetes_namespace_v1}.
 type NamespaceV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_NamespaceV1) WaitForDefaultServiceAccountInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/namespace_v1 kubernetes_namespace_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/namespace_v1 kubernetes_namespace_v1} Resource.
 func NewNamespaceV1(scope constructs.Construct, id *string, config *NamespaceV1Config) NamespaceV1 {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewNamespaceV1(scope constructs.Construct, id *string, config *NamespaceV1C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/namespace_v1 kubernetes_namespace_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/namespace_v1 kubernetes_namespace_v1} Resource.
 func NewNamespaceV1_Override(n NamespaceV1, scope constructs.Construct, id *string, config *NamespaceV1Config) {
 	_init_.Initialize()
 

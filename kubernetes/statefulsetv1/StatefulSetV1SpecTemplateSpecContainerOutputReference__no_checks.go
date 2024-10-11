@@ -83,6 +83,10 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerOutputReference) valida
 	return nil
 }
 
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerOutputReference) validatePutVolumeDeviceParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerOutputReference) validatePutVolumeMountParameters(value interface{}) error {
 	return nil
 }

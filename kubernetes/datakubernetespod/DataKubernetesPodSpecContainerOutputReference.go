@@ -59,6 +59,7 @@ type DataKubernetesPodSpecContainerOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Tty() cdktf.IResolvable
+	VolumeDevice() DataKubernetesPodSpecContainerVolumeDeviceList
 	VolumeMount() DataKubernetesPodSpecContainerVolumeMountList
 	WorkingDir() *string
 	// Experimental.
@@ -355,6 +356,16 @@ func (j *jsiiProxy_DataKubernetesPodSpecContainerOutputReference) Tty() cdktf.IR
 	_jsii_.Get(
 		j,
 		"tty",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesPodSpecContainerOutputReference) VolumeDevice() DataKubernetesPodSpecContainerVolumeDeviceList {
+	var returns DataKubernetesPodSpecContainerVolumeDeviceList
+	_jsii_.Get(
+		j,
+		"volumeDevice",
 		&returns,
 	)
 	return returns

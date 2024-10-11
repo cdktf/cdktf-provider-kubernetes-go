@@ -34,6 +34,7 @@ type DataKubernetesPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDur
 	SetInternalValue(val *DataKubernetesPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm)
 	LabelSelector() DataKubernetesPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList
 	Namespaces() *[]*string
+	NamespaceSelector() DataKubernetesPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -147,6 +148,16 @@ func (j *jsiiProxy_DataKubernetesPodSpecAffinityPodAffinityPreferredDuringSchedu
 	_jsii_.Get(
 		j,
 		"namespaces",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference) NamespaceSelector() DataKubernetesPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList {
+	var returns DataKubernetesPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
+	_jsii_.Get(
+		j,
+		"namespaceSelector",
 		&returns,
 	)
 	return returns

@@ -83,6 +83,10 @@ func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) validatePutStartupProb
 	return nil
 }
 
+func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) validatePutVolumeDeviceParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) validatePutVolumeMountParameters(value interface{}) error {
 	return nil
 }

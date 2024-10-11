@@ -88,6 +88,8 @@ type ReplicationControllerV1SpecTemplateSpecContainerOutputReference interface {
 	Tty() interface{}
 	SetTty(val interface{})
 	TtyInput() interface{}
+	VolumeDevice() ReplicationControllerV1SpecTemplateSpecContainerVolumeDeviceList
+	VolumeDeviceInput() interface{}
 	VolumeMount() ReplicationControllerV1SpecTemplateSpecContainerVolumeMountList
 	VolumeMountInput() interface{}
 	WorkingDir() *string
@@ -126,6 +128,7 @@ type ReplicationControllerV1SpecTemplateSpecContainerOutputReference interface {
 	PutResources(value *ReplicationControllerV1SpecTemplateSpecContainerResources)
 	PutSecurityContext(value *ReplicationControllerV1SpecTemplateSpecContainerSecurityContext)
 	PutStartupProbe(value *ReplicationControllerV1SpecTemplateSpecContainerStartupProbe)
+	PutVolumeDevice(value interface{})
 	PutVolumeMount(value interface{})
 	ResetArgs()
 	ResetCommand()
@@ -145,6 +148,7 @@ type ReplicationControllerV1SpecTemplateSpecContainerOutputReference interface {
 	ResetTerminationMessagePath()
 	ResetTerminationMessagePolicy()
 	ResetTty()
+	ResetVolumeDevice()
 	ResetVolumeMount()
 	ResetWorkingDir()
 	// Produce the Token's value at resolution time.
@@ -607,6 +611,26 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerOutputReferen
 	_jsii_.Get(
 		j,
 		"ttyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerOutputReference) VolumeDevice() ReplicationControllerV1SpecTemplateSpecContainerVolumeDeviceList {
+	var returns ReplicationControllerV1SpecTemplateSpecContainerVolumeDeviceList
+	_jsii_.Get(
+		j,
+		"volumeDevice",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerOutputReference) VolumeDeviceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"volumeDeviceInput",
 		&returns,
 	)
 	return returns
@@ -1141,6 +1165,17 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerOutputReferen
 	)
 }
 
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerOutputReference) PutVolumeDevice(value interface{}) {
+	if err := r.validatePutVolumeDeviceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putVolumeDevice",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerOutputReference) PutVolumeMount(value interface{}) {
 	if err := r.validatePutVolumeMountParameters(value); err != nil {
 		panic(err)
@@ -1292,6 +1327,14 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerOutputReferen
 	_jsii_.InvokeVoid(
 		r,
 		"resetTty",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerOutputReference) ResetVolumeDevice() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetVolumeDevice",
 		nil, // no parameters
 	)
 }

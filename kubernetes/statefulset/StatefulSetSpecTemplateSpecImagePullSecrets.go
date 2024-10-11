@@ -7,7 +7,7 @@ package statefulset
 type StatefulSetSpecTemplateSpecImagePullSecrets struct {
 	// Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/stateful_set#name StatefulSet#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/stateful_set#name StatefulSet#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

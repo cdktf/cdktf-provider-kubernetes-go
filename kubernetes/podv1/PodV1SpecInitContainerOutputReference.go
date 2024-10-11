@@ -88,6 +88,8 @@ type PodV1SpecInitContainerOutputReference interface {
 	Tty() interface{}
 	SetTty(val interface{})
 	TtyInput() interface{}
+	VolumeDevice() PodV1SpecInitContainerVolumeDeviceList
+	VolumeDeviceInput() interface{}
 	VolumeMount() PodV1SpecInitContainerVolumeMountList
 	VolumeMountInput() interface{}
 	WorkingDir() *string
@@ -126,6 +128,7 @@ type PodV1SpecInitContainerOutputReference interface {
 	PutResources(value *PodV1SpecInitContainerResources)
 	PutSecurityContext(value *PodV1SpecInitContainerSecurityContext)
 	PutStartupProbe(value *PodV1SpecInitContainerStartupProbe)
+	PutVolumeDevice(value interface{})
 	PutVolumeMount(value interface{})
 	ResetArgs()
 	ResetCommand()
@@ -145,6 +148,7 @@ type PodV1SpecInitContainerOutputReference interface {
 	ResetTerminationMessagePath()
 	ResetTerminationMessagePolicy()
 	ResetTty()
+	ResetVolumeDevice()
 	ResetVolumeMount()
 	ResetWorkingDir()
 	// Produce the Token's value at resolution time.
@@ -607,6 +611,26 @@ func (j *jsiiProxy_PodV1SpecInitContainerOutputReference) TtyInput() interface{}
 	_jsii_.Get(
 		j,
 		"ttyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecInitContainerOutputReference) VolumeDevice() PodV1SpecInitContainerVolumeDeviceList {
+	var returns PodV1SpecInitContainerVolumeDeviceList
+	_jsii_.Get(
+		j,
+		"volumeDevice",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecInitContainerOutputReference) VolumeDeviceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"volumeDeviceInput",
 		&returns,
 	)
 	return returns
@@ -1141,6 +1165,17 @@ func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) PutStartupProbe(value 
 	)
 }
 
+func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) PutVolumeDevice(value interface{}) {
+	if err := p.validatePutVolumeDeviceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putVolumeDevice",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) PutVolumeMount(value interface{}) {
 	if err := p.validatePutVolumeMountParameters(value); err != nil {
 		panic(err)
@@ -1292,6 +1327,14 @@ func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) ResetTty() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetTty",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PodV1SpecInitContainerOutputReference) ResetVolumeDevice() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetVolumeDevice",
 		nil, // no parameters
 	)
 }

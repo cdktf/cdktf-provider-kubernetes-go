@@ -83,6 +83,10 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputRef
 	return nil
 }
 
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validatePutVolumeDeviceParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerOutputReference) validatePutVolumeMountParameters(value interface{}) error {
 	return nil
 }

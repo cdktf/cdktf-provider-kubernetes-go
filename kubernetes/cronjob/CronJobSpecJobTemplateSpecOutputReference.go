@@ -19,6 +19,9 @@ type CronJobSpecJobTemplateSpecOutputReference interface {
 	BackoffLimit() *float64
 	SetBackoffLimit(val *float64)
 	BackoffLimitInput() *float64
+	BackoffLimitPerIndex() *float64
+	SetBackoffLimitPerIndex(val *float64)
+	BackoffLimitPerIndexInput() *float64
 	CompletionMode() *string
 	SetCompletionMode(val *string)
 	CompletionModeInput() *string
@@ -47,6 +50,9 @@ type CronJobSpecJobTemplateSpecOutputReference interface {
 	ManualSelector() interface{}
 	SetManualSelector(val interface{})
 	ManualSelectorInput() interface{}
+	MaxFailedIndexes() *float64
+	SetMaxFailedIndexes(val *float64)
+	MaxFailedIndexesInput() *float64
 	Parallelism() *float64
 	SetParallelism(val *float64)
 	ParallelismInput() *float64
@@ -96,9 +102,11 @@ type CronJobSpecJobTemplateSpecOutputReference interface {
 	PutTemplate(value *CronJobSpecJobTemplateSpecTemplate)
 	ResetActiveDeadlineSeconds()
 	ResetBackoffLimit()
+	ResetBackoffLimitPerIndex()
 	ResetCompletionMode()
 	ResetCompletions()
 	ResetManualSelector()
+	ResetMaxFailedIndexes()
 	ResetParallelism()
 	ResetPodFailurePolicy()
 	ResetSelector()
@@ -153,6 +161,26 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) BackoffLimitInput(
 	_jsii_.Get(
 		j,
 		"backoffLimitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) BackoffLimitPerIndex() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"backoffLimitPerIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) BackoffLimitPerIndexInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"backoffLimitPerIndexInput",
 		&returns,
 	)
 	return returns
@@ -263,6 +291,26 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) ManualSelectorInpu
 	_jsii_.Get(
 		j,
 		"manualSelectorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) MaxFailedIndexes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxFailedIndexes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) MaxFailedIndexesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxFailedIndexesInput",
 		&returns,
 	)
 	return returns
@@ -438,6 +486,17 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference)SetBackoffLimit(val
 	)
 }
 
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference)SetBackoffLimitPerIndex(val *float64) {
+	if err := j.validateSetBackoffLimitPerIndexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"backoffLimitPerIndex",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference)SetCompletionMode(val *string) {
 	if err := j.validateSetCompletionModeParameters(val); err != nil {
 		panic(err)
@@ -500,6 +559,17 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference)SetManualSelector(v
 	_jsii_.Set(
 		j,
 		"manualSelector",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference)SetMaxFailedIndexes(val *float64) {
+	if err := j.validateSetMaxFailedIndexesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxFailedIndexes",
 		val,
 	)
 }
@@ -783,6 +853,14 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) ResetBackoffLimit(
 	)
 }
 
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) ResetBackoffLimitPerIndex() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBackoffLimitPerIndex",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) ResetCompletionMode() {
 	_jsii_.InvokeVoid(
 		c,
@@ -803,6 +881,14 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) ResetManualSelecto
 	_jsii_.InvokeVoid(
 		c,
 		"resetManualSelector",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) ResetMaxFailedIndexes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMaxFailedIndexes",
 		nil, // no parameters
 	)
 }

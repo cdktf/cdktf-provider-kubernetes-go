@@ -71,6 +71,10 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) validateSetBackoff
 	return nil
 }
 
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) validateSetBackoffLimitPerIndexParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) validateSetCompletionModeParameters(val *string) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) validateSetInterna
 }
 
 func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) validateSetManualSelectorParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecOutputReference) validateSetMaxFailedIndexesParameters(val *float64) error {
 	return nil
 }
 

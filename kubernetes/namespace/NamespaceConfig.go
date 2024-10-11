@@ -24,20 +24,20 @@ type NamespaceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// metadata block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/namespace#metadata Namespace#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/namespace#metadata Namespace#metadata}
 	Metadata *NamespaceMetadata `field:"required" json:"metadata" yaml:"metadata"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/namespace#id Namespace#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/namespace#id Namespace#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/namespace#timeouts Namespace#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/namespace#timeouts Namespace#timeouts}
 	Timeouts *NamespaceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Terraform will wait for the default service account to be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/namespace#wait_for_default_service_account Namespace#wait_for_default_service_account}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/namespace#wait_for_default_service_account Namespace#wait_for_default_service_account}
 	WaitForDefaultServiceAccount interface{} `field:"optional" json:"waitForDefaultServiceAccount" yaml:"waitForDefaultServiceAccount"`
 }
 

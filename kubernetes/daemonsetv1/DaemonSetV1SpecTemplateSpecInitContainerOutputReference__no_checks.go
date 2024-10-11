@@ -83,6 +83,10 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerOutputReference) vali
 	return nil
 }
 
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerOutputReference) validatePutVolumeDeviceParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerOutputReference) validatePutVolumeMountParameters(value interface{}) error {
 	return nil
 }

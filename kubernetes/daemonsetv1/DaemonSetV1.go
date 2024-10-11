@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/daemon_set_v1 kubernetes_daemon_set_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/daemon_set_v1 kubernetes_daemon_set_v1}.
 type DaemonSetV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_DaemonSetV1) WaitForRolloutInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/daemon_set_v1 kubernetes_daemon_set_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/daemon_set_v1 kubernetes_daemon_set_v1} Resource.
 func NewDaemonSetV1(scope constructs.Construct, id *string, config *DaemonSetV1Config) DaemonSetV1 {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewDaemonSetV1(scope constructs.Construct, id *string, config *DaemonSetV1C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.32.0/docs/resources/daemon_set_v1 kubernetes_daemon_set_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/daemon_set_v1 kubernetes_daemon_set_v1} Resource.
 func NewDaemonSetV1_Override(d DaemonSetV1, scope constructs.Construct, id *string, config *DaemonSetV1Config) {
 	_init_.Initialize()
 
