@@ -7,11 +7,11 @@ package deployment
 type DeploymentSpecTemplateSpecInitContainerVolumeDevice struct {
 	// Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/deployment#device_path Deployment#device_path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/deployment#device_path Deployment#device_path}
 	DevicePath *string `field:"required" json:"devicePath" yaml:"devicePath"`
 	// This must match the Name of a PersistentVolumeClaim.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/deployment#name Deployment#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/deployment#name Deployment#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

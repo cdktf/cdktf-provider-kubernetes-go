@@ -7,7 +7,7 @@ package nodetaint
 type NodeTaintMetadata struct {
 	// The name of the node.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/node_taint#name NodeTaint#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/node_taint#name NodeTaint#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

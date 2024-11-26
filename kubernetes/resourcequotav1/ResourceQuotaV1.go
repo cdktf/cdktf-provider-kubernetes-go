@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/resource_quota_v1 kubernetes_resource_quota_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/resource_quota_v1 kubernetes_resource_quota_v1}.
 type ResourceQuotaV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_ResourceQuotaV1) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/resource_quota_v1 kubernetes_resource_quota_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/resource_quota_v1 kubernetes_resource_quota_v1} Resource.
 func NewResourceQuotaV1(scope constructs.Construct, id *string, config *ResourceQuotaV1Config) ResourceQuotaV1 {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewResourceQuotaV1(scope constructs.Construct, id *string, config *Resource
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/resource_quota_v1 kubernetes_resource_quota_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/resource_quota_v1 kubernetes_resource_quota_v1} Resource.
 func NewResourceQuotaV1_Override(r ResourceQuotaV1, scope constructs.Construct, id *string, config *ResourceQuotaV1Config) {
 	_init_.Initialize()
 

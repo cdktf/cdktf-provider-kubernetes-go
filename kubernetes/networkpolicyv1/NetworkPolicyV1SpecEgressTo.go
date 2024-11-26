@@ -7,15 +7,15 @@ package networkpolicyv1
 type NetworkPolicyV1SpecEgressTo struct {
 	// ip_block block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/network_policy_v1#ip_block NetworkPolicyV1#ip_block}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/network_policy_v1#ip_block NetworkPolicyV1#ip_block}
 	IpBlock *NetworkPolicyV1SpecEgressToIpBlock `field:"optional" json:"ipBlock" yaml:"ipBlock"`
 	// namespace_selector block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/network_policy_v1#namespace_selector NetworkPolicyV1#namespace_selector}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/network_policy_v1#namespace_selector NetworkPolicyV1#namespace_selector}
 	NamespaceSelector *NetworkPolicyV1SpecEgressToNamespaceSelector `field:"optional" json:"namespaceSelector" yaml:"namespaceSelector"`
 	// pod_selector block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/network_policy_v1#pod_selector NetworkPolicyV1#pod_selector}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/network_policy_v1#pod_selector NetworkPolicyV1#pod_selector}
 	PodSelector *NetworkPolicyV1SpecEgressToPodSelector `field:"optional" json:"podSelector" yaml:"podSelector"`
 }
 

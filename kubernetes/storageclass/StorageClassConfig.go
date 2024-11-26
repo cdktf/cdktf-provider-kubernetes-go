@@ -24,40 +24,40 @@ type StorageClassConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// metadata block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/storage_class#metadata StorageClass#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/storage_class#metadata StorageClass#metadata}
 	Metadata *StorageClassMetadata `field:"required" json:"metadata" yaml:"metadata"`
 	// Indicates the type of the provisioner.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/storage_class#storage_provisioner StorageClass#storage_provisioner}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/storage_class#storage_provisioner StorageClass#storage_provisioner}
 	StorageProvisioner *string `field:"required" json:"storageProvisioner" yaml:"storageProvisioner"`
 	// allowed_topologies block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/storage_class#allowed_topologies StorageClass#allowed_topologies}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/storage_class#allowed_topologies StorageClass#allowed_topologies}
 	AllowedTopologies *StorageClassAllowedTopologies `field:"optional" json:"allowedTopologies" yaml:"allowedTopologies"`
 	// Indicates whether the storage class allow volume expand.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/storage_class#allow_volume_expansion StorageClass#allow_volume_expansion}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/storage_class#allow_volume_expansion StorageClass#allow_volume_expansion}
 	AllowVolumeExpansion interface{} `field:"optional" json:"allowVolumeExpansion" yaml:"allowVolumeExpansion"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/storage_class#id StorageClass#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/storage_class#id StorageClass#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Persistent Volumes that are dynamically created by a storage class will have the mount options specified.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/storage_class#mount_options StorageClass#mount_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/storage_class#mount_options StorageClass#mount_options}
 	MountOptions *[]*string `field:"optional" json:"mountOptions" yaml:"mountOptions"`
 	// The parameters for the provisioner that should create volumes of this storage class.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/storage_class#parameters StorageClass#parameters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/storage_class#parameters StorageClass#parameters}
 	Parameters *map[string]*string `field:"optional" json:"parameters" yaml:"parameters"`
 	// Indicates the type of the reclaim policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/storage_class#reclaim_policy StorageClass#reclaim_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/storage_class#reclaim_policy StorageClass#reclaim_policy}
 	ReclaimPolicy *string `field:"optional" json:"reclaimPolicy" yaml:"reclaimPolicy"`
 	// Indicates when volume binding and dynamic provisioning should occur.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.33.0/docs/resources/storage_class#volume_binding_mode StorageClass#volume_binding_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/storage_class#volume_binding_mode StorageClass#volume_binding_mode}
 	VolumeBindingMode *string `field:"optional" json:"volumeBindingMode" yaml:"volumeBindingMode"`
 }
 

@@ -26,6 +26,7 @@ type DataKubernetesNodesNodesStatusOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Conditions() DataKubernetesNodesNodesStatusConditionsList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -128,6 +129,16 @@ func (j *jsiiProxy_DataKubernetesNodesNodesStatusOutputReference) ComplexObjectI
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesNodesNodesStatusOutputReference) Conditions() DataKubernetesNodesNodesStatusConditionsList {
+	var returns DataKubernetesNodesNodesStatusConditionsList
+	_jsii_.Get(
+		j,
+		"conditions",
 		&returns,
 	)
 	return returns
