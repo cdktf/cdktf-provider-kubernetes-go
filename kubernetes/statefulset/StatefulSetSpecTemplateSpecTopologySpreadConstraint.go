@@ -7,37 +7,37 @@ package statefulset
 type StatefulSetSpecTemplateSpecTopologySpreadConstraint struct {
 	// label_selector block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
 	LabelSelector interface{} `field:"optional" json:"labelSelector" yaml:"labelSelector"`
 	// is a set of pod label keys to select the pods over which spreading will be calculated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/stateful_set#match_label_keys StatefulSet#match_label_keys}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/stateful_set#match_label_keys StatefulSet#match_label_keys}
 	MatchLabelKeys *[]*string `field:"optional" json:"matchLabelKeys" yaml:"matchLabelKeys"`
 	// describes the degree to which pods may be unevenly distributed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/stateful_set#max_skew StatefulSet#max_skew}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/stateful_set#max_skew StatefulSet#max_skew}
 	MaxSkew *float64 `field:"optional" json:"maxSkew" yaml:"maxSkew"`
 	// indicates a minimum number of eligible domains.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/stateful_set#min_domains StatefulSet#min_domains}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/stateful_set#min_domains StatefulSet#min_domains}
 	MinDomains *float64 `field:"optional" json:"minDomains" yaml:"minDomains"`
 	// indicates how we will treat Pod's nodeAffinity/nodeSelector when calculating pod topology spread skew.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/stateful_set#node_affinity_policy StatefulSet#node_affinity_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/stateful_set#node_affinity_policy StatefulSet#node_affinity_policy}
 	NodeAffinityPolicy *string `field:"optional" json:"nodeAffinityPolicy" yaml:"nodeAffinityPolicy"`
 	// indicates how we will treat node taints when calculating pod topology spread skew.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/stateful_set#node_taints_policy StatefulSet#node_taints_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/stateful_set#node_taints_policy StatefulSet#node_taints_policy}
 	NodeTaintsPolicy *string `field:"optional" json:"nodeTaintsPolicy" yaml:"nodeTaintsPolicy"`
 	// the key of node labels.
 	//
 	// Nodes that have a label with this key and identical values are considered to be in the same topology.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
 	TopologyKey *string `field:"optional" json:"topologyKey" yaml:"topologyKey"`
 	// indicates how to deal with a pod if it doesn't satisfy the spread constraint.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/stateful_set#when_unsatisfiable StatefulSet#when_unsatisfiable}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/stateful_set#when_unsatisfiable StatefulSet#when_unsatisfiable}
 	WhenUnsatisfiable *string `field:"optional" json:"whenUnsatisfiable" yaml:"whenUnsatisfiable"`
 }
 

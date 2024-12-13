@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/role_binding kubernetes_role_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/role_binding kubernetes_role_binding}.
 type RoleBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_RoleBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/role_binding kubernetes_role_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/role_binding kubernetes_role_binding} Resource.
 func NewRoleBinding(scope constructs.Construct, id *string, config *RoleBindingConfig) RoleBinding {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewRoleBinding(scope constructs.Construct, id *string, config *RoleBindingC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/role_binding kubernetes_role_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/role_binding kubernetes_role_binding} Resource.
 func NewRoleBinding_Override(r RoleBinding, scope constructs.Construct, id *string, config *RoleBindingConfig) {
 	_init_.Initialize()
 

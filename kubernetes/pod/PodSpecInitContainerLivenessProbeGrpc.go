@@ -7,11 +7,11 @@ package pod
 type PodSpecInitContainerLivenessProbeGrpc struct {
 	// Number of the port to access on the container. Number must be in the range 1 to 65535.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/pod#port Pod#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/pod#port Pod#port}
 	Port *float64 `field:"required" json:"port" yaml:"port"`
 	// Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/pod#service Pod#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/pod#service Pod#service}
 	Service *string `field:"optional" json:"service" yaml:"service"`
 }
 

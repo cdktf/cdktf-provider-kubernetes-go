@@ -32,6 +32,9 @@ type DaemonSetV1SpecStrategyRollingUpdateOutputReference interface {
 	Fqn() *string
 	InternalValue() *DaemonSetV1SpecStrategyRollingUpdate
 	SetInternalValue(val *DaemonSetV1SpecStrategyRollingUpdate)
+	MaxSurge() *string
+	SetMaxSurge(val *string)
+	MaxSurgeInput() *string
 	MaxUnavailable() *string
 	SetMaxUnavailable(val *string)
 	MaxUnavailableInput() *string
@@ -67,6 +70,7 @@ type DaemonSetV1SpecStrategyRollingUpdateOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMaxSurge()
 	ResetMaxUnavailable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -128,6 +132,26 @@ func (j *jsiiProxy_DaemonSetV1SpecStrategyRollingUpdateOutputReference) Internal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DaemonSetV1SpecStrategyRollingUpdateOutputReference) MaxSurge() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxSurge",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DaemonSetV1SpecStrategyRollingUpdateOutputReference) MaxSurgeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxSurgeInput",
 		&returns,
 	)
 	return returns
@@ -230,6 +254,17 @@ func (j *jsiiProxy_DaemonSetV1SpecStrategyRollingUpdateOutputReference)SetIntern
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DaemonSetV1SpecStrategyRollingUpdateOutputReference)SetMaxSurge(val *string) {
+	if err := j.validateSetMaxSurgeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxSurge",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (d *jsiiProxy_DaemonSetV1SpecStrategyRollingUpdateOutputReference) Interpol
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DaemonSetV1SpecStrategyRollingUpdateOutputReference) ResetMaxSurge() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMaxSurge",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DaemonSetV1SpecStrategyRollingUpdateOutputReference) ResetMaxUnavailable() {

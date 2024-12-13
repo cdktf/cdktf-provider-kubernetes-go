@@ -5,9 +5,9 @@ package cronjob
 
 
 type CronJobSpecJobTemplateSpecPodFailurePolicyRuleOnPodCondition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/cron_job#status CronJob#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/cron_job#status CronJob#status}.
 	Status *string `field:"optional" json:"status" yaml:"status"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.34.0/docs/resources/cron_job#type CronJob#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/cron_job#type CronJob#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

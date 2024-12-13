@@ -63,6 +63,10 @@ func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) validateSetMaxSurgeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference) validateSetMaxUnavailableParameters(val *string) error {
 	return nil
 }
