@@ -26,21 +26,21 @@ type EndpointSliceV1Config struct {
 	//
 	// All addresses in this slice must be the same type. This field is immutable after creation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/endpoint_slice_v1#address_type EndpointSliceV1#address_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/endpoint_slice_v1#address_type EndpointSliceV1#address_type}
 	AddressType *string `field:"required" json:"addressType" yaml:"addressType"`
 	// endpoint block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/endpoint_slice_v1#endpoint EndpointSliceV1#endpoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/endpoint_slice_v1#endpoint EndpointSliceV1#endpoint}
 	Endpoint interface{} `field:"required" json:"endpoint" yaml:"endpoint"`
 	// metadata block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/endpoint_slice_v1#metadata EndpointSliceV1#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/endpoint_slice_v1#metadata EndpointSliceV1#metadata}
 	Metadata *EndpointSliceV1Metadata `field:"required" json:"metadata" yaml:"metadata"`
 	// port block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/endpoint_slice_v1#port EndpointSliceV1#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/endpoint_slice_v1#port EndpointSliceV1#port}
 	Port interface{} `field:"required" json:"port" yaml:"port"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/endpoint_slice_v1#id EndpointSliceV1#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/endpoint_slice_v1#id EndpointSliceV1#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -7,27 +7,27 @@ package statefulset
 type StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec struct {
 	// A set of the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/stateful_set#access_modes StatefulSet#access_modes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/stateful_set#access_modes StatefulSet#access_modes}
 	AccessModes *[]*string `field:"required" json:"accessModes" yaml:"accessModes"`
 	// resources block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/stateful_set#resources StatefulSet#resources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/stateful_set#resources StatefulSet#resources}
 	Resources *StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources `field:"required" json:"resources" yaml:"resources"`
 	// selector block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/stateful_set#selector StatefulSet#selector}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/stateful_set#selector StatefulSet#selector}
 	Selector *StatefulSetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector `field:"optional" json:"selector" yaml:"selector"`
 	// Name of the storage class requested by the claim.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/stateful_set#storage_class_name StatefulSet#storage_class_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/stateful_set#storage_class_name StatefulSet#storage_class_name}
 	StorageClassName *string `field:"optional" json:"storageClassName" yaml:"storageClassName"`
 	// Defines what type of volume is required by the claim.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/stateful_set#volume_mode StatefulSet#volume_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/stateful_set#volume_mode StatefulSet#volume_mode}
 	VolumeMode *string `field:"optional" json:"volumeMode" yaml:"volumeMode"`
 	// The binding reference to the PersistentVolume backing this claim.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/stateful_set#volume_name StatefulSet#volume_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/stateful_set#volume_name StatefulSet#volume_name}
 	VolumeName *string `field:"optional" json:"volumeName" yaml:"volumeName"`
 }
 

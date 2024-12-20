@@ -7,25 +7,25 @@ package replicationcontrollerv1
 type ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePostStartHttpGet struct {
 	// Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/replication_controller_v1#host ReplicationControllerV1#host}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/replication_controller_v1#host ReplicationControllerV1#host}
 	Host *string `field:"optional" json:"host" yaml:"host"`
 	// http_header block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/replication_controller_v1#http_header ReplicationControllerV1#http_header}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/replication_controller_v1#http_header ReplicationControllerV1#http_header}
 	HttpHeader interface{} `field:"optional" json:"httpHeader" yaml:"httpHeader"`
 	// Path to access on the HTTP server.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/replication_controller_v1#path ReplicationControllerV1#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/replication_controller_v1#path ReplicationControllerV1#path}
 	Path *string `field:"optional" json:"path" yaml:"path"`
 	// Name or number of the port to access on the container.
 	//
 	// Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/replication_controller_v1#port ReplicationControllerV1#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/replication_controller_v1#port ReplicationControllerV1#port}
 	Port *string `field:"optional" json:"port" yaml:"port"`
 	// Scheme to use for connecting to the host.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.0/docs/resources/replication_controller_v1#scheme ReplicationControllerV1#scheme}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/replication_controller_v1#scheme ReplicationControllerV1#scheme}
 	Scheme *string `field:"optional" json:"scheme" yaml:"scheme"`
 }
 
