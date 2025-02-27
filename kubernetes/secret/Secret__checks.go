@@ -277,6 +277,22 @@ func (j *jsiiProxy_Secret) validateSetBinaryDataParameters(val *map[string]*stri
 	return nil
 }
 
+func (j *jsiiProxy_Secret) validateSetBinaryDataWoParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Secret) validateSetBinaryDataWoRevisionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Secret) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -368,6 +384,22 @@ func (j *jsiiProxy_Secret) validateSetCountParameters(val interface{}) error {
 }
 
 func (j *jsiiProxy_Secret) validateSetDataParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Secret) validateSetDataWoParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Secret) validateSetDataWoRevisionParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

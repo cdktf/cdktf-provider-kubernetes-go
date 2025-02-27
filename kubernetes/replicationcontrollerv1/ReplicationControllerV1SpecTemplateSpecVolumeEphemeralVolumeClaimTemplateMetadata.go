@@ -9,13 +9,13 @@ type ReplicationControllerV1SpecTemplateSpecVolumeEphemeralVolumeClaimTemplateMe
 	//
 	// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/replication_controller_v1#annotations ReplicationControllerV1#annotations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/replication_controller_v1#annotations ReplicationControllerV1#annotations}
 	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
 	// Map of string keys and values that can be used to organize and categorize (scope and select) the persistent volume claim.
 	//
 	// May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/replication_controller_v1#labels ReplicationControllerV1#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/replication_controller_v1#labels ReplicationControllerV1#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 }
 

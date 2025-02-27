@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/priority_class_v1 kubernetes_priority_class_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/priority_class_v1 kubernetes_priority_class_v1}.
 type PriorityClassV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +428,7 @@ func (j *jsiiProxy_PriorityClassV1) ValueInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/priority_class_v1 kubernetes_priority_class_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/priority_class_v1 kubernetes_priority_class_v1} Resource.
 func NewPriorityClassV1(scope constructs.Construct, id *string, config *PriorityClassV1Config) PriorityClassV1 {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewPriorityClassV1(scope constructs.Construct, id *string, config *Priority
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/priority_class_v1 kubernetes_priority_class_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/priority_class_v1 kubernetes_priority_class_v1} Resource.
 func NewPriorityClassV1_Override(p PriorityClassV1, scope constructs.Construct, id *string, config *PriorityClassV1Config) {
 	_init_.Initialize()
 

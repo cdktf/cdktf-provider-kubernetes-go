@@ -103,6 +103,14 @@ func (j *jsiiProxy_SecretV1) validateSetBinaryDataParameters(val *map[string]*st
 	return nil
 }
 
+func (j *jsiiProxy_SecretV1) validateSetBinaryDataWoParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretV1) validateSetBinaryDataWoRevisionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretV1) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -112,6 +120,14 @@ func (j *jsiiProxy_SecretV1) validateSetCountParameters(val interface{}) error {
 }
 
 func (j *jsiiProxy_SecretV1) validateSetDataParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretV1) validateSetDataWoParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretV1) validateSetDataWoRevisionParameters(val *float64) error {
 	return nil
 }
 

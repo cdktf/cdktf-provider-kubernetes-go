@@ -12,12 +12,18 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/secret kubernetes_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/secret kubernetes_secret}.
 type Secret interface {
 	cdktf.TerraformResource
 	BinaryData() *map[string]*string
 	SetBinaryData(val *map[string]*string)
 	BinaryDataInput() *map[string]*string
+	BinaryDataWo() *map[string]*string
+	SetBinaryDataWo(val *map[string]*string)
+	BinaryDataWoInput() *map[string]*string
+	BinaryDataWoRevision() *float64
+	SetBinaryDataWoRevision(val *float64)
+	BinaryDataWoRevisionInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -33,6 +39,12 @@ type Secret interface {
 	Data() *map[string]*string
 	SetData(val *map[string]*string)
 	DataInput() *map[string]*string
+	DataWo() *map[string]*string
+	SetDataWo(val *map[string]*string)
+	DataWoInput() *map[string]*string
+	DataWoRevision() *float64
+	SetDataWoRevision(val *float64)
+	DataWoRevisionInput() *float64
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -129,7 +141,11 @@ type Secret interface {
 	PutMetadata(value *SecretMetadata)
 	PutTimeouts(value *SecretTimeouts)
 	ResetBinaryData()
+	ResetBinaryDataWo()
+	ResetBinaryDataWoRevision()
 	ResetData()
+	ResetDataWo()
+	ResetDataWoRevision()
 	ResetId()
 	ResetImmutable()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -171,6 +187,46 @@ func (j *jsiiProxy_Secret) BinaryDataInput() *map[string]*string {
 	_jsii_.Get(
 		j,
 		"binaryDataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Secret) BinaryDataWo() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"binaryDataWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Secret) BinaryDataWoInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"binaryDataWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Secret) BinaryDataWoRevision() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"binaryDataWoRevision",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Secret) BinaryDataWoRevisionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"binaryDataWoRevisionInput",
 		&returns,
 	)
 	return returns
@@ -231,6 +287,46 @@ func (j *jsiiProxy_Secret) DataInput() *map[string]*string {
 	_jsii_.Get(
 		j,
 		"dataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Secret) DataWo() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"dataWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Secret) DataWoInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"dataWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Secret) DataWoRevision() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataWoRevision",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Secret) DataWoRevisionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataWoRevisionInput",
 		&returns,
 	)
 	return returns
@@ -477,7 +573,7 @@ func (j *jsiiProxy_Secret) WaitForServiceAccountTokenInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/secret kubernetes_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/secret kubernetes_secret} Resource.
 func NewSecret(scope constructs.Construct, id *string, config *SecretConfig) Secret {
 	_init_.Initialize()
 
@@ -495,7 +591,7 @@ func NewSecret(scope constructs.Construct, id *string, config *SecretConfig) Sec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/secret kubernetes_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/secret kubernetes_secret} Resource.
 func NewSecret_Override(s Secret, scope constructs.Construct, id *string, config *SecretConfig) {
 	_init_.Initialize()
 
@@ -513,6 +609,28 @@ func (j *jsiiProxy_Secret)SetBinaryData(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"binaryData",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Secret)SetBinaryDataWo(val *map[string]*string) {
+	if err := j.validateSetBinaryDataWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"binaryDataWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Secret)SetBinaryDataWoRevision(val *float64) {
+	if err := j.validateSetBinaryDataWoRevisionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"binaryDataWoRevision",
 		val,
 	)
 }
@@ -546,6 +664,28 @@ func (j *jsiiProxy_Secret)SetData(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"data",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Secret)SetDataWo(val *map[string]*string) {
+	if err := j.validateSetDataWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Secret)SetDataWoRevision(val *float64) {
+	if err := j.validateSetDataWoRevisionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataWoRevision",
 		val,
 	)
 }
@@ -1023,10 +1163,42 @@ func (s *jsiiProxy_Secret) ResetBinaryData() {
 	)
 }
 
+func (s *jsiiProxy_Secret) ResetBinaryDataWo() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBinaryDataWo",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Secret) ResetBinaryDataWoRevision() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBinaryDataWoRevision",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_Secret) ResetData() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetData",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Secret) ResetDataWo() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDataWo",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Secret) ResetDataWoRevision() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDataWoRevision",
 		nil, // no parameters
 	)
 }

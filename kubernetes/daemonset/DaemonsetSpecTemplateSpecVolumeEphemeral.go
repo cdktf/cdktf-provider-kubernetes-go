@@ -7,7 +7,7 @@ package daemonset
 type DaemonsetSpecTemplateSpecVolumeEphemeral struct {
 	// volume_claim_template block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.35.1/docs/resources/daemonset#volume_claim_template Daemonset#volume_claim_template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/daemonset#volume_claim_template Daemonset#volume_claim_template}
 	VolumeClaimTemplate *DaemonsetSpecTemplateSpecVolumeEphemeralVolumeClaimTemplate `field:"required" json:"volumeClaimTemplate" yaml:"volumeClaimTemplate"`
 }
 
