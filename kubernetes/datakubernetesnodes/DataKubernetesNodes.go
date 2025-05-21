@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/data-sources/nodes kubernetes_nodes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/data-sources/nodes kubernetes_nodes}.
 type DataKubernetesNodes interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataKubernetesNodes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/data-sources/nodes kubernetes_nodes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/data-sources/nodes kubernetes_nodes} Data Source.
 func NewDataKubernetesNodes(scope constructs.Construct, id *string, config *DataKubernetesNodesConfig) DataKubernetesNodes {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataKubernetesNodes(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/data-sources/nodes kubernetes_nodes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/data-sources/nodes kubernetes_nodes} Data Source.
 func NewDataKubernetesNodes_Override(d DataKubernetesNodes, scope constructs.Construct, id *string, config *DataKubernetesNodesConfig) {
 	_init_.Initialize()
 

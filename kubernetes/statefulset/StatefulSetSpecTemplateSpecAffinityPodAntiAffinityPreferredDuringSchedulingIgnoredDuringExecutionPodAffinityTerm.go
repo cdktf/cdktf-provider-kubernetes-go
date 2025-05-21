@@ -7,19 +7,19 @@ package statefulset
 type StatefulSetSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm struct {
 	// empty topology key is interpreted by the scheduler as 'all topologies'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/stateful_set#topology_key StatefulSet#topology_key}
 	TopologyKey *string `field:"required" json:"topologyKey" yaml:"topologyKey"`
 	// label_selector block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/stateful_set#label_selector StatefulSet#label_selector}
 	LabelSelector interface{} `field:"optional" json:"labelSelector" yaml:"labelSelector"`
 	// namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/stateful_set#namespaces StatefulSet#namespaces}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/stateful_set#namespaces StatefulSet#namespaces}
 	Namespaces *[]*string `field:"optional" json:"namespaces" yaml:"namespaces"`
 	// namespace_selector block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/stateful_set#namespace_selector StatefulSet#namespace_selector}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/stateful_set#namespace_selector StatefulSet#namespace_selector}
 	NamespaceSelector interface{} `field:"optional" json:"namespaceSelector" yaml:"namespaceSelector"`
 }
 

@@ -7,27 +7,27 @@ package cronjobv1
 type CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpec struct {
 	// A set of the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/cron_job_v1#access_modes CronJobV1#access_modes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/cron_job_v1#access_modes CronJobV1#access_modes}
 	AccessModes *[]*string `field:"required" json:"accessModes" yaml:"accessModes"`
 	// resources block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/cron_job_v1#resources CronJobV1#resources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/cron_job_v1#resources CronJobV1#resources}
 	Resources *CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecResources `field:"required" json:"resources" yaml:"resources"`
 	// selector block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/cron_job_v1#selector CronJobV1#selector}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/cron_job_v1#selector CronJobV1#selector}
 	Selector *CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelector `field:"optional" json:"selector" yaml:"selector"`
 	// Name of the storage class requested by the claim.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/cron_job_v1#storage_class_name CronJobV1#storage_class_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/cron_job_v1#storage_class_name CronJobV1#storage_class_name}
 	StorageClassName *string `field:"optional" json:"storageClassName" yaml:"storageClassName"`
 	// Defines what type of volume is required by the claim.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/cron_job_v1#volume_mode CronJobV1#volume_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/cron_job_v1#volume_mode CronJobV1#volume_mode}
 	VolumeMode *string `field:"optional" json:"volumeMode" yaml:"volumeMode"`
 	// The binding reference to the PersistentVolume backing this claim.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/cron_job_v1#volume_name CronJobV1#volume_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/cron_job_v1#volume_name CronJobV1#volume_name}
 	VolumeName *string `field:"optional" json:"volumeName" yaml:"volumeName"`
 }
 

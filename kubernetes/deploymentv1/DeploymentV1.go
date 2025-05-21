@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/deployment_v1 kubernetes_deployment_v1}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/deployment_v1 kubernetes_deployment_v1}.
 type DeploymentV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_DeploymentV1) WaitForRolloutInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/deployment_v1 kubernetes_deployment_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/deployment_v1 kubernetes_deployment_v1} Resource.
 func NewDeploymentV1(scope constructs.Construct, id *string, config *DeploymentV1Config) DeploymentV1 {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewDeploymentV1(scope constructs.Construct, id *string, config *DeploymentV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/deployment_v1 kubernetes_deployment_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/deployment_v1 kubernetes_deployment_v1} Resource.
 func NewDeploymentV1_Override(d DeploymentV1, scope constructs.Construct, id *string, config *DeploymentV1Config) {
 	_init_.Initialize()
 

@@ -7,7 +7,7 @@ package deployment
 type DeploymentSpecTemplateSpecImagePullSecrets struct {
 	// Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.36.0/docs/resources/deployment#name Deployment#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/deployment#name Deployment#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 
