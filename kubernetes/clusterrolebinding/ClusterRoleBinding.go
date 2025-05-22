@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/cluster_role_binding kubernetes_cluster_role_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/cluster_role_binding kubernetes_cluster_role_binding}.
 type ClusterRoleBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_ClusterRoleBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/cluster_role_binding kubernetes_cluster_role_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/cluster_role_binding kubernetes_cluster_role_binding} Resource.
 func NewClusterRoleBinding(scope constructs.Construct, id *string, config *ClusterRoleBindingConfig) ClusterRoleBinding {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewClusterRoleBinding(scope constructs.Construct, id *string, config *Clust
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/cluster_role_binding kubernetes_cluster_role_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/cluster_role_binding kubernetes_cluster_role_binding} Resource.
 func NewClusterRoleBinding_Override(c ClusterRoleBinding, scope constructs.Construct, id *string, config *ClusterRoleBindingConfig) {
 	_init_.Initialize()
 

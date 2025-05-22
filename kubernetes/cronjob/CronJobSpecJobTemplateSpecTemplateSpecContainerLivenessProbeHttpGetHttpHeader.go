@@ -7,11 +7,11 @@ package cronjob
 type CronJobSpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader struct {
 	// The header field name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/cron_job#name CronJob#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/cron_job#name CronJob#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// The header field value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.0/docs/resources/cron_job#value CronJob#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/cron_job#value CronJob#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 
