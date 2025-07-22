@@ -9,15 +9,15 @@ type IngressV1SpecRuleHttpPathBackendResource struct {
 	//
 	// If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/ingress_v1#api_group IngressV1#api_group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/ingress_v1#api_group IngressV1#api_group}
 	ApiGroup *string `field:"required" json:"apiGroup" yaml:"apiGroup"`
 	// The kind of resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/ingress_v1#kind IngressV1#kind}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/ingress_v1#kind IngressV1#kind}
 	Kind *string `field:"required" json:"kind" yaml:"kind"`
 	// The name of the User to bind to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/ingress_v1#name IngressV1#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/ingress_v1#name IngressV1#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

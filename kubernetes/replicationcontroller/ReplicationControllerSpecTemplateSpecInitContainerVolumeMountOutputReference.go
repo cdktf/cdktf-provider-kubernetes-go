@@ -46,6 +46,9 @@ type ReplicationControllerSpecTemplateSpecInitContainerVolumeMountOutputReferenc
 	ReadOnlyInput() interface{}
 	SubPath() *string
 	SetSubPath(val *string)
+	SubPathExpr() *string
+	SetSubPathExpr(val *string)
+	SubPathExprInput() *string
 	SubPathInput() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -82,6 +85,7 @@ type ReplicationControllerSpecTemplateSpecInitContainerVolumeMountOutputReferenc
 	ResetMountPropagation()
 	ResetReadOnly()
 	ResetSubPath()
+	ResetSubPathExpr()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -237,6 +241,26 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerVolumeMount
 	return returns
 }
 
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerVolumeMountOutputReference) SubPathExpr() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subPathExpr",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerVolumeMountOutputReference) SubPathExprInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subPathExprInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerVolumeMountOutputReference) SubPathInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -379,6 +403,17 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerVolumeMount
 	_jsii_.Set(
 		j,
 		"subPath",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerVolumeMountOutputReference)SetSubPathExpr(val *string) {
+	if err := j.validateSetSubPathExprParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subPathExpr",
 		val,
 	)
 }
@@ -611,6 +646,14 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerVolumeMount
 	_jsii_.InvokeVoid(
 		r,
 		"resetSubPath",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerVolumeMountOutputReference) ResetSubPathExpr() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSubPathExpr",
 		nil, // no parameters
 	)
 }

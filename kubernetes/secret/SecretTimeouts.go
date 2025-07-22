@@ -5,7 +5,7 @@ package secret
 
 
 type SecretTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/secret#create Secret#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret#create Secret#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

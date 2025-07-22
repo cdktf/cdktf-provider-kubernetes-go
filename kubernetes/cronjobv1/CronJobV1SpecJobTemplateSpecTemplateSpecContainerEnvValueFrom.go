@@ -7,19 +7,19 @@ package cronjobv1
 type CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFrom struct {
 	// config_map_key_ref block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/cron_job_v1#config_map_key_ref CronJobV1#config_map_key_ref}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#config_map_key_ref CronJobV1#config_map_key_ref}
 	ConfigMapKeyRef *CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef `field:"optional" json:"configMapKeyRef" yaml:"configMapKeyRef"`
 	// field_ref block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/cron_job_v1#field_ref CronJobV1#field_ref}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#field_ref CronJobV1#field_ref}
 	FieldRef *CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromFieldRef `field:"optional" json:"fieldRef" yaml:"fieldRef"`
 	// resource_field_ref block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/cron_job_v1#resource_field_ref CronJobV1#resource_field_ref}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#resource_field_ref CronJobV1#resource_field_ref}
 	ResourceFieldRef *CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRef `field:"optional" json:"resourceFieldRef" yaml:"resourceFieldRef"`
 	// secret_key_ref block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/cron_job_v1#secret_key_ref CronJobV1#secret_key_ref}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job_v1#secret_key_ref CronJobV1#secret_key_ref}
 	SecretKeyRef *CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecretKeyRef `field:"optional" json:"secretKeyRef" yaml:"secretKeyRef"`
 }
 

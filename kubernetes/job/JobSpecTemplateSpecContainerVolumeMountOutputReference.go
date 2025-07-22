@@ -46,6 +46,9 @@ type JobSpecTemplateSpecContainerVolumeMountOutputReference interface {
 	ReadOnlyInput() interface{}
 	SubPath() *string
 	SetSubPath(val *string)
+	SubPathExpr() *string
+	SetSubPathExpr(val *string)
+	SubPathExprInput() *string
 	SubPathInput() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -82,6 +85,7 @@ type JobSpecTemplateSpecContainerVolumeMountOutputReference interface {
 	ResetMountPropagation()
 	ResetReadOnly()
 	ResetSubPath()
+	ResetSubPathExpr()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -237,6 +241,26 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerVolumeMountOutputReference) SubPa
 	return returns
 }
 
+func (j *jsiiProxy_JobSpecTemplateSpecContainerVolumeMountOutputReference) SubPathExpr() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subPathExpr",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecContainerVolumeMountOutputReference) SubPathExprInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subPathExprInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_JobSpecTemplateSpecContainerVolumeMountOutputReference) SubPathInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -379,6 +403,17 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerVolumeMountOutputReference)SetSub
 	_jsii_.Set(
 		j,
 		"subPath",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecContainerVolumeMountOutputReference)SetSubPathExpr(val *string) {
+	if err := j.validateSetSubPathExprParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subPathExpr",
 		val,
 	)
 }
@@ -611,6 +646,14 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerVolumeMountOutputReference) Reset
 	_jsii_.InvokeVoid(
 		j,
 		"resetSubPath",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JobSpecTemplateSpecContainerVolumeMountOutputReference) ResetSubPathExpr() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetSubPathExpr",
 		nil, // no parameters
 	)
 }

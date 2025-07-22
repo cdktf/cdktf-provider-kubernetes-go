@@ -7,11 +7,11 @@ package secretv1data
 type SecretV1DataMetadata struct {
 	// The name of the Secret.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/secret_v1_data#name SecretV1Data#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret_v1_data#name SecretV1Data#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The namespace of the Secret.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/secret_v1_data#namespace SecretV1Data#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/secret_v1_data#namespace SecretV1Data#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

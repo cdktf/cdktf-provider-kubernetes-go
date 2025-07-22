@@ -9,15 +9,15 @@ type HorizontalPodAutoscalerV2SpecBehaviorScaleUpPolicy struct {
 	//
 	// PeriodSeconds must be greater than zero and less than or equal to 1800 (30 min).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/horizontal_pod_autoscaler_v2#period_seconds HorizontalPodAutoscalerV2#period_seconds}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/horizontal_pod_autoscaler_v2#period_seconds HorizontalPodAutoscalerV2#period_seconds}
 	PeriodSeconds *float64 `field:"required" json:"periodSeconds" yaml:"periodSeconds"`
 	// Type is used to specify the scaling policy: Percent or Pods.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/horizontal_pod_autoscaler_v2#type HorizontalPodAutoscalerV2#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/horizontal_pod_autoscaler_v2#type HorizontalPodAutoscalerV2#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Value contains the amount of change which is permitted by the policy. It must be greater than zero.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/horizontal_pod_autoscaler_v2#value HorizontalPodAutoscalerV2#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/horizontal_pod_autoscaler_v2#value HorizontalPodAutoscalerV2#value}
 	Value *float64 `field:"required" json:"value" yaml:"value"`
 }
 

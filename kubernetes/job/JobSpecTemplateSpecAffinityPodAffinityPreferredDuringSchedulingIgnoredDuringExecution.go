@@ -7,11 +7,11 @@ package job
 type JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution struct {
 	// pod_affinity_term block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/job#pod_affinity_term Job#pod_affinity_term}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#pod_affinity_term Job#pod_affinity_term}
 	PodAffinityTerm *JobSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm `field:"required" json:"podAffinityTerm" yaml:"podAffinityTerm"`
 	// weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/job#weight Job#weight}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/job#weight Job#weight}
 	Weight *float64 `field:"required" json:"weight" yaml:"weight"`
 }
 

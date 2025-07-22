@@ -46,6 +46,9 @@ type PodV1SpecContainerVolumeMountOutputReference interface {
 	ReadOnlyInput() interface{}
 	SubPath() *string
 	SetSubPath(val *string)
+	SubPathExpr() *string
+	SetSubPathExpr(val *string)
+	SubPathExprInput() *string
 	SubPathInput() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -82,6 +85,7 @@ type PodV1SpecContainerVolumeMountOutputReference interface {
 	ResetMountPropagation()
 	ResetReadOnly()
 	ResetSubPath()
+	ResetSubPathExpr()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -237,6 +241,26 @@ func (j *jsiiProxy_PodV1SpecContainerVolumeMountOutputReference) SubPath() *stri
 	return returns
 }
 
+func (j *jsiiProxy_PodV1SpecContainerVolumeMountOutputReference) SubPathExpr() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subPathExpr",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PodV1SpecContainerVolumeMountOutputReference) SubPathExprInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subPathExprInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PodV1SpecContainerVolumeMountOutputReference) SubPathInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -379,6 +403,17 @@ func (j *jsiiProxy_PodV1SpecContainerVolumeMountOutputReference)SetSubPath(val *
 	_jsii_.Set(
 		j,
 		"subPath",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PodV1SpecContainerVolumeMountOutputReference)SetSubPathExpr(val *string) {
+	if err := j.validateSetSubPathExprParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subPathExpr",
 		val,
 	)
 }
@@ -611,6 +646,14 @@ func (p *jsiiProxy_PodV1SpecContainerVolumeMountOutputReference) ResetSubPath() 
 	_jsii_.InvokeVoid(
 		p,
 		"resetSubPath",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PodV1SpecContainerVolumeMountOutputReference) ResetSubPathExpr() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSubPathExpr",
 		nil, // no parameters
 	)
 }

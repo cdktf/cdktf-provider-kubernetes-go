@@ -83,6 +83,10 @@ func (j *jsiiProxy_PodSpecContainerVolumeMountOutputReference) validateSetSubPat
 	return nil
 }
 
+func (j *jsiiProxy_PodSpecContainerVolumeMountOutputReference) validateSetSubPathExprParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PodSpecContainerVolumeMountOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -37,6 +37,7 @@ type DataKubernetesPodV1SpecContainerVolumeMountOutputReference interface {
 	Name() *string
 	ReadOnly() cdktf.IResolvable
 	SubPath() *string
+	SubPathExpr() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -179,6 +180,16 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecContainerVolumeMountOutputReference) S
 	_jsii_.Get(
 		j,
 		"subPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataKubernetesPodV1SpecContainerVolumeMountOutputReference) SubPathExpr() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subPathExpr",
 		&returns,
 	)
 	return returns

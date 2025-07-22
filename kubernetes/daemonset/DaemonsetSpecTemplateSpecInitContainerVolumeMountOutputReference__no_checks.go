@@ -83,6 +83,10 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerVolumeMountOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerVolumeMountOutputReference) validateSetSubPathExprParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerVolumeMountOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

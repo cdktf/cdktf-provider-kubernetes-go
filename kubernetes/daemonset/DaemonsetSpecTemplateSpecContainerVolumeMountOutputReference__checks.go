@@ -242,6 +242,14 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerVolumeMountOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerVolumeMountOutputReference) validateSetSubPathExprParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerVolumeMountOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

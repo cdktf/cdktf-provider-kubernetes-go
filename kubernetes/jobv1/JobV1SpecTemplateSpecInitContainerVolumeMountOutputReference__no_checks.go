@@ -83,6 +83,10 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerVolumeMountOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerVolumeMountOutputReference) validateSetSubPathExprParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerVolumeMountOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

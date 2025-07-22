@@ -5,11 +5,11 @@ package cronjob
 
 
 type CronJobSpecJobTemplateSpecPodFailurePolicyRuleOnExitCodes struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/cron_job#values CronJob#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job#values CronJob#values}.
 	Values *[]*float64 `field:"required" json:"values" yaml:"values"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/cron_job#container_name CronJob#container_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job#container_name CronJob#container_name}.
 	ContainerName *string `field:"optional" json:"containerName" yaml:"containerName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/cron_job#operator CronJob#operator}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/cron_job#operator CronJob#operator}.
 	Operator *string `field:"optional" json:"operator" yaml:"operator"`
 }
 

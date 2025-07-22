@@ -7,17 +7,17 @@ package poddisruptionbudgetv1
 type PodDisruptionBudgetV1SpecSelectorMatchExpressions struct {
 	// The label key that the selector applies to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/pod_disruption_budget_v1#key PodDisruptionBudgetV1#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_disruption_budget_v1#key PodDisruptionBudgetV1#key}
 	Key *string `field:"optional" json:"key" yaml:"key"`
 	// A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/pod_disruption_budget_v1#operator PodDisruptionBudgetV1#operator}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_disruption_budget_v1#operator PodDisruptionBudgetV1#operator}
 	Operator *string `field:"optional" json:"operator" yaml:"operator"`
 	// An array of string values.
 	//
 	// If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.37.1/docs/resources/pod_disruption_budget_v1#values PodDisruptionBudgetV1#values}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/2.38.0/docs/resources/pod_disruption_budget_v1#values PodDisruptionBudgetV1#values}
 	Values *[]*string `field:"optional" json:"values" yaml:"values"`
 }
 
