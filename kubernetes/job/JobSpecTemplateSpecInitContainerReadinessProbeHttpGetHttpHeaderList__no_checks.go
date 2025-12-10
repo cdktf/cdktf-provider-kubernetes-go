@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHead
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

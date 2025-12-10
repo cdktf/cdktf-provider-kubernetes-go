@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecInitContainerPortList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecInitContainerPortList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecInitContainerPortList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

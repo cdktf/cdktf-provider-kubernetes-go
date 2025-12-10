@@ -69,7 +69,7 @@ type NetworkPolicyV1SpecEgressToOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutIpBlock(value *NetworkPolicyV1SpecEgressToIpBlock)
 	PutNamespaceSelector(value *NetworkPolicyV1SpecEgressToNamespaceSelector)
 	PutPodSelector(value *NetworkPolicyV1SpecEgressToPodSelector)
@@ -78,7 +78,7 @@ type NetworkPolicyV1SpecEgressToOutputReference interface {
 	ResetPodSelector()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -474,8 +474,8 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -483,7 +483,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) ResetPodSelector(
 	)
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

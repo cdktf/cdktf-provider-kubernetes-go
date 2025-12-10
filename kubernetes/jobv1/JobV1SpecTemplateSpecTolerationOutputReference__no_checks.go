@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecTolerationOutputReference) validateGetSt
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecTolerationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecTolerationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecTolerationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecTolerationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

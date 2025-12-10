@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecContainerLivenessProbeExecOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecContainerLivenessProbeExecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecContainerLivenessProbeExecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecContainerLivenessProbeExecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecContainerLivenessProbeExecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

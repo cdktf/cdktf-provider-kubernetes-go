@@ -43,7 +43,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerSecurityContextOutp
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerSecurityContextOutp
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

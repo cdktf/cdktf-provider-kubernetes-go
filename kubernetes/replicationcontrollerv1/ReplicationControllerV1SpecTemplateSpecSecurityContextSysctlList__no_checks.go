@@ -15,7 +15,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecSecurityContextSysctlL
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecSecurityContextSysctlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecSecurityContextSysctlList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

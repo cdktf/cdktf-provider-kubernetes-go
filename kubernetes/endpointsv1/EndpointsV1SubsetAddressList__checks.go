@@ -29,9 +29,9 @@ func (e *jsiiProxy_EndpointsV1SubsetAddressList) validateGetParameters(index *fl
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetAddressList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (e *jsiiProxy_EndpointsV1SubsetAddressList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

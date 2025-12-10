@@ -15,7 +15,7 @@ func (i *jsiiProxy_IngressSpecTlsList) validateGetParameters(index *float64) err
 	return nil
 }
 
-func (i *jsiiProxy_IngressSpecTlsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IngressSpecTlsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

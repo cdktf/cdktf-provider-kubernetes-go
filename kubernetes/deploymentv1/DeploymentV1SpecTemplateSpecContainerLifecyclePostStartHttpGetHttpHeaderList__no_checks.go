@@ -15,7 +15,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecContainerLifecyclePostStartHttpGe
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

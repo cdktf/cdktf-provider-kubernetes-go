@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerVolumeMountList) valida
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerVolumeMountList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerVolumeMountList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

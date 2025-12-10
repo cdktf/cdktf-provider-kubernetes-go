@@ -43,11 +43,11 @@ func (p *jsiiProxy_PersistentVolumeV1SpecClaimRefOutputReference) validateGetStr
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeV1SpecClaimRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PersistentVolumeV1SpecClaimRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeV1SpecClaimRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PersistentVolumeV1SpecClaimRefOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

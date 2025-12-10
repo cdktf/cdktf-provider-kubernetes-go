@@ -141,7 +141,7 @@ type ReplicationControllerSpecTemplateSpecOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAffinity(value *ReplicationControllerSpecTemplateSpecAffinity)
 	PutContainer(value interface{})
 	PutDnsConfig(value *ReplicationControllerSpecTemplateSpecDnsConfig)
@@ -186,7 +186,7 @@ type ReplicationControllerSpecTemplateSpecOutputReference interface {
 	ResetVolume()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -1320,8 +1320,8 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference) Interpo
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -1329,7 +1329,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference) Interpo
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1708,8 +1708,8 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference) ResetVo
 	)
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1717,7 +1717,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecOutputReference) Resolve
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

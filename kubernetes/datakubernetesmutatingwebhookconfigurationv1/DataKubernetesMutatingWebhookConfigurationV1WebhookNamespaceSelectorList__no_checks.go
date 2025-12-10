@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceS
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookNamespaceSelectorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

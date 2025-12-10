@@ -43,11 +43,11 @@ func (e *jsiiProxy_EndpointSliceV1PortOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (e *jsiiProxy_EndpointSliceV1PortOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EndpointSliceV1PortOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EndpointSliceV1PortOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EndpointSliceV1PortOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -89,7 +89,7 @@ type DeploymentV1SpecTemplateSpecSecurityContextOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutSeccompProfile(value *DeploymentV1SpecTemplateSpecSecurityContextSeccompProfile)
 	PutSeLinuxOptions(value *DeploymentV1SpecTemplateSpecSecurityContextSeLinuxOptions)
 	PutSysctl(value interface{})
@@ -106,7 +106,7 @@ type DeploymentV1SpecTemplateSpecSecurityContextOutputReference interface {
 	ResetWindowsOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -708,8 +708,8 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) I
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -717,7 +717,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) I
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -848,8 +848,8 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) R
 	)
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -857,7 +857,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecSecurityContextOutputReference) R
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintLabelSelectorList)
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintLabelSelectorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintLabelSelectorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

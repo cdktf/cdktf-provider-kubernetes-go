@@ -15,7 +15,7 @@ func (i *jsiiProxy_IngressClassV1SpecParametersList) validateGetParameters(index
 	return nil
 }
 
-func (i *jsiiProxy_IngressClassV1SpecParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IngressClassV1SpecParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

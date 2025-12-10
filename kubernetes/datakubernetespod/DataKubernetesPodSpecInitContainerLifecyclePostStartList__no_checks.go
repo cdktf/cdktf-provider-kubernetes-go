@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

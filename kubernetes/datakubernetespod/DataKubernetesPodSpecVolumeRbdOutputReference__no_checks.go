@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataKubernetesPodSpecVolumeRbdOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecVolumeRbdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesPodSpecVolumeRbdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecVolumeRbdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecVolumeRbdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkPolicyV1SpecIngressFromNamespaceSelectorMatchExpressio
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecIngressFromNamespaceSelectorMatchExpressionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkPolicyV1SpecIngressFromNamespaceSelectorMatchExpressionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecIngressFromNamespaceSelectorMatchExpressionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkPolicyV1SpecIngressFromNamespaceSelectorMatchExpressionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

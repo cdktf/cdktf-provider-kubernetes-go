@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataKubernetesPodSpecVolumeHostPathOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecVolumeHostPathOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesPodSpecVolumeHostPathOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecVolumeHostPathOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecVolumeHostPathOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_EndpointsV1SubsetAddressList) validateGetParameters(index *fl
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetAddressList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EndpointsV1SubsetAddressList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

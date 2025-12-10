@@ -15,7 +15,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerLivenessProbeGrpcList) 
 	return nil
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerLivenessProbeGrpcList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerLivenessProbeGrpcList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

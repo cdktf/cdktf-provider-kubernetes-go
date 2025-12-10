@@ -15,7 +15,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeDownwardApiItemsList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeDownwardApiItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecVolumeDownwardApiItemsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

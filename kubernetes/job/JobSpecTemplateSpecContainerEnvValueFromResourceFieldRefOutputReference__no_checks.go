@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutpu
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

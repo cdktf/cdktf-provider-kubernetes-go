@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulSetSpecUpdateStrategyList) validateGetParameters(inde
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecUpdateStrategyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecUpdateStrategyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

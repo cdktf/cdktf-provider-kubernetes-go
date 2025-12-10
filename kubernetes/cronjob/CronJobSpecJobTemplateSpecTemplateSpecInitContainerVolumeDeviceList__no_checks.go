@@ -15,7 +15,7 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerVolumeDevi
 	return nil
 }
 
-func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerVolumeDeviceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

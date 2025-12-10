@@ -15,7 +15,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringS
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

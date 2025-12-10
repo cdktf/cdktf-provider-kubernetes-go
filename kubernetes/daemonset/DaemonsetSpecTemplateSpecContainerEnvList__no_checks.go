@@ -15,7 +15,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerEnvList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerEnvList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerEnvList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

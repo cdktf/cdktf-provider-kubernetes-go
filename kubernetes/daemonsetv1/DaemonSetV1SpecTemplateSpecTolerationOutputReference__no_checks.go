@@ -43,11 +43,11 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTolerationOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTolerationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTolerationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTolerationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTolerationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (i *jsiiProxy_IngressV1SpecDefaultBackendServiceOutputReference) validateGe
 	return nil
 }
 
-func (i *jsiiProxy_IngressV1SpecDefaultBackendServiceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IngressV1SpecDefaultBackendServiceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IngressV1SpecDefaultBackendServiceOutputReference) validatePu
 	return nil
 }
 
-func (i *jsiiProxy_IngressV1SpecDefaultBackendServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IngressV1SpecDefaultBackendServiceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

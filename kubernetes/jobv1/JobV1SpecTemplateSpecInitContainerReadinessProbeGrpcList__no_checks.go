@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerReadinessProbeGrpcList) val
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerReadinessProbeGrpcList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerReadinessProbeGrpcList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

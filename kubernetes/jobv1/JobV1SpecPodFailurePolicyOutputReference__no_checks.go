@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobV1SpecPodFailurePolicyOutputReference) validateGetStringMa
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecPodFailurePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobV1SpecPodFailurePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (j *jsiiProxy_JobV1SpecPodFailurePolicyOutputReference) validatePutRulePara
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecPodFailurePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecPodFailurePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

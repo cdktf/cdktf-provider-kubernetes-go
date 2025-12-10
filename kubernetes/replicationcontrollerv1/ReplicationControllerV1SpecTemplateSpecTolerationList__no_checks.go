@@ -15,7 +15,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecTolerationList) valida
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecTolerationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecTolerationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

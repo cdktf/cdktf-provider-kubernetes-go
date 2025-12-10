@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeDownwardApiItemsList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeDownwardApiItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeDownwardApiItemsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

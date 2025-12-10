@@ -15,7 +15,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocke
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLivenessProbeTcpSocketList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

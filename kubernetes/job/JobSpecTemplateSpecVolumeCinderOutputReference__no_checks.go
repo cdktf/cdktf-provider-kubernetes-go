@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeCinderOutputReference) validateGetSt
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeCinderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeCinderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeCinderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeCinderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

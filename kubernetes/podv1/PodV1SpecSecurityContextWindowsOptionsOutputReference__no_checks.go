@@ -43,11 +43,11 @@ func (p *jsiiProxy_PodV1SpecSecurityContextWindowsOptionsOutputReference) valida
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecSecurityContextWindowsOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodV1SpecSecurityContextWindowsOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecSecurityContextWindowsOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecSecurityContextWindowsOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

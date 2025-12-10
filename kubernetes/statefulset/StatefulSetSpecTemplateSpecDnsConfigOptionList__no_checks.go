@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecDnsConfigOptionList) validateGetPa
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecDnsConfigOptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecDnsConfigOptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

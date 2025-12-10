@@ -43,11 +43,11 @@ func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) validateGet
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

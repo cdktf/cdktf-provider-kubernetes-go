@@ -41,7 +41,7 @@ type PodSecurityPolicyV1Beta1SpecSeLinuxSeLinuxOptionsList interface {
 	Get(index *float64) PodSecurityPolicyV1Beta1SpecSeLinuxSeLinuxOptionsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecSeLinuxSeLinuxOptionsList) Get(in
 	return returns
 }
 
-func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecSeLinuxSeLinuxOptionsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecSeLinuxSeLinuxOptionsList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecSeLinuxSeLinuxOptionsList) Resolv
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

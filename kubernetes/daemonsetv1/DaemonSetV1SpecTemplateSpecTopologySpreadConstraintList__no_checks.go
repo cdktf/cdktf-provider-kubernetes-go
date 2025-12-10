@@ -15,7 +15,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

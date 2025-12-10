@@ -15,7 +15,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretItemsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

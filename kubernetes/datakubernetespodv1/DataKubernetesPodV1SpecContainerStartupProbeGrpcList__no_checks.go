@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecContainerStartupProbeGrpcList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecContainerStartupProbeGrpcList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecContainerStartupProbeGrpcList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

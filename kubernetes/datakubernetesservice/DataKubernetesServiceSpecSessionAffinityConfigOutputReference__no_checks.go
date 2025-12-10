@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataKubernetesServiceSpecSessionAffinityConfigOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesServiceSpecSessionAffinityConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesServiceSpecSessionAffinityConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesServiceSpecSessionAffinityConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesServiceSpecSessionAffinityConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

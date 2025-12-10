@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecInitContainerEnvValueFromConfigMapKeyRef
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecInitContainerEnvValueFromConfigMapKeyRefList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecInitContainerEnvValueFromConfigMapKeyRefList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecOutputReference) validateGetString
 	return nil
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HorizontalPodAutoscalerSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecOutputReference) validatePutScaleT
 	return nil
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HorizontalPodAutoscalerSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

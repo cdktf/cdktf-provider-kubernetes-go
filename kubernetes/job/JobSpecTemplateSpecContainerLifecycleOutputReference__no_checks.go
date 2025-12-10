@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecycleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

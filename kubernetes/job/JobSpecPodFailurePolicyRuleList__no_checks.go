@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobSpecPodFailurePolicyRuleList) validateGetParameters(index 
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecPodFailurePolicyRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecPodFailurePolicyRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

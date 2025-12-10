@@ -81,14 +81,14 @@ type JobV1SpecTemplateSpecContainerVolumeMountOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetMountPropagation()
 	ResetReadOnly()
 	ResetSubPath()
 	ResetSubPathExpr()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -610,8 +610,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerVolumeMountOutputReference) Int
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerVolumeMountOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerVolumeMountOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -619,7 +619,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerVolumeMountOutputReference) Int
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -658,8 +658,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerVolumeMountOutputReference) Res
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerVolumeMountOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := j.validateResolveParameters(_context); err != nil {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerVolumeMountOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -667,7 +667,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerVolumeMountOutputReference) Res
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

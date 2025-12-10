@@ -39,7 +39,7 @@ type DataKubernetesServiceAccountV1ImagePullSecretList interface {
 	Get(index *float64) DataKubernetesServiceAccountV1ImagePullSecretOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataKubernetesServiceAccountV1ImagePullSecretList) Get(index 
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesServiceAccountV1ImagePullSecretList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataKubernetesServiceAccountV1ImagePullSecretList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataKubernetesServiceAccountV1ImagePullSecretList) Resolve(_c
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

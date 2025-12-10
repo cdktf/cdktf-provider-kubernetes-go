@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLifecyclePostStartList) valid
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLifecyclePostStartList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLifecyclePostStartList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

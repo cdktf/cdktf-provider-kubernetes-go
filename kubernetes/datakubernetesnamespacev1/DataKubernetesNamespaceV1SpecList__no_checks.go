@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesNamespaceV1SpecList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesNamespaceV1SpecList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesNamespaceV1SpecList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

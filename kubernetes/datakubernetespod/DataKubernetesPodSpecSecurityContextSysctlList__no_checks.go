@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecSecurityContextSysctlList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecSecurityContextSysctlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecSecurityContextSysctlList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

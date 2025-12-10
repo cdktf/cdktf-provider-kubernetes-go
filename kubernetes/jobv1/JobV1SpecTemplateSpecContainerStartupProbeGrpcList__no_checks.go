@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeGrpcList) validateG
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeGrpcList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeGrpcList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

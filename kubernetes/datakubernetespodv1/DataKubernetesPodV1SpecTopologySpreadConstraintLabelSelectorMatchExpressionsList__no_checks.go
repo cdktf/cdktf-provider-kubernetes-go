@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelectorM
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelectorMatchExpressionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

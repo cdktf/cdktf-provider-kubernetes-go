@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecVolumeAzureDiskList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecVolumeAzureDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecVolumeAzureDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

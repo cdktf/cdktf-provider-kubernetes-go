@@ -43,7 +43,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecDnsConfigOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecDnsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecDnsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecDnsConfigOutputReference) validateP
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecDnsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecDnsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

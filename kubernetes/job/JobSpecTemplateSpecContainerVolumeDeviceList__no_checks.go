@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerVolumeDeviceList) validateGetPara
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerVolumeDeviceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerVolumeDeviceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

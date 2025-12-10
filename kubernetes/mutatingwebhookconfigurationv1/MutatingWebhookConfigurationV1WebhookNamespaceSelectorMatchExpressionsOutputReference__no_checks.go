@@ -43,11 +43,11 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchEx
 	return nil
 }
 
-func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

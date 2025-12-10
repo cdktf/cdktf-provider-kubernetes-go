@@ -15,7 +15,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTolerationList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTolerationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTolerationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

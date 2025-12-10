@@ -43,11 +43,11 @@ func (s *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecResourcesOutputRefere
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecResourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecResourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecResourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecResourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

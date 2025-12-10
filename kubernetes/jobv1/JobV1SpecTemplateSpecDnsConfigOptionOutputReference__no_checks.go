@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOptionOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

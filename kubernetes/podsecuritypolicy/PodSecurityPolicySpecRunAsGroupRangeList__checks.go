@@ -29,9 +29,9 @@ func (p *jsiiProxy_PodSecurityPolicySpecRunAsGroupRangeList) validateGetParamete
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecRunAsGroupRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_PodSecurityPolicySpecRunAsGroupRangeList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

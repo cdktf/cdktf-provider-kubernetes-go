@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecContainerLivenessProbeHttpGetHttpHeade
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecContainerLivenessProbeHttpGetHttpHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecContainerLivenessProbeHttpGetHttpHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

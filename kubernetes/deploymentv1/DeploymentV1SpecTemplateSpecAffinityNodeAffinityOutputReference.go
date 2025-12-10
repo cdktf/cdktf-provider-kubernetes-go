@@ -67,14 +67,14 @@ type DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutPreferredDuringSchedulingIgnoredDuringExecution(value interface{})
 	PutRequiredDuringSchedulingIgnoredDuringExecution(value *DeploymentV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution)
 	ResetPreferredDuringSchedulingIgnoredDuringExecution()
 	ResetRequiredDuringSchedulingIgnoredDuringExecution()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -450,8 +450,8 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -459,7 +459,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReferen
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReferen
 	)
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReferen
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

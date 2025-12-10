@@ -43,7 +43,7 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecPodFailurePolicyOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CronJobSpecJobTemplateSpecPodFailurePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecPodFailurePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecPodFailurePolicyOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CronJobSpecJobTemplateSpecPodFailurePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecPodFailurePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

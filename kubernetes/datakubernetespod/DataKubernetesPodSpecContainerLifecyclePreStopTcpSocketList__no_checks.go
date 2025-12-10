@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecContainerLifecyclePreStopTcpSocketList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecContainerLifecyclePreStopTcpSocketList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecContainerLifecyclePreStopTcpSocketList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

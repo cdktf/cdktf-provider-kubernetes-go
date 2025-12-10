@@ -15,7 +15,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl
 	return nil
 }
 
-func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecInitContainerSecurityContextSeLinuxOptio
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecInitContainerSecurityContextSeLinuxOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecInitContainerSecurityContextSeLinuxOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

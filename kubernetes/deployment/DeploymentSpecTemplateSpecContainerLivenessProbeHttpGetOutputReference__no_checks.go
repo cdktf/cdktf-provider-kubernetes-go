@@ -43,7 +43,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetOutput
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetOutput
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

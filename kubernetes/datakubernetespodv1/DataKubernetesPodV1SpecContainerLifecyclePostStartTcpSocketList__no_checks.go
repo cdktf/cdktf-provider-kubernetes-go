@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecContainerLifecyclePostStartTcpSocketLi
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecContainerLifecyclePostStartTcpSocketList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecContainerLifecyclePostStartTcpSocketList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

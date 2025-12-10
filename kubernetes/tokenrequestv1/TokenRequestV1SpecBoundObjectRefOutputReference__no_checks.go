@@ -43,11 +43,11 @@ func (t *jsiiProxy_TokenRequestV1SpecBoundObjectRefOutputReference) validateGetS
 	return nil
 }
 
-func (t *jsiiProxy_TokenRequestV1SpecBoundObjectRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TokenRequestV1SpecBoundObjectRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TokenRequestV1SpecBoundObjectRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TokenRequestV1SpecBoundObjectRefOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

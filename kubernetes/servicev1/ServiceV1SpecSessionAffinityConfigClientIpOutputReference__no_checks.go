@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) va
 	return nil
 }
 
-func (s *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

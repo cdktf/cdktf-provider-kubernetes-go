@@ -15,7 +15,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecSecurityContextSysctlList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecSecurityContextSysctlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecSecurityContextSysctlList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

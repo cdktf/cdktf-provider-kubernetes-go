@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataKubernetesEndpointsV1SubsetAddressOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesEndpointsV1SubsetAddressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesEndpointsV1SubsetAddressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesEndpointsV1SubsetAddressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesEndpointsV1SubsetAddressOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

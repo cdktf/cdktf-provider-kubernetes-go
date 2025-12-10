@@ -15,7 +15,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

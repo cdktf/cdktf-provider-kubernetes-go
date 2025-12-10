@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpression
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

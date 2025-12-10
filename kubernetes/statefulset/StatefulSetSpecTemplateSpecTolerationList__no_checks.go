@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecTolerationList) validateGetParamet
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecTolerationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecTolerationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

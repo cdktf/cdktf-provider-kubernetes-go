@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataKubernetesPodSpecTopologySpreadConstraintLabelSelectorOut
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecTopologySpreadConstraintLabelSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesPodSpecTopologySpreadConstraintLabelSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecTopologySpreadConstraintLabelSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecTopologySpreadConstraintLabelSelectorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

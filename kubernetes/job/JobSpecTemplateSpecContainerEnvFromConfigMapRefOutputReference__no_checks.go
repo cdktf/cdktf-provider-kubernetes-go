@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvFromConfigMapRefOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

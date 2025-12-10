@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerPortList) validateGetParameters(i
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerPortList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerPortList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

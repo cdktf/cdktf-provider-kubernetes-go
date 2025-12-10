@@ -43,7 +43,7 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromNamespaceSelectorOutputReference)
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicySpecIngressFromNamespaceSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkPolicySpecIngressFromNamespaceSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromNamespaceSelectorOutputReference)
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicySpecIngressFromNamespaceSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkPolicySpecIngressFromNamespaceSelectorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

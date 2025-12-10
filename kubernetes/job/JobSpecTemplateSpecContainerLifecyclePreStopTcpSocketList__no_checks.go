@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePreStopTcpSocketList) va
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePreStopTcpSocketList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePreStopTcpSocketList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

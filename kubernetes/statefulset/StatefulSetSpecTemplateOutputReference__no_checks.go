@@ -43,7 +43,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulSetSpecTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateOutputReference) validatePutSpecParame
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecTemplateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

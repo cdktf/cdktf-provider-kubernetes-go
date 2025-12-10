@@ -77,7 +77,7 @@ type DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetOutputReference inte
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutHttpHeader(value interface{})
 	ResetHost()
 	ResetHttpHeader()
@@ -86,7 +86,7 @@ type DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetOutputReference inte
 	ResetScheme()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -566,8 +566,8 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetOutput
 	return returns
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -575,7 +575,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetOutput
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -633,8 +633,8 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetOutput
 	)
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -642,7 +642,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecContainerStartupProbeHttpGetOutput
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

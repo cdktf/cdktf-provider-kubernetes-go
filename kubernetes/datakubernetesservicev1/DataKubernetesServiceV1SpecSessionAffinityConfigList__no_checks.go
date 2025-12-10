@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesServiceV1SpecSessionAffinityConfigList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesServiceV1SpecSessionAffinityConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesServiceV1SpecSessionAffinityConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

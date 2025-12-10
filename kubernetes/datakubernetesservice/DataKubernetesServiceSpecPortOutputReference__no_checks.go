@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataKubernetesServiceSpecPortOutputReference) validateGetStri
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesServiceSpecPortOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesServiceSpecPortOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesServiceSpecPortOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesServiceSpecPortOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

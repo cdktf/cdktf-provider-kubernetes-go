@@ -43,11 +43,11 @@ func (p *jsiiProxy_PodV1SpecVolumeEphemeralVolumeClaimTemplateMetadataOutputRefe
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodV1SpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

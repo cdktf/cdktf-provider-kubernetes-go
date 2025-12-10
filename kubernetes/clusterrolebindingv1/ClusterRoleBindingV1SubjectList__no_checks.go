@@ -15,7 +15,7 @@ func (c *jsiiProxy_ClusterRoleBindingV1SubjectList) validateGetParameters(index 
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleBindingV1SubjectList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterRoleBindingV1SubjectList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

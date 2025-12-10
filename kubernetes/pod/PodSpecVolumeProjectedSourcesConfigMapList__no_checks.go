@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapList) validateGetParame
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecVolumeProjectedSourcesConfigMapList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

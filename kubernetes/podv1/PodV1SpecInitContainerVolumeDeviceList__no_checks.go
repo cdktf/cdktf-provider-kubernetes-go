@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerVolumeDeviceList) validateGetParameters
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerVolumeDeviceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecInitContainerVolumeDeviceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

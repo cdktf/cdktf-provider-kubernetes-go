@@ -43,7 +43,7 @@ func (p *jsiiProxy_PodSpecTopologySpreadConstraintOutputReference) validateGetSt
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecTopologySpreadConstraintOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSpecTopologySpreadConstraintOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PodSpecTopologySpreadConstraintOutputReference) validatePutLa
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecTopologySpreadConstraintOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecTopologySpreadConstraintOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesDownwardApiItemsList) validate
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesDownwardApiItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecVolumeProjectedSourcesDownwardApiItemsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

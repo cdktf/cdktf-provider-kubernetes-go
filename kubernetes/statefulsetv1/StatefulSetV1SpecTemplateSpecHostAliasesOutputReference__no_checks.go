@@ -43,11 +43,11 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecHostAliasesOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecHostAliasesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecHostAliasesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecHostAliasesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecHostAliasesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

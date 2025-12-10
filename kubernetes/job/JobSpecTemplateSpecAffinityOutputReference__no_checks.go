@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityOutputReference) validateGetString
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecAffinityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecAffinityOutputReference) validatePutPodAnt
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecAffinityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecAffinityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

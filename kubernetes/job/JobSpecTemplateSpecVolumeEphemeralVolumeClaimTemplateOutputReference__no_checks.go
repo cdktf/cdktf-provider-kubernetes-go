@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecHostAliasesList) validateGetParame
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecHostAliasesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecHostAliasesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

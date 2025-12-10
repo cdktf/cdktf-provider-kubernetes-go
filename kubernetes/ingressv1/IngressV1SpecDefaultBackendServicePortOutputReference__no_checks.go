@@ -43,11 +43,11 @@ func (i *jsiiProxy_IngressV1SpecDefaultBackendServicePortOutputReference) valida
 	return nil
 }
 
-func (i *jsiiProxy_IngressV1SpecDefaultBackendServicePortOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IngressV1SpecDefaultBackendServicePortOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IngressV1SpecDefaultBackendServicePortOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IngressV1SpecDefaultBackendServicePortOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -85,9 +85,9 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeCsiOutputReference) validateGetStr
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeCsiOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeCsiOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -104,9 +104,9 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeCsiOutputReference) validatePutNod
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeCsiOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeCsiOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

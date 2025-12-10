@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesConfigMapList) valid
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesConfigMapList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesConfigMapList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

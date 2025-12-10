@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecAffinityPodAffinityOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecAffinityPodAffinityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecAffinityPodAffinityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecAffinityPodAffinityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecAffinityPodAffinityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

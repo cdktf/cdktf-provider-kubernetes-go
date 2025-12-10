@@ -15,7 +15,7 @@ func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressi
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

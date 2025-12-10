@@ -43,7 +43,7 @@ func (p *jsiiProxy_PodV1SpecVolumeFlexVolumeOutputReference) validateGetStringMa
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeFlexVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodV1SpecVolumeFlexVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PodV1SpecVolumeFlexVolumeOutputReference) validatePutSecretRe
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeFlexVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecVolumeFlexVolumeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

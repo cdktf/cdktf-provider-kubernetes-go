@@ -72,13 +72,13 @@ type PodV1SpecInitContainerEnvValueFromSecretKeyRefOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetKey()
 	ResetName()
 	ResetOptional()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -507,8 +507,8 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvValueFromSecretKeyRefOutputReference
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerEnvValueFromSecretKeyRefOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PodV1SpecInitContainerEnvValueFromSecretKeyRefOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -516,7 +516,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvValueFromSecretKeyRefOutputReference
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvValueFromSecretKeyRefOutputReference
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerEnvValueFromSecretKeyRefOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PodV1SpecInitContainerEnvValueFromSecretKeyRefOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvValueFromSecretKeyRefOutputReference
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

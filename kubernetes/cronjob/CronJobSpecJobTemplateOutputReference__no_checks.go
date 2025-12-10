@@ -43,7 +43,7 @@ func (c *jsiiProxy_CronJobSpecJobTemplateOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (c *jsiiProxy_CronJobSpecJobTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CronJobSpecJobTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_CronJobSpecJobTemplateOutputReference) validatePutSpecParamet
 	return nil
 }
 
-func (c *jsiiProxy_CronJobSpecJobTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CronJobSpecJobTemplateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

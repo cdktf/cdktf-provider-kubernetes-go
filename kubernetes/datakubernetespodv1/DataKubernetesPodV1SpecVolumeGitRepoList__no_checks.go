@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeGitRepoList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeGitRepoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeGitRepoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

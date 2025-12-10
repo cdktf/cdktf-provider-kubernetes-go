@@ -15,7 +15,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateS
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

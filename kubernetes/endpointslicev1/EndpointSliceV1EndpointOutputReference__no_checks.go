@@ -43,7 +43,7 @@ func (e *jsiiProxy_EndpointSliceV1EndpointOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (e *jsiiProxy_EndpointSliceV1EndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EndpointSliceV1EndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_EndpointSliceV1EndpointOutputReference) validatePutTargetRefP
 	return nil
 }
 
-func (e *jsiiProxy_EndpointSliceV1EndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EndpointSliceV1EndpointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

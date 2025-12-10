@@ -43,7 +43,7 @@ func (r *jsiiProxy_ReplicationControllerSpecOutputReference) validateGetStringMa
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ReplicationControllerSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (r *jsiiProxy_ReplicationControllerSpecOutputReference) validatePutTemplate
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ReplicationControllerSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

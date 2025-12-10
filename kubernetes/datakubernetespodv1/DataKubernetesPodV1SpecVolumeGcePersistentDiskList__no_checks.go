@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeGcePersistentDiskList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeGcePersistentDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeGcePersistentDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

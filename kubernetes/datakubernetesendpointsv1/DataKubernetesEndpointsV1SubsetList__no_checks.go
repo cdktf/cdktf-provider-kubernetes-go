@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesEndpointsV1SubsetList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesEndpointsV1SubsetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesEndpointsV1SubsetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

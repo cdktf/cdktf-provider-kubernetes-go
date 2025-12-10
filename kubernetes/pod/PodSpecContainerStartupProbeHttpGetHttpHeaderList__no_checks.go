@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodSpecContainerStartupProbeHttpGetHttpHeaderList) validateGe
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecContainerStartupProbeHttpGetHttpHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecContainerStartupProbeHttpGetHttpHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

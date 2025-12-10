@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopList) validateGetParameters
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

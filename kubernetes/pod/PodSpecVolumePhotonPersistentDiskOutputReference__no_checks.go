@@ -43,11 +43,11 @@ func (p *jsiiProxy_PodSpecVolumePhotonPersistentDiskOutputReference) validateGet
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecVolumePhotonPersistentDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSpecVolumePhotonPersistentDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecVolumePhotonPersistentDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecVolumePhotonPersistentDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

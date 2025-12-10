@@ -43,11 +43,11 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV1SpecScaleTargetRefOutputReference) v
 	return nil
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerV1SpecScaleTargetRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HorizontalPodAutoscalerV1SpecScaleTargetRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerV1SpecScaleTargetRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HorizontalPodAutoscalerV1SpecScaleTargetRefOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

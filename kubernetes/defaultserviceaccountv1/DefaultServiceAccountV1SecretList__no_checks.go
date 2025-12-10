@@ -15,7 +15,7 @@ func (d *jsiiProxy_DefaultServiceAccountV1SecretList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DefaultServiceAccountV1SecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DefaultServiceAccountV1SecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

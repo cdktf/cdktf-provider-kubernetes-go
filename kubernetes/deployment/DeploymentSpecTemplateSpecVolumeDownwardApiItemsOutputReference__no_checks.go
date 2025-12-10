@@ -43,7 +43,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

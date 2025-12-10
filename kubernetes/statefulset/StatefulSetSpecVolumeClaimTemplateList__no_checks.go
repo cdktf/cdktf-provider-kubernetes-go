@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateList) validateGetParameters
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

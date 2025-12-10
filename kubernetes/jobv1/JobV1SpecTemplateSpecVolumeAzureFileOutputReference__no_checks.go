@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeAzureFileOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeAzureFileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeAzureFileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeAzureFileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeAzureFileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

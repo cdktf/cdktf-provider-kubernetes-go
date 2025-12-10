@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecVolumeCsiNodePublishSecretRefList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecVolumeCsiNodePublishSecretRefList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecVolumeCsiNodePublishSecretRefList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

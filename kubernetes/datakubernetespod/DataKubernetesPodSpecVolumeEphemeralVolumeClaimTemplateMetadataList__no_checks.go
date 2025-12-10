@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecVolumeEphemeralVolumeClaimTemplateMetada
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecVolumeEphemeralVolumeClaimTemplateMetadataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecVolumeEphemeralVolumeClaimTemplateMetadataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

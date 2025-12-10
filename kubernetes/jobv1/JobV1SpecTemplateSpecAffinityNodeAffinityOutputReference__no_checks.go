@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityNodeAffinityOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityNodeAffinityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityNodeAffinityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityNodeAffinityOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityNodeAffinityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecAffinityNodeAffinityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

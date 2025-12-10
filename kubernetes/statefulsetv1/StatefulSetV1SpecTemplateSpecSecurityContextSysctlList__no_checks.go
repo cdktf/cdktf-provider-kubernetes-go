@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSysctlList) valid
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSysctlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecSecurityContextSysctlList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

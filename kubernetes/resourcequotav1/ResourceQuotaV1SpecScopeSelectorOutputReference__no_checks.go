@@ -43,7 +43,7 @@ func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validateGetS
 	return nil
 }
 
-func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validatePutM
 	return nil
 }
 
-func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

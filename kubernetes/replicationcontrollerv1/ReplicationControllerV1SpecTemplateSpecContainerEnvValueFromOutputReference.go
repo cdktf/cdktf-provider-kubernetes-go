@@ -71,7 +71,7 @@ type ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromOutputReference
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutConfigMapKeyRef(value *ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromConfigMapKeyRef)
 	PutFieldRef(value *ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromFieldRef)
 	PutResourceFieldRef(value *ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromResourceFieldRef)
@@ -82,7 +82,7 @@ type ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromOutputReference
 	ResetSecretKeyRef()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -498,8 +498,8 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromO
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -507,7 +507,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromO
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -590,8 +590,8 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromO
 	)
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -599,7 +599,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvValueFromO
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

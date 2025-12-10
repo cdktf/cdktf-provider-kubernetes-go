@@ -15,7 +15,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationWebhookRuleList) validateGetParam
 	return nil
 }
 
-func (m *jsiiProxy_MutatingWebhookConfigurationWebhookRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MutatingWebhookConfigurationWebhookRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

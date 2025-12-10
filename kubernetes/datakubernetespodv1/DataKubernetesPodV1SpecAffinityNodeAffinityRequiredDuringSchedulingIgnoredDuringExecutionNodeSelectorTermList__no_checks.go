@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSche
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

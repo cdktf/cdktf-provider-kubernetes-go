@@ -71,14 +71,14 @@ type IngressV1SpecRuleHttpPathOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutBackend(value *IngressV1SpecRuleHttpPathBackend)
 	ResetBackend()
 	ResetPath()
 	ResetPathType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -496,8 +496,8 @@ func (i *jsiiProxy_IngressV1SpecRuleHttpPathOutputReference) InterpolationAsList
 	return returns
 }
 
-func (i *jsiiProxy_IngressV1SpecRuleHttpPathOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IngressV1SpecRuleHttpPathOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -505,7 +505,7 @@ func (i *jsiiProxy_IngressV1SpecRuleHttpPathOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (i *jsiiProxy_IngressV1SpecRuleHttpPathOutputReference) ResetPathType() {
 	)
 }
 
-func (i *jsiiProxy_IngressV1SpecRuleHttpPathOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IngressV1SpecRuleHttpPathOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (i *jsiiProxy_IngressV1SpecRuleHttpPathOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,11 +43,11 @@ func (p *jsiiProxy_PodSpecReadinessGateOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecReadinessGateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSpecReadinessGateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecReadinessGateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecReadinessGateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

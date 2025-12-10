@@ -29,9 +29,9 @@ func (r *jsiiProxy_RoleBindingV1SubjectList) validateGetParameters(index *float6
 	return nil
 }
 
-func (r *jsiiProxy_RoleBindingV1SubjectList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (r *jsiiProxy_RoleBindingV1SubjectList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

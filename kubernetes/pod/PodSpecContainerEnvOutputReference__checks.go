@@ -85,9 +85,9 @@ func (p *jsiiProxy_PodSpecContainerEnvOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecContainerEnvOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (p *jsiiProxy_PodSpecContainerEnvOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -104,9 +104,9 @@ func (p *jsiiProxy_PodSpecContainerEnvOutputReference) validatePutValueFromParam
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecContainerEnvOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_PodSpecContainerEnvOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

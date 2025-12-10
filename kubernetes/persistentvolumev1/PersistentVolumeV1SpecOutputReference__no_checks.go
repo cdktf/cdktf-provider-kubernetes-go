@@ -43,7 +43,7 @@ func (p *jsiiProxy_PersistentVolumeV1SpecOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeV1SpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PersistentVolumeV1SpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (p *jsiiProxy_PersistentVolumeV1SpecOutputReference) validatePutPersistentV
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeV1SpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PersistentVolumeV1SpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

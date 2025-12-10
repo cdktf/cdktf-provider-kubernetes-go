@@ -78,7 +78,7 @@ type HorizontalPodAutoscalerV2SpecOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutBehavior(value *HorizontalPodAutoscalerV2SpecBehavior)
 	PutMetric(value interface{})
 	PutScaleTargetRef(value *HorizontalPodAutoscalerV2SpecScaleTargetRef)
@@ -88,7 +88,7 @@ type HorizontalPodAutoscalerV2SpecOutputReference interface {
 	ResetTargetCpuUtilizationPercentage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -577,8 +577,8 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecOutputReference) InterpolationAs
 	return returns
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := h.validateInterpolationForAttributeParameters(property); err != nil {
+func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -586,7 +586,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -658,8 +658,8 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecOutputReference) ResetTargetCpuU
 	)
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := h.validateResolveParameters(_context); err != nil {
+func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := h.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -667,7 +667,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,11 +43,11 @@ func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) validateGetStri
 	return nil
 }
 
-func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodDisruptionBudgetV1MetadataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

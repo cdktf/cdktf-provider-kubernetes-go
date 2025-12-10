@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulSetSpecPersistentVolumeClaimRetentionPolicyList) vali
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecPersistentVolumeClaimRetentionPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecPersistentVolumeClaimRetentionPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

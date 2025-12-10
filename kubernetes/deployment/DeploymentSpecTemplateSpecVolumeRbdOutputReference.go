@@ -86,7 +86,7 @@ type DeploymentSpecTemplateSpecVolumeRbdOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutSecretRef(value *DeploymentSpecTemplateSpecVolumeRbdSecretRef)
 	ResetFsType()
 	ResetKeyring()
@@ -96,7 +96,7 @@ type DeploymentSpecTemplateSpecVolumeRbdOutputReference interface {
 	ResetSecretRef()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -669,8 +669,8 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeRbdOutputReference) Interpola
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeRbdOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeRbdOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -678,7 +678,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeRbdOutputReference) Interpola
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -744,8 +744,8 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeRbdOutputReference) ResetSecr
 	)
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeRbdOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeRbdOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -753,7 +753,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeRbdOutputReference) Resolve(_
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

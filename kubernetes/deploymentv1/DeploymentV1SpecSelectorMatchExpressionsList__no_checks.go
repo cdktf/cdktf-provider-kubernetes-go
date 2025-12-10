@@ -15,7 +15,7 @@ func (d *jsiiProxy_DeploymentV1SpecSelectorMatchExpressionsList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentV1SpecSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentV1SpecSelectorMatchExpressionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

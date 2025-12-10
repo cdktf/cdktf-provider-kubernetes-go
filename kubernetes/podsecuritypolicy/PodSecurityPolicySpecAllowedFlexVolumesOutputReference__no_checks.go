@@ -43,11 +43,11 @@ func (p *jsiiProxy_PodSecurityPolicySpecAllowedFlexVolumesOutputReference) valid
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecAllowedFlexVolumesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSecurityPolicySpecAllowedFlexVolumesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecAllowedFlexVolumesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSecurityPolicySpecAllowedFlexVolumesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

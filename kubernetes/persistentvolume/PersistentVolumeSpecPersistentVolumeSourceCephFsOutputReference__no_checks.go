@@ -43,7 +43,7 @@ func (p *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCephFsOutputReferen
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCephFsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCephFsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCephFsOutputReferen
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCephFsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCephFsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

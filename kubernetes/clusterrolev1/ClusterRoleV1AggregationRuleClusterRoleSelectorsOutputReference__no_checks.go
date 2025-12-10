@@ -43,7 +43,7 @@ func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

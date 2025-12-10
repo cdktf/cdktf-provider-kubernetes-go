@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxSeLinuxOptionsList) validateGetPa
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxSeLinuxOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxSeLinuxOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

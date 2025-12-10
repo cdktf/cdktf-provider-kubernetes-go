@@ -85,9 +85,9 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -385,9 +385,9 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) validatePutVolu
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

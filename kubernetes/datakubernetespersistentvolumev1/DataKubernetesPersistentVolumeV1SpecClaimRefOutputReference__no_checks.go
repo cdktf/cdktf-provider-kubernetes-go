@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataKubernetesPersistentVolumeV1SpecClaimRefOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPersistentVolumeV1SpecClaimRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesPersistentVolumeV1SpecClaimRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPersistentVolumeV1SpecClaimRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPersistentVolumeV1SpecClaimRefOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

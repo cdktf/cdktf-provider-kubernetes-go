@@ -43,7 +43,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerReadinessProbeOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerReadinessProbeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerReadinessProbeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerReadinessProbeOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerReadinessProbeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerReadinessProbeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

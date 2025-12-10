@@ -43,11 +43,11 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeQuobyteOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeQuobyteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeQuobyteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeQuobyteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeQuobyteOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

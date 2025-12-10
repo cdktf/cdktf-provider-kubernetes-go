@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorMatchExpressionsList) 
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorMatchExpressionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

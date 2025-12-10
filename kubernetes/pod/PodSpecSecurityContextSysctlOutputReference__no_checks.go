@@ -43,11 +43,11 @@ func (p *jsiiProxy_PodSpecSecurityContextSysctlOutputReference) validateGetStrin
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecSecurityContextSysctlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSpecSecurityContextSysctlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecSecurityContextSysctlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecSecurityContextSysctlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

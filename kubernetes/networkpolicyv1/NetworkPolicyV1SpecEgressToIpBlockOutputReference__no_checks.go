@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressToIpBlockOutputReference) validateGe
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecEgressToIpBlockOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkPolicyV1SpecEgressToIpBlockOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecEgressToIpBlockOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkPolicyV1SpecEgressToIpBlockOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) validateGetStr
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) validatePutOpt
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOptionList) validateGetParamete
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecDnsConfigOptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

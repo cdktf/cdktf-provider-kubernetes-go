@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimSpecResourcesList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimSpecResourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimSpecResourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

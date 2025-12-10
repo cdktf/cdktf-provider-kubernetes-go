@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecImagePullSecretsList) validateGetParameter
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecImagePullSecretsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecImagePullSecretsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

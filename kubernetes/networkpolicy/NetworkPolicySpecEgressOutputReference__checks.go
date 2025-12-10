@@ -85,9 +85,9 @@ func (n *jsiiProxy_NetworkPolicySpecEgressOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicySpecEgressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (n *jsiiProxy_NetworkPolicySpecEgressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -155,9 +155,9 @@ func (n *jsiiProxy_NetworkPolicySpecEgressOutputReference) validatePutToParamete
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicySpecEgressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (n *jsiiProxy_NetworkPolicySpecEgressOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

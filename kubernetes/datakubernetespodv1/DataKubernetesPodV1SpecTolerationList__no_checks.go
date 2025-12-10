@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecTolerationList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecTolerationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecTolerationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodSpecInitContainerReadinessProbeGrpcList) validateGetParame
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecInitContainerReadinessProbeGrpcList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecInitContainerReadinessProbeGrpcList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

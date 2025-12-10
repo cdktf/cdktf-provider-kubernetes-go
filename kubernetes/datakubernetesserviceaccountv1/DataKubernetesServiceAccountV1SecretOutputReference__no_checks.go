@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataKubernetesServiceAccountV1SecretOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesServiceAccountV1SecretOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesServiceAccountV1SecretOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesServiceAccountV1SecretOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesServiceAccountV1SecretOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) validateGe
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) validatePu
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecContainerLifecyclePreStopOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

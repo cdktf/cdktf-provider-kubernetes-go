@@ -43,11 +43,11 @@ func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecImagePullSecretsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

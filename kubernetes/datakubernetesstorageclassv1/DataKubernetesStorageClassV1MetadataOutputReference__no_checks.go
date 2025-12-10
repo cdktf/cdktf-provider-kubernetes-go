@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataKubernetesStorageClassV1MetadataOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesStorageClassV1MetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesStorageClassV1MetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesStorageClassV1MetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesStorageClassV1MetadataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

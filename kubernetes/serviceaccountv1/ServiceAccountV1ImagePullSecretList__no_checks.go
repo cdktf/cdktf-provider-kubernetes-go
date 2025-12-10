@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceAccountV1ImagePullSecretList) validateGetParameters(in
 	return nil
 }
 
-func (s *jsiiProxy_ServiceAccountV1ImagePullSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceAccountV1ImagePullSecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecSecurityContextSysctlList) validateGetPara
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecSecurityContextSysctlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecSecurityContextSysctlList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

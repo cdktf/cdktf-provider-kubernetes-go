@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataKubernetesEndpointsV1SubsetOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesEndpointsV1SubsetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesEndpointsV1SubsetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (d *jsiiProxy_DataKubernetesEndpointsV1SubsetOutputReference) validatePutPo
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesEndpointsV1SubsetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesEndpointsV1SubsetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

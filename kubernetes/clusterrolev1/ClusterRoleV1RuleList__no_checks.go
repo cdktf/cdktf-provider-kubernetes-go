@@ -15,7 +15,7 @@ func (c *jsiiProxy_ClusterRoleV1RuleList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleV1RuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterRoleV1RuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

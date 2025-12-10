@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecOsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecOsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecOsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecOsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecOsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

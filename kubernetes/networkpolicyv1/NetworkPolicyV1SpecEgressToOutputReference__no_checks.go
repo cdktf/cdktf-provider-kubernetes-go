@@ -43,7 +43,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) validateGetString
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) validatePutPodSel
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkPolicyV1SpecEgressToOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClusterRoleBindingV1SubjectOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleBindingV1SubjectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterRoleBindingV1SubjectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleBindingV1SubjectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterRoleBindingV1SubjectOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

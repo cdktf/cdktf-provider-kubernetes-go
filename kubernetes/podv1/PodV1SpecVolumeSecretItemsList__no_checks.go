@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodV1SpecVolumeSecretItemsList) validateGetParameters(index *
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeSecretItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecVolumeSecretItemsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

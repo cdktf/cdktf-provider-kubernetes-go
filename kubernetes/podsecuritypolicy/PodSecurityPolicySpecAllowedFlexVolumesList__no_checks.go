@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecAllowedFlexVolumesList) validateGetParam
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecAllowedFlexVolumesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSecurityPolicySpecAllowedFlexVolumesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

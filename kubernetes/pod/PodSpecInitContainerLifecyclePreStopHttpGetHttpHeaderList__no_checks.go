@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList) va
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

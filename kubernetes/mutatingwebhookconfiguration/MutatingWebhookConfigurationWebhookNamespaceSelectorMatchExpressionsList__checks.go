@@ -29,9 +29,9 @@ func (m *jsiiProxy_MutatingWebhookConfigurationWebhookNamespaceSelectorMatchExpr
 	return nil
 }
 
-func (m *jsiiProxy_MutatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (m *jsiiProxy_MutatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

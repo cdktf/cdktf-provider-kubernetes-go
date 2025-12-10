@@ -43,7 +43,7 @@ func (t *jsiiProxy_TokenRequestV1SpecOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (t *jsiiProxy_TokenRequestV1SpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TokenRequestV1SpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (t *jsiiProxy_TokenRequestV1SpecOutputReference) validatePutBoundObjectRefP
 	return nil
 }
 
-func (t *jsiiProxy_TokenRequestV1SpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TokenRequestV1SpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

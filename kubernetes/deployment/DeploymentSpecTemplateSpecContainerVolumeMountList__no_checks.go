@@ -15,7 +15,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerVolumeMountList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerVolumeMountList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerVolumeMountList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

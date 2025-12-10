@@ -69,7 +69,7 @@ type JobSpecTemplateSpecContainerLifecyclePreStopOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutExec(value *JobSpecTemplateSpecContainerLifecyclePreStopExec)
 	PutHttpGet(value *JobSpecTemplateSpecContainerLifecyclePreStopHttpGet)
 	PutTcpSocket(value interface{})
@@ -78,7 +78,7 @@ type JobSpecTemplateSpecContainerLifecyclePreStopOutputReference interface {
 	ResetTcpSocket()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -474,8 +474,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePreStopOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePreStopOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePreStopOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -483,7 +483,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePreStopOutputReference) 
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePreStopOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePreStopOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := j.validateResolveParameters(_context); err != nil {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePreStopOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePreStopOutputReference) 
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

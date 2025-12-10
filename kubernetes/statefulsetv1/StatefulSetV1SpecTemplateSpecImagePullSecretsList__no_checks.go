@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecImagePullSecretsList) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecImagePullSecretsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecImagePullSecretsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

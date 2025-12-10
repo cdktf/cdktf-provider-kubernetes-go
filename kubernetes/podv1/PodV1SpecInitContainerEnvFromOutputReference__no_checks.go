@@ -43,7 +43,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvFromOutputReference) validateGetStri
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerEnvFromOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodV1SpecInitContainerEnvFromOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvFromOutputReference) validatePutSecr
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerEnvFromOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecInitContainerEnvFromOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

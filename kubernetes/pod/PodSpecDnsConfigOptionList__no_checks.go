@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodSpecDnsConfigOptionList) validateGetParameters(index *floa
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecDnsConfigOptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecDnsConfigOptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (p *jsiiProxy_PodV1SpecHostAliasesOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecHostAliasesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodV1SpecHostAliasesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecHostAliasesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecHostAliasesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

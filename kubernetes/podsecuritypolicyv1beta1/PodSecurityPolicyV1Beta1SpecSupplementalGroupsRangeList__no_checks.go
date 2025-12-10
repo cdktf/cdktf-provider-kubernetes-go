@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecSupplementalGroupsRangeList) vali
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecSupplementalGroupsRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecSupplementalGroupsRangeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

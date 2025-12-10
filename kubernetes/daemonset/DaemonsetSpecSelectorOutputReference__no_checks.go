@@ -43,7 +43,7 @@ func (d *jsiiProxy_DaemonsetSpecSelectorOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (d *jsiiProxy_DaemonsetSpecSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DaemonsetSpecSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DaemonsetSpecSelectorOutputReference) validatePutMatchExpress
 	return nil
 }
 
-func (d *jsiiProxy_DaemonsetSpecSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaemonsetSpecSelectorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

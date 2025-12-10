@@ -41,7 +41,7 @@ type HorizontalPodAutoscalerSpecMetricList interface {
 	Get(index *float64) HorizontalPodAutoscalerSpecMetricOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricList) Get(index *float64) Ho
 	return returns
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := h.validateResolveParameters(_context); err != nil {
+func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := h.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricList) Resolve(_context cdktf
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,7 +43,7 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validatePutPortParameters(v
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

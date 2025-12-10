@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesNodesNodesStatusNodeInfoList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesNodesNodesStatusNodeInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesNodesNodesStatusNodeInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

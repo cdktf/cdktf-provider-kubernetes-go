@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodSpecVolumeList) validateGetParameters(index *float64) erro
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecVolumeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecVolumeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

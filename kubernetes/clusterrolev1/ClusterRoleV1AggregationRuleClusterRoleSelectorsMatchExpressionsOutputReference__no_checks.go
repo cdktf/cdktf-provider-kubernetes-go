@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressi
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterRoleV1AggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

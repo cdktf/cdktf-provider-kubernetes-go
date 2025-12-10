@@ -43,7 +43,7 @@ func (p *jsiiProxy_PodV1SpecVolumeDownwardApiOutputReference) validateGetStringM
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeDownwardApiOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodV1SpecVolumeDownwardApiOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PodV1SpecVolumeDownwardApiOutputReference) validatePutItemsPa
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeDownwardApiOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecVolumeDownwardApiOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

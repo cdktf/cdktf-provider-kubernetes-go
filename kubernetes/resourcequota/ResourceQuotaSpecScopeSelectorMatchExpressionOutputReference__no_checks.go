@@ -43,11 +43,11 @@ func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference)
 	return nil
 }
 
-func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorMatchExpressionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

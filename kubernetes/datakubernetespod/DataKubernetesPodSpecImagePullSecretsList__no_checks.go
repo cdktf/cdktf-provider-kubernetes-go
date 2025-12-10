@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecImagePullSecretsList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecImagePullSecretsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecImagePullSecretsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

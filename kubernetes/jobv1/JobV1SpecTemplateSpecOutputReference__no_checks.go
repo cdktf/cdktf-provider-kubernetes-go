@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -95,7 +95,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecOutputReference) validatePutVolumeParame
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

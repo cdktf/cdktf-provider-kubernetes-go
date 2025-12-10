@@ -69,7 +69,7 @@ type PodSpecInitContainerLifecyclePostStartOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutExec(value *PodSpecInitContainerLifecyclePostStartExec)
 	PutHttpGet(value *PodSpecInitContainerLifecyclePostStartHttpGet)
 	PutTcpSocket(value interface{})
@@ -78,7 +78,7 @@ type PodSpecInitContainerLifecyclePostStartOutputReference interface {
 	ResetTcpSocket()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -474,8 +474,8 @@ func (p *jsiiProxy_PodSpecInitContainerLifecyclePostStartOutputReference) Interp
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecInitContainerLifecyclePostStartOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PodSpecInitContainerLifecyclePostStartOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -483,7 +483,7 @@ func (p *jsiiProxy_PodSpecInitContainerLifecyclePostStartOutputReference) Interp
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (p *jsiiProxy_PodSpecInitContainerLifecyclePostStartOutputReference) ResetT
 	)
 }
 
-func (p *jsiiProxy_PodSpecInitContainerLifecyclePostStartOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PodSpecInitContainerLifecyclePostStartOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (p *jsiiProxy_PodSpecInitContainerLifecyclePostStartOutputReference) Resolv
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

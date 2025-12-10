@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecSecurityContextSysctlOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecSecurityContextSysctlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecSecurityContextSysctlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecSecurityContextSysctlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecSecurityContextSysctlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

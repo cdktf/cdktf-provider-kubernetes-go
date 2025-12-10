@@ -15,7 +15,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleList) validat
 	return nil
 }
 
-func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecPodFailurePolicyRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

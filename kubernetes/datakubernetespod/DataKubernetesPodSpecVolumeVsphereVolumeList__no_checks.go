@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecVolumeVsphereVolumeList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecVolumeVsphereVolumeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecVolumeVsphereVolumeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

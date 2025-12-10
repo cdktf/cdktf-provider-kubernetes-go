@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesServiceAccountSecretList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesServiceAccountSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesServiceAccountSecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecVolumePersistentVolumeClaimList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecVolumePersistentVolumeClaimList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecVolumePersistentVolumeClaimList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

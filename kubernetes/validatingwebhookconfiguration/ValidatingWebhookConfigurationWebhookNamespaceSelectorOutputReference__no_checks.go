@@ -43,7 +43,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookNamespaceSelectorOutputR
 	return nil
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookNamespaceSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookNamespaceSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookNamespaceSelectorOutputR
 	return nil
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookNamespaceSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookNamespaceSelectorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

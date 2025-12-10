@@ -15,7 +15,7 @@ func (s *jsiiProxy_StorageClassV1AllowedTopologiesMatchLabelExpressionsList) val
 	return nil
 }
 
-func (s *jsiiProxy_StorageClassV1AllowedTopologiesMatchLabelExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageClassV1AllowedTopologiesMatchLabelExpressionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

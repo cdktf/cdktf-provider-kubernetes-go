@@ -43,7 +43,7 @@ func (p *jsiiProxy_PersistentVolumeClaimSpecOutputReference) validateGetStringMa
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeClaimSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PersistentVolumeClaimSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (p *jsiiProxy_PersistentVolumeClaimSpecOutputReference) validatePutSelector
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeClaimSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PersistentVolumeClaimSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

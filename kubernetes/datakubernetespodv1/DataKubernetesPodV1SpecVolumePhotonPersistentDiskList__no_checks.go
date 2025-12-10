@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecVolumePhotonPersistentDiskList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecVolumePhotonPersistentDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecVolumePhotonPersistentDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

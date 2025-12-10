@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLivenessProbeList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLivenessProbeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLivenessProbeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

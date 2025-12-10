@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesIngressSpecRuleList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesIngressSpecRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesIngressSpecRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

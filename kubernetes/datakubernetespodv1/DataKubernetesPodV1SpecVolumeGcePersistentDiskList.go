@@ -39,7 +39,7 @@ type DataKubernetesPodV1SpecVolumeGcePersistentDiskList interface {
 	Get(index *float64) DataKubernetesPodV1SpecVolumeGcePersistentDiskOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeGcePersistentDiskList) Get(index
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeGcePersistentDiskList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeGcePersistentDiskList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeGcePersistentDiskList) Resolve(_
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

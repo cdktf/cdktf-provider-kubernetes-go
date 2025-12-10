@@ -43,11 +43,11 @@ func (m *jsiiProxy_MutatingWebhookConfigurationWebhookClientConfigServiceOutputR
 	return nil
 }
 
-func (m *jsiiProxy_MutatingWebhookConfigurationWebhookClientConfigServiceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MutatingWebhookConfigurationWebhookClientConfigServiceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MutatingWebhookConfigurationWebhookClientConfigServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MutatingWebhookConfigurationWebhookClientConfigServiceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

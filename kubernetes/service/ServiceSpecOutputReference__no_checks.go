@@ -43,7 +43,7 @@ func (s *jsiiProxy_ServiceSpecOutputReference) validateGetStringMapAttributePara
 	return nil
 }
 
-func (s *jsiiProxy_ServiceSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_ServiceSpecOutputReference) validatePutSessionAffinityConfigP
 	return nil
 }
 
-func (s *jsiiProxy_ServiceSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -85,17 +85,17 @@ func (e *jsiiProxy_EndpointsV1SubsetNotReadyAddressOutputReference) validateGetS
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetNotReadyAddressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (e *jsiiProxy_EndpointsV1SubsetNotReadyAddressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetNotReadyAddressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (e *jsiiProxy_EndpointsV1SubsetNotReadyAddressOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesServiceAccountV1ImagePullSecretList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesServiceAccountV1ImagePullSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesServiceAccountV1ImagePullSecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeAwsElasticBlockStoreList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeAwsElasticBlockStoreList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeAwsElasticBlockStoreList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

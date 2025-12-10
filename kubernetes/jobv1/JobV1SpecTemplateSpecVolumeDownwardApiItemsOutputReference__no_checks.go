@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeDownwardApiItemsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeDownwardApiItemsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecVolumeRbdSecretRefList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecVolumeRbdSecretRefList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecVolumeRbdSecretRefList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

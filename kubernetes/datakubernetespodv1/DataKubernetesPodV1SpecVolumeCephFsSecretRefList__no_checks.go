@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeCephFsSecretRefList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeCephFsSecretRefList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeCephFsSecretRefList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

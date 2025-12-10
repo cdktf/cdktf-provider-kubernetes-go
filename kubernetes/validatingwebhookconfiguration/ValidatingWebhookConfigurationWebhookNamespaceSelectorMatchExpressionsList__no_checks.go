@@ -15,7 +15,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchEx
 	return nil
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_ValidatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

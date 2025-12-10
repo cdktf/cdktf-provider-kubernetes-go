@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobSpecSelectorMatchExpressionsList) validateGetParameters(in
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecSelectorMatchExpressionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

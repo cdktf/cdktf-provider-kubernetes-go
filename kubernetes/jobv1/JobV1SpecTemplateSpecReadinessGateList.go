@@ -41,7 +41,7 @@ type JobV1SpecTemplateSpecReadinessGateList interface {
 	Get(index *float64) JobV1SpecTemplateSpecReadinessGateOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecReadinessGateList) Get(index *float64) J
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecReadinessGateList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := j.validateResolveParameters(_context); err != nil {
+func (j *jsiiProxy_JobV1SpecTemplateSpecReadinessGateList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecReadinessGateList) Resolve(_context cdkt
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

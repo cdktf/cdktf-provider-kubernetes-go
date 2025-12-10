@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecAffinityList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecAffinityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecAffinityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

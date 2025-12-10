@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsOutputRefer
 	return nil
 }
 
-func (s *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

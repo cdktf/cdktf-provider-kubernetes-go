@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuri
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

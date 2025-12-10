@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecHostAliasesList) validateGetParameters(ind
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecHostAliasesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecHostAliasesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

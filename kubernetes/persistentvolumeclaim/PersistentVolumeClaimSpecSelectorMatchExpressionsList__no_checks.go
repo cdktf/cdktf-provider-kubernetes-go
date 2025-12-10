@@ -15,7 +15,7 @@ func (p *jsiiProxy_PersistentVolumeClaimSpecSelectorMatchExpressionsList) valida
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeClaimSpecSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PersistentVolumeClaimSpecSelectorMatchExpressionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

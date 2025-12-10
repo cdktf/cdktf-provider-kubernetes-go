@@ -15,7 +15,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricList) validateGetParameters(
 	return nil
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

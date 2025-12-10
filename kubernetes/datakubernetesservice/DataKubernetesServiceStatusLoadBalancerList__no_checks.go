@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesServiceStatusLoadBalancerList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesServiceStatusLoadBalancerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesServiceStatusLoadBalancerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

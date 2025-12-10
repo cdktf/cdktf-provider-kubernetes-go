@@ -43,7 +43,7 @@ func (p *jsiiProxy_PodDisruptionBudgetSpecSelectorOutputReference) validateGetSt
 	return nil
 }
 
-func (p *jsiiProxy_PodDisruptionBudgetSpecSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodDisruptionBudgetSpecSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PodDisruptionBudgetSpecSelectorOutputReference) validatePutMa
 	return nil
 }
 
-func (p *jsiiProxy_PodDisruptionBudgetSpecSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodDisruptionBudgetSpecSelectorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

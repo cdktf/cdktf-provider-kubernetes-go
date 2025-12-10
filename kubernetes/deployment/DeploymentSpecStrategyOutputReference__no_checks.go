@@ -43,7 +43,7 @@ func (d *jsiiProxy_DeploymentSpecStrategyOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecStrategyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeploymentSpecStrategyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DeploymentSpecStrategyOutputReference) validatePutRollingUpda
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecStrategyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

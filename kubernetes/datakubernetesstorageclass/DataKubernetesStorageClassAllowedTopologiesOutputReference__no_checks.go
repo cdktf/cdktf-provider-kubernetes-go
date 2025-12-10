@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassAllowedTopologiesOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesStorageClassAllowedTopologiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesStorageClassAllowedTopologiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassAllowedTopologiesOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesStorageClassAllowedTopologiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesStorageClassAllowedTopologiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

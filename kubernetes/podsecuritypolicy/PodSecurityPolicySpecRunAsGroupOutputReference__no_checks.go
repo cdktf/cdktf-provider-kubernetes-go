@@ -43,7 +43,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecRunAsGroupOutputReference) validateGetSt
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecRunAsGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSecurityPolicySpecRunAsGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecRunAsGroupOutputReference) validatePutRa
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecRunAsGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSecurityPolicySpecRunAsGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodV1SpecContainerLifecyclePostStartList) validateGetParamete
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecContainerLifecyclePostStartList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecContainerLifecyclePostStartList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

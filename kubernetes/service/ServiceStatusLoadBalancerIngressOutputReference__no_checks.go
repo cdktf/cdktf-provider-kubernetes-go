@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceStatusLoadBalancerIngressOutputReference) validateGetS
 	return nil
 }
 
-func (s *jsiiProxy_ServiceStatusLoadBalancerIngressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceStatusLoadBalancerIngressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceStatusLoadBalancerIngressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceStatusLoadBalancerIngressOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

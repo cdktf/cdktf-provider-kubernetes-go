@@ -43,7 +43,7 @@ func (s *jsiiProxy_StatefulSetSpecUpdateStrategyOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecUpdateStrategyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulSetSpecUpdateStrategyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_StatefulSetSpecUpdateStrategyOutputReference) validatePutRoll
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecUpdateStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecUpdateStrategyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

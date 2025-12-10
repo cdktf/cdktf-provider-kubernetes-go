@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerLivenessProbeTcpSocketList) validateGet
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerLivenessProbeTcpSocketList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecInitContainerLivenessProbeTcpSocketList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

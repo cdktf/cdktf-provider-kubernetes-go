@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesNodesNodesMetadataList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesNodesNodesMetadataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesNodesNodesMetadataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

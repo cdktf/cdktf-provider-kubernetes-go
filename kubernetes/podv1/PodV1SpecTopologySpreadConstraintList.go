@@ -41,7 +41,7 @@ type PodV1SpecTopologySpreadConstraintList interface {
 	Get(index *float64) PodV1SpecTopologySpreadConstraintOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (p *jsiiProxy_PodV1SpecTopologySpreadConstraintList) Get(index *float64) Po
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecTopologySpreadConstraintList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PodV1SpecTopologySpreadConstraintList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (p *jsiiProxy_PodV1SpecTopologySpreadConstraintList) Resolve(_context cdktf
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

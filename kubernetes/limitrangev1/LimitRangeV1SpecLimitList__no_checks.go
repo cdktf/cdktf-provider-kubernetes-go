@@ -15,7 +15,7 @@ func (l *jsiiProxy_LimitRangeV1SpecLimitList) validateGetParameters(index *float
 	return nil
 }
 
-func (l *jsiiProxy_LimitRangeV1SpecLimitList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LimitRangeV1SpecLimitList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

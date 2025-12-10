@@ -29,9 +29,9 @@ func (n *jsiiProxy_NetworkPolicySpecEgressList) validateGetParameters(index *flo
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicySpecEgressList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (n *jsiiProxy_NetworkPolicySpecEgressList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

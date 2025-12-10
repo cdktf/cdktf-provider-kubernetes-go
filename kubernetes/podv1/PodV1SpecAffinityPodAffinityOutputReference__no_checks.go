@@ -43,7 +43,7 @@ func (p *jsiiProxy_PodV1SpecAffinityPodAffinityOutputReference) validateGetStrin
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecAffinityPodAffinityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodV1SpecAffinityPodAffinityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (p *jsiiProxy_PodV1SpecAffinityPodAffinityOutputReference) validatePutRequi
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecAffinityPodAffinityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecAffinityPodAffinityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

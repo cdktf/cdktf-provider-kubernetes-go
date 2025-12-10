@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkPolicySpecEgressList) validateGetParameters(index *flo
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicySpecEgressList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkPolicySpecEgressList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

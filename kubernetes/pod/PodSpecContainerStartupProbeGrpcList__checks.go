@@ -29,9 +29,9 @@ func (p *jsiiProxy_PodSpecContainerStartupProbeGrpcList) validateGetParameters(i
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecContainerStartupProbeGrpcList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_PodSpecContainerStartupProbeGrpcList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

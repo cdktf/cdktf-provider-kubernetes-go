@@ -43,7 +43,7 @@ func (i *jsiiProxy_IngressSpecRuleHttpOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (i *jsiiProxy_IngressSpecRuleHttpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IngressSpecRuleHttpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IngressSpecRuleHttpOutputReference) validatePutPathParameters
 	return nil
 }
 
-func (i *jsiiProxy_IngressSpecRuleHttpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IngressSpecRuleHttpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodV1SpecReadinessGateList) validateGetParameters(index *floa
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecReadinessGateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecReadinessGateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

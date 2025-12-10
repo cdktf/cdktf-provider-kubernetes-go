@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecVolumeCinderList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecVolumeCinderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecVolumeCinderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

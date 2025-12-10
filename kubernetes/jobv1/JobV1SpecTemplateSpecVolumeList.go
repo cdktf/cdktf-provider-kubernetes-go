@@ -41,7 +41,7 @@ type JobV1SpecTemplateSpecVolumeList interface {
 	Get(index *float64) JobV1SpecTemplateSpecVolumeOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeList) Get(index *float64) JobV1Spe
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := j.validateResolveParameters(_context); err != nil {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeList) Resolve(_context cdktf.IReso
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

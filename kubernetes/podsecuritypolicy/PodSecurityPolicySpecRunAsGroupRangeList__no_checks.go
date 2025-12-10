@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecRunAsGroupRangeList) validateGetParamete
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecRunAsGroupRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSecurityPolicySpecRunAsGroupRangeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) validateGetStringMa
 	return nil
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -95,7 +95,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) validatePutVolumePa
 	return nil
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

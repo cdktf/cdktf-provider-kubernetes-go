@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList) valida
 	return nil
 }
 
-func (p *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (e *jsiiProxy_EnvEnvValueFromOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (e *jsiiProxy_EnvEnvValueFromOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EnvEnvValueFromOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (e *jsiiProxy_EnvEnvValueFromOutputReference) validatePutSecretKeyRefParame
 	return nil
 }
 
-func (e *jsiiProxy_EnvEnvValueFromOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EnvEnvValueFromOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

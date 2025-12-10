@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodSpecHostAliasesList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecHostAliasesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecHostAliasesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodSpecSecurityContextSysctlList) validateGetParameters(index
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecSecurityContextSysctlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecSecurityContextSysctlList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

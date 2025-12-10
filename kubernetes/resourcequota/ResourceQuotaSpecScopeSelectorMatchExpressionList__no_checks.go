@@ -15,7 +15,7 @@ func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorMatchExpressionList) validateGe
 	return nil
 }
 
-func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorMatchExpressionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourceQuotaSpecScopeSelectorMatchExpressionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

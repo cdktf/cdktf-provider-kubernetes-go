@@ -15,7 +15,7 @@ func (p *jsiiProxy_PersistentVolumeSpecList) validateGetParameters(index *float6
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeSpecList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PersistentVolumeSpecList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

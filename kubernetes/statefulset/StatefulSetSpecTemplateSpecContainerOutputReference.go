@@ -118,7 +118,7 @@ type StatefulSetSpecTemplateSpecContainerOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutEnv(value interface{})
 	PutEnvFrom(value interface{})
 	PutLifecycle(value *StatefulSetSpecTemplateSpecContainerLifecycle)
@@ -153,7 +153,7 @@ type StatefulSetSpecTemplateSpecContainerOutputReference interface {
 	ResetWorkingDir()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -1050,8 +1050,8 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerOutputReference) Interpol
 	return returns
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -1059,7 +1059,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerOutputReference) Interpol
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1355,8 +1355,8 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerOutputReference) ResetWor
 	)
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1364,7 +1364,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerOutputReference) Resolve(
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

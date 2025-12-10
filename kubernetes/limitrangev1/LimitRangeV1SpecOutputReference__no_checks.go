@@ -43,7 +43,7 @@ func (l *jsiiProxy_LimitRangeV1SpecOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (l *jsiiProxy_LimitRangeV1SpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LimitRangeV1SpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LimitRangeV1SpecOutputReference) validatePutLimitParameters(v
 	return nil
 }
 
-func (l *jsiiProxy_LimitRangeV1SpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LimitRangeV1SpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

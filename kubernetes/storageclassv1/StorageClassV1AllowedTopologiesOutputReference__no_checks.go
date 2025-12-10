@@ -43,7 +43,7 @@ func (s *jsiiProxy_StorageClassV1AllowedTopologiesOutputReference) validateGetSt
 	return nil
 }
 
-func (s *jsiiProxy_StorageClassV1AllowedTopologiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageClassV1AllowedTopologiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_StorageClassV1AllowedTopologiesOutputReference) validatePutMa
 	return nil
 }
 
-func (s *jsiiProxy_StorageClassV1AllowedTopologiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageClassV1AllowedTopologiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

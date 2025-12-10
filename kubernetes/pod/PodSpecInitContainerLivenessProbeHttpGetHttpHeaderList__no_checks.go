@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodSpecInitContainerLivenessProbeHttpGetHttpHeaderList) valid
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecInitContainerLivenessProbeHttpGetHttpHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecInitContainerLivenessProbeHttpGetHttpHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

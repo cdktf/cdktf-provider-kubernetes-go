@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecDnsConfigList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecDnsConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecDnsConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

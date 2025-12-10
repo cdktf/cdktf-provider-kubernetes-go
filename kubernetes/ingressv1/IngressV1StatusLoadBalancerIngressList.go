@@ -39,7 +39,7 @@ type IngressV1StatusLoadBalancerIngressList interface {
 	Get(index *float64) IngressV1StatusLoadBalancerIngressOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (i *jsiiProxy_IngressV1StatusLoadBalancerIngressList) Get(index *float64) I
 	return returns
 }
 
-func (i *jsiiProxy_IngressV1StatusLoadBalancerIngressList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IngressV1StatusLoadBalancerIngressList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (i *jsiiProxy_IngressV1StatusLoadBalancerIngressList) Resolve(_context cdkt
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

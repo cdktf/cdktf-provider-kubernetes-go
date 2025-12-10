@@ -41,7 +41,7 @@ type RoleBindingV1SubjectList interface {
 	Get(index *float64) RoleBindingV1SubjectOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (r *jsiiProxy_RoleBindingV1SubjectList) Get(index *float64) RoleBindingV1Su
 	return returns
 }
 
-func (r *jsiiProxy_RoleBindingV1SubjectList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_RoleBindingV1SubjectList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (r *jsiiProxy_RoleBindingV1SubjectList) Resolve(_context cdktf.IResolveCont
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

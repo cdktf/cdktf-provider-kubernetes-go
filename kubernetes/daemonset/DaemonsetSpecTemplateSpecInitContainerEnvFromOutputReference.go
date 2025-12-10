@@ -70,7 +70,7 @@ type DaemonsetSpecTemplateSpecInitContainerEnvFromOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutConfigMapRef(value *DaemonsetSpecTemplateSpecInitContainerEnvFromConfigMapRef)
 	PutSecretRef(value *DaemonsetSpecTemplateSpecInitContainerEnvFromSecretRef)
 	ResetConfigMapRef()
@@ -78,7 +78,7 @@ type DaemonsetSpecTemplateSpecInitContainerEnvFromOutputReference interface {
 	ResetSecretRef()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -485,8 +485,8 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerEnvFromOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerEnvFromOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerEnvFromOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -494,7 +494,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerEnvFromOutputReference)
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerEnvFromOutputReference)
 	)
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerEnvFromOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerEnvFromOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecInitContainerEnvFromOutputReference)
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

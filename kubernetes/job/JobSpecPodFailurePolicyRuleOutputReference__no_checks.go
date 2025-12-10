@@ -43,7 +43,7 @@ func (j *jsiiProxy_JobSpecPodFailurePolicyRuleOutputReference) validateGetString
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecPodFailurePolicyRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobSpecPodFailurePolicyRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (j *jsiiProxy_JobSpecPodFailurePolicyRuleOutputReference) validatePutOnPodC
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecPodFailurePolicyRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecPodFailurePolicyRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

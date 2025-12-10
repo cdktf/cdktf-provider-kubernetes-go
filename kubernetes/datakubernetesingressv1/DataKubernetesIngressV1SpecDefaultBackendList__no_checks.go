@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesIngressV1SpecDefaultBackendList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesIngressV1SpecDefaultBackendList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesIngressV1SpecDefaultBackendList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

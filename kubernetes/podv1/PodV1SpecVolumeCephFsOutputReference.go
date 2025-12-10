@@ -80,7 +80,7 @@ type PodV1SpecVolumeCephFsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutSecretRef(value *PodV1SpecVolumeCephFsSecretRef)
 	ResetPath()
 	ResetReadOnly()
@@ -89,7 +89,7 @@ type PodV1SpecVolumeCephFsOutputReference interface {
 	ResetUser()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -600,8 +600,8 @@ func (p *jsiiProxy_PodV1SpecVolumeCephFsOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeCephFsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PodV1SpecVolumeCephFsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -609,7 +609,7 @@ func (p *jsiiProxy_PodV1SpecVolumeCephFsOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -667,8 +667,8 @@ func (p *jsiiProxy_PodV1SpecVolumeCephFsOutputReference) ResetUser() {
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeCephFsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PodV1SpecVolumeCephFsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -676,7 +676,7 @@ func (p *jsiiProxy_PodV1SpecVolumeCephFsOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

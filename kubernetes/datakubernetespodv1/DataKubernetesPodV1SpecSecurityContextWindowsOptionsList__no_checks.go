@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecSecurityContextWindowsOptionsList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecSecurityContextWindowsOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecSecurityContextWindowsOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

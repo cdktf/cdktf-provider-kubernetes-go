@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerEnvList) validateGetParameters(index *f
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerEnvList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecInitContainerEnvList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

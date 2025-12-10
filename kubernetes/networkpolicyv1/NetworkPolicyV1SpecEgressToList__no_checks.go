@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressToList) validateGetParameters(index 
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecEgressToList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkPolicyV1SpecEgressToList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

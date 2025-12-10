@@ -15,7 +15,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecHostPortsList) validateGetParamet
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecHostPortsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecHostPortsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

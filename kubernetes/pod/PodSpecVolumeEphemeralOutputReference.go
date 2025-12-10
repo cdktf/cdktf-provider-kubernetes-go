@@ -65,11 +65,11 @@ type PodSpecVolumeEphemeralOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutVolumeClaimTemplate(value *PodSpecVolumeEphemeralVolumeClaimTemplate)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -425,8 +425,8 @@ func (p *jsiiProxy_PodSpecVolumeEphemeralOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecVolumeEphemeralOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PodSpecVolumeEphemeralOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -434,7 +434,7 @@ func (p *jsiiProxy_PodSpecVolumeEphemeralOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -452,8 +452,8 @@ func (p *jsiiProxy_PodSpecVolumeEphemeralOutputReference) PutVolumeClaimTemplate
 	)
 }
 
-func (p *jsiiProxy_PodSpecVolumeEphemeralOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PodSpecVolumeEphemeralOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -461,7 +461,7 @@ func (p *jsiiProxy_PodSpecVolumeEphemeralOutputReference) Resolve(_context cdktf
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

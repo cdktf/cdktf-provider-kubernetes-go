@@ -43,11 +43,11 @@ func (j *jsiiProxy_JobV1SpecPodFailurePolicyRuleOnPodConditionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecPodFailurePolicyRuleOnPodConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobV1SpecPodFailurePolicyRuleOnPodConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecPodFailurePolicyRuleOnPodConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecPodFailurePolicyRuleOnPodConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

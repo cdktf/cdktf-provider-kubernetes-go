@@ -87,7 +87,7 @@ type DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference inte
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCapabilities(value *DaemonSetV1SpecTemplateSpecInitContainerSecurityContextCapabilities)
 	PutSeccompProfile(value *DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeccompProfile)
 	PutSeLinuxOptions(value *DaemonSetV1SpecTemplateSpecInitContainerSecurityContextSeLinuxOptions)
@@ -102,7 +102,7 @@ type DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference inte
 	ResetSeLinuxOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -684,8 +684,8 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutput
 	return returns
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -693,7 +693,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutput
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -805,8 +805,8 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutput
 	)
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -814,7 +814,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerSecurityContextOutput
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecIngressFromNamespaceSelectorMatchExpressio
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecIngressFromNamespaceSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkPolicyV1SpecIngressFromNamespaceSelectorMatchExpressionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

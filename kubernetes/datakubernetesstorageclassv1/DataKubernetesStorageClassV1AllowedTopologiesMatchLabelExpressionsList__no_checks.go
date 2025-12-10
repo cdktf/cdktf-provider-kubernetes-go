@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpres
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesStorageClassV1AllowedTopologiesMatchLabelExpressionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManifestWaitConditionList) validateGetParameters(index *float
 	return nil
 }
 
-func (m *jsiiProxy_ManifestWaitConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManifestWaitConditionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

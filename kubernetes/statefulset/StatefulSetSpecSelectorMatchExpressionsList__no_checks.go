@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulSetSpecSelectorMatchExpressionsList) validateGetParam
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecSelectorMatchExpressionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

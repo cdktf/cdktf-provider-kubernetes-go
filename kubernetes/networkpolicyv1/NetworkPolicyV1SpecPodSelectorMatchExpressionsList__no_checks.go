@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecPodSelectorMatchExpressionsList) validateG
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecPodSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkPolicyV1SpecPodSelectorMatchExpressionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

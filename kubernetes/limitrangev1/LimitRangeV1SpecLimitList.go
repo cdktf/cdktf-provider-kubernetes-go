@@ -41,7 +41,7 @@ type LimitRangeV1SpecLimitList interface {
 	Get(index *float64) LimitRangeV1SpecLimitOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (l *jsiiProxy_LimitRangeV1SpecLimitList) Get(index *float64) LimitRangeV1Sp
 	return returns
 }
 
-func (l *jsiiProxy_LimitRangeV1SpecLimitList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LimitRangeV1SpecLimitList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (l *jsiiProxy_LimitRangeV1SpecLimitList) Resolve(_context cdktf.IResolveCon
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

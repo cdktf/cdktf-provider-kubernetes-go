@@ -43,11 +43,11 @@ func (p *jsiiProxy_PodV1SpecVolumeGitRepoOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeGitRepoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodV1SpecVolumeGitRepoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeGitRepoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecVolumeGitRepoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

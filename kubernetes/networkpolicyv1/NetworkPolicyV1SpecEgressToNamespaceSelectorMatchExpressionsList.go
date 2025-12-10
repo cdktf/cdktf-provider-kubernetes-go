@@ -41,7 +41,7 @@ type NetworkPolicyV1SpecEgressToNamespaceSelectorMatchExpressionsList interface 
 	Get(index *float64) NetworkPolicyV1SpecEgressToNamespaceSelectorMatchExpressionsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressToNamespaceSelectorMatchExpressionsL
 	return returns
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecEgressToNamespaceSelectorMatchExpressionsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkPolicyV1SpecEgressToNamespaceSelectorMatchExpressionsList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecEgressToNamespaceSelectorMatchExpressionsL
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

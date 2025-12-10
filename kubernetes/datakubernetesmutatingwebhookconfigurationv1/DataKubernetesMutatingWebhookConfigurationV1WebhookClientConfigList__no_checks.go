@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConf
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

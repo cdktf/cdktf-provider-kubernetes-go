@@ -15,7 +15,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookList) validateGetParam
 	return nil
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

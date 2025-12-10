@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataKubernetesIngressSpecRuleHttpPathOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesIngressSpecRuleHttpPathOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesIngressSpecRuleHttpPathOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesIngressSpecRuleHttpPathOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesIngressSpecRuleHttpPathOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

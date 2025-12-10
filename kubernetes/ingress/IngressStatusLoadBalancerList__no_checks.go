@@ -15,7 +15,7 @@ func (i *jsiiProxy_IngressStatusLoadBalancerList) validateGetParameters(index *f
 	return nil
 }
 
-func (i *jsiiProxy_IngressStatusLoadBalancerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IngressStatusLoadBalancerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

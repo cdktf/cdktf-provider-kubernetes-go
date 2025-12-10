@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceAccountSecretList) validateGetParameters(index *float6
 	return nil
 }
 
-func (s *jsiiProxy_ServiceAccountSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceAccountSecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

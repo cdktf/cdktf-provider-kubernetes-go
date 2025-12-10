@@ -89,7 +89,7 @@ type ValidatingWebhookConfigurationV1WebhookOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutClientConfig(value *ValidatingWebhookConfigurationV1WebhookClientConfig)
 	PutNamespaceSelector(value *ValidatingWebhookConfigurationV1WebhookNamespaceSelector)
 	PutObjectSelector(value *ValidatingWebhookConfigurationV1WebhookObjectSelector)
@@ -104,7 +104,7 @@ type ValidatingWebhookConfigurationV1WebhookOutputReference interface {
 	ResetTimeoutSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -706,8 +706,8 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) Inter
 	return returns
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -715,7 +715,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) Inter
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -830,8 +830,8 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) Reset
 	)
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -839,7 +839,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookOutputReference) Resol
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

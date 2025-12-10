@@ -41,7 +41,7 @@ type PodV1SpecInitContainerVolumeMountList interface {
 	Get(index *float64) PodV1SpecInitContainerVolumeMountOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (p *jsiiProxy_PodV1SpecInitContainerVolumeMountList) Get(index *float64) Po
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerVolumeMountList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PodV1SpecInitContainerVolumeMountList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerVolumeMountList) Resolve(_context cdktf
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

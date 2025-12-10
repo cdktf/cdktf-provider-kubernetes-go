@@ -43,11 +43,11 @@ func (e *jsiiProxy_EndpointsSubsetNotReadyAddressOutputReference) validateGetStr
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsSubsetNotReadyAddressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EndpointsSubsetNotReadyAddressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsSubsetNotReadyAddressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EndpointsSubsetNotReadyAddressOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

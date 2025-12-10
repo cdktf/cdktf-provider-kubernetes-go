@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceV1StatusList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (s *jsiiProxy_ServiceV1StatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceV1StatusList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

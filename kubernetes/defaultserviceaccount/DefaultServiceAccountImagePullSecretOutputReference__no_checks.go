@@ -43,11 +43,11 @@ func (d *jsiiProxy_DefaultServiceAccountImagePullSecretOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DefaultServiceAccountImagePullSecretOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DefaultServiceAccountImagePullSecretOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DefaultServiceAccountImagePullSecretOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DefaultServiceAccountImagePullSecretOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

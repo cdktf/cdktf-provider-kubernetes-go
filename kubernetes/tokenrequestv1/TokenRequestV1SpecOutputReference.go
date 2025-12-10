@@ -71,14 +71,14 @@ type TokenRequestV1SpecOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutBoundObjectRef(value *TokenRequestV1SpecBoundObjectRef)
 	ResetAudiences()
 	ResetBoundObjectRef()
 	ResetExpirationSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -496,8 +496,8 @@ func (t *jsiiProxy_TokenRequestV1SpecOutputReference) InterpolationAsList() cdkt
 	return returns
 }
 
-func (t *jsiiProxy_TokenRequestV1SpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+func (t *jsiiProxy_TokenRequestV1SpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -505,7 +505,7 @@ func (t *jsiiProxy_TokenRequestV1SpecOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (t *jsiiProxy_TokenRequestV1SpecOutputReference) ResetExpirationSeconds() {
 	)
 }
 
-func (t *jsiiProxy_TokenRequestV1SpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TokenRequestV1SpecOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (t *jsiiProxy_TokenRequestV1SpecOutputReference) Resolve(_context cdktf.IRe
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

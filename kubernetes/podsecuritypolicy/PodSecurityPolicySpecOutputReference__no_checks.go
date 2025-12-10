@@ -43,7 +43,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) validatePutSupplemental
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSecurityPolicySpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

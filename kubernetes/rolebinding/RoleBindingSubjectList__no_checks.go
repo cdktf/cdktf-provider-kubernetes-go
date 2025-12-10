@@ -15,7 +15,7 @@ func (r *jsiiProxy_RoleBindingSubjectList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (r *jsiiProxy_RoleBindingSubjectList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RoleBindingSubjectList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

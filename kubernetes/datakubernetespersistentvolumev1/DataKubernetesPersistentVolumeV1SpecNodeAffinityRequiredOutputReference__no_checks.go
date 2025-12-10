@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataKubernetesPersistentVolumeV1SpecNodeAffinityRequiredOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPersistentVolumeV1SpecNodeAffinityRequiredOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesPersistentVolumeV1SpecNodeAffinityRequiredOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataKubernetesPersistentVolumeV1SpecNodeAffinityRequiredOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPersistentVolumeV1SpecNodeAffinityRequiredOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPersistentVolumeV1SpecNodeAffinityRequiredOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

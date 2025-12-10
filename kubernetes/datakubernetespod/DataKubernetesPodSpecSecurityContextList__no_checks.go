@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecSecurityContextList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecSecurityContextList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecSecurityContextList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

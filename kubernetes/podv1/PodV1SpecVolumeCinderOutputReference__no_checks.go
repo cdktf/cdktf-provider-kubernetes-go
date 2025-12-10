@@ -43,11 +43,11 @@ func (p *jsiiProxy_PodV1SpecVolumeCinderOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeCinderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodV1SpecVolumeCinderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeCinderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecVolumeCinderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
